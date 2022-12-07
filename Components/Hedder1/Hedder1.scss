@@ -1,0 +1,43 @@
+.Hedder1-Body {
+  background-color: #c4c4c4;
+  .content {
+    height: 70vh;
+    .inrto {
+      font-family: "Jost";
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.2em;
+      color: #f76954;
+    }
+    .hedding {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 78.738px;
+      line-height: 70px;
+      letter-spacing: -0.02em;
+      color: #141412;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 28px;
+      color: #292929;
+    }
+    .Button1 {
+      width: fit-content;
+      border: none;
+      border-radius: 20px;
+      background-color: #f76954;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      font-size: 12.918px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+  }
+}

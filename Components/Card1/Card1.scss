@@ -1,0 +1,27 @@
+.Card1-Body {
+  .Card-Body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .Card-hedding {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: #151515;
+  }
+  .Card-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #646464;
+  }
+}
