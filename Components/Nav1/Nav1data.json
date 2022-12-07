@@ -1,0 +1,28 @@
+{
+  "navOptions": [
+    {
+      "text": "Home",
+      "link": "#Home"
+    },
+    {
+      "text": "Promotions",
+      "link": "#Promotions"
+    },
+    {
+      "text": "Shop",
+      "link": "#Shop"
+    },
+    {
+      "text": "Product",
+      "link": "#Product"
+    },
+    {
+      "text": "Blog",
+      "link": "#Blog"
+    },
+    {
+      "text": "Pages",
+      "link": "#Pages"
+    }
+  ]
+}
