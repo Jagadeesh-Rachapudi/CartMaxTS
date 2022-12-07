@@ -17,9 +17,9 @@ function Nav1(props: IProps) {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="container d-flex flex-row justify-content-between ">
+    <div className="container d-flex flex-row justify-content-between  navbar-Container ">
       {/* menu start */}
-      <div className="d-block  d-lg-none d-xl-none d-xxl-none ">
+      <div className="d-block  d-lg-none d-xl-none d-xxl-none  bg-transparent ">
         <Button
           variant="light"
           className="d-lg-none h-75 mt-auto mb-auto p-2 "
@@ -44,7 +44,7 @@ function Nav1(props: IProps) {
       </div>
       {/* menu end  */}
 
-      <div className="logo">
+      <div className="logo bg-transparent ">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo.png?alt=media&token=6dd2fb25-170b-4b1b-bb60-dc0cc8ba3504"
           alt=""
