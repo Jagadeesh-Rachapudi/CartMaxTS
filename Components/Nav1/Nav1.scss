@@ -1,6 +1,12 @@
-.navbar-Container{
-    background-color: #C4C4C4;
-}
-.links{
-    background-color: #C4C4C4;
+.navbar-Container {
+  background-color: #c4c4c4;
+  .links {
+    background-color: #c4c4c4;
+  }
+  .logo > img {
+    @media screen and (max-width: 500px) {
+      width: 100px;
+      height: 50px;
+    }
+  }
 }

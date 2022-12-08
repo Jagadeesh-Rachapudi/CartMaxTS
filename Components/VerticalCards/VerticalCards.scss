@@ -1,0 +1,36 @@
+.VerticalCards {
+  .Cards {
+    flex-wrap: wrap;
+    width: fit-content;
+    .card1 {
+      max-width: 29rem;
+    }
+    .img {
+      width: 100%;
+    }
+    .tag {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #f76954;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: -0.02em;
+      color: #0c0c0c;
+    }
+    .link {
+      font-family: "Jost";
+      font-size: 17px;
+      line-height: 20px;
+      text-decoration-line: underline;
+      color: #4e4e4e;
+    }
+  }
+}
