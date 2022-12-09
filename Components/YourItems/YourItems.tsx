@@ -11,6 +11,8 @@ import FurnitureData from "../../Utils/Furniture/FurnitureItem.json";
 export interface IProps {
   tag: string;
   title: string;
+  products: string[];
+  viewAll: string;
 }
 function YourItems(props: IProps) {
   return (
@@ -36,8 +38,25 @@ function YourItems(props: IProps) {
         </Col>
       </Row>
       <Row>
-        <Col className="d-flex flex-row justify-content-center">
-          <FurnitureItem {...(FurnitureData as FurnitureItemProps)} />
+        <Col>
+          <div
+            className="viewAll"
+            dangerouslySetInnerHTML={{
+              __html: props.viewAll,
+            }}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col className=" products-container d-flex flex-row justify-content-center g-1 ">
+          {props.products.map((e, id) => (
+            <div key={id} className="mt-2 me-1 ms-1">
+              <FurnitureItem
+                {...(FurnitureData as FurnitureItemProps)}
+                title={e}
+              />
+            </div>
+          ))}
         </Col>
       </Row>
     </Container>

@@ -1,5 +1,5 @@
 .YourItems-Body {
-  height: 100vh;
+  height: 500vh;
   .htag {
     font-family: "Inter";
     font-style: normal;
@@ -11,12 +11,23 @@
   .title {
     font-family: "Jost";
     font-style: normal;
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 40px;
     line-height: 45px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #0c0c0c;
   }
+  .products-container {
+    flex-wrap: wrap;
+  }
+  .viewAll {
+    font-family: "Jost";
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4e4e4e;
+    text-align: right;
+    margin-right: 8rem;
+  }
 }
-  
