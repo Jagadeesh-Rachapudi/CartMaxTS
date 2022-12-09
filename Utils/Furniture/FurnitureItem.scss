@@ -1,3 +1,25 @@
-.FurnitureItem-Body{
-    
+.FurnitureItem-Body {
+  width: fit-content;
+  p {
+    margin-bottom: 0;
+  }
+  .tag {
+    padding: 0.5rem;
+    background-color: #f76954;
+    font-family: "Roboto";
+    font-style: normal;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 9.875px;
+    color: #f4eded;
+    margin: 0;
+    width: fit-content;
+    position: absolute;
+    z-index: +1;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .img {
+    position: relative;
+  }
 }

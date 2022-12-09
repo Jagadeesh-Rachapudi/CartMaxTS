@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 
 import FurnitureItem, {
   IProps as FurnitureItemProps,
-} from "../../Utils/Furniture/furnitureItem";
-import FurnitureData from "../../Utils/Furniture/furnitureItem.json";
+} from "../../Utils/Furniture/FurnitureItem";
+import FurnitureData from "../../Utils/Furniture/FurnitureItem.json";
 
 export interface IProps {
   tag: string;
@@ -18,7 +18,7 @@ function YourItems(props: IProps) {
       <Row>
         <Col className="d-flex justify-content-center mt-5">
           <div
-            className="tag"
+            className="htag"
             dangerouslySetInnerHTML={{
               __html: `${props.tag}`,
             }}
@@ -30,13 +30,13 @@ function YourItems(props: IProps) {
           <div
             className="title"
             dangerouslySetInnerHTML={{
-              __html: `${props.title}`,
+              __html: props.title,
             }}
           />
         </Col>
       </Row>
       <Row>
-        <Col className="d-flex flex-row justify-content-center mt-">
+        <Col className="d-flex flex-row justify-content-center">
           <FurnitureItem {...(FurnitureData as FurnitureItemProps)} />
         </Col>
       </Row>
