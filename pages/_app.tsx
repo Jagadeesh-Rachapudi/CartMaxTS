@@ -10,7 +10,8 @@ import "../Components/Card1/Card1.scss";
 import "../Components/Living/Living.scss";
 import "../Components/VerticalCards/VerticalCards.scss";
 import "../Components/YourItems/YourItems.scss";
-
+import "../Components/Timmer1/Timmer1.scss";
+import "../Components/YearBest/YearBest.scss";
 import type { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;

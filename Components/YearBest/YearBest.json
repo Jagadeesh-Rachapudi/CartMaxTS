@@ -1,0 +1,16 @@
+{
+  "timmer": {
+    "tag": "<p>SPRING SALE 20% OFF</p>",
+    "title": "<p>La Chaise Nouvelle<br /> Grande Aventure</p>",
+    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>",
+    "days": "<p>DAYS</p>",
+    "hours": "<p>HOURS</p>",
+    "mins": "<p>MINS</p>",
+    "sec": "<p>SECS</p>",
+    "button": "<p>EXPLORE MORE</p>"
+  },
+  "cards": {
+    "count": "<p>9 Products</p>",
+    "products": ["<p>LAMP</p>", "<p>SOFA</p>", "<p>TABLE</p>", "<p>BED</p>"]
+  }
+}

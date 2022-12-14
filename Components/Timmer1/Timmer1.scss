@@ -1,0 +1,120 @@
+.Timmer1-body {
+  background-color: #dbdbdb;
+  .optionsContainer {
+    margin-top: 2.7rem;
+    margin-bottom: 2rem;
+    .options {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+      @media screen and (max-width: 748px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      @media screen and (max-width: 626px) {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media screen and (max-width: 576px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .card1 {
+    width: 11rem;
+    cursor: pointer;
+    .text {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22.637px;
+      line-height: 33px;
+    }
+    .count {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .timmerCard {
+    max-width: 33rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: 1.5rem;
+    @media screen and (max-width: 748px) {
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .timmer-body {
+      background-color: white;
+      .tag {
+        font-family: "Jost";
+        font-size: 18px;
+        line-height: 21px;
+        color: #f76954;
+        width: 15rem;
+      }
+      .title {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44.29px;
+        line-height: 55px;
+        color: #232323;
+        width: 25rem;
+        @media screen and (max-width: 460px) {
+          font-size: 30px;
+          line-height: 35px;
+          width: 20rem;
+        }
+      }
+      .content {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #373737;
+      }
+      .days {
+        background-color: #f2f2f2;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+        width: fit-content;
+        color: #171515;
+      }
+      .subtext {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #171515;
+      }
+      button {
+        padding: 1rem;
+        border-radius: 25px;
+        border: none;
+        background-color: #f76954;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.918px;
+        line-height: 15px;
+        color: #ffffff;
+      }
+    }
+  }
+}

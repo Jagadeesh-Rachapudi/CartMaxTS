@@ -48,7 +48,7 @@ function YourItems(props: IProps) {
         </Col>
       </Row>
       <Row>
-        <Col className=" products-container d-flex flex-row justify-content-center g-1 ">
+        <Col className=" products-container d-flex mb-5 flex-row justify-content-center g-1 ">
           {props.products.map((e, id) => (
             <div key={id} className="mt-2 me-1 ms-1">
               <FurnitureItem

@@ -20,7 +20,16 @@ import VerticalCardsData from "../Components/VerticalCards/VerticalCards.json";
 import YourItems, {
   IProps as YourItemsProps,
 } from "../Components/YourItems/YourItems";
+
 import YourItemsData from "../Components/YourItems/YourItems.json";
+
+import Timmer1, { IProps as Timmer1Props } from "../Components/Timmer1/Timmer1";
+import Timmer1Data from "../Components/Timmer1/Timmer1.json";
+
+import YearBest, {
+  IProps as YearBest1Props,
+} from "../Components/YearBest/YearBest";
+import YearBestData from "../Components/YearBest/YearBest.json";
 
 function furniture() {
   return (
@@ -31,6 +40,8 @@ function furniture() {
       <Living {...(LivingData as Livingprops)} />
       <VerticalCards {...(VerticalCardsData as vertcialCardsProps)} />
       <YourItems {...(YourItemsData as YourItemsProps)} />
+      <Timmer1 {...(Timmer1Data as Timmer1Props)} />
+      <YearBest {...(YearBestData as YearBest1Props)} />
     </div>
   );
 }
