@@ -11,26 +11,34 @@ import FurnitureData from "../../Utils/Furniture/FurnitureItem.json";
 export interface IProps {
   options: string[];
   products: string[];
+  tag: string;
+  title: string;
 }
 
 function YearBest(props: IProps) {
   const [active, setActive] = useState(0);
   return (
     <div className="YearBest-Body pt-5 ">
-      <Container>
+      <Container fluid="lg">
         <Row>
           <Col>
-            <div className="tagh d-flex justify-content-center ">
-              LATEST ARRIVALS AND
-            </div>
+            <div
+              className="tagh  ms-1"
+              dangerouslySetInnerHTML={{
+                __html: props.tag,
+              }}
+            />
           </Col>
         </Row>
         <Row>
           <Col className="d-flex flex-column flex-md-row">
-            <div className="title mt-auto mb-auto">
-              This year’s best selling items
-            </div>
-            <div className="ms-auto mt-auto mb-auto">
+            <div
+              className="title mt-auto mb-auto"
+              dangerouslySetInnerHTML={{
+                __html: props.title,
+              }}
+            />
+            <div className="options">
               {props.options.map((str, id) => (
                 <a
                   key={id}

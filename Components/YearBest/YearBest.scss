@@ -6,6 +6,11 @@
     font-size: 15px;
     line-height: 18px;
     color: #f76954;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
   }
   .title {
     font-family: "Jost";
@@ -15,6 +20,23 @@
     line-height: 45px;
     letter-spacing: -0.02em;
     color: #0c0c0c;
+    width: 20rem;
+    @media screen and (max-width: 767px) {
+      width: fit-content;
+      margin-bottom: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .options {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-top: 1rem;
+      margin-right: auto;
+    }
   }
   .link {
     font-family: "Jost";

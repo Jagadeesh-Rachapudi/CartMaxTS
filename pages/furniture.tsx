@@ -31,6 +31,9 @@ import YearBest, {
 } from "../Components/YearBest/YearBest";
 import YearBestData from "../Components/YearBest/YearBest.json";
 
+import Stars, { IProps as StartProps } from "../Components/Stars/Stars";
+import StarsData from "../Components/Stars/Stars.json";
+
 function furniture() {
   return (
     <div>
@@ -41,7 +44,8 @@ function furniture() {
       <VerticalCards {...(VerticalCardsData as vertcialCardsProps)} />
       <YourItems {...(YourItemsData as YourItemsProps)} />
       <Timmer1 {...(Timmer1Data as Timmer1Props)} />
-      <YearBest {...(YearBestData as YearBest1Props)} />
+      <YearBest {...(StarsData as StartProps)} />
+      <Stars />
     </div>
   );
 }
