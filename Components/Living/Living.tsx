@@ -42,7 +42,7 @@ function Living(props: IProps) {
                     className={`${active == id ? "active link" : " link "}`}
                   >
                     <RxDotFilled
-                      color={`${active == id ? "#F76954" : "black"}`}
+                      color={`${active == id ? "#F76954" : "#171515"}`}
                       size={20}
                       className="mt-0 mb-1"
                     />

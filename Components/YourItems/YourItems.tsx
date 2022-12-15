@@ -13,7 +13,7 @@ export interface IProps {
   title: string;
   products: string[];
   viewAll: string;
-}
+} 
 function YourItems(props: IProps) {
   return (
     <Container fluid className="YourItems-Body">
