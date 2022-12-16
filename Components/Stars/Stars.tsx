@@ -25,7 +25,7 @@ function Stars() {
       </Row>
       <Row>
         <Col className="d-flex flex-row" >
-            
+            <div className="light"></div>
         </Col>
       </Row>
     </Container>
