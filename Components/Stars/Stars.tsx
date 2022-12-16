@@ -23,9 +23,24 @@ function Stars() {
           />
         </Col>
       </Row>
-      <Row>
-        <Col className="d-flex flex-row" >
-            <div className="light"></div>
+      <Row className="light-dark ">
+        <Col xs={12} sm={12} md={7} lg={7} xl={7} xxl={7} className="p-0">
+          <div className="light d-flex flex-column justify-content-center">
+            <div className="tag">JACKET & COAST</div>
+            <div className="title ">Free Shipping Over Order $290</div>
+            <a href="#" className="link">
+              Shop Now
+            </a>
+          </div>
+        </Col>
+        <Col xs={12} sm={12} md={5} lg={5} xl={5} xxl={5} className="p-0">
+          <div className="dark d-flex flex-column justify-content-start ">
+            <div className="tag text-center mt-1 mb-1">UP TO 30% OFF TODAY</div>
+            <div className="title-dark text-center ">Spring Collection</div>
+            <a href="#" className="link text-center mt-1 mb-1">
+              Shop Now
+            </a>
+          </div>
         </Col>
       </Row>
     </Container>
