@@ -6,18 +6,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 export interface IProps {
-  options: string[];
-  products: string[];
-  tag: string;
-  title: string;
+  src: string;
 }
 
-function Stars() {
+function Stars(props: IProps) {
   return (
     <Container fluid className="Stars-Body">
       <Row>
         <Col>
-          <img src="" className="img" />
+          <img src={props.src} className="img" />
         </Col>
       </Row>
       <Row className="light-dark ">

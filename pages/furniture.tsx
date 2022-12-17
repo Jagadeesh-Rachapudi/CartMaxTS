@@ -44,8 +44,8 @@ function furniture() {
       <VerticalCards {...(VerticalCardsData as vertcialCardsProps)} />
       <YourItems {...(YourItemsData as YourItemsProps)} />
       <Timmer1 {...(Timmer1Data as Timmer1Props)} />
-      <YearBest {...(StarsData as StartProps)} />
-      <Stars />
+      <YearBest {...(YearBestData as YearBest1Props)} />
+      <Stars {...(StarsData as StartProps)} />
     </div>
   );
 }
