@@ -1,0 +1,28 @@
+.News-Body {
+  margin-top: 20rem;
+  height: 500vh;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #f76954;
+  }
+  .Title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+  }
+  .Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+}

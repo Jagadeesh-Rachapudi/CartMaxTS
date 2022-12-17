@@ -34,6 +34,9 @@ import YearBestData from "../Components/YearBest/YearBest.json";
 import Stars, { IProps as StartProps } from "../Components/Stars/Stars";
 import StarsData from "../Components/Stars/Stars.json";
 
+import News, { IProps as NewsProps } from "../Components/News/News";
+import NewsData from "../Components/News/News.json";
+
 function furniture() {
   return (
     <div>
@@ -46,6 +49,7 @@ function furniture() {
       <Timmer1 {...(Timmer1Data as Timmer1Props)} />
       <YearBest {...(YearBestData as YearBest1Props)} />
       <Stars {...(StarsData as StartProps)} />
+      <News {...(NewsData as NewsProps)} />
     </div>
   );
 }
