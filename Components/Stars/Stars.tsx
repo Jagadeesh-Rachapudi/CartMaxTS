@@ -17,10 +17,7 @@ function Stars() {
     <Container fluid className="Stars-Body">
       <Row>
         <Col>
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FDotted-Img.png?alt=media&token=78f6c241-c7e5-4d3d-af94-433ff8974a24"
-            className="img"
-          />
+          <img src="" className="img" />
         </Col>
       </Row>
       <Row className="light-dark ">
@@ -46,5 +43,4 @@ function Stars() {
     </Container>
   );
 }
-``;
 export default Stars;

@@ -1,15 +1,3 @@
 {
-  "options": ["Accessories", "Bedroom", "Dining", "Kids", "Lighting"],
-  "products": [
-    "Small Table Decorations",
-    "Garden Chair",
-    "Kitchen Cupboard",
-    "Kitchen Cupboard",
-    "Kitchen Cupboard",
-    "Kitchen Cupboard",
-    "Kitchen Cupboard",
-    "Small Table Decorations"
-  ],
-  "tag": "<p>LATEST ARRIVALS AND</p>",
-  "title": "<p>This year&rsquo;s best selling items</p>"
+  "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FDotted-Img.png?alt=media&token=78f6c241-c7e5-4d3d-af94-433ff8974a24"
 }
