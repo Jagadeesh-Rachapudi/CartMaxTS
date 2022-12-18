@@ -37,6 +37,11 @@ import StarsData from "../Components/Stars/Stars.json";
 import News, { IProps as NewsProps } from "../Components/News/News";
 import NewsData from "../Components/News/News.json";
 
+import BlackWhite, {
+  IProps as BlackWhiteProps,
+} from "../Components/BlackWhite/BlackWhite";
+import BlackWhiteData from "../Components/BlackWhite/BlackWhite.json";
+
 function furniture() {
   return (
     <div>
@@ -50,6 +55,7 @@ function furniture() {
       <YearBest {...(YearBestData as YearBest1Props)} />
       <Stars {...(StarsData as StartProps)} />
       <News {...(NewsData as NewsProps)} />
+      <BlackWhite {...(BlackWhiteData as BlackWhiteProps)} />
     </div>
   );
 }
