@@ -1,0 +1,29 @@
+{
+  "logoSrc": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo.png?alt=media&token=6dd2fb25-170b-4b1b-bb60-dc0cc8ba3504",
+  "logoContent": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt tetur adipisicing elit, sed do eiusmo Lorem ipsum dolor sit amet, consectetur adipisicing</p>",
+  "col2Hedding": "<p>INFORMATIONS</p>",
+  "col3Hedding": "<p>POLICES</p>",
+  "col4Hedding": "<p>PRODUCT&nbsp; LINKS</p>",
+  "col2Items": [
+    "<p>Track Your Order</p>",
+    "<p>Returns &amp; Exchanges</p>",
+    "<p>Shipping Information</p>",
+    "<p>Help Topic</p>",
+    "<p>Give Us Feedback</p>"
+  ],
+  "col3Items": [
+    "<p>Delivery</p>",
+    "<p>Product Warranty</p>",
+    "<p>Sales and Refunds</p>",
+    "<p>FAQ</p>",
+    "<p>COVID-19 Update</p>"
+  ],
+  "col4Items": [
+    "<p>3 Seater Sofas</p>",
+    "<p>Loveseats</p>",
+    "<p>Sofa Beds</p>",
+    "<p>Sectional Sofas</p>",
+    "<p>Armchairs &amp; Accent Chairs</p>"
+  ],
+  "emailText": "<p><span style=\"color:#f76954\">$90 OFF*</span> YOUR ORDER! SUBSCRBE TO  <br/> OUR NEWSLETTER TODAY.</p>"
+}

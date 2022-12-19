@@ -42,6 +42,9 @@ import BlackWhite, {
 } from "../Components/BlackWhite/BlackWhite";
 import BlackWhiteData from "../Components/BlackWhite/BlackWhite.json";
 
+import Footer1, { IProps as Footer1Props } from "../Components/Footer1/Footer1";
+import Footer1Data from "../Components/Footer1/Footer1.json";
+
 function furniture() {
   return (
     <div>
@@ -56,6 +59,7 @@ function furniture() {
       <Stars {...(StarsData as StartProps)} />
       <News {...(NewsData as NewsProps)} />
       <BlackWhite {...(BlackWhiteData as BlackWhiteProps)} />
+      <Footer1 {...(Footer1Data as Footer1Props)} />
     </div>
   );
 }

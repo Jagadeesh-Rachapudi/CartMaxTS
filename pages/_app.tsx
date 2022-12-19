@@ -16,6 +16,7 @@ import "../Components/YearBest/YearBest.scss";
 import "../Components/Stars/Stars.scss";
 import "../Components/News/News.scss";
 import "../Components/BlackWhite/BlackWhite.scss";
+import "../Components/Footer1/Footer1.scss";
 
 import type { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
