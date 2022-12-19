@@ -12,6 +12,7 @@ import Col from "react-bootstrap/Col";
 export interface IProps {
   navOptions: { text: string; link: string }[];
   cartitems: string[];
+  whishList: string[];
 }
 
 function Nav1(props: IProps) {
@@ -22,6 +23,10 @@ function Nav1(props: IProps) {
   const [show2, setShow2] = useState(false);
   const handleClose2 = () => setShow2(false);
   const handleShow2 = () => setShow2(true);
+
+  const [show3, setShow3] = useState(false);
+  const handleClose3 = () => setShow3(false);
+  const handleShow3 = () => setShow3(true);
 
   return (
     <div className="navbar-Container">
@@ -86,9 +91,27 @@ function Nav1(props: IProps) {
                 <Nav.Link href="#link" className="me-1 mt-2 me-3">
                   <BsPerson size={17} />
                 </Nav.Link>
-                <Nav.Link href="#link" className="me-1 mt-2 me-2">
+
+                {/* Cart OffCanvas Starts */}
+                <Button
+                  variant="transparent"
+                  onClick={handleShow2}
+                  className="p-1 mt-1 "
+                >
                   <BsHeart size={17} />
-                </Nav.Link>
+                </Button>
+
+                <Offcanvas show={show3} onHide={handleClose3} placement={"end"}>
+                  <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>Your Cart Items</Offcanvas.Title>
+                  </Offcanvas.Header>
+                  <Offcanvas.Body>
+                    {props.cartitems.map((cartItem, id) => (
+                      <h6 key={id}>{cartItem}</h6>
+                    ))}
+                  </Offcanvas.Body>
+                </Offcanvas>
+                {/* Cart OffCanvas Ends */}
 
                 {/* Cart OffCanvas Starts */}
                 <Button variant="transparent" onClick={handleShow2}>
@@ -100,7 +123,7 @@ function Nav1(props: IProps) {
                     <Offcanvas.Title>Your Cart Items</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    {props.cartitems.map((cartItem, id) => (
+                    {props.whishList.map((cartItem, id) => (
                       <h6 key={id}>{cartItem}</h6>
                     ))}
                   </Offcanvas.Body>

@@ -57,8 +57,9 @@ function NewsArticle(props: IProps) {
       </Row>
       <Row>
         <Col>
-          <div
+          <a
             className="Readmore"
+            href="#News"
             dangerouslySetInnerHTML={{
               __html: props.Readmore,
             }}

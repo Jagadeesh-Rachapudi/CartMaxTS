@@ -1,3 +1,12 @@
+import * as React from "react";
+import { render } from "react-dom";
+import { createStore, applyMiddleware, Store } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import reducer from "../redux/store/reducer";
+
+
+
 import "bootstrap/dist/css/bootstrap.css";
 
 import "../styles/globals.css";
@@ -19,6 +28,18 @@ import "../Components/BlackWhite/BlackWhite.scss";
 import "../Components/Footer1/Footer1.scss";
 
 import type { AppProps } from "next/app";
+
+const store: Store<productState, productAction> & {
+  dispatch: DispatchType;
+} = createStore(reducer, applyMiddleware(thunk));
+
+
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+  
+    <Provider store={store} >
+      <Component {...pageProps} />
+     </Provider>
+  )
 }
+

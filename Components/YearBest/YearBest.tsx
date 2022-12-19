@@ -42,7 +42,6 @@ function YearBest(props: IProps) {
               {props.options.map((str, id) => (
                 <a
                   key={id}
-                  href="#"
                   onClick={() => {
                     if (active == id) setActive(100);
                     else setActive(id);
