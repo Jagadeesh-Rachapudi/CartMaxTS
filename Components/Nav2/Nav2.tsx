@@ -33,9 +33,9 @@ function Nav2(props: IProps) {
     <Container fluid className="Nav2-Body">
       <Row>
         <Col className="d-flex">
-          <img src={props.src} alt="" className="img mt-3 ms-5" />
+          <img src={props.src} alt="" className="img " />
           <div className="rightIcons ms-auto d-flex">
-            <div className="canvas mt-4 me-5 ">
+            <div className="canvas">
               <Button onClick={handleShow} className="Menu-Button">
                 <AiOutlineMenu size={17} className="me-2" />
                 Menu
@@ -57,7 +57,10 @@ function Nav2(props: IProps) {
                 </Offcanvas.Body>
               </Offcanvas>
             </div>
-            <AiOutlineSearch className="Icon mt-auto mb-auto me-1 " size={35} />
+            <AiOutlineSearch
+              className="Icon searchIcon mt-auto mb-auto"
+              size={35}
+            />
             <Button onClick={handleShow2} className="whishList-Button">
               <AiOutlineHeart className="Icon" size={35} />
             </Button>

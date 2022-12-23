@@ -6,9 +6,35 @@
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
+  .img {
+    margin-top: 0rem;
+    margin-left: 3rem;
+    @media screen and (max-width: 565px) {
+      margin-left: 0.5rem;
+    }
+    @media screen and (max-width: 400px) {
+      margin-left: -0.5rem;
+    }
+    @media screen and (max-width: 461px) {
+      width: 150px;
+      height: 65px;
+    }
+  }
+  .canvas {
+    margin-right: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    @media screen and (max-width: 565px) {
+      margin-right: 0rem;
+    }
+  }
   .Menu-Button {
     background-color: transparent;
     border: none;
+    @media screen and (max-width: 565px) {
+      padding-right: 0rem;
+      margin-right: 1rem;
+    }
   }
   .Menu-Button:hover {
     background-color: black;
@@ -23,6 +49,9 @@
     margin-left: auto;
     margin-right: 2rem;
     border-radius: 50%;
+    @media screen and (max-width: 565px) {
+      margin-right: 0.5rem;
+    }
   }
   .whishList-Button {
     background-color: transparent;
@@ -31,9 +60,18 @@
     margin-top: auto;
     margin-bottom: auto;
     max-width: 2rem;
-    margin-left: auto;
     margin-right: 1.3rem;
     border-radius: 50%;
+    @media screen and (max-width: 565px) {
+      margin-right: 0.5rem;
+      padding-left: 0;
+      margin-left: 0.5rem;
+    }
+  }
+  .searchIcon {
+    @media screen and (max-width: 565px) {
+      margin-right: 0rem;
+    }
   }
   .cart-Button:hover {
     background-color: transparent;
