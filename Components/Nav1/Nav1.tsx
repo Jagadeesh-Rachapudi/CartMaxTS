@@ -31,7 +31,7 @@ function Nav1(props: IProps) {
   const handleClose3 = () => setShow3(false);
   const handleShow3 = () => setShow3(true);
 
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(true);
 
   const [userData, setUserData] = useState("");
 
