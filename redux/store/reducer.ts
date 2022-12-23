@@ -20,7 +20,7 @@ const reducer = (
   switch (action.type) {
     case actionTypes.ADD_PRODUCT:
       const newProduct: IProduct = {
-        id: Math.random(), // not really unique
+        id: Math.random(), 
         title: action.product.title,
       };
       return {

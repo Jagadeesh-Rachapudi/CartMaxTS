@@ -8,6 +8,9 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { RxCross1 } from "react-icons/rx";
+import Form from "react-bootstrap/Form";
+import SearchedProducts, { PropHandler } from "../../pages/SearchedProducts";
 
 export interface IProps {
   navOptions: { text: string; link: string }[];
@@ -27,6 +30,16 @@ function Nav1(props: IProps) {
   const [show3, setShow3] = useState(false);
   const handleClose3 = () => setShow3(false);
   const handleShow3 = () => setShow3(true);
+
+  const [clicked, setClicked] = useState(false);
+
+  const [userData, setUserData] = useState("");
+
+  function f(event: any) {
+    console.log(event?.target.value);
+    setUserData(event?.target.value);
+    PropHandler(userData);
+  }
 
   return (
     <div className="navbar-Container">
@@ -85,8 +98,46 @@ function Nav1(props: IProps) {
                 )}
               </div>
               <div className="d-flex flex-row mt-auto mb-auto  ">
-                <Nav.Link href="#link" className="me-0 mt-2 me-3">
-                  <BsSearch size={17} />
+                <Form className="d-flex search ">
+                  <Form.Control
+                    type="search"
+                    data-backdrop="static"
+                    data-keyboard="false"
+                    placeholder="Search"
+                    className={
+                      clicked === true
+                        ? " SearchedNotClicked me-2"
+                        : "SearchedClicked me-2"
+                    }
+                    aria-label="Search"
+                    onChange={f}
+                  />
+                  <a
+                    className={
+                      clicked === true
+                        ? " SearchedNotClicked btn btn-success"
+                        : "SearchedClicked btn btn-success"
+                    }
+                    href="/SearchedProducts "
+                    target="__blank"
+                  >
+                    Search
+                  </a>
+                </Form>
+
+                <Nav.Link className="me-1 pt-2 me-3">
+                  <BsSearch
+                    size={17}
+                    className={
+                      clicked === true
+                        ? "SearchedClicked"
+                        : "SearchedNotClicked"
+                    }
+                    onClick={() => {
+                      if (clicked === true) setClicked(false);
+                      else setClicked(true);
+                    }}
+                  />
                 </Nav.Link>
                 <Nav.Link href="#link" className="me-1 mt-2 me-3">
                   <BsPerson size={17} />
@@ -114,7 +165,7 @@ function Nav1(props: IProps) {
                 {/* Cart OffCanvas Ends */}
 
                 {/* Cart OffCanvas Starts */}
-                <Button variant="transparent" onClick={handleShow2}>
+                <Button variant="transparent" onClick={handleShow3}>
                   <BsBag size={17} />
                 </Button>
 

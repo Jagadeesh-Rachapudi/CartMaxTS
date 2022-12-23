@@ -1,4 +1,43 @@
 .navbar-Container {
+  position: relative;
+  .SearchedClicked {
+    transition: 1s;
+    opacity: 1;
+  }
+  .SearchedNotClicked {
+    opacity: 0;
+    transition: 1s;
+  }
+  .search {
+    position: absolute;
+    z-index: +1;
+    margin-left: -16rem;
+    width: 15rem;
+    margin-top: 0.25rem;
+    @media screen and (max-width: 992px) {
+      margin-top: 3rem;
+    }
+    @media screen and (max-width: 476px) {
+      margin-left: -10rem;
+    }
+  }
+  .SearchBar {
+    border: none;
+    height: 2rem;
+    width: 11.55rem;
+    border-radius: 10px 0 0 10px;
+  }
+  .crossButton {
+    position: absolute;
+    z-index: +1;
+    margin-left: -0.5rem;
+    margin-top: -0.25rem;
+    background-color: white;
+    border: none;
+    height: 2rem;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.5s;
+  }
   background-color: #c4c4c4;
   .links {
     background-color: #c4c4c4;
@@ -8,6 +47,5 @@
       width: 150px;
       height: 60px;
     }
-    
-  }  
+  }
 }

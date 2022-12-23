@@ -5,8 +5,6 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import reducer from "../redux/store/reducer";
 
-
-
 import "bootstrap/dist/css/bootstrap.css";
 
 import "../styles/globals.css";
@@ -33,13 +31,10 @@ const store: Store<productState, productAction> & {
   dispatch: DispatchType;
 } = createStore(reducer, applyMiddleware(thunk));
 
-
 export default function App({ Component, pageProps }: AppProps) {
   return (
-  
-    <Provider store={store} >
+    <Provider store={store}>
       <Component {...pageProps} />
-     </Provider>
-  )
+    </Provider>
+  );
 }
-
