@@ -1,0 +1,48 @@
+.Nav2-Body {
+  background-color: #4b4b4b;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  .Menu-Button {
+    background-color: transparent;
+    border: none;
+  }
+  .Menu-Button:hover {
+    background-color: black;
+  }
+  .cart-Button {
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 2rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    border-radius: 50%;
+  }
+  .whishList-Button {
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 2rem;
+    margin-left: auto;
+    margin-right: 1.3rem;
+    border-radius: 50%;
+  }
+  .cart-Button:hover {
+    background-color: transparent;
+    border: none;
+  }
+  .Icon {
+    color: white;
+    background-color: #2a343f;
+    border-radius: 50%;
+    padding: 7px;
+  }
+}

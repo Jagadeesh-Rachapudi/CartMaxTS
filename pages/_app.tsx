@@ -25,6 +25,8 @@ import "../Components/News/News.scss";
 import "../Components/BlackWhite/BlackWhite.scss";
 import "../Components/Footer1/Footer1.scss";
 
+import "../Components/Nav2/Nav2.scss";
+
 import type { AppProps } from "next/app";
 
 const store: Store<productState, productAction> & {

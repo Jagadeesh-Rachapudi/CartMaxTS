@@ -8,9 +8,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { RxCross1 } from "react-icons/rx";
 import Form from "react-bootstrap/Form";
-import SearchedProducts, { PropHandler } from "../../pages/SearchedProducts";
 
 export interface IProps {
   navOptions: { text: string; link: string }[];
@@ -38,7 +36,6 @@ function Nav1(props: IProps) {
   function f(event: any) {
     console.log(event?.target.value);
     setUserData(event?.target.value);
-    PropHandler(userData);
   }
 
   return (
