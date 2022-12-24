@@ -17,7 +17,7 @@ export interface IProps {
 
 function News(props: IProps) {
   return (
-    <Container fluid className="News-Body mb-5" id="#News">
+    <Container fluid className="News-Body mb-5" id="Blog">
       <Row>
         <Col>
           <div

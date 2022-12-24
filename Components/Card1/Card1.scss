@@ -5,8 +5,10 @@
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+    @media screen and (max-width: 460px) {
+      justify-content: center;
+    }
   }
-
   .Card-hedding {
     font-family: "Jost";
     font-style: normal;

@@ -12,15 +12,10 @@ import Footer1Data from "../Components/Footer1/Footer1.json";
 export default function Home() {
   return (
     <div>
-      <div className="box-body">
-        <form name="search">
-          <input type="text" className="input" name="txt" />
-        </form>
-        <i className="fas fa-search"></i>
-      </div>
-      <a>
-        <i className="fab fa-youtube"> </i>
-      </a>
+      <Nav1 {...(Nav1data as Nav1Props)} />
+      <h1 className="me-auto ms-auto">No Found</h1>
+      <BlackWhite {...(BlackWhiteData as BlackWhiteProps)} />
+      <Footer1 {...(Footer1Data as Footer1Props)} />
     </div>
   );
 }

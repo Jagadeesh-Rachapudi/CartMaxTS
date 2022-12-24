@@ -13,10 +13,10 @@ export interface IProps {
 
 function Hedder1(props: IProps) {
   return (
-    <div className="Hedder1-Body">
+    <div className="Hedder1-Body" id="Home" >
       <Container>
         <Row>
-          <Col>
+          <Col >
             <div className="container">
               <div className="content d-flex flex-column justify-content-center heght ">
                 <div

@@ -7,7 +7,8 @@ import reducer from "../redux/store/reducer";
 
 import "bootstrap/dist/css/bootstrap.css";
 
-import "../styles/globals.css";
+import "../styles/globals.scss";
+import "../pages/Search.scss"
 
 import "../Utils/Furniture/FurnitureItem.scss";
 import "../Utils/NewsArticle/NewsArticle.scss";

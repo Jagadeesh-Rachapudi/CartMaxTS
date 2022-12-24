@@ -26,16 +26,20 @@
       margin-bottom: 1rem;
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
   }
   .options {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
     @media screen and (max-width: 767px) {
       margin-left: auto;
       margin-top: 1rem;
       margin-right: auto;
+      padding: 0;
     }
   }
   .link {

@@ -13,10 +13,10 @@ export interface IProps {
   title: string;
   products: string[];
   viewAll: string;
-} 
+}
 function YourItems(props: IProps) {
   return (
-    <Container fluid className="YourItems-Body">
+    <Container fluid className="YourItems-Body" id="Shop">
       <Row>
         <Col className="d-flex justify-content-center mt-5">
           <div

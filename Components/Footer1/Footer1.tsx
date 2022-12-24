@@ -26,7 +26,7 @@ export interface IProps {
 
 function Footer1(props: IProps) {
   return (
-    <Container fluid className="Footer1-Body">
+    <Container fluid className="Footer1-Body" id="Pages">
       <Row>
         <Col xs={12} sm={12} md={12} lg={5} xl={5} xxl={5} className="col1">
           <img src={props.logoSrc} alt="" className="img ms-5 " />
@@ -54,7 +54,8 @@ function Footer1(props: IProps) {
           {props.col2Items.map((Item, id) => (
             <div className="link-container d-flex flex-row mt-1" key={id}>
               <BsCheckCircle className="me-2 mt-2" size={20} color="#C2C2C2" />
-              <div
+              <a
+                href="#"
                 className="link"
                 dangerouslySetInnerHTML={{
                   __html: Item,
@@ -73,8 +74,9 @@ function Footer1(props: IProps) {
           {props.col3Items.map((Item, id) => (
             <div className="link-container d-flex flex-row mt-1" key={id}>
               <BsCheckCircle className="me-2 mt-2" size={20} color="#C2C2C2" />
-              <div
+              <a
                 className="link"
+                href="#"
                 dangerouslySetInnerHTML={{
                   __html: Item,
                 }}
@@ -92,8 +94,9 @@ function Footer1(props: IProps) {
           {props.col4Items.map((Item, id) => (
             <div className="link-container d-flex flex-row mt-1" key={id}>
               <BsCheckCircle className="me-2 mt-2" size={20} color="#C2C2C2" />
-              <div
+              <a
                 className="link"
+                href="#"
                 dangerouslySetInnerHTML={{
                   __html: Item,
                 }}

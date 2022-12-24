@@ -9,6 +9,7 @@ import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+import { RxCross1 } from "react-icons/rx";
 
 export interface IProps {
   navOptions: { text: string; link: string }[];
@@ -34,13 +35,14 @@ function Nav1(props: IProps) {
   const [userData, setUserData] = useState("");
 
   function f(event: any) {
-    console.log(event?.target.value);
     setUserData(event?.target.value);
+    event.preventDefault();
+    console.log(userData);
   }
 
   return (
     <div className="navbar-Container">
-      <Container>
+      <Container fluid>
         <Row>
           <Col>
             <div className="container d-flex flex-row justify-content-between">
@@ -77,15 +79,13 @@ function Nav1(props: IProps) {
                   </Offcanvas.Body>
                 </Offcanvas>
               </div>
-              {/* menu end  */}
-
               <div className="logo bg-transparent ">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo.png?alt=media&token=6dd2fb25-170b-4b1b-bb60-dc0cc8ba3504"
                   alt=""
                 />
               </div>
-              <div className="links d-none d-lg-flex d-xl-flex d-xxl-flex flex-row mt-auto mb-auto ">
+              <div className="links d-none d-lg-flex d-xl-flex d-xxl-flex flex-row mt-auto mb-auto me-5 ">
                 {props.navOptions.map(
                   (navOption: { text: string; link: string }, i) => (
                     <Nav.Link href={navOption.link} className="me-3" key={i}>
@@ -95,33 +95,42 @@ function Nav1(props: IProps) {
                 )}
               </div>
               <div className="d-flex flex-row mt-auto mb-auto  ">
-                <Form className="d-flex search ">
+                <form name="search" className="d-flex flex-row search">
                   <Form.Control
-                    type="search"
-                    data-backdrop="static"
-                    data-keyboard="false"
                     placeholder="Search"
+                    type="text"
+                    name="txt"
                     className={
                       clicked === true
-                        ? " SearchedNotClicked me-2"
-                        : "SearchedClicked me-2"
+                        ? " SearchedNotClicked me-2  "
+                        : "SearchedClicked me-2  "
                     }
-                    aria-label="Search"
-                    onChange={f}
                   />
-                  <a
+                  <button
                     className={
                       clicked === true
                         ? " SearchedNotClicked btn btn-success"
                         : "SearchedClicked btn btn-success"
                     }
-                    href="/SearchedProducts "
-                    target="__blank"
+                    type="submit"
                   >
                     Search
-                  </a>
-                </Form>
-
+                  </button>
+                  <button
+                    className={
+                      clicked === true
+                        ? " SearchedNotClicked btn btn-success ms-2  "
+                        : "SearchedClicked btn btn-success ms-2  "
+                    }
+                    onClick={(event) => {
+                      if (clicked === true) setClicked(false);
+                      else setClicked(true);
+                      event.preventDefault();
+                    }}
+                  >
+                    <RxCross1 />
+                  </button>
+                </form>
                 <Nav.Link className="me-1 pt-2 me-3">
                   <BsSearch
                     size={17}
@@ -143,7 +152,7 @@ function Nav1(props: IProps) {
                 {/* Cart OffCanvas Starts */}
                 <Button
                   variant="transparent"
-                  onClick={handleShow2}
+                  onClick={handleShow3}
                   className="p-1 mt-1 "
                 >
                   <BsHeart size={17} />
@@ -151,10 +160,10 @@ function Nav1(props: IProps) {
 
                 <Offcanvas show={show3} onHide={handleClose3} placement={"end"}>
                   <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Your Cart Items</Offcanvas.Title>
+                    <Offcanvas.Title>WhishList</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    {props.cartitems.map((cartItem, id) => (
+                    {props.whishList.map((cartItem, id) => (
                       <h6 key={id}>{cartItem}</h6>
                     ))}
                   </Offcanvas.Body>
@@ -162,7 +171,7 @@ function Nav1(props: IProps) {
                 {/* Cart OffCanvas Ends */}
 
                 {/* Cart OffCanvas Starts */}
-                <Button variant="transparent" onClick={handleShow3}>
+                <Button variant="transparent" onClick={handleShow2}>
                   <BsBag size={17} />
                 </Button>
 
@@ -171,7 +180,7 @@ function Nav1(props: IProps) {
                     <Offcanvas.Title>Your Cart Items</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    {props.whishList.map((cartItem, id) => (
+                    {props.cartitems.map((cartItem, id) => (
                       <h6 key={id}>{cartItem}</h6>
                     ))}
                   </Offcanvas.Body>
