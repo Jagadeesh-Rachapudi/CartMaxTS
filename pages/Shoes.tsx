@@ -11,7 +11,6 @@ function Shoes() {
   return (
     <div>
       <Nav2 {...(Nav2data as Nav2Props)} />
-      <SlideShow1 {...(SlideShow1Data as SlideShow1Props)} />
     </div>
   );
 }
