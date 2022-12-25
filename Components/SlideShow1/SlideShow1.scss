@@ -1,0 +1,84 @@
+.SlideShow1-body {
+  height: 500vh;
+  .img {
+    width: 100%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .slick-slider.slick-initialized {
+    .slick-prev,
+    .slick-next {
+      width: 30px;
+      height: 30px;
+      color: white;
+      z-index: 99;
+    }
+    .slick-list {
+      z-index: -1;
+    }
+    .slick-next {
+      right: 10px;
+    }
+    .slick-prev {
+      left: 10px;
+    }
+  }
+  .Card {
+    width: 90%;
+    z-index: +1;
+    margin-top: -6rem;
+    @media screen and (max-width: 600px) {
+      margin-top: -3rem;
+    }
+    position: absolute;
+    background-color: #f5f1e9;
+    margin-left: 3%;
+    margin-right: 7%;
+    border-radius: 100px;
+    .text {
+      font-family: "Jost";
+      font-size: 27px;
+      line-height: 40px;
+      text-align: center;
+      color: #171616;
+      width: 80%;
+      margin: auto;
+      padding: 1.5rem 0;
+      @media screen and (max-width: 500px) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+    .logs::-webkit-scrollbar {
+      display: none;
+    }
+    .logs {
+      display: flex;
+      flex-direction: row;
+      width: 75%;
+      justify-content: space-evenly;
+      overflow: scroll;
+      @media screen and (max-width: 600px) {
+        justify-content: center;
+        // margin-left: 10%;
+      }
+      .img {
+        height: 90px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 0 20px;
+      }
+      @media screen and (max-width: 600px) {
+        img:nth-child(1) {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        img:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,6 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import "../styles/globals.css";
 
-
 import "../Utils/Furniture/FurnitureItem.scss";
 import "../Utils/NewsArticle/NewsArticle.scss";
 
@@ -27,7 +26,7 @@ import "../Components/BlackWhite/BlackWhite.scss";
 import "../Components/Footer1/Footer1.scss";
 
 import "../Components/Nav2/Nav2.scss";
-
+import "../Components/SlideShow1/SlideShow1.scss";
 import type { AppProps } from "next/app";
 
 const store: Store<productState, productAction> & {

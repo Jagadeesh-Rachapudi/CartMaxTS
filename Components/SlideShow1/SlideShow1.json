@@ -1,30 +1,40 @@
-[
-  {
-    "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
-    "alt": "Slide-show"
-  },
-  {
-    "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
-    "alt": "Slide-show"
-  },
-  {
-    "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
-    "alt": "Slide-show"
-  },
-  {
-    "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
-    "alt": "Slide-show"
-  },
-  {
-    "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
-    "alt": "Slide-show"
-  },
-  {
-    "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
-    "alt": "Slide-show"
-  },
-  {
-    "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
-    "alt": "Slide-show"
-  }
-]
+{
+  "Images": [
+    {
+      "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ik.imagekit.io/op6maelsy/CartMax/cartmaxShoes.png",
+      "alt": ""
+    }
+  ],
+
+  "content": "<p>&ldquo;Millions of combinations, meaning you get a totally unique piece of furniture exactly the way you want it.&rdquo;</p>",
+  "clientLogos": [
+    {
+      "src": "https://ik.imagekit.io/op6maelsy/CartMax/clientLogo4_ROZkHLmHr?ik-sdk-version=javascript-1.4.3&updatedAt=1670047873473",
+      "alt": "clientLogos"
+    },
+    {
+      "src": "https://ik.imagekit.io/op6maelsy/CartMax/clientLogo3_kdpAs5tnw?ik-sdk-version=javascript-1.4.3&updatedAt=1670047847268",
+      "alt": "clientLogos"
+    },
+    {
+      "src": "https://ik.imagekit.io/op6maelsy/CartMax/clientLogo2_KVCLVJxJx?ik-sdk-version=javascript-1.4.3&updatedAt=1670047827478",
+      "alt": "clientLogos"
+    },
+    {
+      "src": "https://ik.imagekit.io/op6maelsy/CartMax/clientLogo_bdNEejuCB?ik-sdk-version=javascript-1.4.3&updatedAt=1670047807258",
+      "alt": "clientLogos"
+    }
+  ]
+}
