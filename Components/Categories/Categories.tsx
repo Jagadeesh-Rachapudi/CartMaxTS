@@ -222,7 +222,6 @@ function Categories(props: IProps) {
                       __html: props.Size,
                     }}
                   />
-                  <div className="value">UK 5.5</div>
                   <div
                     className="value"
                     dangerouslySetInnerHTML={{

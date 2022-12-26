@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Container from "react-bootstrap/Container";
@@ -12,7 +13,11 @@ import {
 } from "react-icons/ai";
 
 export interface IProps {
-  Tag: string;
+  bestSellers: string;
+  Percent: string;
+  title: string;
+  Price: string;
+  src: string;
 }
 
 function ShoesItem(props: IProps) {
@@ -22,8 +27,18 @@ function ShoesItem(props: IProps) {
         <Col>
           <div className="top-row d-flex flex-row">
             <div className="stars me-auto">
-              <div className="bestSellers mt-3 ">Best Seller</div>
-              <div className="percent mt-1 ">-44%</div>
+              <div
+                className="bestSellers mt-3"
+                dangerouslySetInnerHTML={{
+                  __html: props.bestSellers,
+                }}
+              />
+              <div
+                className="percent mt-1"
+                dangerouslySetInnerHTML={{
+                  __html: props.Percent,
+                }}
+              />
             </div>
             <div className="icons">
               <div className="icon rounded  ">
@@ -44,14 +59,15 @@ function ShoesItem(props: IProps) {
               <BsStarHalf />
             </div>
           </div>
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019.png?alt=media&token=37c86229-3b30-4cc7-9c7c-f8e7ba94de68"
-            alt=""
-            className="img mb-2 "
-          />
+          <img src={props.src} alt="" className="img" />
           <hr />
           <div className="title-Colors d-flex flex-row ">
-            <div className="Shoe-title">Nike Air Force 1</div>
+            <div
+              className="Shoe-title"
+              dangerouslySetInnerHTML={{
+                __html: props.title,
+              }}
+            />
             <div className="colors d-flex flex-row  mt-auto mb-auto ms-auto">
               <div className="color1 me-1 ms-1 "></div>
               <div className="color2 me-1 ms-1"></div>
@@ -59,7 +75,12 @@ function ShoesItem(props: IProps) {
               <div className="color4 me-1 ms-1 "></div>
             </div>
           </div>
-          <div className="price mb-3 ">$72.30</div>
+          <div
+            className="price mb-3"
+            dangerouslySetInnerHTML={{
+              __html: props.Price,
+            }}
+          />
         </Col>
       </Row>
     </Container>

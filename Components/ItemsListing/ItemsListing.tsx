@@ -10,13 +10,19 @@ import ShoesItemsData from "../../Utils/ShoesItem/ShoesItem.json";
 
 export interface IProps {
   Tag: string;
+  title: string;
+  Option1: string;
+  a1: string;
+  a2: string;
+  Size: string;
+  Sort: string;
 }
 function ItemsListing(props: IProps) {
   return (
     <Container className="ItemsListing-Body">
       <Row>
         <Col>
-          <span className="tag">Students Now Get 10% Off</span>
+          <span className="tag">{props.Tag}</span>
           <Row>
             <Col
               className="title-row d-flex flex-row"
@@ -27,7 +33,13 @@ function ItemsListing(props: IProps) {
               xl={6}
               xxl={6}
             >
-              <div className="title">Treat Yourself to Sport​</div>
+              <div className="title"></div>
+              <div
+                className="title"
+                dangerouslySetInnerHTML={{
+                  __html: props.title,
+                }}
+              />
             </Col>
             <Col
               className="options d-flex flex-row "
@@ -38,12 +50,27 @@ function ItemsListing(props: IProps) {
               xl={6}
               xxl={6}
             >
-              <div className="option1 me-2 ">SENAKERS</div>
+              <div
+                className="option1 me-2 "
+                dangerouslySetInnerHTML={{
+                  __html: props.Option1,
+                }}
+              />
               <div className="option2 me-2 d-flex ">
-                SIZE: <article>ALL</article>
+                {props.Size}
+                <article
+                  dangerouslySetInnerHTML={{
+                    __html: props.a1,
+                  }}
+                />
               </div>
               <div className="option3  d-flex  ">
-                SORT BY:<article> PRICE</article>
+                {props.Sort}
+                <article
+                  dangerouslySetInnerHTML={{
+                    __html: props.a2,
+                  }}
+                />
               </div>
             </Col>
           </Row>

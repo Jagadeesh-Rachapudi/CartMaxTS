@@ -19,6 +19,9 @@ import SlideShow1, {
 } from "../Components/SlideShow1/SlideShow1";
 import SlideShow1Data from "../Components/SlideShow1/SlideShow1.json";
 
+import Snekers, { IProps as SnekersProps } from "../Components/Snekers/Snekers";
+import SnekersData from "../Components/Snekers/Snekers.json";
+
 function Shoes() {
   return (
     <div>
@@ -26,6 +29,7 @@ function Shoes() {
       <SlideShow1 {...(SlideShow1Data as unknown as SlideShow1Props)} />
       <Categories {...(CategoriesData as CategoriesProps)} />
       <ItemsListing {...(ItemsListingData as ItemsListingProps)} />
+      <Snekers {...(SnekersData as SnekersProps)} />
     </div>
   );
 }
