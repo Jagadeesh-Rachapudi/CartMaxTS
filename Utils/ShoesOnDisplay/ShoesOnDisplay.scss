@@ -1,0 +1,21 @@
+.ShoesOnDisplay-Body {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  .image-body {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    padding: 2rem;
+    width: fit-content;
+  }
+  .name {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    color: #171717;
+    text-align: center;
+  }
+}

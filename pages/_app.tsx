@@ -11,6 +11,7 @@ import "../styles/globals.css";
 
 import "../Utils/Furniture/FurnitureItem.scss";
 import "../Utils/NewsArticle/NewsArticle.scss";
+import "../Utils/ShoesOnDisplay/ShoesOnDisplay.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -27,6 +28,8 @@ import "../Components/Footer1/Footer1.scss";
 
 import "../Components/Nav2/Nav2.scss";
 import "../Components/SlideShow1/SlideShow1.scss";
+import "../Components/Categories/Categories.scss";
+
 import type { AppProps } from "next/app";
 
 const store: Store<productState, productAction> & {

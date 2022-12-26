@@ -1,0 +1,232 @@
+.Categories-Body {
+  margin-top: 12rem;
+  span {
+    background: linear-gradient(110.61deg, #9f119f 8.53%, #224fc8 91.47%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    color: #171717;
+    text-align: center;
+  }
+  .Container-Box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Timmer-Box {
+    background-color: #4b4b4b;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    .Timmer-Content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 8rem;
+      @media screen and (max-width: 838px) {
+        padding-left: 3rem;
+      }
+      .tag-2 {
+        font-family: "Jost";
+        font-size: 17.716px;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        color: #d4d4d4;
+        width: fit-content;
+        @media screen and (max-width: 768px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .Hedding {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        width: fit-content;
+        @media screen and (max-width: 768px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .Content {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #d5d5d5;
+        width: 18.5rem;
+        @media screen and (max-width: 768px) {
+          margin-left: auto;
+          margin-right: auto;
+          padding-right: 0rem;
+        }
+      }
+      .Timmer {
+        margin-left: -1rem;
+        @media screen and (max-width: 768px) {
+          justify-content: center;
+          margin-left: 0rem;
+        }
+      }
+      .days {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 55.656px;
+        line-height: 80px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+      .days-text {
+        font-family: "Jost";
+        font-size: 10px;
+        line-height: 25px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+      }
+      .colon {
+        margin-top: 2.5rem;
+        font-family: "Jost";
+        font-size: 16.76px;
+        line-height: 20px;
+        color: #ffffff;
+      }
+    }
+    .Explore-Button {
+      font-family: "Jost";
+      font-size: 14px;
+      line-height: 16px;
+      padding: 1rem;
+      color: #ffffff;
+      width: fit-content;
+      background: linear-gradient(95.6deg, #9f119f 4.03%, #224fc8 95.97%);
+      border: none;
+      border-radius: 25px;
+      @media screen and (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+      }
+    }
+    .Timmer-Card {
+      background-color: #ffffff;
+      max-width: 20rem;
+      height: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 1rem;
+      margin-right: 2rem;
+      margin-left: auto;
+      @media screen and (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card-hedding {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: -0.02em;
+        color: #141412;
+        width: fit-content;
+      }
+      .card-tag {
+        font-family: "Jost";
+        font-size: 12px;
+        line-height: 15px;
+        width: fit-content;
+        color: #585858;
+      }
+      .img {
+        width: 280px;
+        height: 120px;
+      }
+      .color1 {
+        background-color: #de3033;
+        height: 0.75rem;
+        width: 0.75rem;
+        border-radius: 50%;
+        margin-left: 0.75rem;
+        cursor: pointer;
+        font-family: "Jost";
+        font-size: 17px;
+        line-height: 20px;
+        color: #151515;
+      }
+      .color2 {
+        background-color: black;
+        margin-left: 0.2rem;
+        height: 0.75rem;
+        width: 0.75rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .price1 {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 26px;
+        margin-right: 0.5rem;
+        text-decoration-line: line-through;
+        color: #151515;
+      }
+      .price2 {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 26px;
+        color: #000000;
+      }
+      .sizes {
+        width: fit-content;
+        border: 2px solid rgb(226, 224, 224);
+        padding: 0.25rem;
+        margin-left: 1rem;
+        .size {
+          font-family: "Jost";
+          font-size: 18px;
+          line-height: 21px;
+          font-weight: 500;
+          color: #151515;
+        }
+        .value {
+          border-left: 2px solid rgb(226, 224, 224);
+          font-family: "Jost";
+          font-size: 18px;
+          line-height: 21px;
+          color: #151515;
+        }
+      }
+      .Cart-Button {
+        font-family: "Jost";
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+        width: fit-content;
+        border: none;
+        border-radius: 20px;
+        padding: 0.75rem;
+        background: linear-gradient(95.37deg, #9f119f 3.89%, #224fc8 96.11%);
+      }
+    }
+  }
+}
