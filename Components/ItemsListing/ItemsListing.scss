@@ -1,0 +1,93 @@
+.ItemsListing-Body {
+  margin-top: 5rem;
+  span {
+    background: linear-gradient(118.01deg, #9f119f 8.13%, #224fc8 91.87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tag {
+    @media screen and (max-width: 992px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39.369px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+    color: #141412;
+    @media screen and (max-width: 992px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 410px) {
+      text-align: center;
+    }
+  }
+  .options {
+    margin-top: auto;
+    margin-bottom: auto;
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+  .option1 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: #141412;
+    cursor: pointer;
+    margin-left: auto;
+    text-decoration: underline;
+    @media screen and (max-width: 992px) {
+      margin-left: 0;
+    }
+  }
+  .option2 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+    color: #acacac;
+  }
+  .option3 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+    color: #acacac;
+  }
+  article {
+    color: #141412;
+    margin-left: 0.5rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .shoesItemBox {
+    @media screen and (max-width: 460px) {
+      max-width: 424px;
+    }
+  }
+}
