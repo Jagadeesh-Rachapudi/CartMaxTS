@@ -9,10 +9,9 @@ import ShoesItem, {
 import ShoesItemsData from "../../Utils/ShoesItem/ShoesItem.json";
 
 export interface IProps {
-  tag: string;
   title: string;
-  products: string[];
-  viewAll: string;
+  Option1: string;
+  Option2: string;
 }
 
 function Yourself(props: IProps) {
@@ -26,7 +25,12 @@ function Yourself(props: IProps) {
       </Row>
       <Row>
         <Col className="Title-Options d-flex flex-row ">
-          <div className="Title">Treat Yourself to Sport</div>
+          <div
+            className="Title"
+            dangerouslySetInnerHTML={{
+              __html: props.title,
+            }}
+          />
           <div className="Options">
             <div
               className={
@@ -36,9 +40,10 @@ function Yourself(props: IProps) {
                 if (active === "1") setActive("");
                 else setActive("1");
               }}
-            >
-              New Arrival{" "}
-            </div>
+              dangerouslySetInnerHTML={{
+                __html: props.Option1,
+              }}
+            />
             <div
               className={
                 active === "2" ? "Option me-2 active " : " Option me-2 "
@@ -47,9 +52,10 @@ function Yourself(props: IProps) {
                 if (active === "2") setActive("");
                 else setActive("2");
               }}
-            >
-              Best Sellers
-            </div>
+              dangerouslySetInnerHTML={{
+                __html: props.Option2,
+              }}
+            />
             <div
               className={
                 active === "3" ? "Option me-2 active " : " Option me-2 "
@@ -58,9 +64,10 @@ function Yourself(props: IProps) {
                 if (active === "3") setActive("");
                 else setActive("3");
               }}
-            >
-              Best Sellers
-            </div>
+              dangerouslySetInnerHTML={{
+                __html: props.Option2,
+              }}
+            />
           </div>
         </Col>
       </Row>
@@ -78,9 +85,6 @@ function Yourself(props: IProps) {
             </div>
           </div>
         </Col>
-      </Row>
-      <Row className="Shoes">
-        <Col>aaaa</Col>
       </Row>
     </Container>
   );
