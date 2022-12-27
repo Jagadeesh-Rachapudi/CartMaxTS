@@ -14,6 +14,9 @@ import ItemsListingData from "../Components/ItemsListing/ItemsListing.json";
 import Nav2, { IProps as Nav2Props } from "../Components/Nav2/Nav2";
 import Nav2data from "../Components/Nav2/Nav2.json";
 
+import Percent, { IProps as PercentProps } from "../Components/Percent/Percent";
+import PercentData from "../Components/Percent/Percent.json";
+
 import Savings, { IProps as SavingsProps } from "../Components/Savings/Savings";
 import SavingsData from "../Components/Savings/Savings.json";
 
@@ -25,6 +28,11 @@ import SlideShow1Data from "../Components/SlideShow1/SlideShow1.json";
 import Snekers, { IProps as SnekersProps } from "../Components/Snekers/Snekers";
 import SnekersData from "../Components/Snekers/Snekers.json";
 
+import Yourself, {
+  IProps as YourselfProps,
+} from "../Components/Yourself/Yourself";
+import YourselfData from "../Components/Yourself/Yourself.json";
+
 function Shoes() {
   return (
     <div>
@@ -34,6 +42,8 @@ function Shoes() {
       <ItemsListing {...(ItemsListingData as ItemsListingProps)} />
       <Snekers {...(SnekersData as SnekersProps)} />
       <Savings {...(SavingsData as SavingsProps)} />
+      <Percent {...(PercentData as PercentProps)} />
+      <Yourself {...(YourselfData as YourselfProps)} />
     </div>
   );
 }

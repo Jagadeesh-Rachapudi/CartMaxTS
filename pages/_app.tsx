@@ -33,6 +33,8 @@ import "../Components/Categories/Categories.scss";
 import "../Components/ItemsListing/ItemsListing.scss";
 import "../Components/Snekers/Snekers.scss";
 import "../Components/Savings/Savings.scss";
+import "../Components/Percent/Percent.scss";
+import "../Components/Yourself/Yourself.scss";
 
 import type { AppProps } from "next/app";
 

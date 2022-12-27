@@ -1,0 +1,119 @@
+.Percent-Body {
+  margin-top: 20rem;
+  @media screen and (max-width: 860px) {
+    margin-top: 28rem;
+  }
+  @media screen and (max-width: 706px) {
+    margin-top: 0rem;
+  }
+  .black {
+    background-color: #424242;
+    height: 70vh;
+    .img {
+      width: fit-content;
+      margin-left: 44%;
+      margin-right: auto;
+      margin-top: 8rem;
+    }
+    .text {
+      margin-top: 1rem;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 58px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25rem;
+      margin-bottom: 1rem;
+    }
+    .Button {
+      background: linear-gradient(95.6deg, #9f119f 4.03%, #224fc8 95.97%);
+      font-family: "Jost";
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      border: none;
+      border-radius: 25px;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3rem;
+    }
+  }
+  .white {
+    background-color: #ff6363;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    .whitebox {
+      width: 78%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      .tag {
+        font-family: "Jost";
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+        background-color: #ff6363;
+        width: fit-content;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+      }
+      .img {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: 1227px) {
+          width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+          width: auto;
+        }
+      }
+      .imageText {
+        font-family: "Jost";
+        font-size: 18px;
+        line-height: 33px;
+        color: #666666;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -3rem;
+        @media screen and (max-width: 812px) {
+          margin-top: 0rem;
+        }
+      }
+      .Button {
+        border: 2px solid #ff6363;
+        margin-top: 1rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        background-color: transparent;
+        border-radius: 25px;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        @media screen and (max-width: 576px) {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
