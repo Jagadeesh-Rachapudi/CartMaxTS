@@ -1,0 +1,44 @@
+.Yourself-Body {
+  margin-top: 2rem;
+  height: 500vh;
+  span {
+    background: linear-gradient(118.01deg, #9f119f 8.13%, #224fc8 91.87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39.369px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+    color: #141412;
+  }
+  .Options {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    cursor: pointer;
+    font-family: "Jost";
+    font-size: 19.684px;
+    line-height: 23px;
+    color: #141412;
+  }
+  .active {
+    color: #224fc8;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+}
