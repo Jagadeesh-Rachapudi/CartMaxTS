@@ -1,0 +1,173 @@
+.Savings-body {
+  margin-bottom: 5rem;
+  .img {
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    z-index: +1;
+    margin-top: 26rem;
+    @media screen and (max-width: 716px) {
+      display: none;
+    }
+  }
+  .content {
+    margin-top: 3rem;
+    padding-left: 18%;
+    @media screen and (max-width: 716px) {
+      padding-left: 0;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: -0.02em;
+      color: #141412;
+      width: 29rem;
+      @media screen and (max-width: 716px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .price {
+      font-family: "Jost";
+      font-size: 35px;
+      line-height: 41px;
+      color: #151515;
+      @media screen and (max-width: 716px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 28px;
+      color: #6a6969;
+      width: 22rem;
+      @media screen and (max-width: 716px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .colors {
+      @media screen and (max-width: 716px) {
+        margin-left: 38%;
+      }
+    }
+    .color-hedding {
+      font-family: "Jost";
+      font-size: 17px;
+      line-height: 20px;
+      color: #151515;
+    }
+    .color1 {
+      margin-top: 0.3rem;
+      margin-left: 0.75rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background-color: red;
+      cursor: pointer;
+    }
+    .color2 {
+      margin-top: 0.3rem;
+      margin-left: 0.25rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background-color: black;
+      cursor: pointer;
+    }
+    .button-container {
+      @media screen and (max-width: 716px) {
+        justify-content: center;
+      }
+    }
+    .value {
+      border: 2px solid rgb(232, 229, 229);
+      margin-right: 3rem;
+    }
+    .size {
+      font-family: "Jost";
+      font-size: 18px;
+      font-weight: 500;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      line-height: 21px;
+      color: #151515;
+    }
+    .UK {
+      font-family: "Jost";
+      font-size: 18px;
+      line-height: 21px;
+      color: #151515;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      border-left: 2px solid rgb(232, 229, 229);
+    }
+    .Button {
+      padding: 1rem;
+      border: none;
+      border-radius: 25px;
+      width: fit-content;
+      font-family: "Jost";
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      background: linear-gradient(95.6deg, #9f119f 4.03%, #224fc8 95.97%);
+    }
+  }
+  .col2 {
+    @media screen and (max-width: 877px) {
+      display: none;
+    }
+    .images {
+      .img1 {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        z-index: +1;
+        margin-top: 6rem;
+        margin-left: 27%;
+      }
+      .img2 {
+        width: 350px;
+        height: 175px;
+        position: absolute;
+        z-index: +1;
+        margin-top: 14rem;
+        margin-left: 12%;
+        @media screen and (max-width: 1051px) {
+          margin-left: 5%;
+        }
+      }
+      .img3 {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        z-index: +1;
+        margin-top: 30rem;
+        margin-left: 26%;
+      }
+      .verticalBox {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff3eb;
+        height: 80vh;
+        width: 40vh;
+        border-radius: 150px;
+      }
+    }
+  }
+}

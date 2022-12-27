@@ -32,6 +32,7 @@ import "../Components/SlideShow1/SlideShow1.scss";
 import "../Components/Categories/Categories.scss";
 import "../Components/ItemsListing/ItemsListing.scss";
 import "../Components/Snekers/Snekers.scss";
+import "../Components/Savings/Savings.scss";
 
 import type { AppProps } from "next/app";
 
