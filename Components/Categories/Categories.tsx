@@ -241,28 +241,28 @@ function Categories(props: IProps) {
                       className="Link"
                       href="#/action-1"
                       onClick={() => {
-                        setSize("IND 6.5");
+                        setSize("UK 5.5");
                       }}
                     >
-                      IND 6.5
+                      UK 5.5
                     </Dropdown.Item>
                     <Dropdown.Item
                       className="Link"
                       href="#/action-2"
                       onClick={() => {
-                        setSize("ASU 4.5");
+                        setSize("UK 6.0");
                       }}
                     >
-                      ASU 4.5
+                      UK 6.0
                     </Dropdown.Item>
                     <Dropdown.Item
                       className="Link"
                       href="#/action-3"
                       onClick={() => {
-                        setSize("PAK 10.5");
+                        setSize("UK 6.5");
                       }}
                     >
-                      PAK 10.5
+                      UK 6.5
                     </Dropdown.Item>
                   </DropdownButton>
                 </div>
