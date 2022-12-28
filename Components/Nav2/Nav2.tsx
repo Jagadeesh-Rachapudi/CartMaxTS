@@ -8,6 +8,8 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineHeart } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";
 import Nav from "react-bootstrap/Nav";
+import { RxCross1 } from "react-icons/rx";
+import Form from "react-bootstrap/Form";
 
 export interface IProps {
   src: string;
@@ -28,6 +30,8 @@ function Nav2(props: IProps) {
   const [show3, setShow3] = useState(false);
   const handleClose3 = () => setShow3(false);
   const handleShow3 = () => setShow3(true);
+
+  const [clicked, setClicked] = useState(true);
 
   return (
     <Container fluid className="Nav2-Body">
@@ -57,10 +61,61 @@ function Nav2(props: IProps) {
                 </Offcanvas.Body>
               </Offcanvas>
             </div>
-            <AiOutlineSearch
+            {/* Search */}
+            {/* <AiOutlineSearch
               className="Icon searchIcon mt-auto mb-auto"
               size={35}
+            /> */}
+
+            <form name="search" className="d-flex flex-row search">
+              <Form.Control
+                placeholder="Search"
+                type="text"
+                name="txt"
+                className={
+                  clicked === true
+                    ? " SearchedNotClicked me-2  "
+                    : "SearchedClicked me-2  "
+                }
+              />
+              <button
+                className={
+                  clicked === true
+                    ? " SearchedNotClicked btn btn-success"
+                    : "SearchedClicked btn btn-success"
+                }
+                type="submit"
+              >
+                Search
+              </button>
+              <button
+                className={
+                  clicked === true
+                    ? " SearchedNotClicked btn btn-success ms-2  "
+                    : "SearchedClicked btn btn-success ms-2  "
+                }
+                onClick={(event) => {
+                  if (clicked === true) setClicked(false);
+                  else setClicked(true);
+                  event.preventDefault();
+                }}
+              >
+                <RxCross1 />
+              </button>
+            </form>
+            <AiOutlineSearch
+              size={35}
+              className={
+                clicked === true
+                  ? "SearchedClicked Icon searchIcon mt-auto mb-auto "
+                  : "SearchedNotClicked Icon searchIcon mt-auto mb-auto "
+              }
+              onClick={() => {
+                if (clicked === true) setClicked(false);
+                else setClicked(true);
+              }}
             />
+            {/* Search */}
             <Button onClick={handleShow2} className="whishList-Button">
               <AiOutlineHeart className="Icon" size={35} />
             </Button>

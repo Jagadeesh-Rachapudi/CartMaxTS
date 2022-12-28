@@ -6,6 +6,53 @@
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
+  .SearchedClicked {
+    transition: 1s;
+    opacity: 1;
+  }
+  .SearchedNotClicked {
+    opacity: 0;
+    transition: 1s;
+  }
+  .search {
+    position: absolute;
+    z-index: +1;
+    margin-left: -6rem;
+    width: 16rem;
+    margin-top: 3.5rem;
+    @media screen and (max-width: 992px) {
+      margin-top: 3rem;
+    }
+    @media screen and (max-width: 476px) {
+      margin-left: -10rem;
+    }
+  }
+  .SearchText {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+  }
+  .SearchBar {
+    border: none;
+    height: 2rem;
+    width: 11.55rem;
+    border-radius: 10px 0 0 10px;
+  }
+  .crossButton {
+    position: absolute;
+    z-index: +1;
+    margin-left: -0.5rem;
+    margin-top: -0.25rem;
+    background-color: white;
+    border: none;
+    height: 2rem;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.5s;
+  }
   .img {
     margin-top: 0rem;
     margin-left: 3rem;
