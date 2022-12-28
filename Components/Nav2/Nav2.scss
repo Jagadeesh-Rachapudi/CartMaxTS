@@ -6,6 +6,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
+  // padding-bottom: 1.5rem;
   .SearchedClicked {
     transition: 1s;
     opacity: 1;
@@ -54,7 +55,8 @@
     transition: 0.5s;
   }
   .img {
-    margin-top: 0rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
     margin-left: 3rem;
     @media screen and (max-width: 565px) {
       margin-left: 0.5rem;
@@ -116,6 +118,7 @@
     }
   }
   .searchIcon {
+    cursor: pointer;
     @media screen and (max-width: 565px) {
       margin-right: 0rem;
     }
