@@ -11,6 +11,7 @@ export interface IProps {
   src: string;
   text: string;
   hedding1: string;
+  hedding2: string;
   address: string;
   mail: string;
   Phone: string;
@@ -38,7 +39,7 @@ function Footer2(props: IProps) {
               <BsGoogle size={20} color="#CCCCCC" className="me-3 " />
             </div>
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} xl={4} xxl={5} className="Col2">
+          <Col xs={12} sm={12} md={6} lg={6} xl={4} xxl={4} className="Col2">
             <div
               className="hedding"
               dangerouslySetInnerHTML={{
@@ -101,7 +102,12 @@ function Footer2(props: IProps) {
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={12} xl={4} xxl={4}>
-            <div className="hedding hedding2"></div>
+            <div
+              className="hedding hedding2"
+              dangerouslySetInnerHTML={{
+                __html: props.hedding2,
+              }}
+            />
             <div className="avatars">
               {props.avatars.map((e, i) => (
                 <img key={i} src={e} alt="" className="m-2" />
