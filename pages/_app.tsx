@@ -35,6 +35,7 @@ import "../Components/Snekers/Snekers.scss";
 import "../Components/Savings/Savings.scss";
 import "../Components/Percent/Percent.scss";
 import "../Components/Yourself/Yourself.scss";
+import "../Components/SelectShoes/SelectShoes.scss";
 
 import type { AppProps } from "next/app";
 

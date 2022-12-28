@@ -3,7 +3,6 @@ import React from "react";
 import Categories, {
   IProps as CategoriesProps,
 } from "../Components/Categories/Categories";
-
 import CategoriesData from "../Components/Categories/Categories.json";
 
 import ItemsListing, {
@@ -19,6 +18,11 @@ import PercentData from "../Components/Percent/Percent.json";
 
 import Savings, { IProps as SavingsProps } from "../Components/Savings/Savings";
 import SavingsData from "../Components/Savings/Savings.json";
+
+import SelectShoes, {
+  IProps as SelectShoesProps,
+} from "../Components/SelectShoes/SelectShoes";
+import SelectShoesData from "../Components/SelectShoes/SelectShoes.json";
 
 import SlideShow1, {
   IProps as SlideShow1Props,
@@ -44,6 +48,7 @@ function Shoes() {
       <Savings {...(SavingsData as SavingsProps)} />
       <Percent {...(PercentData as PercentProps)} />
       <Yourself {...(YourselfData as YourselfProps)} />
+      <SelectShoes {...(SelectShoesData as SelectShoesProps)} />
     </div>
   );
 }

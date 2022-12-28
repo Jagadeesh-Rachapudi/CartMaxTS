@@ -1,0 +1,84 @@
+.SelectShoes-Body {
+  span {
+    background: linear-gradient(118.01deg, #9f119f 8.13%, #224fc8 91.87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tag {
+    margin-top: 3rem;
+    @media screen and (max-width: 534px) {
+      text-align: center;
+    }
+  }
+  .title-viewMore {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 534px) {
+      flex-direction: column;
+    }
+  }
+  .img2 {
+    margin-top: 5rem;
+    width: 400px;
+    height: 550px;
+  }
+  .adds {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39.369px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+    color: #141412;
+    @media screen and (max-width: 534px) {
+      text-align: center;
+    }
+  }
+  .viewMore {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    @media screen and (max-width: 534px) {
+      text-align: center;
+    }
+  }
+  a {
+    background: linear-gradient(118.01deg, #9f119f 8.13%, #224fc8 91.87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.645px;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    color: #141412;
+  }
+  .price {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.657px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #151515;
+  }
+}
