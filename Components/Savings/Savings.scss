@@ -1,5 +1,15 @@
 .Savings-body {
   margin-bottom: 5rem;
+  .DropDown {
+    background-color: transparent;
+  }
+  .dropdown-toggle.btn.btn-transparent {
+    padding: 0;
+  }
+  .DropDown.p-0.dropdown{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
   .img {
     width: 550px;
     height: 450px;

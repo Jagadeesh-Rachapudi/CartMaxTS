@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 
 export interface IProps {
   src1: string;
@@ -17,6 +19,7 @@ export interface IProps {
 }
 
 function Savings(props: IProps) {
+  const [size, setSize] = useState("UK 5.5");
   return (
     <Container className="Savings-body " fluid>
       <Row className="p-0">
@@ -61,12 +64,40 @@ function Savings(props: IProps) {
                     __html: props.Size,
                   }}
                 />
-                <div
-                  className="UK mt-auto mb-auto"
-                  dangerouslySetInnerHTML={{
-                    __html: props.UK,
-                  }}
-                />
+                <DropdownButton
+                  className="DropDown p-0 "
+                  id="value"
+                  title={size}
+                  variant="transparent"
+                >
+                  <Dropdown.Item
+                    className="Link"
+                    href="#/action-1"
+                    onClick={() => {
+                      setSize("IND 6.5");
+                    }}
+                  >
+                    IND 6.5
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className="Link"
+                    href="#/action-2"
+                    onClick={() => {
+                      setSize("ASU 4.5");
+                    }}
+                  >
+                    ASU 4.5
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className="Link"
+                    href="#/action-3"
+                    onClick={() => {
+                      setSize("PAK 10.5");
+                    }}
+                  >
+                    PAK 10.5
+                  </Dropdown.Item>
+                </DropdownButton>
               </div>
               <div
                 className="Button"

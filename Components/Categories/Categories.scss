@@ -208,6 +208,15 @@
           font-weight: 500;
           color: #151515;
         }
+        .DropDown {
+          background-color: transparent;
+        }
+        .dropdown-toggle.btn.btn-transparent {
+          padding: 0;
+        }
+        .Link::after {
+          background-color: #141412;
+        }
         .value {
           border-left: 2px solid rgb(226, 224, 224);
           font-family: "Jost";

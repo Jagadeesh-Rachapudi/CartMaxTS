@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 
 import ShoesOnDisplay, {
   IProps as ShoesOnDisplayProps,
@@ -35,6 +36,8 @@ export interface IProps {
 }
 
 function Categories(props: IProps) {
+  const [size, setSize] = useState("UK 5.5");
+
   const [day, setDay] = useState(12);
   const [hrs, setHrs] = useState(36);
   const [min, setMin] = useState(15);
@@ -217,17 +220,51 @@ function Categories(props: IProps) {
               <Row className="d-flex flex-row">
                 <div className="sizes mt-3 d-flex flex-row ">
                   <div
-                    className="size"
+                    className="size mt-auto mb-auto me-1 "
                     dangerouslySetInnerHTML={{
                       __html: props.Size,
                     }}
                   />
-                  <div
+                  {/* <div
                     className="value"
                     dangerouslySetInnerHTML={{
                       __html: props.UK,
                     }}
-                  />
+                  /> */}
+                  <DropdownButton
+                    className="DropDown p-0 "
+                    id="value"
+                    title={size}
+                    variant="transparent"
+                  >
+                    <Dropdown.Item
+                      className="Link"
+                      href="#/action-1"
+                      onClick={() => {
+                        setSize("IND 6.5");
+                      }}
+                    >
+                      IND 6.5
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      className="Link"
+                      href="#/action-2"
+                      onClick={() => {
+                        setSize("ASU 4.5");
+                      }}
+                    >
+                      ASU 4.5
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      className="Link"
+                      href="#/action-3"
+                      onClick={() => {
+                        setSize("PAK 10.5");
+                      }}
+                    >
+                      PAK 10.5
+                    </Dropdown.Item>
+                  </DropdownButton>
                 </div>
                 <div
                   className="Cart-Button mt-3 ms-auto me-3"

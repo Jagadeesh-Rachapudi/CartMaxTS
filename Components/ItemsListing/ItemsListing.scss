@@ -49,6 +49,10 @@
     @media screen and (max-width: 992px) {
       margin-left: 0;
     }
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+      line-height: 18px;
+    }
   }
   .option2 {
     font-family: "Jost";
@@ -59,6 +63,10 @@
     letter-spacing: -0.02em;
     cursor: pointer;
     color: #acacac;
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+      line-height: 18px;
+    }
   }
   .option3 {
     font-family: "Jost";
@@ -69,6 +77,10 @@
     letter-spacing: -0.02em;
     cursor: pointer;
     color: #acacac;
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+      line-height: 18px;
+    }
   }
   article {
     color: #141412;

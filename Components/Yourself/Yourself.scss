@@ -6,6 +6,12 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .tag {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
   .Title {
     font-family: "Jost";
     font-style: normal;
@@ -14,6 +20,20 @@
     line-height: 57px;
     letter-spacing: -0.02em;
     color: #141412;
+    @media screen and (max-width: 768px) {
+      margin-left: 25% !important ;
+    }
+    @media screen and (max-width: 563px) {
+      margin-left: 20% !important ;
+    }
+    @media screen and (max-width: 500px) {
+      margin-left: 5% !important ;
+    }
+    @media screen and (max-width: 430px) {
+      font-size: 25px !important ;
+      line-height: 30px !important ;
+      margin-left: 15% !important ;
+    }
   }
   .Options {
     display: flex;
@@ -26,6 +46,9 @@
     font-size: 19.684px;
     line-height: 23px;
     color: #141412;
+    @media screen and (max-width: 768px) {
+      justify-content: center !important;
+    }
   }
   .active {
     color: #224fc8;
@@ -39,5 +62,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
+  }
+  .Option1 {
+    @media screen and (max-width: 815px) {
+      margin-left: 3% !important;
+    }
   }
 }

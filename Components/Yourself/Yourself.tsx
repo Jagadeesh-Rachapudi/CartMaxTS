@@ -17,24 +17,46 @@ export interface IProps {
 function Yourself(props: IProps) {
   const [active, setActive] = useState("");
   return (
-    <Container className="Yourself-Body">
+    <Container className="Yourself-Body" fluid="lg" >
       <Row>
         <Col>
-          <span className="tag">Students Now Get 10% Off</span>
+          <div className="tag">
+            <span>Students Now Get 10% Off</span>
+          </div>
         </Col>
       </Row>
       <Row>
-        <Col className="Title-Options d-flex flex-row ">
+        <Col
+          className="Title-Options d-flex flex-row"
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xl={6}
+          xxl={6}
+        >
           <div
             className="Title"
             dangerouslySetInnerHTML={{
               __html: props.title,
             }}
           />
+        </Col>
+        <Col
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xl={6}
+          xxl={6}
+          className=" mt-auto mb-auto "
+        >
           <div className="Options">
             <div
               className={
-                active === "1" ? "Option active me-2 " : " Option me-2"
+                active === "1"
+                  ? "Option1 active me-2 ms-auto "
+                  : " Option1 ms-auto me-2"
               }
               onClick={() => {
                 if (active === "1") setActive("");
