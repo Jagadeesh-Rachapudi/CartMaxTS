@@ -116,9 +116,9 @@ function Nav2(props: IProps) {
               }}
             />
             {/* Search */}
-            <Button onClick={handleShow2} className="whishList-Button">
+            <button onClick={handleShow2} className=" ms-3 whishList-Button">
               <AiOutlineHeart className="Icon" size={35} />
-            </Button>
+            </button>
 
             <Offcanvas show={show2} onHide={handleClose2} placement="end">
               <Offcanvas.Header closeButton>
