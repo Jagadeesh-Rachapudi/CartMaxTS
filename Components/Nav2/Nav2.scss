@@ -18,14 +18,21 @@
   .search {
     position: absolute;
     z-index: +1;
-    margin-left: -5rem;
+    margin-left: -6rem;
     width: 16rem;
     margin-top: 3.5rem;
     @media screen and (max-width: 992px) {
       margin-top: 3rem;
     }
     @media screen and (max-width: 476px) {
-      margin-left: -10rem;
+      margin-left: -8.5rem;
+    }
+    @media screen and (max-width: 1024px) {
+      margin-top: 4rem;
+    }
+    @media screen and (max-width: 450px) {
+      margin-top: 4.5rem;
+      margin-left: -8rem;
     }
   }
   .SearchText {
