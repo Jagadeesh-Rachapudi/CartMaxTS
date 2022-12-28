@@ -1,0 +1,90 @@
+.Footer2Body {
+  background-color: black;
+  .Footer2-container {
+    background-color: black;
+  }
+  .Logo {
+    width: fit-content;
+  }
+  .Col1 {
+    
+    @media screen and (max-width: 768px) {
+        width: fit-content;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+  .text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #959595;
+    max-width: 20rem;
+  }
+  .hedding {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: #ffffff;
+    width: fit-content;
+    @media screen and (max-width: 1200px) {
+      margin-left: auto !important;
+      margin-right: auto !important ;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1rem !important ;
+      margin-top: 2rem !important;
+    }
+  }
+  .Links {
+    @media screen and (max-width: 1200px) {
+      margin-left: 20% !important;
+    }
+    @media screen and (max-width: 823px) {
+      margin-left: 0% !important;
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: 28% !important;
+    }
+    @media screen and (max-width: 576px) {
+      margin-left: 20% !important;
+    }
+    @media screen and (max-width: 576px) {
+      margin-left: 17% !important;
+    }
+    @media screen and (max-width: 400px) {
+      margin-left: 8% !important;
+    }
+  }
+  .textcontent {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 46px;
+    color: #a1a1a1;
+  }
+  .hedding2 {
+    @media screen and (max-width: 1200px) {
+      margin-left: auto !important;
+      margin-right: auto !important ;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+  }
+  .avatars {
+    margin-left: -2rem;
+    max-width: 22rem;
+    img {
+      border-radius: 50%;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-left: auto !important;
+      margin-right: auto !important ;
+    }
+  }
+}

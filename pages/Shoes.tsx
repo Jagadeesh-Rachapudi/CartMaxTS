@@ -10,6 +10,9 @@ import Categories, {
 } from "../Components/Categories/Categories";
 import CategoriesData from "../Components/Categories/Categories.json";
 
+import Footer2, { IProps as Footer2Props } from "../Components/Footer2/Footer2";
+import Footer2Data from "../Components/Footer2/Footer2.json";
+
 import ItemsListing, {
   IProps as ItemsListingProps,
 } from "../Components/ItemsListing/ItemsListing";
@@ -55,6 +58,7 @@ function Shoes() {
       <Yourself {...(YourselfData as YourselfProps)} />
       <SelectShoes {...(SelectShoesData as SelectShoesProps)} />
       <BlackWhite2 {...(BlackWhite2Data as BlackWhite2Props)} />
+      <Footer2 {...(Footer2Data as Footer2Props)} />
     </div>
   );
 }
