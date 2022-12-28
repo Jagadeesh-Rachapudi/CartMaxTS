@@ -120,7 +120,7 @@ function Nav2(props: IProps) {
               <AiOutlineHeart className="Icon" size={35} />
             </Button>
 
-            <Offcanvas show={show2} onHide={handleClose2} placement="start">
+            <Offcanvas show={show2} onHide={handleClose2} placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                   <h1>WhishList</h1>
@@ -139,7 +139,7 @@ function Nav2(props: IProps) {
               <BsBag className="Icon" size={35} />
             </Button>
 
-            <Offcanvas show={show3} onHide={handleClose3} placement="start">
+            <Offcanvas show={show3} onHide={handleClose3} placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                   <h1>CartItems</h1>
