@@ -1,5 +1,10 @@
 import React from "react";
 
+import BlackWhite2, {
+  IProps as BlackWhite2Props,
+} from "../Components/BlackWhite2/BlackWhite2";
+import BlackWhite2Data from "../Components/BlackWhite2/BlackWhite2.json";
+
 import Categories, {
   IProps as CategoriesProps,
 } from "../Components/Categories/Categories";
@@ -49,6 +54,7 @@ function Shoes() {
       <Percent {...(PercentData as PercentProps)} />
       <Yourself {...(YourselfData as YourselfProps)} />
       <SelectShoes {...(SelectShoesData as SelectShoesProps)} />
+      <BlackWhite2 {...(BlackWhite2Data as BlackWhite2Props)} />
     </div>
   );
 }
