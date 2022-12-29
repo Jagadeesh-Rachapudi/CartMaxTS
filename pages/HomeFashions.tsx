@@ -1,17 +1,22 @@
 import React from "react";
+
+import Behind, { IProps as BehindProps } from "../Components/Behind/Behind";
+import BehindData from "../Components/Behind/Behind.json";
+
 import Nav3, { IProps as Nav3Props } from "../Components/Nav3/Nav3";
 import Nav3Data from "../Components/Nav3/Nav3.json";
 
-import SlideSmhow2, {
-  IProps as SlideSmhow2Props,
-} from "../Components/SlideShow2/SlideSmhow2";
-import SlideSmhow2Data from "../Components/SlideShow2/SlideSmhow2.json";
+import SlideShow2, {
+  IProps as SlideShow2Props,
+} from "../Components/SlideShow2/SlideShow2";
+import SlideShow2Data from "../Components/SlideShow2/SlideShow2.json";
 
 function HomeFashions() {
   return (
     <div>
       <Nav3 {...(Nav3Data as Nav3Props)} />
-      <SlideSmhow2 {...(SlideSmhow2Data as SlideSmhow2Props)} />
+      <SlideShow2 {...(SlideShow2Data as SlideShow2Props)} />
+      <Behind {...(BehindData as BehindProps)} />
     </div>
   );
 }

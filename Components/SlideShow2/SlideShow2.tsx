@@ -16,7 +16,7 @@ export interface IProps {
   button2: string;
 }
 
-function SlideSmhow2(props: IProps) {
+function SlideShow2(props: IProps) {
   return (
     <Container fluid className="SlideShow2-body">
       <Row>
@@ -81,4 +81,4 @@ function SlideSmhow2(props: IProps) {
   );
 }
 
-export default SlideSmhow2;
+export default SlideShow2;

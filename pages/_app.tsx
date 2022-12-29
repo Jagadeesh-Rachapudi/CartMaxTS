@@ -41,7 +41,8 @@ import "../Components/BlackWhite2/BlackWhite2.scss";
 import "../Components/Footer2/Footer2.scss";
 
 import "../Components/Nav3/Nav3.scss";
-import "../Components/SlideShow2/SlideSmhow2.scss";
+import "../Components/SlideShow2/SlideShow2.scss";
+import "../Components/Behind/Behind.scss";
 
 import type { AppProps } from "next/app";
 
