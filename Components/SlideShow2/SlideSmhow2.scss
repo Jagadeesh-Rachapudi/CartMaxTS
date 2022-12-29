@@ -1,0 +1,151 @@
+.SlideShow2-body {
+  background-color: #eaeaea;
+  height: 100vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FAV142_NA7183_m.png?alt=media&token=a419ae82-5abd-4283-b97e-078dc5d0f361");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  // display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1163px) {
+    padding-left: 0 !important;
+    background-image: none;
+    height: fit-content !important;
+    padding-bottom: 5rem !important;
+  }
+  .control-next-icon {
+    margin-left: 50% !important;
+    margin-top: 0.5rem !important;
+  }
+  .carousel-control-prev-icon {
+    margin-right: 50% !important;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .tag {
+    padding-left: 8rem;
+    margin-top: 18rem;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #d9121f;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 1163px) {
+      padding-left: 0 !important;
+      text-align: center !important;
+      margin-top: 5rem !important;
+    }
+    @media screen and (max-width: 1163px) {
+      font-size: 10px !important;
+      line-height: 12px !important;
+    }
+  }
+  .title {
+    padding-left: 8rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 80px;
+    line-height: 85px;
+    color: #040404;
+    @media screen and (max-width: 1163px) {
+      padding-left: 0 !important;
+      text-align: center !important;
+    }
+    @media screen and (max-width: 1163px) {
+      font-size: 50px !important;
+      line-height: 55px !important;
+    }
+  }
+  .textBox {
+    width: 48rem !important;
+    padding-left: 8rem;
+    @media screen and (max-width: 1163px) {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      padding-left: 2rem !important;
+      width: 33rem !important;
+    }
+    @media screen and (max-width: 518px) {
+      width: 95% !important;
+      padding-left: 1rem !important;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #717171;
+      @media screen and (max-width: 1163px) {
+        font-size: 14px !important;
+        line-height: 24px !important;
+        width: 95% !important ;
+      }
+    }
+  }
+  .Buttons {
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 1163px) {
+      padding-left: 0 !important;
+      justify-content: center !important;
+    }
+    @media screen and (max-width: 412px) {
+      flex-direction: column !important;
+    }
+  }
+  .Button1 {
+    @media screen and (max-width: 412px) {
+      display: flex !important;
+      justify-content: center !important;
+      margin-bottom: 0.5rem !important;
+    }
+  }
+  .Button2 {
+    background-color: transparent;
+    border: none;
+    margin-left: 2rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #212121;
+    @media screen and (max-width: 412px) {
+      justify-content: center !important;
+      margin-top: 0.5rem !important;
+    }
+  }
+  .OfferToggle {
+    margin-left: 63%;
+    .circle {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      background-color: #838383;
+      position: absolute;
+      z-index: +1;
+      margin-left: 0rem;
+      cursor: pointer;
+    }
+    .bar {
+      height: 4rem;
+      width: 18rem;
+      background-color: white;
+      border-radius: 50px 50px 50px 50px;
+    }
+    .OfferText {
+      margin-left: 5rem;
+      margin-top: 0.4rem;
+    }
+    @media screen and (max-width: 1163px) {
+      display: none !important;
+    }
+  }
+}
