@@ -27,7 +27,7 @@ function SlideShow1(props: IProps) {
     nextArrow: <FaChevronRight />,
   };
   return (
-    <Container className="SlideShow1-body" fluid>
+    <Container className="SlideShow1-body" fluid id="ShoesHome">
       <Row>
         <Col className="p-0">
           <Carousel>
@@ -39,7 +39,7 @@ function SlideShow1(props: IProps) {
           </Carousel>
         </Col>
       </Row>
-      <Row className="Card">
+      <Row className="Card" id="ShoesPromotions">
         <Col>
           <div
             className="text-center text"

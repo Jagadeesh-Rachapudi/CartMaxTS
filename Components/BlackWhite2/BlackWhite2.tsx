@@ -15,7 +15,7 @@ export interface IProps {
 
 function BlackWhite2(props: IProps) {
   return (
-    <Container className="BlackWite2Body" fluid>
+    <Container className="BlackWite2Body" fluid id="ShoesBlog">
       <Row className="p-0">
         <Col
           xs={12}

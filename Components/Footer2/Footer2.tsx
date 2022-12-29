@@ -21,7 +21,7 @@ export interface IProps {
 
 function Footer2(props: IProps) {
   return (
-    <div className="Footer2Body">
+    <div className="Footer2Body" id="ShoesPages">
       <Container className="Footer2-container pt-5" fluid="lg">
         <Row>
           <Col xs={12} sm={12} md={6} lg={6} xl={4} xxl={4} className="Col1">

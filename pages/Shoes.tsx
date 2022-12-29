@@ -48,7 +48,7 @@ import YourselfData from "../Components/Yourself/Yourself.json";
 function Shoes() {
   return (
     <div>
-      <Nav2 {...(Nav2data as Nav2Props)} />
+      <Nav2 {...(Nav2data as Nav2Props)}  />
       <SlideShow1 {...(SlideShow1Data as unknown as SlideShow1Props)} />
       <Categories {...(CategoriesData as CategoriesProps)} />
       <ItemsListing {...(ItemsListingData as ItemsListingProps)} />

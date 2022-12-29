@@ -19,7 +19,7 @@ export interface IProps {
 }
 function ItemsListing(props: IProps) {
   return (
-    <Container className="ItemsListing-Body">
+    <Container className="ItemsListing-Body" id="ShoesShop">
       <Row>
         <Col>
           <span className="tag">{props.Tag}</span>

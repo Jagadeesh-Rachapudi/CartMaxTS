@@ -72,7 +72,7 @@ function Categories(props: IProps) {
     }, 1000);
   });
   return (
-    <Container className="Categories-Body" fluid>
+    <Container className="Categories-Body" fluid id="ShoesProduct">
       <Row>
         <Col>
           <span
