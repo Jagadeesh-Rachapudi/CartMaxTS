@@ -15,6 +15,7 @@ export interface IProps {
   navOptions: { text: string; link: string }[];
   cartitems: string[];
   whishList: string[];
+  src: string;
 }
 
 function Nav1(props: IProps) {
@@ -80,10 +81,7 @@ function Nav1(props: IProps) {
                 </Offcanvas>
               </div>
               <div className="logo bg-transparent ">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo.png?alt=media&token=6dd2fb25-170b-4b1b-bb60-dc0cc8ba3504"
-                  alt=""
-                />
+                <img src={props.src} alt="" />
               </div>
               <div className="links d-none d-lg-flex d-xl-flex d-xxl-flex flex-row mt-auto mb-auto me-5 ">
                 {props.navOptions.map(

@@ -1,3 +1,71 @@
 .Nav3-Body {
+  .TopRibbon {
+    background-color: #193a43;
+    font-family: "Jost";
+    font-size: 10px;
+    line-height: 15px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
   background-color: #ececec;
+  position: relative;
+  .SearchedClicked {
+    transition: 1s;
+    opacity: 1;
+  }
+  .SearchedNotClicked {
+    opacity: 0;
+    transition: 1s;
+  }
+  .search {
+    position: absolute;
+    z-index: +1;
+    margin-left: -15rem;
+    width: 16rem;
+    margin-top: 0.25rem;
+    @media screen and (max-width: 992px) {
+      margin-top: 3rem;
+    }
+    @media screen and (max-width: 476px) {
+      margin-left: -10rem;
+    }
+  }
+  .SearchText {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+  }
+  .SearchBar {
+    border: none;
+    height: 2rem;
+    width: 11.55rem;
+    border-radius: 10px 0 0 10px;
+  }
+  .crossButton {
+    position: absolute;
+    z-index: +1;
+    margin-left: -0.5rem;
+    margin-top: -0.25rem;
+    background-color: white;
+    border: none;
+    height: 2rem;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.5s;
+  }
+  background-color: #ececec;
+  .links {
+    background-color: #ececec;
+  }
+  .logo > img {
+    @media screen and (max-width: 500px) {
+      width: 150px;
+      height: 60px;
+    }
+  }
 }
