@@ -1,0 +1,36 @@
+.Amazon-Body {
+  background-color: #383838;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .play {
+      margin-top: 10rem;
+      background-color: white;
+      width: fit-content;
+      border-radius: 50%;
+    }
+    .tag {
+      font-family: "Jost";
+      font-size: 19.682px;
+      line-height: 23px;
+      letter-spacing: 0.3em;
+      color: #ffffff;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 80px;
+      text-align: center;
+      color: #ffffff;
+      width: 50rem;
+      @media screen and (max-width: 668px) {
+        width: 100%;
+      }
+    }
+  }
+}
