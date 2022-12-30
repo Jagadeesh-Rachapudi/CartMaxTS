@@ -48,6 +48,7 @@ import "../Components/BestSales/BestSales.scss";
 import "../Components/Mini/Mini.scss";
 import "../Components/Month/Month.scss";
 import "../Components/Amazon/Amazon.scss";
+import "../Components/Cards/Cards.scss";
 
 import type { AppProps } from "next/app";
 

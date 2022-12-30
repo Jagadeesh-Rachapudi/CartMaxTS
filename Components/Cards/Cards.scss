@@ -1,0 +1,51 @@
+.Cards-Body {
+  height: fit-content;
+  margin-bottom: 3rem;
+  .content {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    @media screen and (max-width: 1400px) {
+      margin-right: auto;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      height: 100%;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 55px;
+      color: #0f0f0f;
+      width: 35rem;
+      @media screen and (max-width: 600px) {
+        width: auto;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+    .Link {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      text-decoration-line: underline;
+      color: #454545;
+    }
+  }
+  .img {
+    @media screen and (max-width: 1400px) {
+      width: 570px;
+      height: 765px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

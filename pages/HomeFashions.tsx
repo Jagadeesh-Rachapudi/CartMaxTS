@@ -11,6 +11,9 @@ import BestSales, {
 } from "../Components/BestSales/BestSales";
 import BestSalesData from "../Components/BestSales/BestSales.json";
 
+import Cards, { IProps as CardsProps } from "../Components/Cards/Cards";
+import CardsData from "../Components/Cards/Cards.json";
+
 import Mini, { IProps as MiniProps } from "../Components/Mini/Mini";
 import MiniData from "../Components/Mini/Mini.json";
 
@@ -35,6 +38,7 @@ function HomeFashions() {
       <Mini {...(MiniData as MiniProps)} />
       <Month {...(MonthData as MonthProps)} />
       <Amazon {...(AmazonData as AmazonProps)} />
+      <Cards {...(CardsData as CardsProps)} />
     </div>
   );
 }
