@@ -14,6 +14,7 @@ import "../Utils/NewsArticle/NewsArticle.scss";
 import "../Utils/ShoesOnDisplay/ShoesOnDisplay.scss";
 import "../Utils/ShoesItem/ShoesItem.scss";
 import "../Utils/RedButton/RedButton.scss";
+import "../Utils/HomeFashionItem/HomeFashionItem.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -43,6 +44,8 @@ import "../Components/Footer2/Footer2.scss";
 import "../Components/Nav3/Nav3.scss";
 import "../Components/SlideShow2/SlideShow2.scss";
 import "../Components/Behind/Behind.scss";
+import "../Components/BestSales/BestSales.scss";
+import "../Components/Mini/Mini.scss";
 
 import type { AppProps } from "next/app";
 
