@@ -11,6 +11,8 @@ import BestSalesData from "../Components/BestSales/BestSales.json";
 import Mini, { IProps as MiniProps } from "../Components/Mini/Mini";
 import MiniData from "../Components/Mini/Mini.json";
 
+import Month, { IProps as MonthProps } from "../Components/Month/Month";
+import MonthData from "../Components/Month/Month.json";
 import Nav3, { IProps as Nav3Props } from "../Components/Nav3/Nav3";
 import Nav3Data from "../Components/Nav3/Nav3.json";
 
@@ -27,6 +29,7 @@ function HomeFashions() {
       <Behind {...(BehindData as BehindProps)} />
       <BestSales {...(BestSalesData as BestSalesProps)} />
       <Mini {...(MiniData as MiniProps)} />
+      <Month {...(MonthData as MonthProps)} />
     </div>
   );
 }

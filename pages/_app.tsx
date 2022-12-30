@@ -46,6 +46,7 @@ import "../Components/SlideShow2/SlideShow2.scss";
 import "../Components/Behind/Behind.scss";
 import "../Components/BestSales/BestSales.scss";
 import "../Components/Mini/Mini.scss";
+import "../Components/Month/Month.scss";
 
 import type { AppProps } from "next/app";
 
