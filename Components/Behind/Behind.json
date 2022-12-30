@@ -1,6 +1,14 @@
 {
-  "Title1": "<p>Office Chair <br/> Collection</p>",
-  "ViewAll": "<p>VIEW ALL PRODUCTS</p>",
-  "Title2": "<p>Follow Our Store <br/> On Instagram</p>",
-  "UserNames": "<p>@USERTHEMES</p>"
+  "tag": "<p>JACKET & COAST</p>",
+  "title": "<p><strong>Get Aventa now and set up<br /> your store today</strong></p>",
+  "addsrc": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2013.png?alt=media&token=4ce4613a-a414-46ea-b746-c384fb109e67",
+  "title2": "<p>Behind the brand</p>",
+  "randomImage1": "https://picsum.photos/318/271",
+  "randomImage2": "https://picsum.photos/615/655",
+  "Text1": "<p>Subscribe to our newsletter and be the first to receive the latest fashion news, promotions and more! Would you like to stop receiving our newsletter?</p>",
+  "ButtonText": "BUY IT NOW",
+  "Option1": "<p>New Arrival</p>",
+  "Option2": "<p>Mens</p>",
+  "Option3": "<p>Kids</p>",
+  "Option4": "<p>Tops</p>"
 }
