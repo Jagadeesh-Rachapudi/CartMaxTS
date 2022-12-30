@@ -28,6 +28,9 @@ import SlideShow2, {
 } from "../Components/SlideShow2/SlideShow2";
 import SlideShow2Data from "../Components/SlideShow2/SlideShow2.json";
 
+import Timmer2, { IProps as Timmer2Props } from "../Components/Timmer2/Timmer2";
+import Timmer2Data from "../Components/Timmer2/Timmer2.json";
+
 function HomeFashions() {
   return (
     <div>
@@ -39,6 +42,7 @@ function HomeFashions() {
       <Month {...(MonthData as MonthProps)} />
       <Amazon {...(AmazonData as AmazonProps)} />
       <Cards {...(CardsData as CardsProps)} />
+      <Timmer2 {...(Timmer2Data as Timmer2Props)} />
     </div>
   );
 }

@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "tag": "LONG WEEK SUPPER SALE",
+      "title": "<p>Get Cartmax<br /> 50% Discount</p>",
+      "link": "Shop Now",
+      "color": "#F6FBFF",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fc1.png?alt=media&token=286d5a4f-347b-4554-9584-c9d474f46367"
+    },
+    {
+      "tag": "SALE UPTO 30%",
+      "title": "<p>Adder string<br />lights.</p>",
+      "link": "Shop Now",
+      "color": "#FFF9F2",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Frev_home13.png?alt=media&token=f0826602-5337-422b-a676-e2775c311d96"
+    },
+    {
+      "tag": "LONG WEEK SUPPER SALE",
+      "title": "<p>Adder string<br />lights.</p>",
+      "link": "Shop Now",
+      "color": "#F1F2F4",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Frev_home2.png?alt=media&token=f2ca0f16-d8d1-4b4c-bb39-e011b7990a54"
+    }
+  ]
+}
