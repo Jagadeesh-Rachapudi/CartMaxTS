@@ -143,7 +143,7 @@ function Timmer2(props: IProps) {
               </div>
             </div>
           </div>
-          <div className="Button-Container">
+          <div className="Button-Container mb-5 pb-5 ">
             <RedButton text="BUY IT NOW" />
           </div>
         </Col>
