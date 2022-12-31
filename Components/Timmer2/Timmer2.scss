@@ -1,5 +1,4 @@
 .Timmer2-Body {
-  margin-bottom: 5rem;
   .Boxes {
     display: flex;
     flex-direction: column;
@@ -27,7 +26,7 @@
     }
   }
   .white {
-    height: 70vh !important;
+    height: 50vh !important;
     background-color: #e8ecef;
     .tag {
       font-family: "Roboto";
@@ -138,6 +137,7 @@
     .Button-Container {
       width: fit-content;
       margin-left: 33%;
+      padding-bottom: 50rem;
       @media screen and (max-width: 1046px) {
         margin-left: 10%;
       }
@@ -147,7 +147,6 @@
     }
   }
   .dark {
-    height: 70vh !important;
     background-color: #b1b1b1;
     @media screen and (max-width: 768px) {
       display: none;
