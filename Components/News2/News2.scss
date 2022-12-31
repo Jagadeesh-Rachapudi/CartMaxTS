@@ -1,0 +1,44 @@
+.News2-Body {
+  margin-top: 5rem;
+  height: fit-content;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2055.png?alt=media&token=33a3a2ce-8989-455b-8af0-7fa975563c4d");
+  background-size: 100%;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #d9121f;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    width: 31rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 522px) {
+      font-size: 30px;
+      line-height: 35px;
+      width: 98%;
+    }
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

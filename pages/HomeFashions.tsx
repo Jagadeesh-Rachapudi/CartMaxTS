@@ -23,6 +23,9 @@ import MonthData from "../Components/Month/Month.json";
 import Nav3, { IProps as Nav3Props } from "../Components/Nav3/Nav3";
 import Nav3Data from "../Components/Nav3/Nav3.json";
 
+import News2, { IProps as News2Props } from "../Components/News2/News2";
+import News2Data from "../Components/News2/News2.json";
+
 import SlideShow2, {
   IProps as SlideShow2Props,
 } from "../Components/SlideShow2/SlideShow2";
@@ -43,6 +46,7 @@ function HomeFashions() {
       <Amazon {...(AmazonData as AmazonProps)} />
       <Cards {...(CardsData as CardsProps)} />
       <Timmer2 {...(Timmer2Data as Timmer2Props)} />
+      <News2 {...(News2Data as News2Props)} />
     </div>
   );
 }

@@ -15,6 +15,7 @@ import "../Utils/ShoesOnDisplay/ShoesOnDisplay.scss";
 import "../Utils/ShoesItem/ShoesItem.scss";
 import "../Utils/RedButton/RedButton.scss";
 import "../Utils/HomeFashionItem/HomeFashionItem.scss";
+import "../Utils/NewsArticle2/NewsArticle2.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -50,6 +51,7 @@ import "../Components/Month/Month.scss";
 import "../Components/Amazon/Amazon.scss";
 import "../Components/Cards/Cards.scss";
 import "../Components/Timmer2/Timmer2.scss";
+import "../Components/News2/News2.scss";
 
 import type { AppProps } from "next/app";
 

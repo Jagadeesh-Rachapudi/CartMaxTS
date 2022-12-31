@@ -1,0 +1,36 @@
+.NewsArticle2-Body {
+  border: 2px solid #f8f7f3;
+  width: fit-content;
+  @media screen and (max-width: 460px) {
+    width: 100%;
+  }
+  .avatar {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #a1a1a2;
+  }
+  .lowerBody {
+    background-color: #f8f7f3;
+    .title2 {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 35px;
+      color: #151515;
+    }
+    .text2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 27px;
+      color: #6b6b6b;
+      width: 20rem;
+    }
+  }
+}
