@@ -47,7 +47,7 @@ function Behind(props: IProps) {
         <Row>
           <Col>
             <div className="img-Container">
-              <img src={props.addsrc} alt="" className="img mt-5" />
+              <img src={props.addsrc} alt="" className="img mt-5 pb-5 " />
             </div>
           </Col>
         </Row>
