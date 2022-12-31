@@ -1,0 +1,143 @@
+.Insta-Body {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #d9121f;
+    text-align: center;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    margin-bottom: 11rem;
+    @media screen and (max-width: 488px) {
+      margin-bottom: 1rem;
+    }
+  }
+  .Insta-bg {
+    position: absolute;
+    z-index: +1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: -12rem;
+    @media screen and (max-width: 488px) {
+      display: none;
+    }
+  }
+  .Insta-tiles {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0;
+    width: min-content;
+  }
+  .Insta-Tiles-Col-1,
+  .Insta-Tiles-Col-2,
+  .Insta-Tiles-Col-3,
+  .Insta-Tiles-Col-4,
+  .Insta-Tiles-Col-5,
+  .Insta-Tiles-Col-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .Insta-tailes-black {
+    height: 10rem;
+    width: 10rem;
+    background-color: #545454;
+  }
+  .Inst-tailes-white {
+    height: 10rem;
+    width: 10rem;
+    background-color: #9e9e9e;
+  }
+  @media screen and (max-width: 960px) {
+    .Insta-Tiles-Col-6 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .Insta-Tiles-Col-5 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 635px) {
+    .Insta-Tiles-Col-4 {
+      display: none;
+    }
+  }
+  .Insta-Content {
+    background-color: #e8ecef;
+    height: fit-content;
+    padding-bottom: 5rem;
+    .col1 {
+      margin-top: 15rem;
+      @media screen and (max-width: 488px) {
+        margin-top: 3rem;
+      }
+    }
+    .col2 {
+      margin-top: 15rem;
+      @media screen and (max-width: 576px) {
+        margin-top: 2rem;
+      }
+    }
+    .col3 {
+      margin-top: 15rem;
+      @media screen and (max-width: 992px) {
+        margin-top: 2rem;
+      }
+    }
+    .content {
+      .Image-Container {
+        border-radius: 50%;
+        background-color: white;
+        height: 8rem;
+        width: 8rem;
+        .img {
+          margin-top: 3rem;
+          margin-left: 2.25rem;
+        }
+      }
+      .hedding {
+        margin-top: 2rem;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #151515;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #3d3d3d;
+        width: 21rem;
+        @media screen and (max-width: 1072px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

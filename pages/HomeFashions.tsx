@@ -14,6 +14,9 @@ import BestSalesData from "../Components/BestSales/BestSales.json";
 import Cards, { IProps as CardsProps } from "../Components/Cards/Cards";
 import CardsData from "../Components/Cards/Cards.json";
 
+import Insta, { IProps as InstaProps } from "../Components/Insta/Insta";
+import InstaData from "../Components/Insta/Insta.json";
+
 import Mini, { IProps as MiniProps } from "../Components/Mini/Mini";
 import MiniData from "../Components/Mini/Mini.json";
 
@@ -47,6 +50,7 @@ function HomeFashions() {
       <Cards {...(CardsData as CardsProps)} />
       <Timmer2 {...(Timmer2Data as Timmer2Props)} />
       <News2 {...(News2Data as News2Props)} />
+      <Insta {...(InstaData as InstaProps)} />
     </div>
   );
 }

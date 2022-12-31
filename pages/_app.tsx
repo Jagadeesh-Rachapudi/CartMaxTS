@@ -52,6 +52,7 @@ import "../Components/Amazon/Amazon.scss";
 import "../Components/Cards/Cards.scss";
 import "../Components/Timmer2/Timmer2.scss";
 import "../Components/News2/News2.scss";
+import "../Components/Insta/Insta.scss";
 
 import type { AppProps } from "next/app";
 
