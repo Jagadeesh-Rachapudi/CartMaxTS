@@ -18,7 +18,7 @@ export interface IProps {
 
 function SlideShow2(props: IProps) {
   return (
-    <Container fluid className="SlideShow2-body">
+    <Container fluid className="SlideShow2-body" id="Home1" >
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
           <Carousel variant="dark">

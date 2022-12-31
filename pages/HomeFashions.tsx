@@ -14,6 +14,9 @@ import BestSalesData from "../Components/BestSales/BestSales.json";
 import Cards, { IProps as CardsProps } from "../Components/Cards/Cards";
 import CardsData from "../Components/Cards/Cards.json";
 
+import Footer3, { IProps as Footer3Props } from "../Components/Footer3/Footer3";
+import Footer3Data from "../Components/Footer3/Footer3.json";
+
 import Insta, { IProps as InstaProps } from "../Components/Insta/Insta";
 import InstaData from "../Components/Insta/Insta.json";
 
@@ -51,6 +54,7 @@ function HomeFashions() {
       <Timmer2 {...(Timmer2Data as Timmer2Props)} />
       <News2 {...(News2Data as News2Props)} />
       <Insta {...(InstaData as InstaProps)} />
+      <Footer3 {...(Footer3Data as Footer3Props)} />
     </div>
   );
 }

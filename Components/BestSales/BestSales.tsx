@@ -15,7 +15,7 @@ export interface IProps {
 
 function BestSales(props: IProps) {
   return (
-    <div className="BestSales-Body">
+    <div className="BestSales-Body" id="Shop1">
       <Container fluid="lg">
         <Row>
           <Col>

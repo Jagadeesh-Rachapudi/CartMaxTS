@@ -3,27 +3,27 @@
   "navOptions": [
     {
       "text": "Home",
-      "link": "#Home"
+      "link": "#Home1"
     },
     {
       "text": "Promotions",
-      "link": "#Promotions"
+      "link": "#Promotions1"
     },
     {
       "text": "Shop",
-      "link": "#Shop"
+      "link": "#Shop1"
     },
     {
       "text": "Product",
-      "link": "#Product"
+      "link": "#Product1"
     },
     {
       "text": "Blog",
-      "link": "#Blog"
+      "link": "#Blog1"
     },
     {
       "text": "Pages",
-      "link": "#Pages"
+      "link": "#Pages1"
     }
   ],
   "cartitems": [

@@ -1,0 +1,188 @@
+.Footer3-Body {
+  height: fit-content;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FBg%20(1).png?alt=media&token=9468539d-028d-4d0a-9eff-a8d5ab5e9953");
+  background-size: 100% 100%;
+  .title {
+    margin-top: 3rem;
+    font-family: "Jost";
+    font-size: 30px;
+    line-height: 40px;
+    width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+  .form-container {
+    margin-top: 2rem !important ;
+    width: fit-content;
+    margin: auto;
+    .input-form {
+      border: none;
+      width: 20rem;
+      height: 3rem;
+      padding-left: 1rem;
+      background-color: #303030;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14.217px;
+      line-height: 17px;
+      color: #ffffff;
+      @media screen and (max-width: 485px) {
+        width: 10rem;
+      }
+    }
+    button {
+      font-family: "Jost";
+      font-size: 17.835px;
+      line-height: 21px;
+      color: #ffffff;
+      background-color: black;
+      height: 3rem;
+      width: 8rem;
+      border: none;
+      @media screen and (max-width: 485px) {
+        width: fit-content;
+      }
+    }
+  }
+  .content {
+    @media screen and (max-width: 1200px) {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2rem;
+    }
+    .text {
+      margin-top: 1rem;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+      @media screen and (max-width: 1200px) {
+        width: 20rem;
+      }
+    }
+  }
+  .hedding1 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    width: fit-content;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    @media screen and (max-width: 1200px) {
+      margin-left: 5rem;
+    }
+    @media screen and (max-width: 992px) {
+      margin-left: 38%;
+    }
+    @media screen and (max-width: 576px) {
+      margin-left: 40%;
+    }
+  }
+  .hedding2 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    width: fit-content;
+    color: #ffffff;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    @media screen and (max-width: 1200px) {
+      margin-left: 4rem;
+    }
+    @media screen and (max-width: 992px) {
+      margin-left: 33%;
+    }
+    @media screen and (max-width: 576px) {
+      margin-left: 36%;
+    }
+  }
+  .hedding3 {
+    margin-top: 2rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    width: fit-content;
+    color: #ffffff;
+    margin-left: 1rem;
+    @media screen and (max-width: 1200px) {
+      margin-left: 3rem;
+    }
+    @media screen and (max-width: 992px) {
+      margin-left: 29%;
+    }
+    @media screen and (max-width: 576px) {
+      margin-left: 35%;
+    }
+  }
+  .hedding4 {
+    font-family: "Jost";
+    margin-top: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    width: fit-content;
+    color: #ffffff;
+    margin-left: 1rem;
+    @media screen and (max-width: 1200px) {
+      margin-left: 0rem;
+    }
+    @media screen and (max-width: 992px) {
+      margin-left: 30%;
+    }
+    @media screen and (max-width: 576px) {
+      margin-left: 35%;
+    }
+  }
+  .Links {
+    margin-top: 1rem;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    a {
+      width: fit-content;
+      font-family: "Jost";
+      font-size: 17px;
+      line-height: 35px;
+      color: #d6d6d6;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #fbf8f8;
+    }
+  }
+  .Link-Conatiner {
+    display: flex;
+    flex-direction: row;
+  }
+  .addr {
+    font-family: "Jost";
+    font-size: 17px;
+    line-height: 35px;
+    color: #d6d6d6;
+  }
+  .Part4 {
+    display: flex !important ;
+    flex-direction: column !important;
+    justify-content: center !important ;
+    align-items: center !important;
+    // @media screen and (max-width: 992px) {
+    //   margin-top: 0.5rem;
+    //   margin-bottom: 0.5rem;
+    // }
+  }
+}

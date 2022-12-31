@@ -1,0 +1,33 @@
+{
+  "title": "<p>Clearance Sales Up to 70% Off. All Sales are Final!</p>",
+  "Buttontext": "subscribe",
+  "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo%20(3).png?alt=media&token=15d6710a-91f4-4cf3-99ba-2bc925431126",
+  "text": "<p>Fashion trends are influenced by several factors ncluding cinema, celebrities, climate</p>",
+  "hedding1": "<p>Support</p>",
+  "hedding2": "<p>Shop</p>",
+  "hedding3": "<p>Company</p>",
+  "hedding4": "<p>Contact us</p>",
+  "addr1": "<p>1-888-923-8044</p>",
+  "addr2": "<p>1-888-923-8055</p>",
+  "addr3": "<p>help@Cartmax.com</p>",
+  "col1": [
+    "<p>About</p>",
+    "<p>Privacy Policy</p>",
+    "<p>Promotion</p>",
+    "<p>Return</p>"
+  ],
+  "col2": [
+    "<p>Men&apos;s Shopping</p>",
+    "<p>Women&apos;s Shopping</p>",
+    "<p>Kids Shopping</p>",
+    "<p>Discount</p>",
+    "<p>Return</p>"
+  ],
+  "col3": [
+    "<p>Our Story</p>",
+    "<p>Careers</p>",
+    "<p>Trems & Conditions</p>",
+    "<p>Privacy & Cookie Policy</p>",
+    "<p>Return</p>"
+  ]
+}

@@ -22,7 +22,7 @@ export interface IProps {
 function Behind(props: IProps) {
   const [active, setActive] = useState("");
   return (
-    <div className="Behind-Body">
+    <div className="Behind-Body" id="Promotions1">
       <Container className="ads" fluid>
         <Row>
           <Col>
