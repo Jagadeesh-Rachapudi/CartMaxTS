@@ -49,6 +49,7 @@ import "../Components/Mini/Mini.scss";
 import "../Components/Month/Month.scss";
 import "../Components/Amazon/Amazon.scss";
 import "../Components/Cards/Cards.scss";
+import "../Components/Timmer2/Timmer2.scss";
 
 import type { AppProps } from "next/app";
 
