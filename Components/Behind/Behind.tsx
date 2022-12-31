@@ -60,7 +60,7 @@ function Behind(props: IProps) {
             sm={12}
             md={12}
             lg={12}
-            xl={4}
+            xl={5}
             xxl={4}
           >
             <div
