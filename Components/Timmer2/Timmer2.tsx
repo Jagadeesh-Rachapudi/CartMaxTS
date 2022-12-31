@@ -110,7 +110,7 @@ function Timmer2(props: IProps) {
               </div>
               <div className="ms-2 me-2">
                 <div className="days rounded-circle p-3">
-                  {day}
+                  {hrs}
                   <div
                     className="subtext me-auto ms-auto mt-1 "
                     dangerouslySetInnerHTML={{
@@ -121,7 +121,7 @@ function Timmer2(props: IProps) {
               </div>
               <div className="ms-2 me-2">
                 <div className="days rounded-circle p-3">
-                  {day}
+                  {min}
                   <div
                     className="subtext me-auto ms-auto mt-1"
                     dangerouslySetInnerHTML={{
@@ -132,7 +132,7 @@ function Timmer2(props: IProps) {
               </div>
               <div className="ms-2 me-2">
                 <div className="days rounded-circle p-3  ">
-                  {day}
+                  {sec}
                   <div
                     className="subtext me-auto ms-auto mt-1 "
                     dangerouslySetInnerHTML={{
