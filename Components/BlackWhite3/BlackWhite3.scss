@@ -1,0 +1,135 @@
+.BlackWhite3-Body {
+  height: fit-content;
+  .BlackWhite3 {
+    span {
+      background: linear-gradient(90deg, #fe6066 0%, #e0c05b 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 49.211px;
+      line-height: 55px;
+      color: #ffffff;
+      width: 23rem;
+      @media screen and (max-width: 410px) {
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+    .title2 {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 49.211px;
+      line-height: 55px;
+      color: #ffffff;
+      width: 24rem;
+      @media screen and (max-width: 410px) {
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+    .dark {
+      height: 60vh;
+      background-color: #2b2929;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding-left: 25%;
+      @media screen and (max-width: 1010px) {
+        padding-left: 5%;
+      }
+      @media screen and (max-width: 768px) {
+        padding-left: 30%;
+        height: 36vh;
+      }
+      @media screen and (max-width: 536px) {
+        padding-left: 10%;
+      }
+    }
+    .white {
+      height: 60vh;
+      background-color: #565656;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding-left: 25%;
+      @media screen and (max-width: 1010px) {
+        padding-left: 5%;
+      }
+      @media screen and (max-width: 768px) {
+        padding-left: 30%;
+        height: 36vh;
+      }
+      @media screen and (max-width: 536px) {
+        padding-left: 10%;
+      }
+    }
+  }
+
+  .Items {
+    span {
+      background: linear-gradient(90deg, #fe6066 0%, #e0c05b 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tag {
+      text-align: center;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 49.211px;
+      line-height: 71px;
+      letter-spacing: -0.02em;
+      color: #141412;
+      text-align: center;
+      @media screen and (max-width: 410px) {
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+    .Container-Box {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .Play {
+    background-color: #424242;
+    height: 70vh;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 12rem;
+      img {
+      }
+      .title {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        width: 23rem;
+        @media screen and (max-width: 400px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
