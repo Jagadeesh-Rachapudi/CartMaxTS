@@ -1,0 +1,13 @@
+.GradiantButton-Body {
+  width: fit-content;
+  .Button {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-family: "Jost";
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #fe6066 0%, #e0c05b 100%);
+  }
+}

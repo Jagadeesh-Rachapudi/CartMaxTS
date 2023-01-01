@@ -1,0 +1,202 @@
+.Nav4-Body {
+  height: 100vh;
+  background-color: #404040;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%20983.png?alt=media&token=fc4fa37c-56c8-4f3d-966b-241070601dd8");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  .SearchedClicked {
+    transition: 1s;
+    opacity: 1;
+  }
+  .SearchedNotClicked {
+    opacity: 0;
+    transition: 1s;
+  }
+  .search {
+    position: absolute;
+    z-index: +1;
+    margin-left: -6rem;
+    width: 16rem;
+    margin-top: 3.5rem;
+    @media screen and (max-width: 992px) {
+      margin-top: 3rem;
+    }
+    @media screen and (max-width: 476px) {
+      margin-left: -8.5rem;
+    }
+    @media screen and (max-width: 1024px) {
+      margin-top: 4rem;
+    }
+    @media screen and (max-width: 450px) {
+      margin-top: 4.5rem;
+      margin-left: -8rem;
+    }
+  }
+  .SearchText {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+  }
+  .SearchBar {
+    border: none;
+    height: 2rem;
+    width: 11.55rem;
+    border-radius: 10px 0 0 10px;
+  }
+  .crossButton {
+    position: absolute;
+    z-index: +1;
+    margin-left: -0.5rem;
+    margin-top: -0.25rem;
+    background-color: white;
+    border: none;
+    height: 2rem;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.5s;
+  }
+  .img {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    margin-left: 3rem;
+    @media screen and (max-width: 565px) {
+      margin-left: 0.5rem;
+    }
+    @media screen and (max-width: 400px) {
+      margin-left: -0.5rem;
+    }
+    @media screen and (max-width: 461px) {
+      width: 130px;
+      height: 55px;
+    }
+  }
+  .canvas {
+    margin-right: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    @media screen and (max-width: 565px) {
+      margin-right: 0rem;
+    }
+  }
+  .Menu-Button {
+    background-color: transparent;
+    border: none;
+    @media screen and (max-width: 565px) {
+      padding-right: 0rem;
+      margin-right: 1rem;
+    }
+  }
+  .Menu-Button:hover {
+    background-color: black;
+  }
+  .cart-Button {
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 2rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    border-radius: 50%;
+    @media screen and (max-width: 565px) {
+      margin-right: 0.5rem;
+    }
+  }
+  .whishList-Button {
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 2rem;
+    margin-right: 1.3rem;
+    border-radius: 50%;
+    @media screen and (max-width: 565px) {
+      margin-right: 0.5rem;
+      padding-left: 0;
+      margin-left: 0.5rem;
+    }
+  }
+  .searchIcon {
+    cursor: pointer;
+    @media screen and (max-width: 565px) {
+      margin-right: 0rem;
+    }
+  }
+  .cart-Button:hover {
+    background-color: transparent;
+    border: none;
+  }
+  .Icon {
+    color: white;
+    background-color: #2a343f;
+    border-radius: 50%;
+    padding: 7px;
+  }
+  .Hedder {
+    span {
+      background: linear-gradient(90deg, #fe6066 0%, #e0c05b 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tag {
+      text-align: center;
+      margin-top: 12rem;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 110px;
+      line-height: 120px;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      width: 40rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (max-width: 656px) {
+        width: 100%;
+        font-size: 70px;
+        line-height: 75px;
+      }
+      @media screen and (max-width: 656px) {
+        width: 100%;
+        font-size: 50px;
+        line-height: 55px;
+      }
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      color: #eeeeee;
+      width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (max-width: 656px) {
+        width: 95%;
+        font-size: 13px;
+        line-height: 25px;
+      }
+    }
+    .Button-Container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
