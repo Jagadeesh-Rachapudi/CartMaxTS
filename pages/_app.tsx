@@ -58,7 +58,7 @@ import "../Components/Footer3/Footer3.scss";
 
 import "../Components/Nav4/Nav4.scss";
 import "../Components/BlackWhite3/BlackWhite3.scss";
-
+ 
 import type { AppProps } from "next/app";
 
 const store: Store<productState, productAction> & {

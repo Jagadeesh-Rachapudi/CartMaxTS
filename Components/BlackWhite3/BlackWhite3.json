@@ -2,11 +2,20 @@
   "tag1": "MEN'S ORIGINALS",
   "tag2": "MEN'S HOODED JACKET",
   "tag3": "Students Now Get 10% Off",
+  "tag4": "<p><span style=\"color:#cccccc\">POSTED &nbsp;23 MARCH 2022 &nbsp;| &nbsp;BY</span> <span style=\"color:#555555\">JONT DORE</span></p>",
+  "tag5": "Students Now Get 10% Off",
   "title1": "<p>EQT Cushion ADV Shoes $65</p>",
   "title2": "<p>Nike Sportswear Windrunner.</p>",
   "title3": "<p>Treat Yourself to Sport</p>",
   "title4": "<p>Nike Air Saving 50% Max Zephyr</p>",
+  "title5": "<p>Nike Sportswear Windrunner.</p>",
+  "title6": "<p>The Love At First Sight Boots.</p>",
+  "title7": "<p>Treat Yourself to Sport</p>",
   "viewMore": "View More",
   "play": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fplay%20(1).png?alt=media&token=f5a6e214-f2a6-44e9-9d70-ab38ce44ece9",
-  "ButtonText":"EXPLORE MORE"
+  "ButtonText": "EXPLORE MORE",
+  "ButtonText2": "READ ARTICLE",
+  "randomImage1": "https://picsum.photos/595/570",
+  "randomImage2": "https://picsum.photos/595/571",
+  "text": "<p>Pellentesque augue diam, aliquam nec finibus vitae, ut leo a,eleifend elit. Vestibulum aliquam auctor Praesent ac turpis turpis. Vestibulum finibus</p>"
 }

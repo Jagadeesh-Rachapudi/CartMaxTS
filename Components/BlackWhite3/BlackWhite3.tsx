@@ -15,13 +15,22 @@ export interface IProps {
   tag1: string;
   tag2: string;
   tag3: string;
+  tag4: string;
+  tag5: string;
   title1: string;
   title2: string;
   title3: string;
   title4: string;
+  title5: string;
+  title6: string;
+  title7: string;
   viewMore: string;
   play: string;
   ButtonText: string;
+  ButtonText2: string;
+  randomImage1: string;
+  randomImage2: string;
+  text: string;
 }
 function BlackWhite3(props: IProps) {
   return (
@@ -111,6 +120,109 @@ function BlackWhite3(props: IProps) {
                 <GradiantButton text={props.ButtonText} />
               </div>
             </div>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="Columns mb-5 " fluid>
+        <Row>
+          <Col>
+            <div className="UpperTag mb-3 ">
+              <article>{props.tag5}</article>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div
+              className="UpperTitle mb-5"
+              dangerouslySetInnerHTML={{
+                __html: props.title7,
+              }}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            className="content"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={6}
+            xxl={6}
+          >
+            <img src={props.randomImage1} alt="" className="img1 rounded " />
+          </Col>
+          <Col xs={12} sm={12} md={12} lg={12} xl={6} xxl={6} className="Col2">
+            <div className="details">
+              <div
+                className="tag mb-3"
+                dangerouslySetInnerHTML={{
+                  __html: props.tag4,
+                }}
+              />
+              <div
+                className="title"
+                dangerouslySetInnerHTML={{
+                  __html: props.title5,
+                }}
+              />
+              <div
+                className="text mt-3"
+                dangerouslySetInnerHTML={{
+                  __html: props.text,
+                }}
+              />
+              <div className="Button-Container mt-3 ">
+                <GradiantButton text={props.ButtonText2} />
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            className="content"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={6}
+            xxl={6}
+          >
+            <div className="details2">
+              <div
+                className="tag mb-3"
+                dangerouslySetInnerHTML={{
+                  __html: props.tag4,
+                }}
+              />
+              <div
+                className="title"
+                dangerouslySetInnerHTML={{
+                  __html: props.title6,
+                }}
+              />
+              <div
+                className="text mt-3"
+                dangerouslySetInnerHTML={{
+                  __html: props.text,
+                }}
+              />
+              <div className="Button-Container mt-3 mb-5  ">
+                <GradiantButton text={props.ButtonText2} />
+              </div>
+            </div>
+          </Col>
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={6}
+            xxl={6}
+            className="content2"
+          >
+            <img src={props.randomImage2} alt="" className="img1 rounded " />
           </Col>
         </Row>
       </Container>

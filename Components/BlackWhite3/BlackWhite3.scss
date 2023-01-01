@@ -132,4 +132,104 @@
       }
     }
   }
+  .Columns {
+    margin-top: 5rem;
+    .UpperTag {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    article {
+      background: linear-gradient(90deg, #fe6066 0%, #e0c05b 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .UpperTitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 49.211px;
+      line-height: 71px;
+      letter-spacing: -0.02em;
+      color: #141412;
+    }
+    .content {
+      display: flex;
+      justify-content: end;
+      @media screen and (max-width: 1200px) {
+        justify-content: center;
+      }
+      .img1 {
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+      }
+    }
+    .content2 {
+      display: flex;
+      justify-content: start;
+      @media screen and (max-width: 1200px) {
+        justify-content: center;
+      }
+      .img1 {
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+      }
+    }
+    .tag {
+      font-family: "Jost";
+      font-size: 13px;
+      line-height: 15px;
+      // color: #cccccc;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 45px;
+      color: #000000;
+      width: 22rem;
+      @media screen and (max-width: 430px) {
+        font-size: 40px;
+        line-height: 40px;
+        width: 95%;
+      }
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #a1a1a1;
+      width: 26rem;
+      @media screen and (max-width: 430px) {
+        width: 95%;
+      }
+    }
+    .details {
+      margin-top: 7rem;
+      @media screen and (max-width: 1200px) {
+        margin-top: 2rem;
+      }
+    }
+    .details2 {
+      margin-top: 7rem;
+      @media screen and (max-width: 1200px) {
+        margin-top: 3rem;
+      }
+    }
+    .Col2 {
+      @media screen and (max-width: 1200px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 }
