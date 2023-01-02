@@ -35,7 +35,7 @@ export interface IProps {
 function BlackWhite3(props: IProps) {
   return (
     <div className="BlackWhite3-Body">
-      <Container fluid className="BlackWhite3">
+      <Container fluid className="BlackWhite3" id="Promotions3">
         <Row className="p-0">
           <Col className="p-0" xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
             <div className="dark">
@@ -71,7 +71,7 @@ function BlackWhite3(props: IProps) {
           </Col>
         </Row>
       </Container>
-      <Container className="Items" fluid>
+      <Container className="Items" fluid id="Shop3">
         <Row>
           <Col>
             <div className="tag mt-5 ">
@@ -105,7 +105,7 @@ function BlackWhite3(props: IProps) {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="Play">
+      <Container fluid className="Play" id="Product3">
         <Row>
           <Col>
             <div className="content">
@@ -123,7 +123,7 @@ function BlackWhite3(props: IProps) {
           </Col>
         </Row>
       </Container>
-      <Container className="Columns mb-5 " fluid>
+      <Container className="Columns mb-5" fluid id="Blog3">
         <Row>
           <Col>
             <div className="UpperTag mb-3 ">

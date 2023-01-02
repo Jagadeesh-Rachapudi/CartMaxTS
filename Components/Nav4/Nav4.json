@@ -4,27 +4,27 @@
   "navOptions": [
     {
       "text": "Home",
-      "link": "#ShoesHome"
+      "link": "#Home3"
     },
     {
       "text": "Promotions",
-      "link": "#ShoesPromotions"
+      "link": "#Promotions3"
     },
     {
       "text": "Shop",
-      "link": "#ShoesShop"
+      "link": "#Shop3"
     },
     {
       "text": "Product",
-      "link": "#ShoesProduct"
+      "link": "#Product3"
     },
     {
       "text": "Blog",
-      "link": "#ShoesBlog"
+      "link": "#Blog3"
     },
     {
       "text": "Pages",
-      "link": "#ShoesPages"
+      "link": "#Pages3"
     }
   ],
   "cartitems": [
