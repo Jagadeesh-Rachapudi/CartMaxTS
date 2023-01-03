@@ -1,3 +1,73 @@
-.Hedder2-Body{
-    height: 100vh;
+.Hedder2-Body {
+  height: 40rem;
+  background-color: #ececec;
+  .add {
+    height: 40rem;
+    @media screen and (max-width: 1205px) {
+      display: none;
+    }
+    .img1 {
+      height: 40rem;
+    }
+  }
+  .content {
+    padding-left: 8rem;
+    height: 40rem;
+    @media screen and (max-width: 530px) {
+      padding-left: 2rem;
+    }
+    .helmet {
+      position: absolute;
+      z-index: +1;
+      margin-left: 25%;
+      @media screen and (max-width: 1333px) {
+        margin-left: 20%;
+      }
+      @media screen and (max-width: 1200px) {
+        margin-left: 40%;
+      }
+      @media screen and (max-width: 1192px) {
+        margin-left: 30%;
+      }
+      @media screen and (max-width: 947px) {
+        display: none;
+      }
+    }
+    .tag {
+      font-family: "Jost";
+      font-size: 12.997px;
+      line-height: 15px;
+      color: #0170dc;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      width: fit-content;
+      border: 2px solid #0170dc;
+      border-radius: 20px;
+    }
+    .title {
+      font-family: "Jost";
+      font-size: 61.985px;
+      line-height: 65px;
+      color: #333e48;
+      width: 25rem;
+      @media screen and (max-width: 530px) {
+        font-size: 51px;
+        line-height: 55px;
+      }
+    }
+    .From {
+      font-family: "Jost";
+      font-size: 13.997px;
+      line-height: 16px;
+      letter-spacing: -0.01em;
+      color: #333e48;
+    }
+    .price {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 36px;
+      color: #333e48;
+    }
+  }
 }

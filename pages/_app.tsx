@@ -17,6 +17,7 @@ import "../Utils/RedButton/RedButton.scss";
 import "../Utils/HomeFashionItem/HomeFashionItem.scss";
 import "../Utils/NewsArticle2/NewsArticle2.scss";
 import "../Utils/GradiantButton/GradiantButton.scss";
+import "../Utils/BlueButton/BlueButton.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
