@@ -1,5 +1,8 @@
 import React from "react";
 
+import Hedder2, { IProps as Hedder2Props } from "../Components/Hedder2/Hedder2";
+import Hedder2Data from "../Components/Hedder2/Hedder2.json";
+
 import Nav5, { IProps as Nav5Props } from "../Components/Nav5/Nav5";
 import Nav5Data from "../Components/Nav5/Nav5.json";
 
@@ -14,6 +17,7 @@ function SuperMarket() {
       <div>
         <TopSearch {...(TopSearchData as TopSearchProps)} />
         <Nav5 {...(Nav5Data as Nav5Props)} />
+        <Hedder2 {...(Hedder2Data as Hedder2Props)} />
       </div>
     </div>
   );

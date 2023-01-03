@@ -10,13 +10,16 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 export interface IProps {
-  src: string;
-  navOptions: { text: string; link: string }[];
-  cartitems: string[];
-  whishList: string[];
-  Hedder: string;
-  text: string;
-  buttonText: string;
+  Home: string;
+  AboutUS: string;
+  Blog: string;
+  Pages: string;
+  Features: string;
+  ContactUS: string;
+  DopDownName: string;
+  DropDownLinks: string[];
+  Hotline: string;
+  Number: string;
 }
 
 function Nav5(props: IProps) {
@@ -37,7 +40,7 @@ function Nav5(props: IProps) {
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                     <Nav.Link href="#home" className="Nav-Link">
-                      Home
+                      {props.Home}
                     </Nav.Link>
                     <NavDropdown
                       title="About Us"
@@ -45,7 +48,7 @@ function Nav5(props: IProps) {
                       className="Nav-Link"
                     >
                       <NavDropdown.Item href="#About Us">
-                        About Us
+                        {props.AboutUS}
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown
@@ -53,20 +56,24 @@ function Nav5(props: IProps) {
                       id="basic-nav-dropdown"
                       className="Nav-Link"
                     >
-                      <NavDropdown.Item href="#Blog">Blog</NavDropdown.Item>
+                      <NavDropdown.Item href="#Blog">
+                        {props.Blog}
+                      </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown
                       title="Pages"
                       id="basic-nav-dropdown"
                       className="Nav-Link"
                     >
-                      <NavDropdown.Item href="#Pages">Pages</NavDropdown.Item>
+                      <NavDropdown.Item href="#Pages">
+                        {props.Pages}
+                      </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#Features" className="Nav-Link">
-                      Features
+                      {props.Features}
                     </Nav.Link>
                     <Nav.Link href="#ContactUS" className="Nav-Link">
-                      ContactUS
+                      {props.ContactUS}
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
@@ -77,128 +84,19 @@ function Nav5(props: IProps) {
             <Dropdown>
               <Dropdown.Toggle id="dropdown-basic" className="DropDownButton">
                 <AiOutlineMenu className="me-2" />
-                SHOP BY DEPARTMENT
+                {props.DopDownName}
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Best Seller Products
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Top 10 Offers
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  New Arrivals
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Phone & Tablets
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Electronics & Digital
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Fashion & Clothings
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Jewelry & Watches
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Heath & Beauty
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  TV & Audio
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Sound & Speaker
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Gadgets
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Toys & Hobbies
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Heath & Beauty
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Asus
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Acessories
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#"
-                  className="DropDown-Link d-flex flex-row "
-                >
-                  <div className="dot mt-auto mb-auto me-2 "></div>
-                  Art & Craft
-                </Dropdown.Item>
+                {props.DropDownLinks.map((e, i) => (
+                  <Dropdown.Item
+                    href="#"
+                    key={i}
+                    className="DropDown-Link d-flex flex-row "
+                  >
+                    <div className="dot mt-auto mb-auto me-2 "></div>
+                    {e}
+                  </Dropdown.Item>
+                ))}
               </Dropdown.Menu>
             </Dropdown>
           </Col>
@@ -207,14 +105,14 @@ function Nav5(props: IProps) {
               bg="light"
               variant="dark"
               expand="lg"
-              className="bg-transparent nav-Links "
+              className="bg-transparent nav-Links nav2  "
             >
               <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                     <Nav.Link href="#home" className="Nav-Link">
-                      Home
+                      {props.Home}
                     </Nav.Link>
                     <NavDropdown
                       title="About Us"
@@ -222,7 +120,7 @@ function Nav5(props: IProps) {
                       className="Nav-Link"
                     >
                       <NavDropdown.Item href="#About Us">
-                        About Us
+                        {props.AboutUS}
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown
@@ -230,20 +128,24 @@ function Nav5(props: IProps) {
                       id="basic-nav-dropdown"
                       className="Nav-Link"
                     >
-                      <NavDropdown.Item href="#Blog">Blog</NavDropdown.Item>
+                      <NavDropdown.Item href="#Blog">
+                        {props.Blog}
+                      </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown
                       title="Pages"
                       id="basic-nav-dropdown"
                       className="Nav-Link"
                     >
-                      <NavDropdown.Item href="#Pages">Pages</NavDropdown.Item>
+                      <NavDropdown.Item href="#Pages">
+                        {props.Pages}
+                      </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#Features" className="Nav-Link">
-                      Features
+                      {props.Features}
                     </Nav.Link>
                     <Nav.Link href="#ContactUS" className="Nav-Link">
-                      ContactUS
+                      {props.ContactUS}
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
@@ -254,9 +156,9 @@ function Nav5(props: IProps) {
             <div className="d-flex ">
               <AiOutlineBell size={20} color="white" className="" />
               <div className="Hedding">
-                <b>Hotline:</b>
+                <b>{props.Hotline}</b>
               </div>
-              <div className="number ms-2">(+100) 123 456 7890</div>
+              <div className="number ms-2">{props.Number}</div>
             </div>
           </Col>
         </Row>
