@@ -7,7 +7,7 @@ import NewsArticleData from "../../Utils/NewsArticle/NewsArticle.json";
 import NewsArticle, {
   IProps as NewsArticleProps,
 } from "../../Utils/NewsArticle/NewsArticle";
-import { title } from "process";
+
 
 export interface IProps {
   tag: string;

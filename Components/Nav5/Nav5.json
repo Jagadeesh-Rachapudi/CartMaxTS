@@ -1,0 +1,46 @@
+{
+  "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo%20(4).png?alt=media&token=859b951f-20a6-4959-aefe-5588b4c9f864",
+
+  "navOptions": [
+    {
+      "text": "Home",
+      "link": "#Home3"
+    },
+    {
+      "text": "Promotions",
+      "link": "#Promotions3"
+    },
+    {
+      "text": "Shop",
+      "link": "#Shop3"
+    },
+    {
+      "text": "Product",
+      "link": "#Product3"
+    },
+    {
+      "text": "Blog",
+      "link": "#Blog3"
+    },
+    {
+      "text": "Pages",
+      "link": "#Pages3"
+    }
+  ],
+  "cartitems": [
+    "Apple Watch Ultra",
+    "IPhone 14",
+    "Apple Tab 13",
+    "Nike Shoes",
+    "Realme 10 Pro"
+  ],
+  "whishList": [
+    "Galaxy Z Fold4",
+    "Galaxy Z Fold3",
+    "Galaxy Z Fold2",
+    "Galaxy Z Fold1"
+  ],
+  "Hedder": "<p>Men&apos;s Classic Shoes 2022</p>",
+  "text": "<p>Step into a new realm of Air with the Nike Air Max Zephyr. It brings the soft cushioning of visible of Air with the Nike Air Max Zephyr.</p>",
+  "buttonText": "EXPLORE MORE"
+}

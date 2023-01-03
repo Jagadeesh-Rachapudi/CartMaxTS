@@ -60,6 +60,7 @@ import "../Components/Nav4/Nav4.scss";
 import "../Components/BlackWhite3/BlackWhite3.scss";
 
 import "../Components/TopSearch/TopSearch.scss";
+import "../Components/Nav5/Nav5.scss";
 
 import type { AppProps } from "next/app";
 

@@ -88,6 +88,7 @@ function TopSearch(props: IProps) {
               ></input>
               <button className="">{props.Search}</button>
             </form>
+            <hr></hr>
           </Col>
         </Row>
       </Container>

@@ -1,0 +1,65 @@
+.Nav5-Body {
+  background-color: #232f3e;
+  height: fit-content;
+  @media screen and (max-width: 730px) {
+    padding-top: 2rem;
+  }
+  .DropDownButton {
+    border-radius: 0;
+    height: 3rem;
+  }
+  .nav1 {
+    @media screen and (max-width: 992px) {
+      display: none !important ;
+    }
+  }
+  .nav2 {
+    display: none !important;
+    @media screen and (max-width: 992px) {
+      display: flex !important;
+      margin-left: 30% !important;
+    }
+    @media screen and (max-width: 390px) {
+      margin-left: 10% !important;
+    }
+  }
+  .dot {
+    background-color: #0170dc;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+  }
+  .Nav-Link.nav-link.active {
+    color: white !important ;
+  }
+  .dropdown-toggle.nav-link {
+    color: white !important;
+  }
+  .DropDown-Nav-Container {
+    display: flex;
+  }
+  .Hedding {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  .number {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  .hotline {
+    margin: auto !important;
+    display: flex !important;
+    @media screen and (max-width: 610px) {
+      display: none !important;
+    }
+  }
+}
