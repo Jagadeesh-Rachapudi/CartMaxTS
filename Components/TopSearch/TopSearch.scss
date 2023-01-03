@@ -1,0 +1,85 @@
+.TopSearch-Body {
+  height: 100vh;
+  background-color: #232f3e;
+  .form-container {
+    @media screen and (max-width: 728px) {
+      display: none !important;
+    }
+  }
+
+  .form-container2 {
+    display: none !important;
+    @media screen and (max-width: 728px) {
+      display: flex !important;
+    }
+  }
+
+  img {
+    @media screen and (max-width: 728px) {
+      width: 150px;
+      height: 65px;
+    }
+  }
+  .Search-Bar {
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border: none;
+    height: 2.5rem;
+    width: 13rem;
+    min-width: fit-content;
+    font-family: "Jost";
+    font-size: 15px;
+    line-height: 18px;
+    color: #d6d6d6;
+    @media screen and (max-width: 412px) {
+      width: fit-content;
+    }
+  }
+  button {
+    border: none;
+    height: 2.5rem;
+    background-color: #0170dc;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fefefe;
+    width: 5rem;
+    border-radius: 0 20px 20px 0;
+  }
+  .DropDown-Button {
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #616161;
+    padding-right: 6rem;
+  }
+  .cart {
+    border: 2px solid gray;
+    padding: 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+  .price {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 26px;
+    color: #919396;
+  }
+}
