@@ -1,5 +1,5 @@
 .Featured-Body {
-  height: 100vh;
+  height: fit-content;
   .tag {
     margin-top: 2rem;
     font-family: "Jost";
@@ -29,11 +29,116 @@
   }
   .Container-Box {
     margin-top: 2rem;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
+  }
+  .Card1 {
+    background-color: #efefef;
+    width: 421px;
+    height: 196px;
+    @media screen and (max-width: 445px) {
+      width: 100%;
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    .Card1-content {
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title2 {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21.736px;
+        line-height: 31px;
+        letter-spacing: -0.03em;
+        color: #101010;
+      }
+      .text1,
+      .text2 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.215px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        color: #101010;
+      }
+    }
+  }
+  .Card2 {
+    background-color: #c7c7c7;
+    width: 421px;
+    height: 196px;
+    @media screen and (max-width: 445px) {
+      width: 100%;
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    .Card2-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2rem;
+      .title3 {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21.736px;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+      }
+      .text2 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.215px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+      }
+    }
+  }
+  .Card3 {
+    background-color: #c7c7c7;
+    width: 421px;
+    height: 196px;
+    @media screen and (max-width: 445px) {
+      width: 100%;
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    .Card3-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2rem;
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.215px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #000000;
+      }
+      .title4 {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22.823px;
+        line-height: 33px;
+        text-align: center;
+        color: #000000;
+      }
+    }
   }
 }

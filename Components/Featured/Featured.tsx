@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ColorCard from "../../Utils/ColorCard/ColorCard";
+import Card from "react-bootstrap/Card";
 
 export interface IProps {
   tag: string;
@@ -41,7 +42,7 @@ function Featured(props: IProps) {
         </Row>
         <Row>
           <Col>
-            <div className="Container-Box">
+            <div className="Container-Box mb-5 ">
               {props.cards.map(
                 (
                   card: {
@@ -53,7 +54,7 @@ function Featured(props: IProps) {
                   },
                   i
                 ) => (
-                  <div className="cards-conatiner m-1 " key={i}>
+                  <div className="cards-conatiner m-1  " key={i}>
                     <ColorCard
                       src={card.src}
                       title2={card.title2}
@@ -64,6 +65,39 @@ function Featured(props: IProps) {
                   </div>
                 )
               )}
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div className="Container-Box mt-5 mb-5 ">
+              <Card className="Card1 rounded  m-1 ">
+                <Card.Body className="Card1-content">
+                  <div className="title2 mb-1 ">LOVE YOUR WATCH</div>
+                  <div className="text1">items as low as US $6.99!</div>
+                  <div className="text2">
+                    Receive a free Gift with every order
+                  </div>
+                </Card.Body>
+              </Card>
+              <Card className="Card2 rounded m-1 ">
+                <Card.Body className="Card2-content">
+                  <div className="title3 mb-2 ">
+                    NAILS WORTH <br /> FLAUNTING
+                  </div>
+                  <div className="text2">
+                    Fashion Nails <br /> everywhere you go
+                  </div>
+                </Card.Body>
+              </Card>
+              <Card className="Card3 rounded m-1 ">
+                <Card.Body className="Card3-content">
+                  <div className="text mb-2">BRAND ZONE</div>
+                  <div className="title4">
+                    FEATURED BRANDS <br /> ALL STARS
+                  </div>
+                </Card.Body>
+              </Card>
             </div>
           </Col>
         </Row>
