@@ -11,15 +11,22 @@
     }
   }
   .content {
-    padding-left: 8rem;
+    padding-left: 3rem;
     height: 40rem;
+    @media screen and (max-width: 1200px) {
+      padding-left: 8rem;
+    }
     @media screen and (max-width: 530px) {
-      padding-left: 2rem;
+      padding-left: 5rem;
+    }
+    @media screen and (max-width: 400px) {
+      padding-left: 1rem;
     }
     .helmet {
       position: absolute;
       z-index: +1;
-      margin-left: 25%;
+      margin-left: 45%;
+      margin-top: -25rem;
       @media screen and (max-width: 1333px) {
         margin-left: 20%;
       }
@@ -34,6 +41,7 @@
       }
     }
     .tag {
+      margin-top: 7rem;
       font-family: "Jost";
       font-size: 12.997px;
       line-height: 15px;
@@ -69,5 +77,23 @@
       line-height: 36px;
       color: #333e48;
     }
+  }
+  .carousel-control-prev-icon {
+    margin-left: -25rem !important;
+    @media screen and (max-width: 1476px) {
+      margin-left: -15rem !important;
+    }
+    @media screen and (max-width: 530px) {
+      margin-left: -10rem !important;
+    }
+    @media screen and (max-width: 400px) {
+      margin-left: 0rem !important;
+    }
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+  .carousalheight {
+    height: 35rem !important;
   }
 }

@@ -63,6 +63,7 @@ import "../Components/BlackWhite3/BlackWhite3.scss";
 import "../Components/TopSearch/TopSearch.scss";
 import "../Components/Nav5/Nav5.scss";
 import "../Components/Hedder2/Hedder2.scss";
+// import "../Components/Featured/Featured.scss";
 
 import type { AppProps } from "next/app";
 

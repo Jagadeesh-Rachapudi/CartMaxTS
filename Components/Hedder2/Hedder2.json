@@ -3,7 +3,7 @@
   "title": "<p><strong>ESPARGARO</strong> REPLICA 2020</p>",
   "From": "<p>FROM</p>",
   "price": "<p>$749.99</p>",
-  "ButtonText": "Shop Now",
+  "ButtonText": ["Shop Now", "Shop Now"],
   "image1": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fvertical%20add%202.jpeg?alt=media&token=bd298952-a277-4301-838b-c638ff57879a",
   "image2": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2F3267889e0af7863371b88523bfc6568e.png?alt=media&token=48512a69-9aca-48f2-be8c-5d602eb3f98b"
 }

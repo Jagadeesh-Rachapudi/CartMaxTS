@@ -5,13 +5,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BlueButton from "../../Utils/BlueButton/BlueButton";
+import Carousel from "react-bootstrap/Carousel";
 
 export interface IProps {
   tag: string;
   title: string;
   From: string;
   price: string;
-  ButtonText: string;
+  ButtonText: string[];
   image1: string;
   image2: string;
 }
@@ -31,34 +32,40 @@ function Hedder2(props: IProps) {
           xl={9}
           xxl={9}
         >
-          <div
-            className="tag mb-2"
-            dangerouslySetInnerHTML={{
-              __html: props.tag,
-            }}
-          />
-          <div
-            className="title mb-1"
-            dangerouslySetInnerHTML={{
-              __html: props.title,
-            }}
-          />
-          <div
-            className="From mb-3"
-            dangerouslySetInnerHTML={{
-              __html: props.From,
-            }}
-          />
-          <div
-            className="price mb-2"
-            dangerouslySetInnerHTML={{
-              __html: props.price,
-            }}
-          />
-          <div className="Button-Container">
-            <BlueButton text={props.ButtonText} />
-          </div>
-          <img src={props.image2} alt="" className="helmet" />
+          <Carousel variant="dark">
+            {props.ButtonText.map((e, i) => (
+              <Carousel.Item key={i} className="carousalheight">
+                <div
+                  className="tag mb-2"
+                  dangerouslySetInnerHTML={{
+                    __html: props.tag,
+                  }}
+                />
+                <div
+                  className="title mb-1"
+                  dangerouslySetInnerHTML={{
+                    __html: props.title,
+                  }}
+                />
+                <div
+                  className="From mb-3"
+                  dangerouslySetInnerHTML={{
+                    __html: props.From,
+                  }}
+                />
+                <div
+                  className="price mb-2"
+                  dangerouslySetInnerHTML={{
+                    __html: props.price,
+                  }}
+                />
+                <div className="Button-Container">
+                  <BlueButton text={e} />
+                </div>
+                <img src={props.image2} alt="" className="helmet" />{" "}
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </Col>
       </Row>
     </Container>

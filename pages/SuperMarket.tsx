@@ -1,5 +1,10 @@
 import React from "react";
 
+import Featured, {
+  IProps as FeaturedProps,
+} from "../Components/Featured/Featured";
+import FeaturedData from "../Components/Featured/Featured.json";
+
 import Hedder2, { IProps as Hedder2Props } from "../Components/Hedder2/Hedder2";
 import Hedder2Data from "../Components/Hedder2/Hedder2.json";
 
@@ -18,6 +23,7 @@ function SuperMarket() {
         <TopSearch {...(TopSearchData as TopSearchProps)} />
         <Nav5 {...(Nav5Data as Nav5Props)} />
         <Hedder2 {...(Hedder2Data as Hedder2Props)} />
+        <Featured {...(FeaturedData as FeaturedProps)} />
       </div>
     </div>
   );
