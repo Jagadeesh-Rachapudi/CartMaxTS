@@ -1,0 +1,158 @@
+.MarketItem-Body {
+  background-color: white;
+  width: fit-content;
+  position: relative;
+  .Icons {
+    position: absolute;
+    z-index: +1;
+    margin-top: 9rem;
+    margin-left: 4rem;
+    display: flex;
+    opacity: 0;
+    transition: 0.5s;
+    .icon {
+      background-color: white;
+      height: 2rem;
+      width: 2rem;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .icon:hover,
+    .active-icon {
+      background-color: #0170dc;
+      color: white;
+    }
+
+    .icon1 {
+      margin-left: 0.3rem;
+      margin-top: 0.25rem;
+    }
+    .icon2 {
+      margin-left: 0.35rem;
+      margin-top: 0.2rem;
+    }
+    .icon3 {
+      margin-left: 0.35rem;
+      margin-top: 0.3rem;
+    }
+    .icon4 {
+      margin-left: 0.35rem;
+      margin-top: 0.25rem;
+    }
+  }
+  .image-Container:hover {
+    .Icons {
+      transition: 0.5s;
+      opacity: +1;
+    }
+  }
+  .tags {
+    position: absolute;
+    z-index: +1;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 1.3rem;
+    margin-top: 1.5rem;
+    .tag1 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #ffffff;
+      background-color: #3bb77e;
+      padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+      width: fit-content;
+    }
+    .drop {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      background-color: #ff541f;
+      color: #ffffff;
+      padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+      width: fit-content;
+    }
+  }
+  .img {
+    position: relative;
+    padding: 1rem;
+  }
+  img:hover + article {
+    display: none;
+  }
+  .above-title {
+    margin-left: 1rem;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0170dc;
+  }
+  .title2 {
+    margin-left: 1rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: -0.01em;
+    color: #333e48;
+  }
+  .Stars-Count {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    .Count {
+      margin-top: 0.3rem;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 19px;
+      color: #a0a0a0;
+    }
+  }
+  .prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    .price1 {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: -0.01em;
+      color: #006fdc;
+    }
+    .price2 {
+      margin-top: 0.3rem;
+      font-family: "Jost";
+      font-size: 12px;
+      line-height: 14px;
+      text-decoration-line: line-through;
+      color: #7e7e7e;
+      margin-left: -1rem;
+    }
+    .time {
+      margin-top: 0.2rem;
+      font-family: "Jost";
+      font-size: 14px;
+      line-height: 16px;
+      color: #6881a1;
+    }
+  }
+}

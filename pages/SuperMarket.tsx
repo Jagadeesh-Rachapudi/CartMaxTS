@@ -11,6 +11,9 @@ import Hedder2Data from "../Components/Hedder2/Hedder2.json";
 import Nav5, { IProps as Nav5Props } from "../Components/Nav5/Nav5";
 import Nav5Data from "../Components/Nav5/Nav5.json";
 
+import Popular, { IProps as PopularProps } from "../Components/Popular/Popular";
+import PopularData from "../Components/Popular/Popular.json";
+
 import TopSearch, {
   IProps as TopSearchProps,
 } from "../Components/TopSearch/TopSearch";
@@ -24,6 +27,7 @@ function SuperMarket() {
         <Nav5 {...(Nav5Data as Nav5Props)} />
         <Hedder2 {...(Hedder2Data as Hedder2Props)} />
         <Featured {...(FeaturedData as FeaturedProps)} />
+        <Popular {...(PopularData as PopularProps)} />
       </div>
     </div>
   );

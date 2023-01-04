@@ -19,6 +19,7 @@ import "../Utils/NewsArticle2/NewsArticle2.scss";
 import "../Utils/GradiantButton/GradiantButton.scss";
 import "../Utils/BlueButton/BlueButton.scss";
 import "../Utils/ColorCard/ColorCard.scss";
+import "../Utils/MarketItem/MarketItem.scss"
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -65,6 +66,7 @@ import "../Components/TopSearch/TopSearch.scss";
 import "../Components/Nav5/Nav5.scss";
 import "../Components/Hedder2/Hedder2.scss";
 import "../Components/Featured/Featured.scss";
+import "../Components/Popular/Popular.scss"
 
 import type { AppProps } from "next/app";
 

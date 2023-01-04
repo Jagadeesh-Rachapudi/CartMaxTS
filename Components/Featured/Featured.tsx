@@ -7,6 +7,13 @@ import Card from "react-bootstrap/Card";
 export interface IProps {
   tag: string;
   title: string;
+  cardtitle1: string;
+  cardtitle2: string;
+  cardtitle3: string;
+  Cardtext1: string;
+  Cardtext2: string;
+  Cardtext3: string;
+  Cardtext4: string;
   cards: {
     src: string;
     title2: string;
@@ -73,29 +80,57 @@ function Featured(props: IProps) {
             <div className="Container-Box mt-5 mb-5 ">
               <Card className="Card1 rounded  m-1 ">
                 <Card.Body className="Card1-content">
-                  <div className="title2 mb-1 ">LOVE YOUR WATCH</div>
-                  <div className="text1">items as low as US $6.99!</div>
-                  <div className="text2">
-                    Receive a free Gift with every order
-                  </div>
+                  <div
+                    className="title2 mb-1 "
+                    dangerouslySetInnerHTML={{
+                      __html: props.cardtitle1,
+                    }}
+                  />
+                  <div
+                    className="text1"
+                    dangerouslySetInnerHTML={{
+                      __html: props.Cardtext1,
+                    }}
+                  />
+                  <div
+                    className="text2"
+                    dangerouslySetInnerHTML={{
+                      __html: props.Cardtext2,
+                    }}
+                  />
                 </Card.Body>
               </Card>
               <Card className="Card2 rounded m-1 ">
                 <Card.Body className="Card2-content">
-                  <div className="title3 mb-2 ">
-                    NAILS WORTH <br /> FLAUNTING
-                  </div>
-                  <div className="text2">
-                    Fashion Nails <br /> everywhere you go
-                  </div>
+                  <div
+                    className="title3 mb-2 "
+                    dangerouslySetInnerHTML={{
+                      __html: props.cardtitle2,
+                    }}
+                  />
+                  <div
+                    className="text2"
+                    dangerouslySetInnerHTML={{
+                      __html: props.Cardtext3,
+                    }}
+                  />
                 </Card.Body>
               </Card>
               <Card className="Card3 rounded m-1 ">
                 <Card.Body className="Card3-content">
-                  <div className="text mb-2">BRAND ZONE</div>
-                  <div className="title4">
-                    FEATURED BRANDS <br /> ALL STARS
-                  </div>
+                  <div
+                    className="text mb-2"
+                    dangerouslySetInnerHTML={{
+                      __html: props.Cardtext4,
+                    }}
+                  />
+
+                  <div
+                    className="title4"
+                    dangerouslySetInnerHTML={{
+                      __html: props.cardtitle3,
+                    }}
+                  />
                 </Card.Body>
               </Card>
             </div>

@@ -1,6 +1,14 @@
 {
   "tag": "<p>Hot Categories</p>",
   "title": "<p>Featured Categories<p>",
+  "cardtitle1": "<p>LOVE YOUR WATCH</p>",
+  "cardtitle2": "<p>NAILS WORTH <br /> FLAUNTING</p>",
+  "cardtitle3": "<p>FEATURED BRANDS <br /> ALL STARS</p>",
+  "Cardtext1": "<p>items as low as US $6.99!</p>",
+  "Cardtext2": "<p>Receive a free Gift with every order</p>",
+  "Cardtext3": "<p>Fashion Nails <br /> everywhere you go</p>",
+  "Cardtext4": "<p>BRAND ZONE</p>",
+
   "cards": [
     {
       "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2Fkitchen.png?alt=media&token=841cb8d5-5a77-4922-8a36-39465f2b2f29",

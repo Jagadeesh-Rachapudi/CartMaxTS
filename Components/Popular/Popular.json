@@ -1,0 +1,13 @@
+{
+  "tag": "<p>Hot Categories</p>",
+  "title": "<p>Popular Producs</p>",
+  "Options": [
+    "All",
+    "Miks & Dairies",
+    "Coffes & Teas",
+    "Pet Food",
+    "Meats",
+    "Vegetables",
+    "Fruits"
+  ]
+}
