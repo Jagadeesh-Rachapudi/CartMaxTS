@@ -67,7 +67,8 @@ import "../Components/Nav5/Nav5.scss";
 import "../Components/Hedder2/Hedder2.scss";
 import "../Components/Featured/Featured.scss";
 import "../Components/Popular/Popular.scss";
-import "../Components/Categories2/Categories2.scss"
+import "../Components/Categories2/Categories2.scss";
+import "../Components/Offers/Offers.scss";
 
 import type { AppProps } from "next/app";
 

@@ -21,9 +21,9 @@ export interface IProps {
 
 function Categories2(props: IProps) {
   return (
-    <Container className="Categories2-Body">
+    <Container className="Categories2-Body" fluid="xxl">
       <Row>
-        <Col xs={10} sm={10} lg={10} md={10} xl={10} xxl={10}>
+        <Col xs={12} sm={12} md={12} lg={12} xl={10} xxl={10}>
           <div className="Content">
             <div
               className="tag"
@@ -55,14 +55,24 @@ function Categories2(props: IProps) {
             </div>
           </div>
         </Col>
-        <Col xs={2} sm={2} lg={2} md={2} xl={2} xxl={2}>
+        <Col
+          xs={0}
+          sm={0}
+          lg={0}
+          md={0}
+          xl={2}
+          xxl={2}
+          className="img2-container"
+        >
           <img src={props.add1} alt="" className="img2" />
         </Col>
       </Row>
       <Row>
-        <Col className="d-flex">
-          <img src={props.add2} alt="" className="img3 me-5 " />
-          <img src={props.add3} alt="" className="img4" />
+        <Col>
+          <div className="images-container d-flex">
+            <img src={props.add2} alt="" className="img3 me-5 " />
+            <img src={props.add3} alt="" className="img4" />
+          </div>
         </Col>
       </Row>
     </Container>

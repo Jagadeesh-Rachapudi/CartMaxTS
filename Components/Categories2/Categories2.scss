@@ -1,5 +1,5 @@
 .Categories2-Body {
-  height: 500vh;
+  height: fit-content;
   .tag {
     margin-top: 2rem;
     font-family: "Jost";
@@ -42,11 +42,27 @@
   .item {
     margin: 0.25rem;
   }
-  .img2 {
-    margin-top: 7rem;
+  .img2-container {
+    .img2 {
+      margin-top: 7rem;
+    }
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
-  .img3{
-    width: 70%;
+
+  .images-container {
+    .img3 {
+      width: 70%;
+      @media screen and (max-width: 1200px) {
+        width: 65%;
+      }
+    }
+    .img4 {
+      width: 30%;
+      @media screen and (max-width: 1400px) {
+        width: 25%;
+      }
+    }
   }
-  
 }
