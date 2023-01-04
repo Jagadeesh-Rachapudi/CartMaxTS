@@ -9,6 +9,10 @@
     height: 3rem;
   }
   .nav1 {
+    margin-right: 3rem;
+    @media screen and (max-width: 1067px) {
+      margin-right: 1rem;
+    }
     @media screen and (max-width: 992px) {
       display: none !important ;
     }
@@ -17,10 +21,10 @@
     display: none !important;
     @media screen and (max-width: 992px) {
       display: flex !important;
-      margin-left: 30% !important;
+      justify-content: center !important;
     }
     @media screen and (max-width: 390px) {
-      margin-left: 10% !important;
+      // margin-left: 10% !important;
     }
   }
   .dot {
@@ -58,8 +62,13 @@
   .hotline {
     margin: auto !important;
     display: flex !important;
+    justify-content: center !important;
     @media screen and (max-width: 610px) {
       display: none !important;
     }
+  }
+  .col2 {
+    display: flex !important;
+    justify-content: center !important;
   }
 }
