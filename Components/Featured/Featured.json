@@ -1,28 +1,48 @@
 {
-    "tag": "<p>JACKET &amp; COAST</p>",
-    "title": "<p>Our Categories</p>",
-    "names": [
-      "<p>Nike Just Do it</p>",
-      "<p>Adidas Shoes</p>",
-      "<p>Sports Brands</p>",
-      "<p>ADV Shoes</p>"
-    ],
-    "TimmerTag": "<p>SHOES</p>",
-    "Hedding": "<p>Nike Air Max 90/1</p>",
-    "Content": "<p>Step into a new realm of Air with the Nike Air Max Zephyr. It brings the soft cushioning of visible of Air with the Nike Air Max Zephyr. It brings the&nbsp;</p>",
-    "DAYS": "<p>DAYS</p>",
-    "HOURS": "<p>HOURS</p>",
-    "MINUTES": "<p>MINITES</p>",
-    "SECONDS": "<p>SECONDS</p>",
-    "Button1": "<p>EXPLORE MORE</p>",
-    "CardHedding": "<p>Nike Air <br /> Max Zephyr</p>",
-    "CardTag": "<p>SPRING SALE 20% OFF</p>",
-    "ShoesImages": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fzoom-fly-flyknit-running-shoe-B3BBnm%20(1).png?alt=media&token=65f4879e-9656-46c8-a7e5-21acb69dd3d9",
-    "ColorsText": "<p>Color:</p>",
-    "Price1": "<p>89.00$</p>",
-    "Price2": "<p>80.00$</p>",
-    "Size": "<p>Size:</p>",
-    "UK": "<p>UK 5.5</p>",
-    "Button2": "<p>ADD TO CART</p>"
-  }
-  
+  "tag": "<p>Hot Categories</p>",
+  "title": "<p>Featured Categories<p>",
+  "cards": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2Fkitchen.png?alt=media&token=841cb8d5-5a77-4922-8a36-39465f2b2f29",
+      "title2": "<p>Home & Kitchen</p>",
+      "color1": "#F2FCE4",
+      "color2": "#E3FBC2",
+      "Count": "26 items"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2Fclothes.png?alt=media&token=a01aac3e-20dc-41cd-ad6b-d05a9aececc3",
+      "title2": "<p>Fashion</p>",
+      "color1": "#FFFCEB",
+      "color2": "#FBF5D3",
+      "Count": "26 items"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2Ffashion.png?alt=media&token=0e05d08b-a96a-4d6e-b36a-17e7077357b2",
+      "title2": "<p>Shoes & Outdoor</p>",
+      "color1": "#ECFFEC",
+      "color2": "#CDFFCD",
+      "Count": "26 items"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2Fgadgets.png?alt=media&token=a37d8309-1731-462b-8255-867218af278a",
+      "title2": "<p>Electronics</p>",
+      "color1": "#FEEFEA",
+      "color2": "#FDE1D7",
+      "Count": "26 items"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2Fcosmetics.png?alt=media&token=c578cd90-5fa9-4769-8f8a-caaac9a1af8f",
+      "title2": "<p>Cosmetics</p>",
+      "color1": "#FFF3FF",
+      "color2": "#FEE1FE",
+      "Count": "26 items"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2Fjewelry.png?alt=media&token=956f69b9-d233-4b23-b917-5aa3ed9b3ce6",
+      "title2": "<p>Watch & Jewellry</p>",
+      "color1": "#F2FCE4",
+      "color2": "#E3FBC2",
+      "Count": "26 items"
+    }
+  ]
+}
