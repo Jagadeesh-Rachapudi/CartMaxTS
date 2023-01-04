@@ -1,5 +1,10 @@
 import React from "react";
 
+import Categories2, {
+  IProps as Categories2Props,
+} from "../Components/Categories2/Categories2";
+import Categories2Data from "../Components/Categories2/Categories2.json";
+
 import Featured, {
   IProps as FeaturedProps,
 } from "../Components/Featured/Featured";
@@ -28,6 +33,7 @@ function SuperMarket() {
         <Hedder2 {...(Hedder2Data as Hedder2Props)} />
         <Featured {...(FeaturedData as FeaturedProps)} />
         <Popular {...(PopularData as PopularProps)} />
+        <Categories2 {...(Categories2Data as Categories2Props)} />
       </div>
     </div>
   );

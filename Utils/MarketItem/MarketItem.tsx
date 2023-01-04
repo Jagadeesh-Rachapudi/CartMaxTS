@@ -20,7 +20,7 @@ export interface IProps {
 function MarketItem(props: IProps) {
   const [selected, setSelected] = useState(0);
   return (
-    <div className="MarketItem-Body">
+    <div className="MarketItem-Body rounded ">
       <div className="tags">
         <div
           className="tag1 rounded"

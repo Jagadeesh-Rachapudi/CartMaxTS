@@ -1,0 +1,52 @@
+.Categories2-Body {
+  height: 500vh;
+  .tag {
+    margin-top: 2rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: #0170dc;
+    border: 2px solid #0170dc;
+    width: fit-content;
+    border-radius: 25px;
+  }
+  .title {
+    font-family: "Jost";
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: -0.01em;
+    color: #333e48;
+  }
+  a {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #0170dc;
+    margin-left: auto;
+  }
+  .Container-Box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+  .item {
+    margin: 0.25rem;
+  }
+  .img2 {
+    margin-top: 7rem;
+  }
+  .img3{
+    width: 70%;
+  }
+  
+}
