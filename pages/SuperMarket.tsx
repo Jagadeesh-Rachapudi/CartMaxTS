@@ -46,15 +46,35 @@ function SuperMarket() {
     <div>
       <div>
         <TopSearch {...(TopSearchData as TopSearchProps)} />
+      </div>
+      <div>
         <Nav5 {...(Nav5Data as Nav5Props)} />
+      </div>
+      <div id="#home4">
         <Hedder2 {...(Hedder2Data as Hedder2Props)} />
+      </div>
+      <div id="#Features4">
         <Featured {...(FeaturedData as FeaturedProps)} />
+      </div>
+      <div id="#Blog4">
         <Popular {...(PopularData as PopularProps)} />
+      </div>
+      <div>
         <Categories2 {...(Categories2Data as Categories2Props)} />
+      </div>
+      <div>
         <Offers {...(OffersData as OffersProps)} />
+      </div>
+      <div id="#Pages4">
         <Smart {...(SmartData as SmartProps)} />
+      </div>
+      <div>
         <Timmer3 {...(Timmer3Data as Timmer3Props)} />
+      </div>
+      <div>
         <BestSellers {...(BestSellersData as BestSellersProps)} />
+      </div>
+      <div id="#ContactUS4">
         <Footer4 {...(Footer4Data as Footer4Props)} />
       </div>
     </div>

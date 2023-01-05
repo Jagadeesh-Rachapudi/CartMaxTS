@@ -47,7 +47,7 @@ function Nav5(props: IProps) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
-                    <Nav.Link href="#home" className="Nav-Link">
+                    <Nav.Link href="#home4" className="Nav-Link">
                       {props.Home}
                     </Nav.Link>
                     <NavDropdown
@@ -55,7 +55,7 @@ function Nav5(props: IProps) {
                       id="basic-nav-dropdown"
                       className="Nav-Link"
                     >
-                      <NavDropdown.Item href="#About Us">
+                      <NavDropdown.Item href="#AboutUs4">
                         {props.AboutUS}
                       </NavDropdown.Item>
                     </NavDropdown>
@@ -64,7 +64,7 @@ function Nav5(props: IProps) {
                       id="basic-nav-dropdown"
                       className="Nav-Link"
                     >
-                      <NavDropdown.Item href="#Blog">
+                      <NavDropdown.Item href="#Blog4">
                         {props.Blog}
                       </NavDropdown.Item>
                     </NavDropdown>
@@ -73,14 +73,14 @@ function Nav5(props: IProps) {
                       id="basic-nav-dropdown"
                       className="Nav-Link"
                     >
-                      <NavDropdown.Item href="#Pages">
+                      <NavDropdown.Item href="#Pages4">
                         {props.Pages}
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#Features" className="Nav-Link">
+                    <Nav.Link href="#Features4" className="Nav-Link">
                       {props.Features}
                     </Nav.Link>
-                    <Nav.Link href="#ContactUS" className="Nav-Link">
+                    <Nav.Link href="#ContactUS4" className="Nav-Link">
                       {props.ContactUS}
                     </Nav.Link>
                   </Nav>

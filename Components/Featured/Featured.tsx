@@ -77,7 +77,7 @@ function Featured(props: IProps) {
         </Row>
         <Row>
           <Col>
-            <div className="Container-Box mt-5 mb-5 ">
+            <div id="#AboutUs4" className="Container-Box mt-5 mb-5 ">
               <Card className="Card1 rounded  m-1 ">
                 <Card.Body className="Card1-content">
                   <div
