@@ -1,5 +1,10 @@
 import React from "react";
 
+import BestSellers, {
+  IProps as BestSellersProps,
+} from "../Components/BestSellers/BestSellers";
+import BestSellersData from "../Components/BestSellers/BestSellers.json";
+
 import Categories2, {
   IProps as Categories2Props,
 } from "../Components/Categories2/Categories2";
@@ -46,6 +51,7 @@ function SuperMarket() {
         <Offers {...(OffersData as OffersProps)} />
         <Smart {...(SmartData as SmartProps)} />
         <Timmer3 {...(Timmer3Data as Timmer3Props)} />
+        <BestSellers {...(BestSellersData as BestSellersProps)} />
       </div>
     </div>
   );

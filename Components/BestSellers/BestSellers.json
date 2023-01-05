@@ -1,0 +1,13 @@
+{
+  "tag": "<p>Hot Categories</p>",
+  "title": "<p>Bestseller Products</p>",
+  "dummy": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  "dummy2": ["1", "2", "3", "4"],
+  "adds": [
+    "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2F1.png?alt=media&token=582da6d8-98fb-4a95-9836-d704eb842b58",
+    "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2F2.png?alt=media&token=728719ac-9a17-4246-ba13-eefd6a9f2de3",
+    "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2F3.png?alt=media&token=7ef2abac-f13e-4095-9eb3-1830c528b5a8",
+    "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2F4.png?alt=media&token=63278e85-01eb-4e79-8453-f091283142e1",
+    "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2F5.png?alt=media&token=6f54972d-a3d6-44a7-983d-0d291cf97675"
+  ]
+}

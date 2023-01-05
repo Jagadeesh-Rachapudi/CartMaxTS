@@ -1,0 +1,80 @@
+.BestSellers-Body {
+  height: fit-content;
+  .tag {
+    margin-top: 2rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: #0170dc;
+    border: 2px solid #0170dc;
+    width: fit-content;
+    border-radius: 25px;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+    color: #000000;
+  }
+  .Container-Box {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+  .ads::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cards {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    width: fit-content;
+    margin: auto;
+    .adds {
+      overflow-x: hidden;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .adds > img:nth-child(5) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 860px) {
+    .adds > img:nth-child(4) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 646px) {
+    .adds > img:nth-child(3) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 438px) {
+    .adds > img:nth-child(2) {
+      display: none;
+    }
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.01em;
+    color: #090909;
+    margin-left: 2.25rem;
+  }
+  .container2 {
+    width: 85%;
+  }
+}
