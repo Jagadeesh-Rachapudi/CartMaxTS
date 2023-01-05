@@ -1,0 +1,97 @@
+.SpecialOffer-Body {
+  width: fit-content;
+  .Icons {
+    position: absolute;
+    z-index: +1;
+    margin-top: 4.75rem;
+    margin-left: 2rem;
+    display: flex;
+    opacity: 0;
+    transition: 0.5s;
+    .icon {
+      background-color: white;
+      height: 2rem;
+      width: 2rem;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .icon:hover,
+    .active-icon {
+      background-color: #0170dc;
+      color: white;
+    }
+
+    .icon1 {
+      margin-left: 0.3rem;
+      margin-top: 0.25rem;
+    }
+    .icon2 {
+      margin-left: 0.35rem;
+      margin-top: 0.2rem;
+    }
+    .icon3 {
+      margin-left: 0.35rem;
+      margin-top: 0.3rem;
+    }
+    .icon4 {
+      margin-left: 0.35rem;
+      margin-top: 0.25rem;
+    }
+  }
+  .image-Container:hover {
+    .Icons {
+      transition: 0.5s;
+      opacity: +1;
+    }
+  }
+  .img {
+    padding: 1rem;
+  }
+  .P2 {
+    .tag2 {
+      margin-top: 1.5rem;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13.4px;
+      line-height: 16px;
+      color: #0170dc;
+      margin-bottom: 0.5rem;
+    }
+    .title2 {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: -0.01em;
+      color: #333e48;
+    }
+    .stars-Count {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+      .Count {
+        margin-top: 0.3rem;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        color: #a0a0a0;
+      }
+    }
+    .price {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17.867px;
+      line-height: 26px;
+      color: #006fdc;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.Offers-Body {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%201526.png?alt=media&token=61b55ec1-64be-435d-bc0f-1805642b1db2");
+  height: fit-content;
+  background-size: 100%;
+  .tag {
+    margin-top: 2rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: #0170dc;
+    border: 2px solid #0170dc;
+    width: fit-content;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 51px;
+    letter-spacing: -0.01em;
+    color: #171b1e;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .Options {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    color: #737373;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 759px) {
+      justify-content: unset;
+      flex-wrap: wrap;
+    }
+  }
+  .Option1 {
+    margin-bottom:0.5rem;
+    width: fit-content;
+    cursor: pointer;
+    white-space: nowrap;
+    .UnderLine {
+      height: 0.15rem;
+      width: 100%;
+      border-radius: 25px;
+      background-color: #0170dc;
+      opacity: 0;
+    }
+  }
+  .Option1:hover {
+    color: #0170dc;
+    .UnderLine {
+      opacity: 1;
+    }
+  }
+  .active {
+    color: #0170dc;
+  }
+  .UnderLine2 {
+    height: 0.15rem;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #0170dc;
+    opacity: 1;
+  }
+  .Container-Box {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+}

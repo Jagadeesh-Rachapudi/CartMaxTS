@@ -20,6 +20,7 @@ import "../Utils/GradiantButton/GradiantButton.scss";
 import "../Utils/BlueButton/BlueButton.scss";
 import "../Utils/ColorCard/ColorCard.scss";
 import "../Utils/MarketItem/MarketItem.scss";
+import "../Utils/SpecialOffer/SpecialOffer.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
