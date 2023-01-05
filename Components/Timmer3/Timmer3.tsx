@@ -13,6 +13,7 @@ export interface IProps {
   tag: string;
   title: string;
   dummy: string[];
+  src: string;
 }
 
 function Timmer3(props: IProps) {
@@ -40,13 +41,18 @@ function Timmer3(props: IProps) {
       </Row>
       <Row>
         <Col>
-          <div className="Container-Box">
+          <div className="Container-Box mb-5 ">
             {props.dummy.map((e) => (
               <div key={e} className="m-2">
                 <Deals {...(DealsData as DealProps)} />
               </div>
             ))}
           </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <img src={props.src} alt="" className=" mt-5 w-100" />
         </Col>
       </Row>
     </Container>
