@@ -59,138 +59,136 @@ function Deals(props: IProps) {
   });
   return (
     <div className="Deals-Body">
-      <div className="d-flex">
-        <div className="p1">
+      <div className="p1">
+        <div>
+          <div className=""></div>
+          <div
+            className="tag2"
+            dangerouslySetInnerHTML={{
+              __html: props.tag,
+            }}
+          />
+        </div>
+        <div className="image-Container">
+          <img src={props.src} className="img" />
+        </div>
+      </div>
+      <div className="p2">
+        <div className="stars-Count">
           <div>
-            <div className=""></div>
-            <div
-              className="tag2"
-              dangerouslySetInnerHTML={{
-                __html: props.tag,
-              }}
-            />
+            <div className="stars">
+              <AiFillStar color="gold" />
+              <AiFillStar color="gold" />
+              <AiFillStar color="gold" />
+              <AiFillStar color="gold" />
+              <AiOutlineStar color="grey" />
+            </div>
           </div>
           <div>
-            <img src={props.src} className="img" />
+            <div
+              className="Count"
+              dangerouslySetInnerHTML={{
+                __html: props.Count,
+              }}
+            />
           </div>
         </div>
-        <div className="p2">
-          <div className="stars-Count">
-            <div>
-              <div className="stars">
-                <AiFillStar color="gold" />
-                <AiFillStar color="gold" />
-                <AiFillStar color="gold" />
-                <AiFillStar color="gold" />
-                <AiOutlineStar color="grey" />
-              </div>
-            </div>
-            <div>
-              <div
-                className="Count"
-                dangerouslySetInnerHTML={{
-                  __html: props.Count,
-                }}
-              />
-            </div>
-          </div>
-          <div>
+        <div>
+          <div
+            className="title2"
+            dangerouslySetInnerHTML={{
+              __html: props.title2,
+            }}
+          />
+        </div>
+        <div>
+          <div className="prices">
             <div
-              className="title2"
+              className="price"
               dangerouslySetInnerHTML={{
-                __html: props.title2,
+                __html: props.price,
+              }}
+            />
+            <div
+              className="price2"
+              dangerouslySetInnerHTML={{
+                __html: props.price2,
               }}
             />
           </div>
-          <div>
-            <div className="prices">
+        </div>
+        <hr />
+        <div>
+          <div
+            className="Sub-Title"
+            dangerouslySetInnerHTML={{
+              __html: props.Subtitle,
+            }}
+          />
+        </div>
+        <div>
+          <div className="time">
+            <div className="hrs-box">
+              <div className="hrs">{hrs}</div>
               <div
-                className="price"
+                className="text"
                 dangerouslySetInnerHTML={{
-                  __html: props.price,
+                  __html: props.hrs,
                 }}
               />
+            </div>
+            <div
+              className="colon"
+              dangerouslySetInnerHTML={{
+                __html: props.Colon,
+              }}
+            />
+            <div className="hrs-box">
+              <div className="hrs">{min}</div>
               <div
-                className="price2"
+                className=" ms-2 text"
                 dangerouslySetInnerHTML={{
-                  __html: props.price2,
+                  __html: props.mins,
+                }}
+              />
+            </div>
+            <div
+              className="colon"
+              dangerouslySetInnerHTML={{
+                __html: props.Colon,
+              }}
+            />
+            <div className="hrs-box">
+              <div className="hrs">{sec}</div>
+              <div
+                className=" ms-2 text"
+                dangerouslySetInnerHTML={{
+                  __html: props.secs,
                 }}
               />
             </div>
           </div>
-          <hr />
-          <div>
+        </div>
+        <div>
+          <div className="Counts">
             <div
-              className="Sub-Title"
+              className="Count1"
               dangerouslySetInnerHTML={{
-                __html: props.Subtitle,
+                __html: props.Count1,
+              }}
+            />
+            <div
+              className="Count2"
+              dangerouslySetInnerHTML={{
+                __html: props.Count2,
               }}
             />
           </div>
-          <div>
-            <div className="time">
-              <div className="hrs-box">
-                <div className="hrs">{hrs}</div>
-                <div
-                  className="text"
-                  dangerouslySetInnerHTML={{
-                    __html: props.hrs,
-                  }}
-                />
-              </div>
-              <div
-                className="colon"
-                dangerouslySetInnerHTML={{
-                  __html: props.Colon,
-                }}
-              />
-              <div className="hrs-box">
-                <div className="hrs">{min}</div>
-                <div
-                  className=" ms-2 text"
-                  dangerouslySetInnerHTML={{
-                    __html: props.mins,
-                  }}
-                />
-              </div>
-              <div
-                className="colon"
-                dangerouslySetInnerHTML={{
-                  __html: props.Colon,
-                }}
-              />
-              <div className="hrs-box">
-                <div className="hrs">{sec}</div>
-                <div
-                  className=" ms-2 text"
-                  dangerouslySetInnerHTML={{
-                    __html: props.secs,
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="Counts">
-              <div
-                className="Count1"
-                dangerouslySetInnerHTML={{
-                  __html: props.Count1,
-                }}
-              />
-              <div
-                className="Count2"
-                dangerouslySetInnerHTML={{
-                  __html: props.Count2,
-                }}
-              />
-            </div>
-          </div>
-          <div>
-            <div className="progress">
-              <div className="progress-bar" role="progressbar">
-                <span className="sr-only"></span>
-              </div>
+        </div>
+        <div>
+          <div className="progress">
+            <div className="progress-bar" role="progressbar">
+              <span className="sr-only"></span>
             </div>
           </div>
         </div>

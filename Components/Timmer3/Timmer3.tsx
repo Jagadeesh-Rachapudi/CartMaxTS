@@ -10,13 +10,8 @@ import Deals, { IProps as DealProps } from "../../Utils/Deals/Deals";
 import DealsData from "../../Utils/Deals/Deals.json";
 
 export interface IProps {
-  src: string;
-  DropDownktext: string;
-  Option1: string;
-  Option2: string;
-  Search: string;
-  Cart: string;
-  Price: string;
+  tag: string;
+  title: string;
   dummy: string[];
 }
 
@@ -25,12 +20,22 @@ function Timmer3(props: IProps) {
     <Container className="Timmer3-Body">
       <Row>
         <Col>
-          <div className="tag">Hot Categories</div>
+          <div
+            className="tag"
+            dangerouslySetInnerHTML={{
+              __html: props.tag,
+            }}
+          />
         </Col>
       </Row>
       <Row>
         <Col>
-          <div className="title">Deals of the Week</div>
+          <div
+            className="title"
+            dangerouslySetInnerHTML={{
+              __html: props.title,
+            }}
+          />
         </Col>
       </Row>
       <Row>
