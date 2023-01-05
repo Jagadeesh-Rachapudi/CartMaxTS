@@ -22,6 +22,9 @@ import OffersData from "../Components/Offers/Offers.json";
 import Popular, { IProps as PopularProps } from "../Components/Popular/Popular";
 import PopularData from "../Components/Popular/Popular.json";
 
+import Smart, { IProps as SmartProps } from "../Components/Smart/Smart";
+import SmartData from "../Components/Smart/Smart.json";
+
 import TopSearch, {
   IProps as TopSearchProps,
 } from "../Components/TopSearch/TopSearch";
@@ -38,6 +41,7 @@ function SuperMarket() {
         <Popular {...(PopularData as PopularProps)} />
         <Categories2 {...(Categories2Data as Categories2Props)} />
         <Offers {...(OffersData as OffersProps)} />
+        <Smart {...(SmartData as SmartProps)} />
       </div>
     </div>
   );

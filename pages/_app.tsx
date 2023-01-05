@@ -70,6 +70,7 @@ import "../Components/Featured/Featured.scss";
 import "../Components/Popular/Popular.scss";
 import "../Components/Categories2/Categories2.scss";
 import "../Components/Offers/Offers.scss";
+import "../Components/Smart/Smart.scss";
 
 import type { AppProps } from "next/app";
 
