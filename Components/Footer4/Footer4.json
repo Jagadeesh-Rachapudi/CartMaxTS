@@ -1,0 +1,24 @@
+{
+  "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/SM%2FLogo.png?alt=media&token=7cfa3b3f-ba00-4a20-9e1f-bcd40af1d3f9",
+  "text": "<p>Orci varius nato que penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel nisi lorem. Donec dignissim non est ut pulvinar. Dlobortis metus libero commodo rhon cusnunc libero tarcu.</p>",
+  "hedding1": "<p>Buyer Central</p>",
+  "hedding2": "<p>Information</p>",
+  "hedding3": "<p>Contact info</p>",
+  "addr1": "<p>1789 Street Name, City Name, United States</p>",
+  "addr2": "<p>0092 - 123 455 789 +123 958 789</p>",
+  "addr3": "<p>Email: support@Cartmax.com 9AM-5PM, Mon - Sat, GMT+3</p>",
+  "Links1": [
+    "Sign in",
+    "Buyer Protection",
+    "Payment Options",
+    "Shipping Policy",
+    "Return Policy"
+  ],
+  "Links2": [
+    "About Us",
+    "Band of Trust",
+    "Market History",
+    "News",
+    "Contact us"
+  ]
+}

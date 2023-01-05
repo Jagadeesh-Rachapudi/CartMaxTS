@@ -74,6 +74,7 @@ import "../Components/Offers/Offers.scss";
 import "../Components/Smart/Smart.scss";
 import "../Components/Timmer3/Timmer3.scss";
 import "../Components/BestSellers/BestSellers.scss";
+import "../Components/Footer4/Footer4.scss";
 
 import type { AppProps } from "next/app";
 

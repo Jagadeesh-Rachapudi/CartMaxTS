@@ -15,6 +15,9 @@ import Featured, {
 } from "../Components/Featured/Featured";
 import FeaturedData from "../Components/Featured/Featured.json";
 
+import Footer4, { IProps as Footer4Props } from "../Components/Footer4/Footer4";
+import Footer4Data from "../Components/Footer4/Footer4.json";
+
 import Hedder2, { IProps as Hedder2Props } from "../Components/Hedder2/Hedder2";
 import Hedder2Data from "../Components/Hedder2/Hedder2.json";
 
@@ -52,6 +55,7 @@ function SuperMarket() {
         <Smart {...(SmartData as SmartProps)} />
         <Timmer3 {...(Timmer3Data as Timmer3Props)} />
         <BestSellers {...(BestSellersData as BestSellersProps)} />
+        <Footer4 {...(Footer4Data as Footer4Props)} />
       </div>
     </div>
   );
