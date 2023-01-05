@@ -21,6 +21,7 @@ import "../Utils/BlueButton/BlueButton.scss";
 import "../Utils/ColorCard/ColorCard.scss";
 import "../Utils/MarketItem/MarketItem.scss";
 import "../Utils/SpecialOffer/SpecialOffer.scss";
+import "../Utils/Deals/Deals.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -71,6 +72,7 @@ import "../Components/Popular/Popular.scss";
 import "../Components/Categories2/Categories2.scss";
 import "../Components/Offers/Offers.scss";
 import "../Components/Smart/Smart.scss";
+import "../Components/Timmer3/Timmer3.scss";
 
 import type { AppProps } from "next/app";
 

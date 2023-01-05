@@ -25,6 +25,9 @@ import PopularData from "../Components/Popular/Popular.json";
 import Smart, { IProps as SmartProps } from "../Components/Smart/Smart";
 import SmartData from "../Components/Smart/Smart.json";
 
+import Timmer3, { IProps as Timmer3Props } from "../Components/Timmer3/Timmer3";
+import Timmer3Data from "../Components/Timmer3/Timmer3.json";
+
 import TopSearch, {
   IProps as TopSearchProps,
 } from "../Components/TopSearch/TopSearch";
@@ -42,6 +45,7 @@ function SuperMarket() {
         <Categories2 {...(Categories2Data as Categories2Props)} />
         <Offers {...(OffersData as OffersProps)} />
         <Smart {...(SmartData as SmartProps)} />
+        <Timmer3 {...(Timmer3Data as Timmer3Props)} />
       </div>
     </div>
   );
