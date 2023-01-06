@@ -54,12 +54,14 @@
 
   .images-container {
     .img3 {
+      cursor: pointer;
       width: 70%;
       @media screen and (max-width: 1200px) {
         width: 65%;
       }
     }
     .img4 {
+      cursor: pointer;
       width: 75%;
       @media screen and (max-width: 1400px) {
         width: 70%;

@@ -72,12 +72,8 @@ function Categories2(props: IProps) {
       <Row>
         <Col>
           <div className="images-container d-flex">
-            <a href="#">
-              <img src={props.add2} alt="" className="img3 me-5 " />
-            </a>
-            <a href="#">
-              <img src={props.add3} alt="" className="img4" />
-            </a>
+            <img src={props.add2} alt="" className="img3 me-5 " />
+            <img src={props.add3} alt="" className="img4" />
           </div>
         </Col>
       </Row>
