@@ -18,7 +18,7 @@ export interface IProps {
 }
 function Hedder2(props: IProps) {
   return (
-    <Container className="Hedder2-Body" fluid>
+    <Container className="Hedder2-Body" fluid id="home4">
       <Row>
         <Col className=" add p-0" xs={0} sm={0} md={0} lg={0} xl={3} xxl={3}>
           <img src={props.image1} alt="" className="img1" />

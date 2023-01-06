@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Dropdown from "react-bootstrap/Dropdown";
 import { BsBag } from "react-icons/bs";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Button from "react-bootstrap/Button";
+import Nav from "react-bootstrap/Nav";
 
 export interface IProps {
   src: string;
@@ -14,9 +17,13 @@ export interface IProps {
   Search: string;
   Cart: string;
   Price: string;
+  cartitems: string[];
 }
 
 function TopSearch(props: IProps) {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div className="TopSearch-Body">
       <Container className="pt-3" fluid>
@@ -48,17 +55,33 @@ function TopSearch(props: IProps) {
               ></input>
               <button className="">{props.Search}</button>
             </form>
+
             <div className="d-flex flex-row mt-2">
               <BsBag
                 color="white"
                 className="cart mt-auto mb-auto me-2 "
                 size={40}
+                onClick={handleShow}
               />
               <div className=" mt-auto mb-auto ms-2 ">
                 <div className="title">{props.Search}</div>
                 <article className="price">{props.Price}</article>
               </div>
             </div>
+            <Offcanvas show={show} onHide={handleClose} placement="end">
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>
+                  <h1>Cart</h1>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                {props.cartitems.map((e, i) => (
+                  <Nav.Link className="mb-3" key={i}>
+                    {e}
+                  </Nav.Link>
+                ))}
+              </Offcanvas.Body>
+            </Offcanvas>
           </Col>
         </Row>
         <Row>

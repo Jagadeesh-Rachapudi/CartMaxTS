@@ -50,13 +50,13 @@ function SuperMarket() {
       <div>
         <Nav5 {...(Nav5Data as Nav5Props)} />
       </div>
-      <div id="#home4">
+      <div>
         <Hedder2 {...(Hedder2Data as Hedder2Props)} />
       </div>
-      <div id="#Features4">
+      <div id="Features4">
         <Featured {...(FeaturedData as FeaturedProps)} />
       </div>
-      <div id="#Blog4">
+      <div id="Blog4">
         <Popular {...(PopularData as PopularProps)} />
       </div>
       <div>
@@ -65,7 +65,7 @@ function SuperMarket() {
       <div>
         <Offers {...(OffersData as OffersProps)} />
       </div>
-      <div id="#Pages4">
+      <div id="Pages4">
         <Smart {...(SmartData as SmartProps)} />
       </div>
       <div>
@@ -74,7 +74,7 @@ function SuperMarket() {
       <div>
         <BestSellers {...(BestSellersData as BestSellersProps)} />
       </div>
-      <div id="#ContactUS4">
+      <div id="ContactUS4">
         <Footer4 {...(Footer4Data as Footer4Props)} />
       </div>
     </div>

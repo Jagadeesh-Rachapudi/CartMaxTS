@@ -13,6 +13,7 @@ import SpecialOfferData from "../../Utils/SpecialOffer/SpecialOffer.json";
 export interface IProps {
   tag: string;
   title: string;
+  title2: string;
   dummy: string[];
   dummy2: string[];
   adds: string[];
@@ -58,11 +59,11 @@ function BestSellers(props: IProps) {
         <Row>
           <Col>
             <Card className="cards  ">
-              <div className="m-auto adds ">
+              <a href="#" className="m-auto adds ">
                 {props.adds.map((e, i) => (
                   <img key={i} src={e} alt="" className="img" />
                 ))}
-              </div>
+              </a>
             </Card>
           </Col>
         </Row>
@@ -70,15 +71,24 @@ function BestSellers(props: IProps) {
       <Container className=" container2 mt-5" fluid>
         <Row>
           <Col>
-            <div className="title">Recently Viewed Products</div>
+            <div
+              className="title"
+              dangerouslySetInnerHTML={{
+                __html: props.title2,
+              }}
+            />
           </Col>
         </Row>
         <Row>
           <Col>
-            <div className="Container-Box">
+            <div className="Container-Box2">
               {props.dummy2.map((i) => (
                 <div key={i}>
-                  <SpecialOffer {...(SpecialOfferData as SpecialOfferProps)} />
+                  <div className="item">
+                    <SpecialOffer
+                      {...(SpecialOfferData as SpecialOfferProps)}
+                    />
+                  </div>
                 </div>
               ))}
             </div>

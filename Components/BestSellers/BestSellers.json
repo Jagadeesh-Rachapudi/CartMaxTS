@@ -1,6 +1,7 @@
 {
   "tag": "<p>Hot Categories</p>",
   "title": "<p>Bestseller Products</p>",
+  "title2": "<p>Recently Viewed Products</p>",
   "dummy": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
   "dummy2": ["1", "2", "3", "4"],
   "adds": [

@@ -64,14 +64,20 @@ function Categories2(props: IProps) {
           xxl={2}
           className="img2-container"
         >
-          <img src={props.add1} alt="" className="img2" />
+          <a href="#">
+            <img src={props.add1} alt="" className="img2" />
+          </a>
         </Col>
       </Row>
       <Row>
         <Col>
           <div className="images-container d-flex">
-            <img src={props.add2} alt="" className="img3 me-5 " />
-            <img src={props.add3} alt="" className="img4" />
+            <a href="#">
+              <img src={props.add2} alt="" className="img3 me-5 " />
+            </a>
+            <a href="#">
+              <img src={props.add3} alt="" className="img4" />
+            </a>
           </div>
         </Col>
       </Row>
