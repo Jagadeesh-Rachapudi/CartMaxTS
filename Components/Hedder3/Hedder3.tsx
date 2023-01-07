@@ -9,11 +9,8 @@ import BrownButton from "../../Utils/BrownButton/BrownButton";
 export interface IProps {
   tag: string;
   title: string;
-  hedding1: string;
-  hedding2: string;
-  hedding3: string;
   text: string;
-  addimg: string;
+  ButtonText: string;
 }
 
 function Hedder3(props: IProps) {
@@ -30,20 +27,30 @@ function Hedder3(props: IProps) {
           xxl={8}
         >
           <div>
-            <div className="title">
-              HEUER <br /> CAMARO
-            </div>
+            <div
+              className="title"
+              dangerouslySetInnerHTML={{
+                __html: props.title,
+              }}
+            />
             <div className="d-flex justify-content-center">
               <div className="underline"></div>
-              <div className="tag">UP TO 40% OFF</div>
+              <div
+                className="tag"
+                dangerouslySetInnerHTML={{
+                  __html: props.tag,
+                }}
+              />
               <div className="underline"></div>
             </div>
-            <div className="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt
-            </div>
+            <div
+              className="text"
+              dangerouslySetInnerHTML={{
+                __html: props.text,
+              }}
+            />
             <div className="button">
-              <BrownButton text="EXPLORE MORE" />
+              <BrownButton text={props.ButtonText} />
             </div>
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/Watch%2Fslider1_slide1_01-copyright.png?alt=media&token=b2ed6ecf-9d3c-4fca-b0b4-6feb2e360bf9"

@@ -7,7 +7,12 @@ export interface IProps {
 function BrownButton(props: IProps) {
   return (
     <div className="BrownButton-Body">
-      <button className="Button">{props.text}</button>
+      <button
+        className="Button"
+        dangerouslySetInnerHTML={{
+          __html: props.text,
+        }}
+      />
     </div>
   );
 }
