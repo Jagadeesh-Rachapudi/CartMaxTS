@@ -45,7 +45,7 @@ import BlackWhiteData from "../Components/BlackWhite/BlackWhite.json";
 import Footer1, { IProps as Footer1Props } from "../Components/Footer1/Footer1";
 import Footer1Data from "../Components/Footer1/Footer1.json";
 
-function furniture() {
+function Furniture() {
   return (
     <div>
       <Nav1 {...(Nav1data as Nav1Props)} />
@@ -64,4 +64,4 @@ function furniture() {
   );
 }
 
-export default furniture;
+export default Furniture;

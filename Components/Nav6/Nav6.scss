@@ -1,4 +1,7 @@
-.Nav1-Body {
+.Nav6-Body {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  background-color: #161d25;
   .navbar-Container {
     position: relative;
     .SearchedClicked {
@@ -48,15 +51,41 @@
       border-radius: 0px 10px 10px 0px;
       transition: 0.5s;
     }
-    background-color: #c4c4c4;
+    background-color: #161d25;
     .links {
-      background-color: #c4c4c4;
+      background-color: #161d25;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #f6f7fb;
     }
     .logo > img {
-      @media screen and (max-width: 500px) {
-        width: 150px;
+      @media screen and (max-width: 580px) {
+        width: 130px;
         height: 60px;
       }
+      @media screen and (max-width: 400px) {
+        // width: 100px;
+        // height: 60px;
+      }
+    }
+    .icon1 {
+      margin-top: 0.35rem;
+      background-color: #2a343f;
+      height: 2rem;
+      width: 2rem;
+      padding: 0.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-right: 1rem !important;
+      @media screen and (max-width: 400px) {
+        margin-right: 0.2rem !important;
+      }
+    }
+    .d-lg-none.h-75.mt-2.mb-auto.p-2.bg-transparent.border-0.btn.btn-light {
+      color: white !important;
     }
   }
 }

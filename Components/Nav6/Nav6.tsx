@@ -18,7 +18,7 @@ export interface IProps {
   src: string;
 }
 
-function Nav1(props: IProps) {
+function Nav6(props: IProps) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -40,9 +40,8 @@ function Nav1(props: IProps) {
     event.preventDefault();
     console.log(userData);
   }
-
   return (
-    <div className="Nav1-Body">
+    <div className="Nav6-Body">
       <div className="navbar-Container">
         <Container fluid>
           <Row>
@@ -130,8 +129,9 @@ function Nav1(props: IProps) {
                       <RxCross1 />
                     </button>
                   </form>
-                  <Nav.Link className="me-1 pt-2 me-3">
+                  <Nav.Link className=" icon1 me-1 pt-1 ">
                     <BsSearch
+                      color="white"
                       size={17}
                       className={
                         clicked === true
@@ -144,19 +144,21 @@ function Nav1(props: IProps) {
                       }}
                     />
                   </Nav.Link>
-                  <Nav.Link href="#link" className="me-1 mt-2 me-3">
-                    <BsPerson size={17} />
+                  <Nav.Link href="#link">
+                    <BsPerson
+                      size={17}
+                      color="white"
+                      className=" icon1 me-1 pb-2 "
+                    />
                   </Nav.Link>
 
                   {/* Cart OffCanvas Starts */}
-                  <Button
-                    variant="transparent"
+                  <BsHeart
+                    size={17}
+                    color="white"
                     onClick={handleShow3}
-                    className="p-1 mt-1 "
-                  >
-                    <BsHeart size={17} />
-                  </Button>
-
+                    className=" icon1 me-1 pb-2 "
+                  />
                   <Offcanvas
                     show={show3}
                     onHide={handleClose3}
@@ -172,12 +174,13 @@ function Nav1(props: IProps) {
                     </Offcanvas.Body>
                   </Offcanvas>
                   {/* Cart OffCanvas Ends */}
-
                   {/* Cart OffCanvas Starts */}
-                  <Button variant="transparent" onClick={handleShow2}>
-                    <BsBag size={17} />
-                  </Button>
-
+                  <BsBag
+                    size={17}
+                    color="white"
+                    className=" icon1 me-1 pb-2"
+                    onClick={handleShow2}
+                  />
                   <Offcanvas
                     show={show2}
                     onHide={handleClose2}
@@ -203,4 +206,4 @@ function Nav1(props: IProps) {
   );
 }
 
-export default Nav1;
+export default Nav6;
