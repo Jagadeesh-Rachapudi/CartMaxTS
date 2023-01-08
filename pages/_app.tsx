@@ -78,6 +78,7 @@ import "../Components/Footer4/Footer4.scss";
 
 import "../Components/Nav6/Nav6.scss";
 import "../Components/Hedder3/Hedder3.scss";
+import "../Components/Arrivals/Arrivals.scss";
 
 import type { AppProps } from "next/app";
 

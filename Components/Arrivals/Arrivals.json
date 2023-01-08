@@ -1,0 +1,28 @@
+{
+  "adds": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/Watch%2FLayer%2026.png?alt=media&token=5cf17f60-0953-4da9-b680-b397868e3cad",
+      "title": "<p>Worldwide Shipping</p>",
+      "text": "<p>Get free shipping over $65</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2027.png?alt=media&token=81a066cb-6f1b-46be-82e0-575286ff835a",
+      "title": "<p>Free Returns</p>",
+      "text": "<p>30-days free return policy</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2027.png?alt=media&token=81a066cb-6f1b-46be-82e0-575286ff835a",
+      "title": "<p>Free Returns</p>",
+      "text": "<p>30-days free return policy</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2028.png?alt=media&token=7180759d-67b6-445c-9348-744ed3baf866",
+      "title": "<p>Secured payments</p>",
+      "text": "<p>30-days free return policy</p>"
+    }
+  ],
+  "hedding1": "<p>New Arrivals</p>",
+  "hedding2": "<p>Relax Now, <br /> Pay Later</p>",
+  "tag1": "<p>Ideal Has Never</p>",
+  "tag2": "<p>SHOP NOW</p>"
+}

@@ -11,6 +11,7 @@ export interface IProps {
   title: string;
   text: string;
   ButtonText: string;
+  src: string;
 }
 
 function Hedder3(props: IProps) {
@@ -52,12 +53,7 @@ function Hedder3(props: IProps) {
             <div className="button">
               <BrownButton text={props.ButtonText} />
             </div>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/Watch%2Fslider1_slide1_01-copyright.png?alt=media&token=b2ed6ecf-9d3c-4fca-b0b4-6feb2e360bf9"
-              height={350}
-              width={200}
-              className="img"
-            />
+            <img src={props.src} height={350} width={200} className="img" />
           </div>
         </Col>
         <Col
