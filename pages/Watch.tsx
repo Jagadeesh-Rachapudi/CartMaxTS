@@ -5,6 +5,9 @@ import Arrivals, {
 } from "../Components/Arrivals/Arrivals";
 import ArrivalsData from "../Components/Arrivals/Arrivals.json";
 
+import Black, { IProps as BlackProps } from "../Components/Black/Black";
+import BlackData from "../Components/Black/Black.json";
+
 import Collection, {
   IProps as CollectionProps,
 } from "../Components/Collection/Collection";
@@ -33,6 +36,7 @@ function Watch() {
       <Collection {...(CollectionData as CollectionProps)} />
       <TwoParts {...(TwoPart2Data as TwoPart2props)} />
       <Edition {...(EditionData as EditionProps)} />
+      <Black {...(BlackData as BlackProps)} />
     </div>
   );
 }
