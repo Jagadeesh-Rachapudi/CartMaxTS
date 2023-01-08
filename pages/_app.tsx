@@ -81,6 +81,7 @@ import "../Components/Nav6/Nav6.scss";
 import "../Components/Hedder3/Hedder3.scss";
 import "../Components/Arrivals/Arrivals.scss";
 import "../Components/Collection/Collection.scss";
+import "../Components/TwoParts/TwoParts.scss";
 
 import type { AppProps } from "next/app";
 

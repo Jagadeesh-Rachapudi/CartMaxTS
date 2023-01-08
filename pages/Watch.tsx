@@ -16,6 +16,11 @@ import Hedder3Data from "../Components/Hedder3/Hedder3.json";
 import Nav6, { IProps as Nav6Props } from "../Components/Nav6/Nav6";
 import Nav6Data from "../Components/Nav6/Nav6.json";
 
+import TwoParts, {
+  IProps as TwoPart2props,
+} from "../Components/TwoParts/TwoParts";
+import TwoPart2Data from "../Components/TwoParts/TwoParts.json";
+
 function Watch() {
   return (
     <div>
@@ -23,6 +28,7 @@ function Watch() {
       <Hedder3 {...(Hedder3Data as Hedder3Props)} />
       <Arrivals {...(ArrivalsData as ArrivalsProps)} />
       <Collection {...(CollectionData as CollectionProps)} />
+      <TwoParts {...(TwoPart2Data as TwoPart2props)} />
     </div>
   );
 }

@@ -1,0 +1,131 @@
+.TwoParts-Body {
+  height: fit-content;
+  .dark {
+    background-color: #161d25;
+    height: 100vh;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+    .img-Container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 60%;
+      @media screen and (max-width: 1500px) {
+        margin-left: 50%;
+      }
+      @media screen and (max-width: 1200px) {
+        margin-left: 39%;
+      }
+      @media screen and (max-width: 987px) {
+        margin-left: 22%;
+      }
+      img {
+        height: 70vh;
+      }
+    }
+  }
+  .white {
+    background-color: #f8f7f6;
+    height: 100vh;
+    @media screen and (max-width: 1200px) {
+      height: 70vh;
+    }
+    .content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 25%;
+      @media screen and (max-width: 576px) {
+        margin-left: 5rem;
+      }
+      @media screen and (max-width: 456px) {
+        margin-left: 2rem;
+      }
+    }
+    .sale {
+      background-color: #2cc25d;
+      width: fit-content;
+      padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+      font-family: "Jost";
+      font-size: 13px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+    .tag {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17.045px;
+      line-height: 20px;
+      color: #b38068;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 55px;
+      line-height: 60px;
+      color: #191919;
+      width: 24rem;
+      @media screen and (max-width: 456px) {
+        width: 98%;
+        font-size: 45px;
+        line-height: 50x;
+      }
+    }
+    .price1 {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 25px;
+      color: #272727;
+    }
+    .price2 {
+      font-family: "Jost";
+      font-size: 15px;
+      line-height: 18px;
+      text-decoration-line: line-through;
+      color: #646464;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 28px;
+      color: #565656;
+      width: 27rem;
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
+    }
+    .color {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 25px;
+      color: #272727;
+    }
+    .color1 {
+      background-color: #36383c;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+    }
+    .color2 {
+      background-color: #323f33;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+    }
+    .color3 {
+      background-color: #fb4038;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
