@@ -84,6 +84,7 @@ import "../Components/Collection/Collection.scss";
 import "../Components/TwoParts/TwoParts.scss";
 import "../Components/Edition/Edition.scss";
 import "../Components/Black/Black.scss";
+import "../Components/Collection2/Collection2.scss";
 
 import type { AppProps } from "next/app";
 

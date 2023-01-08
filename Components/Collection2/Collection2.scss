@@ -1,0 +1,133 @@
+.Collection2-Body {
+  height: fit-content;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #b38068;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: #252525;
+    text-align: center;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 770px) {
+      justify-content: center !important;
+    }
+  }
+  .light {
+    background-color: #f6f6f6;
+    height: 70vh;
+    margin-bottom: 3rem;
+    .content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 6rem;
+      .title2 {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 50px;
+        color: #191919;
+      }
+      .date {
+        font-family: "Jost";
+        font-size: 15.367px;
+        line-height: 18px;
+        color: #a3a4a4;
+      }
+      .by {
+        font-family: "Jost";
+        font-size: 15.367px;
+        line-height: 18px;
+        color: #d66622;
+      }
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: #555555;
+        width: 25rem;
+      }
+    }
+  }
+  .dark {
+    height: 70vh;
+    background-color: #191919;
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
+    margin-bottom: 3rem;
+  }
+  .bottom {
+    .whitebox {
+      background-color: #313131;
+      height: 40vh;
+    }
+    .darkbox {
+      background-color: #1b1b1b;
+      height: 40vh;
+    }
+    .tag {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffffff;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 40px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .link {
+      font-family: "Jost";
+      font-size: 19.993px;
+      line-height: 23px;
+      text-decoration-line: underline;
+      color: #ffffff;
+      text-align: center;
+    }
+    .title2 {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 40px;
+      text-align: center;
+      color: #b38068;
+      width: 20rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

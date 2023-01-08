@@ -13,6 +13,11 @@ import Collection, {
 } from "../Components/Collection/Collection";
 import CollectionData from "../Components/Collection/Collection.json";
 
+import Collection2, {
+  IProps as Collection2Props,
+} from "../Components/Collection2/Collection2";
+import Collection2Data from "../Components/Collection2/Collection2.json";
+
 import Edition, { IProps as EditionProps } from "../Components/Edition/Edition";
 import EditionData from "../Components/Edition/Edition.json";
 
@@ -37,6 +42,7 @@ function Watch() {
       <TwoParts {...(TwoPart2Data as TwoPart2props)} />
       <Edition {...(EditionData as EditionProps)} />
       <Black {...(BlackData as BlackProps)} />
+      <Collection2 {...(Collection2Data as Collection2Props)} />
     </div>
   );
 }

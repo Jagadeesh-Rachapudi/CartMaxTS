@@ -2,7 +2,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ColorCard from "../../Utils/ColorCard/ColorCard";
+
 
 import WatchItem, {
   IProps as WatchItemProps,
@@ -15,6 +15,7 @@ export interface IProps {
   buttontext: string;
   images: string[];
 }
+
 function Edition(props: IProps) {
   return (
     <Container className="Edition-Body">
