@@ -82,6 +82,7 @@ import "../Components/Hedder3/Hedder3.scss";
 import "../Components/Arrivals/Arrivals.scss";
 import "../Components/Collection/Collection.scss";
 import "../Components/TwoParts/TwoParts.scss";
+import "../Components/Edition/Edition.scss";
 
 import type { AppProps } from "next/app";
 

@@ -1,0 +1,74 @@
+.Edition-Body {
+  height: fit-content;
+  margin-top: 3rem;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #b38068;
+    @media screen and (max-width: 470px) {
+      text-align: center !important;
+    }
+  }
+  .title-explore {
+    display: flex !important ;
+    justify-content: space-between !important;
+    @media screen and (max-width: 470px) {
+      flex-direction: column !important;
+      width: 100%;
+    }
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: #252525;
+    @media screen and (max-width: 470px) {
+      text-align: center !important;
+    }
+  }
+  .Explore {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.889px;
+    line-height: 14px;
+    border: 1px solid #f6f6f6;
+    border-radius: 25px;
+    color: #252525;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.75rem;
+    cursor: pointer;
+    @media screen and (max-width: 470px) {
+      text-align: center !important;
+    }
+  }
+  .Container-Box {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1200px) {
+      justify-content: unset !important;
+    }
+    @media screen and (max-width: 990px) {
+      justify-content: space-between !important;
+    }
+    @media screen and (max-width: 770px) {
+      justify-content: center !important;
+    }
+  }
+  .Col2 {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+}

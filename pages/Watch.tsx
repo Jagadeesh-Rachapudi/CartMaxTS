@@ -10,6 +10,9 @@ import Collection, {
 } from "../Components/Collection/Collection";
 import CollectionData from "../Components/Collection/Collection.json";
 
+import Edition, { IProps as EditionProps } from "../Components/Edition/Edition";
+import EditionData from "../Components/Edition/Edition.json";
+
 import Hedder3, { IProps as Hedder3Props } from "../Components/Hedder3/Hedder3";
 import Hedder3Data from "../Components/Hedder3/Hedder3.json";
 
@@ -29,6 +32,7 @@ function Watch() {
       <Arrivals {...(ArrivalsData as ArrivalsProps)} />
       <Collection {...(CollectionData as CollectionProps)} />
       <TwoParts {...(TwoPart2Data as TwoPart2props)} />
+      <Edition {...(EditionData as EditionProps)} />
     </div>
   );
 }
