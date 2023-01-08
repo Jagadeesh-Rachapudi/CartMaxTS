@@ -1,0 +1,75 @@
+.Collection-Body {
+  padding-top: 3rem;
+  height: fit-content;
+  margin-bottom: 5rem;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #b38068;
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+  .title-Options {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    @media screen and (max-width: 1200px) {
+      justify-content: center !important;
+      flex-direction: column !important;
+    }
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+    color: #252525;
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 465px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+  .options {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 770px) {
+      flex-direction: column;
+      margin-left: 29%;
+    }
+  }
+  .option {
+    width: fit-content;
+    cursor: pointer;
+  }
+  .option:hover {
+    color: #252525;
+    color: #8c8c8c;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 770px) {
+      justify-content: center !important;
+    }
+  }
+}

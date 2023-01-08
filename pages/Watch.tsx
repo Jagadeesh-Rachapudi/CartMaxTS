@@ -5,6 +5,11 @@ import Arrivals, {
 } from "../Components/Arrivals/Arrivals";
 import ArrivalsData from "../Components/Arrivals/Arrivals.json";
 
+import Collection, {
+  IProps as CollectionProps,
+} from "../Components/Collection/Collection";
+import CollectionData from "../Components/Collection/Collection.json";
+
 import Hedder3, { IProps as Hedder3Props } from "../Components/Hedder3/Hedder3";
 import Hedder3Data from "../Components/Hedder3/Hedder3.json";
 
@@ -17,6 +22,7 @@ function Watch() {
       <Nav6 {...(Nav6Data as Nav6Props)} />
       <Hedder3 {...(Hedder3Data as Hedder3Props)} />
       <Arrivals {...(ArrivalsData as ArrivalsProps)} />
+      <Collection {...(CollectionData as CollectionProps)} />
     </div>
   );
 }

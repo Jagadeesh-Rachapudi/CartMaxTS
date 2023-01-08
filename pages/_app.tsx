@@ -23,6 +23,7 @@ import "../Utils/MarketItem/MarketItem.scss";
 import "../Utils/SpecialOffer/SpecialOffer.scss";
 import "../Utils/Deals/Deals.scss";
 import "../Utils/BrownButton/BrownButton.scss";
+import "../Utils/WatchItem/WatchItem.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -79,6 +80,7 @@ import "../Components/Footer4/Footer4.scss";
 import "../Components/Nav6/Nav6.scss";
 import "../Components/Hedder3/Hedder3.scss";
 import "../Components/Arrivals/Arrivals.scss";
+import "../Components/Collection/Collection.scss";
 
 import type { AppProps } from "next/app";
 
