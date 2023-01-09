@@ -21,6 +21,9 @@ import Collection2Data from "../Components/Collection2/Collection2.json";
 import Edition, { IProps as EditionProps } from "../Components/Edition/Edition";
 import EditionData from "../Components/Edition/Edition.json";
 
+import Footer5, { IProps as Footer5Props } from "../Components/Footer5/Footer5";
+import Footer5Data from "../Components/Footer5/Footer5.json";
+
 import Hedder3, { IProps as Hedder3Props } from "../Components/Hedder3/Hedder3";
 import Hedder3Data from "../Components/Hedder3/Hedder3.json";
 
@@ -43,6 +46,7 @@ function Watch() {
       <Edition {...(EditionData as EditionProps)} />
       <Black {...(BlackData as BlackProps)} />
       <Collection2 {...(Collection2Data as Collection2Props)} />
+      <Footer5 {...(Footer5Data as Footer5Props)} />
     </div>
   );
 }
