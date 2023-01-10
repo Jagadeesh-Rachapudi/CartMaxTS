@@ -43,7 +43,7 @@ function Edition(props: IProps) {
           </div>
           <div className="Container-Box">
             {props.images.map((e, i) => (
-              <div key={i} className="mt-2 mb-2">
+              <div key={i} className="m-2">
                 <WatchItem {...(WatchItemData as WatchItemProps)} src={e} />
               </div>
             ))}

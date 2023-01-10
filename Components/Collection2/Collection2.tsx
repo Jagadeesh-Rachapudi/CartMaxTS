@@ -56,7 +56,7 @@ function Collection2(props: IProps) {
           <Col>
             <div className="Container-Box">
               {props.images.map((e, i) => (
-                <div key={i}>
+                <div key={i} className="m-2">
                   <WatchItem {...(WatchItemData as WatchItemProps)} src={e} />
                 </div>
               ))}
@@ -227,7 +227,7 @@ function Collection2(props: IProps) {
           <Col>
             <div className="Container-Box">
               {props.images.map((e, i) => (
-                <div key={i}>
+                <div key={i} className="m-2">
                   <WatchItem {...(WatchItemData as WatchItemProps)} src={e} />
                 </div>
               ))}
