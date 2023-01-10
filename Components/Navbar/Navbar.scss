@@ -1,0 +1,142 @@
+.Navbar-Body {
+  .topcontainer {
+    display: flex;
+    padding: 0;
+    height: 6rem;
+    @media screen and (max-width: 1200px) {
+      justify-content: space-between !important;
+    }
+  }
+  .box {
+    width: 8rem;
+    height: 6rem;
+    background-color: #494949;
+    @media screen and (max-width: 1600px) {
+      display: none;
+    }
+  }
+  .search {
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
+  }
+  .SearchButton {
+    border: none;
+    background-color: transparent;
+  }
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .searchbar {
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #c0c0c0;
+    width: 8rem;
+    height: 2rem;
+    @media screen and (max-width: 700px) {
+      width: 5rem;
+    }
+  }
+  .call {
+    @media screen and (max-width: 900px) {
+      display: none !important;
+    }
+  }
+  .callIcon {
+    margin-left: 0.4rem;
+    margin-top: 0.1rem;
+  }
+  .line {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .number {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+  .img {
+    object-fit: contain;
+    margin-left: 15%;
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+    }
+    @media screen and (max-width: 500px) {
+      width: 150px;
+      margin-left: 1rem;
+    }
+  }
+  .right-Icons {
+    margin-left: auto;
+    margin-right: 5rem;
+    @media screen and (max-width: 1200px) {
+      margin: 0;
+      margin-right: 5rem;
+    }
+    @media screen and (max-width: 700px) {
+      margin-right: 1rem;
+    }
+    .cartPrice {
+      margin-right: 1rem;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+      .cart {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        margin-left: 2rem;
+      }
+      .price {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+      }
+    }
+  }
+  .secondContainer {
+    .links {
+      display: flex;
+      // justify-content: space-evenly;
+    }
+    .menu {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      color: #232323;
+    }
+    .navlinks {
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #232323;
+      }
+    }
+  }
+}
