@@ -65,6 +65,13 @@
           width: 100%;
         }
       }
+      .ExperianceTag {
+        margin-top: -6rem;
+        margin-left: -5rem;
+        @media screen and (max-width: 930px) {
+          display: none;
+        }
+      }
     }
     .col3 {
       @media screen and (max-width: 1305px) {

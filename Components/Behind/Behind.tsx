@@ -18,6 +18,7 @@ export interface IProps {
   Option2: string;
   Option3: string;
   Option4: string;
+  expreiance: string;
 }
 function Behind(props: IProps) {
   const [active, setActive] = useState("");
@@ -94,6 +95,7 @@ function Behind(props: IProps) {
             xxl={6}
           >
             <img src={props.randomImage2} alt="" className="img2" />
+            <img src={props.expreiance} alt="" className="ExperianceTag" />
           </Col>
           <Col
             className="mb-3 col3"
