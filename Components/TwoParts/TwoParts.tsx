@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -18,6 +18,7 @@ export interface IProps {
 }
 
 function TwoParts(props: IProps) {
+  const [active, setActive] = useState(0);
   return (
     <Container className="TwoParts-Body" fluid>
       <Row>
@@ -80,10 +81,37 @@ function TwoParts(props: IProps) {
                 __html: props.Color,
               }}
             />
-            <div className="d-flex mt-2 ">
-              <div className="color1 me-1 ms-1 rounded"></div>
-              <div className="color2 rounded me-1 ms-1"></div>
-              <div className="color3 rounded me-1 ms-1"></div>
+            <div className="d-flex mt-2">
+              <div
+                onClick={() => {
+                  if (active === 1) setActive(0);
+                  else setActive(1);
+                }}
+                className={active === 1 ? "active1 rounded me-1" : " me-2 "}
+              >
+                <div className="color1 rounded"></div>
+              </div>
+              <div
+                onClick={() => {
+                  if (active === 2) setActive(0);
+                  else setActive(2);
+                }}
+                className={
+                  active === 2 ? "active2 rounded me-1 ms-1 " : " me-2 ms-1 "
+                }
+              >
+                <div className="color2 rounded"></div>
+              </div>
+
+              <div
+                onClick={() => {
+                  if (active === 3) setActive(0);
+                  else setActive(3);
+                }}
+                className={active === 3 ? "active3 rounded ms-1 " : " ms-1 "}
+              >
+                <div className="color3 rounded "></div>
+              </div>
             </div>
             <div className="Button-Container mt-5 ">
               <BrownButton text={props.ButtonText} />

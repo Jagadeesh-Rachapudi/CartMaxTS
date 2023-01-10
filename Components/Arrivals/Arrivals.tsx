@@ -43,7 +43,7 @@ function Arrivals(props: IProps) {
         )}
       </Row>
       <Row>
-        <Col className="container2 mt-3">
+        <Col className="container2 mt-3" id="Pages4">
           <div className="box1">
             <div
               className="hedding"

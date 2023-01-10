@@ -56,7 +56,7 @@ function Black(props: IProps) {
   });
   return (
     <div className="Black-Body">
-      <Container fluid className="playbox">
+      <Container fluid className="playbox mt-3 ">
         <Row>
           <Col>
             <div className="play">

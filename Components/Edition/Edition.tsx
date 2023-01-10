@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-
 import WatchItem, {
   IProps as WatchItemProps,
 } from "../../Utils/WatchItem/WatchItem";
@@ -18,7 +17,7 @@ export interface IProps {
 
 function Edition(props: IProps) {
   return (
-    <Container className="Edition-Body">
+    <Container className="Edition-Body" id="Shop4">
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} xl={8} xxl={8}>
           <div className="tag"></div>

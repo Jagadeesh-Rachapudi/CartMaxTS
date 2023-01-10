@@ -39,11 +39,17 @@
     background-color: #f6f6f6;
     height: 70vh;
     margin-bottom: 3rem;
+    @media screen and (max-width: 557px) {
+      margin-bottom: 1rem !important;
+    }
     .content {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
       margin-left: 6rem;
+      @media screen and (max-width: 540px) {
+        margin-left: 3rem;
+      }
       .title2 {
         font-family: "Jost";
         font-style: normal;
@@ -51,6 +57,7 @@
         font-size: 45px;
         line-height: 50px;
         color: #191919;
+        max-width: 19rem;
       }
       .date {
         font-family: "Jost";
@@ -72,6 +79,9 @@
         line-height: 28px;
         color: #555555;
         width: 25rem;
+        @media screen and (max-width: 454px) {
+         width: 95%;
+        }
       }
     }
   }

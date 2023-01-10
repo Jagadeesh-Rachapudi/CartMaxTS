@@ -16,7 +16,7 @@ export interface IProps {
 
 function Hedder3(props: IProps) {
   return (
-    <Container className="Hedder3-Body">
+    <Container className="Hedder3-Body" id="Home6" >
       <Row>
         <Col
           className="White p-0"
@@ -53,7 +53,7 @@ function Hedder3(props: IProps) {
             <div className="button">
               <BrownButton text={props.ButtonText} />
             </div>
-            <img src={props.src} height={350} width={200} className="img" />
+            <img src={props.src}  className="img" />
           </div>
         </Col>
         <Col

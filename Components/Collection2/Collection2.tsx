@@ -85,7 +85,7 @@ function Collection2(props: IProps) {
             />
           </Col>
         </Row>
-        <Row className="mt-5">
+        <Row className="mt-5" id="Blog4">
           <Col
             xs={12}
             sm={12}

@@ -114,18 +114,39 @@
       cursor: pointer;
       width: 34px;
       height: 34px;
+      margin-top: 0.15rem;
+      margin-left: 0.12rem !important;
     }
     .color2 {
       background-color: #323f33;
       cursor: pointer;
       width: 34px;
       height: 34px;
+      margin-top: 0.15rem;
+      margin-left: 0.13rem;
     }
     .color3 {
       background-color: #fb4038;
       cursor: pointer;
       width: 34px;
       height: 34px;
+      margin-top: 0.15rem;
+      margin-left: 0.115rem;
+    }
+    .active1 {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #36383c !important;
+    }
+    .active2 {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #323f33 !important;
+    }
+    .active3 {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #fb4038 !important;
     }
   }
 }

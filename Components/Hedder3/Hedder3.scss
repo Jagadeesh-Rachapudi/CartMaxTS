@@ -74,12 +74,13 @@
     img {
       position: absolute;
       margin-top: -25rem;
-      margin-left: 50rem;
+      margin-left: 47rem;
+      width: 300px;
       @media screen and (max-width: 1400px) {
-        margin-left: 42rem;
+        margin-left: 39rem;
       }
       @media screen and (max-width: 1200px) {
-        margin-left: 34.5rem;
+        margin-left: 32rem;
       }
       @media screen and (max-width: 992px) {
         display: none;

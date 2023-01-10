@@ -18,7 +18,7 @@ export interface IProps {
 function Collection(props: IProps) {
   const [active, setActive] = useState(0);
   return (
-    <Container className="Collection-Body">
+    <Container className="Collection-Body" id="Product4">
       <Row>
         <Col>
           <div
@@ -59,7 +59,7 @@ function Collection(props: IProps) {
         <Col>
           <div className="Container-Box">
             {props.images.map((e, i) => (
-              <div key={i}>
+              <div key={i} className="m-2">
                 <WatchItem {...(WatchItemData as WatchItemProps)} src={e} />
               </div>
             ))}

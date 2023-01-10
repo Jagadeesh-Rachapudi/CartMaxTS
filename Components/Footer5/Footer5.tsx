@@ -14,7 +14,7 @@ export interface IProps {
 
 function Footer5(props: IProps) {
   return (
-    <div className="Footer5-Body">
+    <div className="Footer5-Body" id="Contact4" >
       <Container>
         <Row className="pt-5">
           <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={4} className="col1">
