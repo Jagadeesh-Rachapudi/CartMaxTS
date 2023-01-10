@@ -29,25 +29,35 @@
     margin-top: 0.5rem;
     margin-left: 0.5rem;
   }
-  .Icons {
-    position: absolute;
-    margin-top: 12rem;
-    margin-left: 5rem;
-    opacity: 0;
-    transition: 0.5s;
-    .Icon {
-      margin-left: 0.25rem;
-      margin-right: 0.25rem;
-      border-radius: 50%;
-      padding: 0.5rem;
-      background-color: #ffffff;
-    }
-    .Icon:hover {
-      cursor: pointer;
-      background-color: #d9121f;
-      color: #000000;
+  .hover {
+    .Icons {
+      position: absolute;
+      margin-top: 12rem;
+      margin-left: 5rem;
+      opacity: 0;
+      transition: 0.5s;
+      .Icon {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        border-radius: 50%;
+        padding: 0.5rem;
+        background-color: #ffffff;
+        color: black;
+      }
+      .Icon:hover {
+        cursor: pointer;
+        background-color: #d9121f;
+        color: white;
+      }
     }
   }
+  .hover:hover {
+    .Icons {
+      opacity: 1;
+      transition: 0.2s;
+    }
+  }
+
   .Icons:hover {
     transition: 0.5s;
     opacity: 1;
@@ -88,6 +98,17 @@
     background-color: #343434;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 0.05rem !important;
+  }
+  .border1 {
+    height: 1.2rem;
+    width: 1.2rem;
+    border: 1px solid #343434;
+  }
+  .bordernone {
+    height: 1.2rem;
+    width: 1.2rem;
+    border: 1px solid transparent;
   }
   .Color2 {
     height: 1rem;
@@ -95,5 +116,11 @@
     background-color: #931f1d;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 0.05rem !important;
+  }
+  .border2 {
+    height: 1.2rem;
+    width: 1.2rem;
+    border: 1px solid #931f1d;
   }
 }

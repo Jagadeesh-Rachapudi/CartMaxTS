@@ -2,6 +2,7 @@
   margin-bottom: 3rem;
   background-color: #f6f6f6;
   .tag {
+    margin-left: 9%;
     margin-top: 3rem;
     font-family: "Roboto";
     font-style: normal;
@@ -11,6 +12,7 @@
     color: #d9121f;
   }
   .title {
+    margin-left: 9%;
     font-family: "Jost";
     font-style: normal;
     font-weight: 600;
@@ -20,12 +22,17 @@
     margin-bottom: 2rem;
   }
   .Container-Box {
-    margin-top: 2rem;
+    // width: 85%;
+    margin-top: 0rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
+    @media screen and (max-width: 460px) {
+    // width: 100%;
+    }
   }
 }

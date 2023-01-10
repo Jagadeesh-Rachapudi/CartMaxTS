@@ -11,12 +11,13 @@ import HomeFashionItemData from "../../Utils/HomeFashionItem/HomeFashionItem.jso
 export interface IProps {
   tag: string;
   title: string;
+  dummy: string[];
 }
 
 function BestSales(props: IProps) {
   return (
-    <div className="BestSales-Body" id="Shop1">
-      <Container fluid="lg">
+    <div className="BestSales-Body">
+      <Container id="Shop1">
         <Row>
           <Col>
             <div
@@ -40,18 +41,14 @@ function BestSales(props: IProps) {
         <Row>
           <Col>
             <div className="Container-Box">
-              <HomeFashionItem
-                {...(HomeFashionItemData as HomeFashionItemProps)}
-                imageTitle="Crew Neck T-shirt"
-              />
-              <HomeFashionItem
-                {...(HomeFashionItemData as HomeFashionItemProps)}
-                imageTitle="Crew Neck T-shirt"
-              />
-              <HomeFashionItem
-                {...(HomeFashionItemData as HomeFashionItemProps)}
-                imageTitle="Crew Neck T-shirt"
-              />
+              {props.dummy.map((e, i) => (
+                <div key={i} className="m-1">
+                  <HomeFashionItem
+                    {...(HomeFashionItemData as HomeFashionItemProps)}
+                    imageTitle={e}
+                  />
+                </div>
+              ))}
             </div>
           </Col>
         </Row>
