@@ -182,18 +182,23 @@ function TopSearch(props: IProps) {
                             </button>
                           </div>
                         </div>
-                        <span className="totalPrice mt-auto mb-auto ms-5">
+                        <span
+                          className="totalPrice mt-auto mb-auto ms-5"
+                          onLoad={() => {
+                            console.log("loaded");
+                          }}
+                        >
                           ${e.pPrice * e.quantity}
                         </span>
                       </div>
                       <hr />
                     </div>
                   ))}
-                  {/* <div className="Buy">
+                  <div className="Buy">
                     <span className="totalPrice mt-auto mb-auto ms-5">
                       2 {sum} 1
                     </span>
-                  </div> */}
+                  </div>
                 </div>
               </Offcanvas.Body>
             </Offcanvas>

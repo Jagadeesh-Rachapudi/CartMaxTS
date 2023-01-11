@@ -35,7 +35,7 @@ function Popular(props: IProps) {
           </Col>
         </Row>
         <Row>
-          <Col className="d-flex flex-row justify-content-between">
+          <Col className="titleRow">
             <div
               className="title"
               dangerouslySetInnerHTML={{
