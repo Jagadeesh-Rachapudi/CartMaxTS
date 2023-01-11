@@ -5,6 +5,10 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { BsSearch, BsBag, BsHeart } from "react-icons/bs";
 import { BiRefresh } from "react-icons/bi";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import cartReducer from "../../redux/reducers/cartReducer";
+import { IStore } from "../../redux/store";
 
 export interface IProps {
   tag1: string;
@@ -19,6 +23,9 @@ export interface IProps {
 
 function MarketItem(props: IProps) {
   const [selected, setSelected] = useState(0);
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
+
   return (
     <div className="MarketItem-Body rounded ">
       <div className="tags">
@@ -51,6 +58,11 @@ function MarketItem(props: IProps) {
             onClick={() => {
               if (selected === 2) setSelected(0);
               else setSelected(2);
+              dispatch(
+                updateCart({
+                  products: [...cart, { productName: props.title2 }],
+                })
+              );
             }}
           >
             <BsBag size={20} className="icon2" />

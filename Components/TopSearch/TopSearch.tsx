@@ -8,6 +8,9 @@ import { BsBag } from "react-icons/bs";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
+import { useDispatch, useSelector } from "react-redux";
+import { IStore } from "../../redux/store";
+import { countAndRemoveDuplicates } from "../../public/functions";
 
 export interface IProps {
   src: string;
@@ -24,6 +27,12 @@ function TopSearch(props: IProps) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const cartProducts = useSelector((state: IStore) => state.cart.products);
+  console.log(cartProducts);
+
+  let resutls = countAndRemoveDuplicates(cartProducts);
+
   return (
     <div className="TopSearch-Body">
       <Container className="pt-3" fluid>
@@ -75,10 +84,8 @@ function TopSearch(props: IProps) {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                {props.cartitems.map((e, i) => (
-                  <Nav.Link className="mb-3" key={i}>
-                    {e}
-                  </Nav.Link>
+                {cartProducts.map((e, i) => (
+                  <div key={i}>{e.productName}</div>
                 ))}
               </Offcanvas.Body>
             </Offcanvas>

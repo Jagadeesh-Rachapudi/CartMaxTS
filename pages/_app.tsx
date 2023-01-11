@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Provider } from "react-redux";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
@@ -84,7 +85,17 @@ import "../Components/Footer5/Footer5.scss";
 import "../Components/Navbar/Navbar.scss";
 
 import type { AppProps } from "next/app";
+import { store } from "../redux/store";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistStore } from "redux-persist";
+let persister = persistStore(store);
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Provider store={store}>
+      <PersistGate persistor={persister}>
+        <Component {...pageProps} />
+      </PersistGate>
+    </Provider>
+  );
 }
