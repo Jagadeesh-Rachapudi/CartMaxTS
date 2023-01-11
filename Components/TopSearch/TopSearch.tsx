@@ -192,8 +192,8 @@ function TopSearch(props: IProps) {
                   {/* <div className="Buy">
                     <span className="totalPrice mt-auto mb-auto ms-5">
                       2 {sum} 1
-                    </span> */}
-                  </div>
+                    </span>
+                  </div> */}
                 </div>
               </Offcanvas.Body>
             </Offcanvas>
