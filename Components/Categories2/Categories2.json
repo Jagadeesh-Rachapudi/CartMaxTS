@@ -5,5 +5,42 @@
   "add1": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fv3.jpeg?alt=media&token=c5cb7106-e2e4-45fc-91dc-40f08c8bd22f",
   "add2": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fphoto_6174535441492063272_y.jpg?alt=media&token=ed434506-4def-4294-a3cb-41d78e3da7fa",
   "add3": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fadd6.png?alt=media&token=157e6ad8-12b3-4fed-948b-7293d4ef5c46",
-  "dummy": [1, 2, 3, 4, 5, 6]
+  "products": [
+    {
+      "id": 1,
+      "productName": "Asus Zenbook",
+      "url": "https://picsum.photos/252/284",
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "productName": "Asus Zenbook pro ",
+      "url": "https://picsum.photos/252/284",
+      "price": 9000
+    },
+    {
+      "id": 3,
+      "productName": "Asus Zenbook S ",
+      "url": "https://picsum.photos/252/284",
+      "price": 7000
+    },
+    {
+      "id": 4,
+      "productName": "Asus Zenbook Flip",
+      "url": "https://picsum.photos/252/284",
+      "price": 1500
+    },
+    {
+      "id": 5,
+      "productName": "Asus Zenbook Duo",
+      "url": "https://picsum.photos/252/284",
+      "price": 2500
+    },
+    {
+      "id": 6,
+      "productName": "Asus ChromeBook ",
+      "url": "https://picsum.photos/252/284",
+      "price": 2000
+    }
+  ]
 }

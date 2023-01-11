@@ -1,3 +1,61 @@
+.cartSideBar {
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  .product-name {
+    flex: 1;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: -0.01em;
+    color: #333e48;
+  }
+  .Buy {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    // background-color: #0170dc;
+    // color: #ffffff;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+  .quantity {
+    margin: 0 10px;
+  }
+  .decrement,
+  .increment {
+    padding: 5px 15px;
+    background-color: #ddd;
+    border: none;
+    padding-bottom: 0.5rem;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  .decrement:active,
+  .increment:active {
+    background-color: #ccc;
+  }
+  .totalPrice {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+    color: #006fdc;
+  }
+}
 .TopSearch-Body {
   background-color: #232f3e;
   .form-container {
@@ -81,7 +139,7 @@
     line-height: 26px;
     color: #919396;
   }
-  .cart-Button{
+  .cart-Button {
     display: none;
   }
 }

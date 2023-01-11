@@ -3,6 +3,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useDispatch, useSelector } from "react-redux";
+import { IStore } from "../../redux/store";
 
 import MarketItem, {
   IProps as MarketItemProps,
@@ -16,7 +18,7 @@ export interface IProps {
   add1: string;
   add2: string;
   add3: string;
-  dummy: number[];
+  products: { id: number; productName: string; url: string; price: number }[];
 }
 
 function Categories2(props: IProps) {
@@ -47,9 +49,15 @@ function Categories2(props: IProps) {
               />
             </div>
             <div className="Container-Box">
-              {props.dummy.map((i) => (
-                <div className="item" key={i}>
-                  <MarketItem {...(MarketItemData as MarketItemProps)} />
+              {props.products.map((product, i: number) => (
+                <div key={i}>
+                  <MarketItem
+                    {...(MarketItemData as MarketItemProps)}
+                    id={product.id}
+                    productName={product.productName}
+                    url={product.url}
+                    price={product.price}
+                  />
                 </div>
               ))}
             </div>

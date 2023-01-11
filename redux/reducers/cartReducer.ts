@@ -3,6 +3,9 @@ import { AnyAction } from "redux";
 
 export interface ICartItem {
   productName: string;
+  pId: number;
+  pPrice: number;
+  quantity: number;
 }
 
 export interface ICart {

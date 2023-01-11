@@ -11,11 +11,13 @@ import cartReducer from "../../redux/reducers/cartReducer";
 import { IStore } from "../../redux/store";
 
 export interface IProps {
+  id: number;
+  productName: string;
+  url: string;
+  price: number;
   tag1: string;
   tag2: string;
   aboveTitle: string;
-  title2: string;
-  price1: string;
   price2: string;
   Count: string;
   time: string;
@@ -25,7 +27,6 @@ function MarketItem(props: IProps) {
   const [selected, setSelected] = useState(0);
   const dispatch = useDispatch();
   const cart = useSelector((state: IStore) => state.cart.products);
-
   return (
     <div className="MarketItem-Body rounded ">
       <div className="tags">
@@ -58,11 +59,31 @@ function MarketItem(props: IProps) {
             onClick={() => {
               if (selected === 2) setSelected(0);
               else setSelected(2);
-              dispatch(
-                updateCart({
-                  products: [...cart, { productName: props.title2 }],
-                })
-              );
+
+              function addToCart(productId: number, newQuantity: number) {
+                var existingProduct = cart.find(function (item) {
+                  return item.pId === productId;
+                });
+
+                if (existingProduct) {
+                  existingProduct.quantity += newQuantity;
+                } else {
+                  dispatch(
+                    updateCart({
+                      products: [
+                        ...cart,
+                        {
+                          pId: props.id,
+                          productName: props.productName,
+                          pPrice: props.price,
+                          quantity: newQuantity,
+                        },
+                      ],
+                    })
+                  );
+                }
+              }
+              addToCart(props.id, 1);
             }}
           >
             <BsBag size={20} className="icon2" />
@@ -86,7 +107,7 @@ function MarketItem(props: IProps) {
             <BiRefresh size={20} className="icon4" />
           </div>
         </div>
-        <img src="https://picsum.photos/252/284" className="img" />
+        <img src={props.url} className="img" />
       </div>
       <div
         className="above-title"
@@ -97,7 +118,7 @@ function MarketItem(props: IProps) {
       <div
         className="title2"
         dangerouslySetInnerHTML={{
-          __html: props.title2,
+          __html: props.productName,
         }}
       />
       <div className="Stars-Count">
@@ -117,12 +138,7 @@ function MarketItem(props: IProps) {
       </div>
       <hr />
       <div className="prices">
-        <div
-          className="price1"
-          dangerouslySetInnerHTML={{
-            __html: props.price1,
-          }}
-        />
+        <div className="price1"> ${props.price}</div>
         <div
           className="price2"
           dangerouslySetInnerHTML={{
