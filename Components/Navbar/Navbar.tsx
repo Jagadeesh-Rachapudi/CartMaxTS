@@ -8,12 +8,20 @@ import { AiOutlineSearch, AiOutlineHeart } from "react-icons/ai";
 import { BiPhoneCall, BiMenuAltLeft } from "react-icons/bi";
 import { BsBag, BsPerson } from "react-icons/bs";
 import React, { useState } from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import Button from "react-bootstrap/Button";
 
 export interface IProps {
-  navOptions: { text: string; link: string }[];
-  cartitems: string[];
-  whishList: string[];
+  Line: string;
+  Number: string;
   src: string;
+  Cart: string;
+  Price: string;
+  Menu: string;
+  WishList: string;
+  NavOptions: { link: string; href: string; Option: string }[];
+  Languages: string[];
 }
 
 function Navbar(props: IProps) {
@@ -27,6 +35,12 @@ function Navbar(props: IProps) {
   const [show2, setShow2] = useState(false);
   const handleClose2 = () => setShow2(false);
   const handleShow2 = () => setShow2(true);
+
+  const [show3, setShow3] = useState(false);
+  const handleClose3 = () => setShow3(false);
+  const handleShow3 = () => setShow3(true);
+
+  const [Language, setLanguage] = useState("ENGLISH");
   return (
     <Container className="Navbar-Body" fluid>
       <Row>
@@ -52,19 +66,35 @@ function Navbar(props: IProps) {
               <BiPhoneCall size={17} color="black" className="callIcon" />
             </div>
             <div>
-              <div className="line mb-1 ">24 Line</div>
-              <div className="number">760 398 9595</div>
+              <div
+                className="line mb-1"
+                dangerouslySetInnerHTML={{
+                  __html: props.Line,
+                }}
+              />
+              <div
+                className="number"
+                dangerouslySetInnerHTML={{
+                  __html: props.Number,
+                }}
+              />
             </div>
           </div>
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo%20(6).png?alt=media&token=0dde3308-0c58-4ebd-b176-51e84ac18961"
-            alt=""
-            className="img mt-auto mb-auto"
-          />
+          <img src={props.src} alt="" className="img mt-auto mb-auto" />
           <div className="right-Icons d-flex mt-auto mb-auto ">
             <div className="cartPrice">
-              <div className="cart">Cart</div>
-              <div className="price">$9,983</div>
+              <div
+                className="cart"
+                dangerouslySetInnerHTML={{
+                  __html: props.Cart,
+                }}
+              />
+              <div
+                className="price"
+                dangerouslySetInnerHTML={{
+                  __html: props.Price,
+                }}
+              />
             </div>
             <div className="icon mt-auto mb-auto me-2" onClick={handleShow}>
               <BsBag size={17} color="black" className="callIcon" />
@@ -87,50 +117,145 @@ function Navbar(props: IProps) {
         <div className="hidden">
           <Offcanvas show={show} onHide={handleClose} placement="end">
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title>Cart</Offcanvas.Title>
+              <Offcanvas.Title>
+                <h1
+                  dangerouslySetInnerHTML={{
+                    __html: props.Cart,
+                  }}
+                />
+              </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className="d-flex flex-column">
-              {props.cartitems.map((cartItem, id) => (
-                <h6 key={id}>{cartItem}</h6>
-              ))}
-              <div className="price"> total price $9,983</div>
+              {/* <div className="price"> total price $9,983</div> */}
             </Offcanvas.Body>
           </Offcanvas>
 
           <Offcanvas show={show2} onHide={handleClose2} placement="end">
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title>whishList</Offcanvas.Title>
+              <Offcanvas.Title>
+                <h1
+                  dangerouslySetInnerHTML={{
+                    __html: props.WishList,
+                  }}
+                />
+              </Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body className="d-flex flex-column">
-              {props.whishList.map((cartItem, id) => (
-                <h6 key={id}>{cartItem}</h6>
-              ))}
-            </Offcanvas.Body>
+            <Offcanvas.Body className="d-flex flex-column"></Offcanvas.Body>
           </Offcanvas>
         </div>
       </Row>
       <Row className="p-0">
-        <Col className="p-0">
-          <div className="secondContainer d-flex ">
-            <div className="box"></div>
-            <div className="Links mt-auto mb-auto">
-              <div className="d-flex ms-3 menu ">
-                <BiMenuAltLeft size={30} color="black" className="me-2" />
-                <div className="menutext mt-auto mb-auto ">MENU</div>
-              </div>
-              <div className="navlinks mt-auto mb-auto ">
-                <Nav.Link href="#Bridal" className="d-flex">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fnecklace.png?alt=media&token=bec6aaf6-3e75-4162-bc41-5227715689bc"
-                    alt=""
-                    className="bridal me-2 "
-                  />
-                  <div className="text">Bridal juwellary</div>
-                </Nav.Link>
-              </div>
+        <Col className="p-0 secondContainer ">
+          <div className="box"></div>
+          <div className="menu" onClick={handleShow3}>
+            <BiMenuAltLeft size={30} color="black" className="me-2" />
+            <div
+              className="menutext mt-auto mb-auto"
+              dangerouslySetInnerHTML={{
+                __html: props.Menu,
+              }}
+            />
+          </div>
+          <div className="Links mt-auto mb-auto">
+            <div className="navlinks mt-auto mb-auto">
+              {props.NavOptions.map(
+                (
+                  navOption: { link: string; href: string; Option: string },
+                  i
+                ) => (
+                  <div key={i}>
+                    <Nav.Link
+                      href={navOption.href}
+                      className="ms-3 d-flex me-3"
+                    >
+                      <img src={navOption.link} alt="" className="me-1 " />
+                      <div
+                        className="text"
+                        dangerouslySetInnerHTML={{
+                          __html: navOption.Option,
+                        }}
+                      />
+                    </Nav.Link>
+                  </div>
+                )
+              )}
             </div>
           </div>
+          <div className="DropDown">
+            <Dropdown as={ButtonGroup}>
+              <Button variant="light" className="bg-transparent mb-1">
+                {Language}
+              </Button>
+              <Dropdown.Toggle
+                split
+                variant="light"
+                id="dropdown-split-basic"
+                className="bg-transparent mb-1"
+              />
+              <Dropdown.Menu>
+                {props.Languages.map((e, i) => (
+                  <Dropdown.Item
+                    key={i}
+                    onClick={() => {
+                      if (Language != e) {
+                        setLanguage(e);
+                      } else {
+                        setLanguage("ENGLISH");
+                      }
+                    }}
+                  >
+                    {e}
+                  </Dropdown.Item>
+                ))}
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
         </Col>
+      </Row>
+      <Row>
+        <Offcanvas
+          show={show3}
+          onHide={handleClose3}
+          scroll={true}
+          backdrop={true}
+          className="row2Navbar"
+        >
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>
+              <h1
+                dangerouslySetInnerHTML={{
+                  __html: props.Menu,
+                }}
+              />
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <div className="menuLinks">
+              {props.NavOptions.map(
+                (
+                  navOption: { link: string; href: string; Option: string },
+                  i
+                ) => (
+                  <div key={i}>
+                    <Nav.Link
+                      key={i}
+                      href={navOption.href}
+                      className="ms-3  mb-3 menuLink d-flex"
+                    >
+                      <img src={navOption.link} alt="" className="ms-3 me-1" />
+                      <div
+                        className="text"
+                        dangerouslySetInnerHTML={{
+                          __html: navOption.Option,
+                        }}
+                      />
+                    </Nav.Link>
+                  </div>
+                )
+              )}
+            </div>
+          </Offcanvas.Body>
+        </Offcanvas>
       </Row>
     </Container>
   );

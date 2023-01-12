@@ -1,43 +1,42 @@
 {
-    "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo%20(6).png?alt=media&token=be4447f3-58d5-4bac-bc80-6dcde482c05d",
-    "navOptions": [
-      {
-        "text": "HOME",
-        "link": "#Home6"
-      },
-      {
-        "text": "PRODUCTS",
-        "link": "#Product4"
-      },
-      {
-        "text": "SHOP",
-        "link": "#Shop4"
-      },
-      {
-        "text": "BLOG",
-        "link": "#Blog4"
-      },
-      {
-        "text": "PAGES",
-        "link": "#Pages4"
-      },
-      {
-        "text": "CONTACT",
-        "link": "#Contact4"
-      }
-    ],
-    "cartitems": [
-      "Apple Watch Ultra",
-      "IPhone 14",
-      "Apple Tab 13",
-      "Nike Shoes",
-      "Realme 10 Pro"
-    ],
-    "whishList": [
-      "Galaxy Z Fold4",
-      "Galaxy Z Fold3",
-      "Galaxy Z Fold2",
-      "Galaxy Z Fold10"
-    ]
-  }
-  
+  "Line": "<p>24 Line</p>",
+  "Number": "<p>760 398 9595</p>",
+  "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo%20(6).png?alt=media&token=0dde3308-0c58-4ebd-b176-51e84ac18961",
+  "Cart": "<p>Cart</p>",
+  "Price": "<p>$9,983</p>",
+  "Menu": "<p>Menu</p>",
+  "WishList": "<p>Whishlist</p>",
+  "NavOptions": [
+    {
+      "link": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fnecklace.png?alt=media&token=bec6aaf6-3e75-4162-bc41-5227715689bc",
+      "href": "#Bridal",
+      "Option": "<p>Birdal Jewellary</p>"
+    },
+    {
+      "link": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fring.png?alt=media&token=e1852b9f-6d42-4a2a-affa-8f504cf6fd8e",
+      "href": "#Rings",
+      "Option": "<p>Rings</p>"
+    },
+    {
+      "link": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Ffemenine.png?alt=media&token=1552b91a-3cea-42c6-9298-91f0b75f3c44",
+      "href": "#Women",
+      "Option": "<p>Women</p>"
+    },
+    {
+      "link": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fmars.png?alt=media&token=6d72a0ed-2817-4f5e-961b-be0b693ac810",
+      "href": "#Mens",
+      "Option": "<p>Mens</p>"
+    },
+    {
+      "link": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fbaby-boy.png?alt=media&token=c5c7736c-cb5c-498e-bd2b-23845c55c8d4",
+      "href": "#Children",
+      "Option": "<p>Children</p>"
+    },
+    {
+      "link": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fwatch%20(1).png?alt=media&token=43d96ecd-631b-4b5f-8be6-ea56d6b1c31f",
+      "href": "#Watches",
+      "Option": "<p>Watches</p>"
+    }
+  ],
+  "Languages": ["GERMAN", "SPANISH", "ENGLISH"]
+}
