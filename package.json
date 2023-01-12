@@ -22,7 +22,7 @@
     "fa-icons": "^0.2.0",
     "next": "13.0.6",
     "react": "18.2.0",
-    "react-bootstrap": "^2.6.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",

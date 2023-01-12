@@ -2,6 +2,7 @@ import * as React from "react";
 import { Provider } from "react-redux";
 
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
 
 import "../Utils/Furniture/FurnitureItem.scss";
@@ -83,6 +84,7 @@ import "../Components/Collection2/Collection2.scss";
 import "../Components/Footer5/Footer5.scss";
 
 import "../Components/Navbar/Navbar.scss";
+import "../Components/Hedder4/Hedder4.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

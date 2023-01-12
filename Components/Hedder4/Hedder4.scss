@@ -1,0 +1,118 @@
+.Hedder4-Body {
+  height: fit-content;
+  background-color: #494949;
+  .content {
+    margin-left: 6rem;
+    padding-top: 22rem;
+    .tag {
+      font-family: "Jost";
+      font-size: 12px;
+      line-height: 14px;
+      color: #c18623;
+      margin-top: 1rem;
+    }
+    .name {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 46px;
+      color: #ffffff;
+    }
+    .price {
+      font-family: "Jost";
+      font-size: 17px;
+      line-height: 20px;
+      color: #c18623;
+    }
+  }
+  .BlackBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    height: 604px;
+    width: 604px;
+    padding-left: 6rem;
+    .tag {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #c18623;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 55px;
+      line-height: 70px;
+      color: #ffffff;
+      width: 24rem;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 28px;
+      color: #d7d7d7;
+      width: 25rem;
+    }
+    .Button {
+      width: 139px;
+      height: 56px;
+      border-radius: 25px;
+      background-color: #c18623;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12.918px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: end;
+    .button1 {
+      height: 30vh;
+      background-color: #363636;
+      width: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        background-color: #c18623;
+        border-radius: 50%;
+      }
+    }
+    .button2 {
+      height: 30vh;
+      background-color: #c18623;
+      width: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+    .button3 {
+      border-left: 10px solid #c18623;
+      border-top: 10px solid #c18623;
+      height: 30vh;
+      background-color: #363636;
+      width: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        background-color: #c18623;
+        border-radius: 50%;
+      }
+    }
+  }
+}
