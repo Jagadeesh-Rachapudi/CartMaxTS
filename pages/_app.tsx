@@ -20,7 +20,8 @@ import "../Utils/SpecialOffer/SpecialOffer.scss";
 import "../Utils/Deals/Deals.scss";
 import "../Utils/BrownButton/BrownButton.scss";
 import "../Utils/WatchItem/WatchItem.scss";
-import "../Utils/GoldButton/GoldButton.scss";
+import "../Utils/TransButton/TransButton.scss";
+import "../Utils/GoldCard/GoldCard.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -86,6 +87,7 @@ import "../Components/Footer5/Footer5.scss";
 
 import "../Components/Navbar/Navbar.scss";
 import "../Components/Hedder4/Hedder4.scss";
+import "../Components/Popular2/Popular2.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

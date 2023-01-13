@@ -1,0 +1,47 @@
+{
+  "img1": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2032(2).png?alt=media&token=d6a42cc9-cc5c-4aeb-966b-f7f46ef1b400",
+  "img2": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2031.png?alt=media&token=7ec871df-cefd-4e6d-9560-09bb39d257e9",
+  "img3": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2059%20copy.png?alt=media&token=caea77c6-5f8a-4f2d-bc7a-7af978f0a0a1",
+  "text": "<p>“To provide the best designer jewelry at a reasonable price, while revolutionizing the jewelry industry with transparency and honesty ”</p>",
+  "tag": "<p>NEW COLLECTION 2022</p>",
+  "title": "<p>BestSellers</p>",
+  "options": [
+    "<p>ALL</p>",
+    "<p>RINGS</p>",
+    "<p>EARRINGS</p>",
+    "<p>NECKLACES</p>",
+    "<p>SHOW MORE</p>"
+  ],
+  "products": [
+    {
+      "prodid": 1,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2039.png?alt=media&token=74505187-43f9-4709-9137-2505fc639bb4",
+      "Cardtag": "<p>EAR RINGS<p>",
+      "Cardtitle": "<p>22k Gold Hoops</p>",
+      "price": "<p>$200.99</p>"
+    },
+    {
+      "prodid": 2,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2042.png?alt=media&token=f737822b-ddbf-4fe4-9d0d-d4e41cc1acf5",
+      "Cardtag": "<p>BANGLES<p>",
+      "Cardtitle": "<p>24k Gold Bangles</p>",
+      "price": "<p>$400.99</p>"
+    },
+    {
+      "prodid": 3,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2043%20(2).png?alt=media&token=fc296226-2ed6-4a3c-80e3-c63bb626a949",
+      "Cardtag": "<p>NOSE RINGS<p>",
+      "Cardtitle": "<p>20k Gold Nose Rings</p>",
+      "price": "<p>$100.99</p>"
+    },
+    {
+      "prodid": 4,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2018.png?alt=media&token=2a4e3523-4a58-4684-aeb9-7bd1e5ac15f3",
+      "Cardtag": "<p>MENS RINGS<p>",
+      "Cardtitle": "<p>18K Gold Rings</p>",
+      "price": "<p>$600.99</p>"
+    }
+  ],
+  "buttontext1":"MORE ABOUT US",
+  "buttontext2":"SHOW MORE PRODUCTS"
+}

@@ -113,7 +113,18 @@
           width: 80% !important;
         }
       }
-      
+      .Button {
+        width: 139px;
+        height: 56px;
+        border-radius: 25px;
+        background-color: #c18623;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12.918px;
+        line-height: 15px;
+        color: #ffffff;
+      }
     }
     .buttons {
       display: flex;

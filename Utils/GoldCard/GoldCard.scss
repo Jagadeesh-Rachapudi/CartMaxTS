@@ -1,0 +1,42 @@
+.GoldCard-Body {
+  width: 260px;
+  img {
+    width: 245px;
+    height: 240px;
+    object-fit: contain;
+  }
+  .GoldCard-tag {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.2em;
+    color: #969696;
+  }
+  .GoldCard-title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 28px;
+    color: #232323;
+  }
+  .price {
+    font-family: "Jost";
+    font-size: 17px;
+    line-height: 20px;
+    color: #3f3f3f;
+  }
+  .Cart {
+    background-color: #c18623;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    .icon {
+      margin-left: 0.7rem;
+      margin-top: 0.7rem;
+      cursor: pointer;
+    }
+  }
+}

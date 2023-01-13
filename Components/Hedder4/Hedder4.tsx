@@ -6,7 +6,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
-import GoldButton from "../../Utils/GoldButton/GoldButton";
 
 export interface IProps {
   src: string;
@@ -92,9 +91,12 @@ function Hedder4(props: IProps) {
                     __html: props.text,
                   }}
                 />
-                <div className="mt-5">
-                  <GoldButton text={props.buttonText} />
-                </div>
+                <button
+                  className="Button mt-5"
+                  dangerouslySetInnerHTML={{
+                    __html: props.buttonText,
+                  }}
+                />
               </div>
             </div>
             <div className="buttons">
