@@ -1,118 +1,177 @@
 .Hedder4-Body {
   height: fit-content;
   background-color: #494949;
-  .content {
-    margin-left: 6rem;
-    padding-top: 22rem;
-    .tag {
-      font-family: "Jost";
-      font-size: 12px;
-      line-height: 14px;
-      color: #c18623;
-      margin-top: 1rem;
+  .col1 {
+    margin-top: 35rem;
+    @media screen and (max-width: 992px) {
+      margin: 0 !important ;
+      height: 50vh;
+      margin-left: 25% !important;
+      padding-top: 8rem !important;
     }
-    .name {
-      font-family: "Jost";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 46px;
-      color: #ffffff;
+    @media screen and (max-width: 992px) {
+      margin-left: 10% !important;
     }
-    .price {
-      font-family: "Jost";
-      font-size: 17px;
-      line-height: 20px;
-      color: #c18623;
+    .content {
+      margin-left: 6rem;
+      @media screen and (max-width: 992px) {
+        margin: 0 !important ;
+        width: fit-content;
+      }
+      .tag {
+        font-family: "Jost";
+        font-size: 12px;
+        line-height: 14px;
+        color: #c18623;
+        margin-top: 1rem;
+        width: fit-content;
+      }
+      .name {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 46px;
+        color: #ffffff;
+        width: fit-content;
+      }
+      .price {
+        font-family: "Jost";
+        font-size: 17px;
+        line-height: 20px;
+        color: #c18623;
+        width: fit-content;
+      }
     }
   }
-  .BlackBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: black;
-    height: 604px;
-    width: 604px;
-    padding-left: 6rem;
-    .tag {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 18px;
-      color: #c18623;
+  .col2 {
+    @media screen and (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .title {
-      font-family: "Jost";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 55px;
-      line-height: 70px;
-      color: #ffffff;
-      width: 24rem;
+    .Black-Button {
+      @media screen and (max-width: 992px) {
+        margin: 0 !important;
+      }
     }
-    .text {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 28px;
-      color: #d7d7d7;
-      width: 25rem;
+    .BlackBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: black;
+      height: 604px;
+      width: fit-content;
+      padding-left: 6rem;
+      padding-right: 6.75rem;
+      @media screen and (max-width: 992px) {
+        margin: 0 !important;
+      }
+      @media screen and (max-width: 604px) {
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-left: 3rem !important;
+      }
+      .tag {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #c18623;
+      }
+      .title {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 70px;
+        color: #ffffff;
+        width: 24rem;
+        @media screen and (max-width: 604px) {
+          width: 80% !important;
+        }
+        @media screen and (max-width: 519px) {
+          font-size: 45px;
+          line-height: 50px;
+        }
+        @media screen and (max-width: 415px) {
+          font-size: 38px;
+          line-height: 50px;
+        }
+      }
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: #d7d7d7;
+        width: 25rem;
+        @media screen and (max-width: 604px) {
+          width: 80% !important;
+        }
+      }
+      
     }
-    .Button {
-      width: 139px;
-      height: 56px;
-      border-radius: 25px;
-      background-color: #c18623;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 12.918px;
-      line-height: 15px;
-      color: #ffffff;
+    .buttons {
+      display: flex;
+      justify-content: end;
+      @media screen and (max-width: 604px) {
+        width: 100% !important;
+        height: 100%;
+      }
+      .button1 {
+        height: 30vh;
+        background-color: #363636;
+        display: flex;
+        width: 302px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        div {
+          background-color: #c18623;
+          border-radius: 50%;
+        }
+      }
+      .button2 {
+        height: 30vh;
+        background-color: #c18623;
+        display: flex;
+        width: 302px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        div {
+          background-color: white;
+          border-radius: 50%;
+        }
+      }
+      .button3 {
+        border-left: 10px solid #c18623;
+        border-top: 10px solid #c18623;
+        height: 30vh;
+        background-color: #363636;
+        width: 302px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        div {
+          background-color: #c18623;
+          border-radius: 50%;
+        }
+      }
     }
   }
-  .buttons {
-    display: flex;
-    justify-content: end;
-    .button1 {
-      height: 30vh;
-      background-color: #363636;
-      width: 320px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      div {
-        background-color: #c18623;
-        border-radius: 50%;
-      }
-    }
-    .button2 {
-      height: 30vh;
-      background-color: #c18623;
-      width: 340px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      div {
-        background-color: white;
-        border-radius: 50%;
-      }
-    }
-    .button3 {
-      border-left: 10px solid #c18623;
-      border-top: 10px solid #c18623;
-      height: 30vh;
-      background-color: #363636;
-      width: 340px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      div {
-        background-color: #c18623;
-        border-radius: 50%;
-      }
-    }
+  .carousel-indicators {
+    display: none !important;
+  }
+  .carousel-control-next-icon {
+    display: none !important;
+  }
+  .carousel-control-prev-icon {
+    display: none !important;
   }
 }

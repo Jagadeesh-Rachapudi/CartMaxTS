@@ -6,70 +6,125 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
+import GoldButton from "../../Utils/GoldButton/GoldButton";
 
 export interface IProps {
+  src: string;
+  tag1: string;
+  tag2: string;
+  name: string;
+  price: string;
+  text: string;
+  title: string;
+  buttonText: string;
   dummy: string[];
 }
 
 function Hedder4(props: IProps) {
   const [active, setActive] = useState(1);
   return (
-    <Container fluid className="Hedder4-Body">
-      <Row>
-        <Col className="p-0 ">
-          <div className="d-flex">
-            <div className="content">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2F6a929e2fd80767890cfefb3828b23a32.png?alt=media&token=cd98b55a-087f-4ec4-96a7-bd279d3dd0a9"
-                alt=""
-                className="img"
-              />
-              <div className="tag">EARRINGS</div>
-              <div className="name">Wedding Rings</div>
-              <div className="price">$299.00</div>
-            </div>
-            <div className=" ms-auto Black-Button">
-              <div className="BlackBox">
-                <div className="tag">NEW COLLECTION 2022</div>
-                <div className="title mt-3 ">
-                  Fossil Explorist Men&apos;s Watch
+    <div>
+      <Container fluid className="Hedder4-Body">
+        <Row className="p-0">
+          <Col
+            className="p-0 col1"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xl={6}
+            xxl={6}
+          >
+            <Carousel className="ms-5">
+              {props.dummy.map((e, i) => (
+                <Carousel.Item key={i}>
+                  <div className="content">
+                    <img src={props.src} alt="" className="img" />
+                    <div
+                      className="tag"
+                      dangerouslySetInnerHTML={{
+                        __html: props.tag1,
+                      }}
+                    />
+                    <div
+                      className="name"
+                      dangerouslySetInnerHTML={{
+                        __html: props.name,
+                      }}
+                    />
+                    <div
+                      className="price"
+                      dangerouslySetInnerHTML={{
+                        __html: props.price,
+                      }}
+                    />
+                  </div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </Col>
+          <Col
+            className="p-0 col2 "
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xl={6}
+            xxl={6}
+          >
+            <div className="ms-auto Black-Button">
+              <div className=" ms-auto BlackBox">
+                <div
+                  className="tag"
+                  dangerouslySetInnerHTML={{
+                    __html: props.tag2,
+                  }}
+                />
+                <div
+                  className="title mt-3"
+                  dangerouslySetInnerHTML={{
+                    __html: props.title,
+                  }}
+                />
+                <div
+                  className="text mt-3"
+                  dangerouslySetInnerHTML={{
+                    __html: props.text,
+                  }}
+                />
+                <div className="mt-5">
+                  <GoldButton text={props.buttonText} />
                 </div>
-                <div className="text mt-3 ">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididuntLorem ipsum dolor sit amet,
-                  consectetur adipisicing
+              </div>
+            </div>
+            <div className="buttons">
+              <div
+                onClick={() => {
+                  if (active == 1) setActive(2);
+                  else setActive(1);
+                }}
+                className={`${active == 1 ? "button2 border2 " : "button3"}`}
+              >
+                <div>
+                  <HiArrowSmLeft className="left" size={50} />
                 </div>
-                <button className="Button mt-5 ">MORE ABOUT</button>
+              </div>
+              <div
+                onClick={() => {
+                  if (active == 2) setActive(1);
+                  else setActive(2);
+                }}
+                className={`${active == 2 ? "button2" : "button1"}`}
+              >
+                <div>
+                  <HiArrowSmRight className="right" size={50} />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="buttons">
-            <div
-              onClick={() => {
-                if (active == 1) setActive(2);
-                else setActive(1);
-              }}
-              className={`${active == 1 ? "button2 border2 " : "button3"}`}
-            >
-              <div>
-                <HiArrowSmLeft className="left" size={50} />
-              </div>
-            </div>
-            <div
-              onClick={() => {
-                if (active == 2) setActive(1);
-                else setActive(2);
-              }}
-              className={`${active == 2 ? "button2" : "button1"}`}
-            >
-              <div>
-                <HiArrowSmRight className="right" size={50} />
-              </div>
-            </div>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 

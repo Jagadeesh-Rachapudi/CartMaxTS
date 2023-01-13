@@ -20,6 +20,7 @@ import "../Utils/SpecialOffer/SpecialOffer.scss";
 import "../Utils/Deals/Deals.scss";
 import "../Utils/BrownButton/BrownButton.scss";
 import "../Utils/WatchItem/WatchItem.scss";
+import "../Utils/GoldButton/GoldButton.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
