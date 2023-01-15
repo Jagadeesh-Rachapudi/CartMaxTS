@@ -22,6 +22,9 @@ import Popular2, {
 } from "../Components/Popular2/Popular2";
 import Popular2Data from "../Components/Popular2/Popular2.json";
 
+import Review, { IProps as ReviewProps } from "../Components/Review/Review";
+import ReviewData from "../Components/Review/Review.json";
+
 import TopSelling, {
   IProps as TopSellingProps,
 } from "../Components/TopSelling/TopSelling";
@@ -37,6 +40,7 @@ function Jewellery() {
       <Daimond {...(DaimondData as DaimondProps)} />
       <Categories3 {...(Categories3Data as Categories3Props)} />
       <TopSelling {...(TopSellingData as TopSellingProps)} />
+      <Review {...(ReviewData as ReviewProps)} />
     </div>
   );
 }

@@ -6,7 +6,7 @@
   }
   .Col2 {
     background-color: #fff9f3;
-    height: 100vh;
+    height: fit-content;
     .tag {
       font-family: "Roboto";
       font-style: normal;
@@ -35,7 +35,7 @@
       justify-content: space-evenly;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
   }
 }
