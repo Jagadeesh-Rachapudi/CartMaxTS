@@ -1,0 +1,148 @@
+.Details-Body {
+  height: fit-content;
+  margin-top: -7rem;
+  background-color: white;
+  .content {
+    height: 70vh;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 992px) {
+     margin-left: 10rem;
+    }
+    .tag {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #c18623;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 55px;
+      color: #232323;
+      @media screen and (max-width: 992px) {
+        width: 24rem;
+      }
+    }
+    .price {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 33px;
+      line-height: 48px;
+      color: #3f3f3f;
+    }
+    .horizontalline {
+      width: 80%;
+      @media screen and (max-width: 992px) {
+        width: 24rem;
+      }
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16.972px;
+      line-height: 26px;
+      color: #666666;
+      @media screen and (max-width: 992px) {
+        width: 24rem;
+      }
+    }
+    .icon-container {
+      margin-left: 0.5rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      background-color: #eeeeee;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      .icon {
+        margin-left: 0.7rem;
+        margin-top: 0.7rem;
+      }
+    }
+  }
+  .roseBox {
+    width: 100%;
+    height: 394px;
+    background-color: #fff9f6;
+  }
+  .box {
+    width: 5rem;
+    height: 5rem;
+    background-color: #efefef;
+  }
+  .box2 {
+    width: 85px;
+    height: 77px;
+    background-color: #eae4e4;
+  }
+  .hedding {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020202;
+  }
+  .name-button,
+  .split-button {
+    border: 2px sold red !important;
+    border-radius: 20px;
+  }
+  span {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020202;
+  }
+  .wishlist {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.029px;
+    line-height: 23px;
+    color: #191919;
+    .icon {
+      margin-top: 0.23rem;
+      margin-right: 0.5rem;
+    }
+  }
+  .Button {
+    background-color: #191919;
+    width: 234px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.029px;
+    line-height: 23px;
+    color: #ffffff;
+    .icon {
+      margin-top: -0.25rem;
+      margin-right: 0.5rem;
+    }
+  }
+  .tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.924px;
+    line-height: 26px;
+    color: #3d3d3d;
+  }
+}
