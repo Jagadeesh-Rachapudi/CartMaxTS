@@ -96,6 +96,8 @@ import "../Components/TopSelling/TopSelling.scss";
 import "../Components/Review/Review.scss";
 import "../Components/Footer6/Footer6.scss";
 
+import "../Components/Hedder5/Hedder5.scss";
+
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";
 import { PersistGate } from "redux-persist/integration/react";

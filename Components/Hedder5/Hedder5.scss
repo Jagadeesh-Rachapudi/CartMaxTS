@@ -1,0 +1,31 @@
+.Hedder5-Body {
+  height: 100vh;
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59.907px;
+    line-height: 87px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 17rem;
+  }
+  .option {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .option:hover {
+    color: #d9121f;
+  }
+  .active {
+    color: #d9121f;
+  }
+}
