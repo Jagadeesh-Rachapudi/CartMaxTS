@@ -1,11 +1,12 @@
 .TopSelling-Body {
-  height: 500vh;
+  height: fit-content;
+  margin-bottom: 5rem;
   .Col1 {
-    height: 70vh;
+    height: 100vh;
   }
   .Col2 {
     background-color: #fff9f3;
-    height: 70vh;
+    height: 100vh;
     .tag {
       font-family: "Roboto";
       font-style: normal;

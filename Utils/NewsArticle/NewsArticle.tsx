@@ -10,6 +10,7 @@ export interface IProps {
   title: string;
   content: string;
   Readmore: string;
+  color: string;
 }
 
 function NewsArticle(props: IProps) {
@@ -17,7 +18,7 @@ function NewsArticle(props: IProps) {
     <Container className="NewsArticle-Body">
       <Row>
         <Col>
-          <div className="Date">
+          <div className="Date" style={{ backgroundColor: props.color }}>
             <div>20</div>
             <div>Jan</div>
           </div>
@@ -27,6 +28,7 @@ function NewsArticle(props: IProps) {
       <Row>
         <Col>
           <div
+            style={{ color: props.color }}
             className="tagh"
             dangerouslySetInnerHTML={{
               __html: props.tag,

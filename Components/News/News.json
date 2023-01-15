@@ -2,8 +2,23 @@
   "tag": "<p>INTERIOR DECOR STORIES</p>",
   "Title": "<p>News &amp; updates</p>",
   "Articles": [
-    "<p>A Modern, Pastel shared baby and Toddler Room</p>",
-    "<p>The menu space New York Show Room Designed</p>",
-    "<p>A Modern, Pastel shared baby and Toddler Room</p>"
+    {
+      "color": "#F76954",
+      "tag": "<p>FUNITURE</p>",
+      "title": "<p>A Modern, Pastel shared baby and Toddler Room</p>",
+      "src": "https:picsum.photos/445/276"
+    },
+    {
+      "color": "#F76954",
+      "tag": "<p>FUNITURE</p>",
+      "src": "https:picsum.photos/445/276",
+      "title": "<p>The menu space New York Show Room Designed</p>"
+    },
+    {
+      "color": "#F76954",
+      "tag": "<p>FUNITURE</p>",
+      "src": "https:picsum.photos/445/276",
+      "title": "<p>A Modern, Pastel shared baby and Toddler Room</p>"
+    }
   ]
 }

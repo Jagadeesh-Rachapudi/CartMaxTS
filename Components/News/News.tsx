@@ -8,11 +8,10 @@ import NewsArticle, {
   IProps as NewsArticleProps,
 } from "../../Utils/NewsArticle/NewsArticle";
 
-
 export interface IProps {
   tag: string;
   Title: string;
-  Articles: string[];
+  Articles: { color: string; title: string; tag: string; src: string }[];
 }
 
 function News(props: IProps) {
@@ -40,14 +39,27 @@ function News(props: IProps) {
       </Row>
       <Row>
         <Col className="Container">
-          {props.Articles.map((e, id) => (
-            <div key={id} className="mt-5">
-              <NewsArticle
-                {...(NewsArticleData as NewsArticleProps)}
-                title={e}
-              />
-            </div>
-          ))}
+          {props.Articles.map(
+            (
+              Article: {
+                color: string;
+                title: string;
+                tag: string;
+                src: string;
+              },
+              i
+            ) => (
+              <div key={i} className="m-4">
+                <NewsArticle
+                  {...(NewsArticleData as NewsArticleProps)}
+                  title={Article.title}
+                  color={Article.color}
+                  tag={Article.tag}
+                  src={Article.src}
+                />
+              </div>
+            )
+          )}
         </Col>
       </Row>
     </Container>

@@ -1,3 +1,24 @@
 {
-    
+  "tag": "<p>JACKET & COAST</p>",
+  "title": "<p>Top Selling Products</p>",
+  "Articles": [
+    {
+      "color": "#C18623",
+      "tag": "<p>GOLD RINGS</p>",
+      "src": "https:picsum.photos/399/276",
+      "title": "<p>Golden ring with gemstone isolated</p>"
+    },
+    {
+      "color": "#C18623",
+      "tag": "<p>GOLD RINGS</p>",
+      "src": "https:picsum.photos/399/276",
+      "title": "<p>Preparing a new set of Rings stock photo</p>"
+    },
+    {
+      "color": "#C18623",
+      "tag": "<p>GOLD RINGS</p>",
+      "src": "https:picsum.photos/399/276",
+      "title": "<p>A Modern, Pastel shared and Toddler Room</p>"
+    }
+  ]
 }
