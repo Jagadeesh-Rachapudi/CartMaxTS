@@ -1,0 +1,32 @@
+.Categories3-Body {
+  height: 500vh;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.681px;
+    line-height: 17px;
+    letter-spacing: 0.2em;
+    color: #c18623;
+    text-align: center;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+    color: #252525;
+    text-align: center;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+}

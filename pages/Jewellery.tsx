@@ -3,6 +3,11 @@ import React from "react";
 import Antique, { IProps as AntiqueProps } from "../Components/Antique/Antique";
 import AntiqueData from "../Components/Antique/Antique.json";
 
+import Categories3, {
+  IProps as Categories3Props,
+} from "../Components/Categories3/Categories3";
+import Categories3Data from "../Components/Categories3/Categories3.json";
+
 import Daimond, { IProps as DaimondProps } from "../Components/Daimond/Daimond";
 import DaimondData from "../Components/Daimond/Daimond.json";
 
@@ -25,6 +30,7 @@ function Jewellery() {
       <Popular2 {...(Popular2Data as Popular2Props)} />
       <Antique {...(AntiqueData as AntiqueProps)} />
       <Daimond {...(DaimondData as DaimondProps)} />
+      <Categories3 {...(Categories3Data as Categories3Props)} />
     </div>
   );
 }

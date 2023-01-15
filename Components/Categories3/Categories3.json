@@ -1,0 +1,46 @@
+{
+  "tag": "<p>NEW COLLECTION 2022</p>",
+  "title": "<p>Popular Categories</p>",
+  "items": [
+    {
+      "name": "<p>CHAIN<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2021(11).png?alt=media&token=dbed7e6e-a131-435d-98b1-2e5794e72441"
+    },
+    {
+      "name": "<p>BRACELET<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2022.png?alt=media&token=2a25e9f5-9a47-4634-8728-4251cfad6510"
+    },
+    {
+      "name": "<p>DAIMOND RINGS<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2023.png?alt=media&token=59a9d20c-7ad2-4bfe-a894-48068d5bb5e9"
+    },
+    {
+      "name": "<p>WRIST BAND<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2024.png?alt=media&token=7444cfa1-9bec-49f0-8c29-afe1c8fdf7c5"
+    },
+    {
+      "name": "<p>GREEN STONE RING<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2025.png?alt=media&token=12ebda99-c31b-421f-a2ba-202a8e5ae0a1"
+    },
+    {
+      "name": "<p>HEAD BAND<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2026.png?alt=media&token=bf530615-91f1-4986-8809-ced920efbd21"
+    },
+    {
+      "name": "<p>EAR RINGS<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2027%20(1).png?alt=media&token=231ce41d-a5b3-48e7-8442-0cd4dd6bbfbc"
+    },
+    {
+      "name": "<p>RING<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2028%20(1).png?alt=media&token=ff1f188e-a89d-4ccf-94bb-16f56d21bc4e"
+    },
+    {
+      "name": "<p>TWISTED RING<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2029.png?alt=media&token=a73fb464-6fd3-4ab8-9b23-9f4638b77397"
+    },
+    {
+      "name": "<p>DAIMOND RINGS PAIR<p>",
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2030.png?alt=media&token=a10f60c9-eee9-41f5-8419-b4330694ca87"
+    }
+  ]
+}

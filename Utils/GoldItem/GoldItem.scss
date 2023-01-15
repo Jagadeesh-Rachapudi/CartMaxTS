@@ -1,0 +1,42 @@
+.GoldItem-Body {
+  width: fit-content;
+  .hover {
+    .img-Container {
+      border: 2px solid #f3f3f3;
+      border-radius: 5px 5px 5px 5px;
+      cursor: pointer;
+      margin-bottom: 3rem;
+      img {
+        object-fit: contain;
+        width: 245px;
+        height: 251px;
+      }
+    }
+    .name-Container {
+      display: none;
+      background-color: #c18623;
+      text-align: center;
+      height: 3rem;
+      border-radius: 0 0 5px 5px;
+      .name {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        color: #ffffff;
+        padding-top: 0.8rem;
+      }
+    }
+  }
+  .hover:hover {
+    .img-Container {
+      border: 2px solid #c18623;
+      border-radius: 5px 5px 0 0;
+      margin-bottom: 0rem;
+    }
+    .name-Container {
+      display: block;
+    }
+  }
+}

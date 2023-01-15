@@ -22,6 +22,7 @@ import "../Utils/BrownButton/BrownButton.scss";
 import "../Utils/WatchItem/WatchItem.scss";
 import "../Utils/TransButton/TransButton.scss";
 import "../Utils/GoldCard/GoldCard.scss";
+import "../Utils/GoldItem/GoldItem.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -90,6 +91,7 @@ import "../Components/Hedder4/Hedder4.scss";
 import "../Components/Popular2/Popular2.scss";
 import "../Components/Antique/Antique.scss";
 import "../Components/Daimond/Daimond.scss";
+import "../Components/Categories3/Categories3.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";
