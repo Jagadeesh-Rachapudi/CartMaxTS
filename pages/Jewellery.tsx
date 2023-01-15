@@ -22,6 +22,11 @@ import Popular2, {
 } from "../Components/Popular2/Popular2";
 import Popular2Data from "../Components/Popular2/Popular2.json";
 
+import TopSelling, {
+  IProps as TopSellingProps,
+} from "../Components/TopSelling/TopSelling";
+import TopSellingData from "../Components/TopSelling/TopSelling.json";
+
 function Jewellery() {
   return (
     <div>
@@ -31,6 +36,7 @@ function Jewellery() {
       <Antique {...(AntiqueData as AntiqueProps)} />
       <Daimond {...(DaimondData as DaimondProps)} />
       <Categories3 {...(Categories3Data as Categories3Props)} />
+      <TopSelling {...(TopSellingData as TopSellingProps)} />
     </div>
   );
 }

@@ -92,6 +92,7 @@ import "../Components/Popular2/Popular2.scss";
 import "../Components/Antique/Antique.scss";
 import "../Components/Daimond/Daimond.scss";
 import "../Components/Categories3/Categories3.scss";
+import "../Components/TopSelling/TopSelling.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

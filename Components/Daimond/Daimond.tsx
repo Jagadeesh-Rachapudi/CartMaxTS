@@ -7,6 +7,7 @@ import TransButton from "../../Utils/TransButton/TransButton";
 export interface IProps {
   tag: string;
   title: string;
+  buttontext: string;
 }
 
 function Daimond(props: IProps) {
@@ -40,7 +41,7 @@ function Daimond(props: IProps) {
             }}
           />
           <div className="Button-Container">
-            <TransButton color="white" text="SHOPPING NOW" />
+            <TransButton color="white" text={props.buttontext} />
           </div>
         </Col>
       </Row>
