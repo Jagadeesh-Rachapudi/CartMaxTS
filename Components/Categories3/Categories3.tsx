@@ -12,7 +12,7 @@ export interface IProps {
 
 function Categories3(props: IProps) {
   return (
-    <Container className="Categories3-Body">
+    <Container className="Categories3-Body" id="Watches">
       <Row>
         <Col>
           <div

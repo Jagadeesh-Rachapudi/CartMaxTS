@@ -12,7 +12,7 @@ export interface IProps {
 
 function Daimond(props: IProps) {
   return (
-    <Container fluid className="Daimond-Body">
+    <Container fluid className="Daimond-Body" id="Children">
       <Row className="p-0">
         <Col className="p-0">
           <div className="box"></div>

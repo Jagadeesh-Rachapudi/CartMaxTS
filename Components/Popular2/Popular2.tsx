@@ -28,7 +28,7 @@ export interface IProps {
 function Popular2(props: IProps) {
   const [active, setActive] = useState(100);
   return (
-    <Container className="Popular2-Body" fluid>
+    <Container className="Popular2-Body" id="Rings" fluid>
       <Row className="p-0">
         <Col className="p-0">
           <img src={props.img1} alt="" className="img1" />
@@ -52,7 +52,7 @@ function Popular2(props: IProps) {
           </Col>
         </Row>
       </Container>
-      <Container>
+      <Container id="Women">
         <Row>
           <Col>
             <div

@@ -79,7 +79,7 @@ function Antique(props: IProps) {
       <div>
         <img src={props.leaves} alt="" className="leaves" />
       </div>
-      <Container className="BestSeller">
+      <Container className="BestSeller" id="Mens">
         <Row>
           <Col>
             <div

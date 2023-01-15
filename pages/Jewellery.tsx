@@ -37,7 +37,9 @@ function Jewellery() {
   return (
     <div>
       <Navbar {...(NavbarData as NavbarProps)} />
-      <Hedder4 {...(Hedder4Data as Hedder4Props)} />
+      <div id="Bridal">
+        <Hedder4 {...(Hedder4Data as Hedder4Props)} />
+      </div>
       <Popular2 {...(Popular2Data as Popular2Props)} />
       <Antique {...(AntiqueData as AntiqueProps)} />
       <Daimond {...(DaimondData as DaimondProps)} />
