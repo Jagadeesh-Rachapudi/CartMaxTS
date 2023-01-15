@@ -1,0 +1,165 @@
+.Footer6-Body {
+  height: fit-content;
+  .Dark {
+    height: 40vh;
+    background-color: #1b1b1b;
+  }
+  .Dark2 {
+    height: 40vh;
+    background-color: #1b1b1b;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  .Dark3 {
+    height: 40vh;
+    background-color: #1b1b1b;
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  .Light {
+    height: 40vh;
+    background-color: #525252;
+  }
+  .Light2 {
+    height: 40vh;
+    background-color: #525252;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .Footer {
+    height: fit-content;
+    margin-top: -3rem;
+    background-color: #f2eee7;
+    .Button {
+      width: 134px;
+      height: 47px;
+      border: none;
+      border-radius: 25px;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      background-color: #c18623;
+      color: #ffffff;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #646464;
+      max-width: 27rem;
+    }
+    .hedding {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 33px;
+      letter-spacing: -0.01em;
+      color: #080808;
+    }
+    .Container {
+      width: fit-content;
+    }
+    .link {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 48px;
+      color: #5c5b5b;
+      text-decoration: none;
+    }
+    .link:hover {
+      color: #ffffff;
+    }
+    .underline1 {
+      width: 25%;
+      background-color: #c18623;
+      height: 0.1rem;
+    }
+    .underline {
+      width: 25%;
+      background-color: #c18623;
+      height: 0.1rem;
+      margin-top: -0.5rem;
+    }
+    .icon1 {
+      background-color: #c18623;
+      height: 2rem;
+      width: 2.5rem;
+      border-radius: 50%;
+      @media screen and (max-width: 992px) {
+        width: 2rem !important;
+      }
+    }
+    .icon2 {
+      background-color: #c18623;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      @media screen and (max-width: 992px) {
+        width: 2rem !important;
+      }
+    }
+    .icon3 {
+      background-color: #c18623;
+      height: 2rem;
+      width: 3.5rem;
+      border-radius: 50%;
+      @media screen and (max-width: 992px) {
+        width: 2rem !important;
+      }
+    }
+    .address {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      color: #5c5b5b;
+    }
+    .content1 {
+      @media screen and (max-width: 992px) {
+        margin-left: 27%;
+      }
+      @media screen and (max-width: 593px) {
+        margin-left: 12%;
+      }
+      @media screen and (max-width: 400px) {
+        margin-left: 1rem !important;
+      }
+    }
+    .content2 {
+      @media screen and (max-width: 992px) {
+        margin-top: 3rem !important;
+        padding: 0 !important;
+        margin-left: 25% !important;
+      }
+      @media screen and (max-width: 593px) {
+        margin-left: 12% !important;
+      }
+      @media screen and (max-width: 400px) {
+        margin-left: 1rem !important;
+      }
+    }
+    .content4 {
+      @media screen and (max-width: 992px) {
+        margin-top: 3rem !important;
+        margin-left: 25% !important;
+      }
+      @media screen and (max-width: 593px) {
+        margin-left: 12% !important;
+      }
+      @media screen and (max-width: 400px) {
+        margin-left: 1rem !important;
+      }
+    }
+  }
+}

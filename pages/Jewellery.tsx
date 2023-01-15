@@ -11,6 +11,9 @@ import Categories3Data from "../Components/Categories3/Categories3.json";
 import Daimond, { IProps as DaimondProps } from "../Components/Daimond/Daimond";
 import DaimondData from "../Components/Daimond/Daimond.json";
 
+import Footer6, { IProps as Footer6Props } from "../Components/Footer6/Footer6";
+import Footer6Data from "../Components/Footer6/Footer6.json";
+
 import Hedder4, { IProps as Hedder4Props } from "../Components/Hedder4/Hedder4";
 import Hedder4Data from "../Components/Hedder4/Hedder4.json";
 
@@ -41,6 +44,7 @@ function Jewellery() {
       <Categories3 {...(Categories3Data as Categories3Props)} />
       <TopSelling {...(TopSellingData as TopSellingProps)} />
       <Review {...(ReviewData as ReviewProps)} />
+      <Footer6 {...(Footer6Data as Footer6Props)} />
     </div>
   );
 }
