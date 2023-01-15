@@ -1,0 +1,53 @@
+{
+  "chain": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335",
+  "carousel": [
+    "https://picsum.photos/500/651",
+    "https://picsum.photos/500/650",
+    "https://picsum.photos/500/652"
+  ],
+  "tag1": "<p>NEW COLLECTION 2022</p>",
+  "title1": "<p>Antique Diamond Necklaces</p>",
+  "text": "<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing</p>",
+  "buttontext1": "SHOPPING NOW",
+  "buttontext2": "SHOW MORE PRODUCTS",
+  "tag2": "<p>NEW COLLECTION 2022</p>",
+  "title2": "<p>BestSellers</p>",
+  "options": [
+    "<p>ALL</p>",
+    "<p>RINGS</p>",
+    "<p>EARRINGS</p>",
+    "<p>NECKLACES</p>",
+    "<p>SHOW MORE</p>"
+  ],
+  "products": [
+    {
+      "prodid": 1,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2039.png?alt=media&token=74505187-43f9-4709-9137-2505fc639bb4",
+      "Cardtag": "<p>EAR RINGS<p>",
+      "Cardtitle": "<p>22k Gold Hoops</p>",
+      "price": "<p>$200.99</p>"
+    },
+    {
+      "prodid": 2,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2042.png?alt=media&token=f737822b-ddbf-4fe4-9d0d-d4e41cc1acf5",
+      "Cardtag": "<p>BANGLES<p>",
+      "Cardtitle": "<p>24k Gold Bangles</p>",
+      "price": "<p>$400.99</p>"
+    },
+    {
+      "prodid": 3,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2043%20(2).png?alt=media&token=fc296226-2ed6-4a3c-80e3-c63bb626a949",
+      "Cardtag": "<p>NOSE RINGS<p>",
+      "Cardtitle": "<p>20k Gold Nose Rings</p>",
+      "price": "<p>$100.99</p>"
+    },
+    {
+      "prodid": 4,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2018.png?alt=media&token=2a4e3523-4a58-4684-aeb9-7bd1e5ac15f3",
+      "Cardtag": "<p>MENS RINGS<p>",
+      "Cardtitle": "<p>18K Gold Rings</p>",
+      "price": "<p>$600.99</p>"
+    }
+  ],
+  "leaves":"https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2031%20copy%20(1).png?alt=media&token=397e508a-b1ca-40a1-b099-38f6299ecce0"
+}
