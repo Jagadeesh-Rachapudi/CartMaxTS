@@ -3,6 +3,9 @@ import React from "react";
 import Antique, { IProps as AntiqueProps } from "../Components/Antique/Antique";
 import AntiqueData from "../Components/Antique/Antique.json";
 
+import Daimond, { IProps as DaimondProps } from "../Components/Daimond/Daimond";
+import DaimondData from "../Components/Daimond/Daimond.json";
+
 import Hedder4, { IProps as Hedder4Props } from "../Components/Hedder4/Hedder4";
 import Hedder4Data from "../Components/Hedder4/Hedder4.json";
 
@@ -21,6 +24,7 @@ function Jewellery() {
       <Hedder4 {...(Hedder4Data as Hedder4Props)} />
       <Popular2 {...(Popular2Data as Popular2Props)} />
       <Antique {...(AntiqueData as AntiqueProps)} />
+      <Daimond {...(DaimondData as DaimondProps)} />
     </div>
   );
 }
