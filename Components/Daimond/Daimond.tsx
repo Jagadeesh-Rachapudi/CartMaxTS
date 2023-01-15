@@ -20,9 +20,9 @@ function Daimond(props: IProps) {
       <Row className="p-0">
         <Col
           className="p-0 content"
-          xs={11}
-          sm={11}
-          md={11}
+          xs={12}
+          sm={12}
+          md={12}
           lg={11}
           xl={11}
           xxl={11}

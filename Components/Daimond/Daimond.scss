@@ -1,10 +1,16 @@
 .Daimond-Body {
   margin-top: -10rem;
   margin-bottom: 5rem;
+  @media screen and (max-width: 992px) {
+    margin-top: 0;
+  }
   .box {
     height: 6rem;
     width: 8rem;
     background-color: #656565;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
   }
   .content {
     height: 60vh;
@@ -17,6 +23,17 @@
       font-size: 72.008px;
       line-height: 72px;
       padding-left: 12rem;
+      @media screen and (max-width: 800px) {
+        padding-left: 5rem;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 1rem;
+      }
+      @media screen and (max-width: 435px) {
+        padding-left: 1rem;
+      }
     }
     .tag {
       font-family: "Jost";
@@ -24,9 +41,21 @@
       line-height: 29px;
       color: #ffffff;
       padding-left: 12rem;
+      @media screen and (max-width: 800px) {
+        padding-left: 5rem;
+      }
+      @media screen and (max-width: 435px) {
+        padding-left: 1rem;
+      }
     }
     .Button-Container {
       padding-left: 12rem;
+      @media screen and (max-width: 800px) {
+        padding-left: 5rem;
+      }
+      @media screen and (max-width: 435px) {
+        padding-left: 1rem;
+      }
     }
   }
 }
