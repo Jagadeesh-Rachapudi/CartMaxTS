@@ -17,6 +17,11 @@ import TabsInDetails, {
 } from "../Components/TabsInDetails/TabsInDetails";
 import TabsInDetailsData from "../Components/TabsInDetails/TabsInDetails.json";
 
+import Products, {
+  IProps as ProductsProps,
+} from "../Components/Products/Products";
+import ProductsData from "../Components/Products/Products.json";
+
 function JewelleryDetailsPage() {
   return (
     <div>
@@ -31,6 +36,7 @@ function JewelleryDetailsPage() {
       />
       <Details {...(DetailsData as DetailsProps)} />
       <TabsInDetails {...(TabsInDetailsData as TabsInDetailsProps)} />
+      <Products {...(ProductsData as ProductsProps)} />
       <Footer6 {...(Footer6Data as Footer6Props)} />
     </div>
   );

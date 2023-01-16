@@ -1,0 +1,37 @@
+.Products-Body {
+  margin-top: 3rem;
+  height: 100vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2040.png?alt=media&token=d2df097a-9e37-4eb6-a3a2-29a3628849a6");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #c18623;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 65px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-align: center;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+}

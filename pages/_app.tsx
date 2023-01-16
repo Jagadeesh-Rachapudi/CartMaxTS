@@ -99,6 +99,7 @@ import "../Components/Footer6/Footer6.scss";
 import "../Components/Hedder5/Hedder5.scss";
 import "../Components/Details/Details.scss";
 import "../Components/TabsInDetails/TabsInDetails.scss";
+import "../Components/Products/Products.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

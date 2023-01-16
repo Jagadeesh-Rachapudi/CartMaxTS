@@ -17,8 +17,18 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 export interface IProps {
   tag: string;
+  text: string;
   title: string;
-  buttontext: string;
+  price: string;
+  src: string;
+  dummy1: string[];
+  dummy2: string[];
+  tags: string[];
+  count: string;
+  hedding1: string;
+  hedding2: string;
+  hedding3: string;
+  hedding4: string;
 }
 
 function Details(props: IProps) {
@@ -28,17 +38,31 @@ function Details(props: IProps) {
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} xl={4} xxl={4}>
           <div className="content">
-            <div className="tag">SUMMER 2022</div>
-            <div className="title">Diamond Gold Chain</div>
-            <div className="price">
-              <b>$1,800.</b>99
-            </div>
+            <div
+              className="tag"
+              dangerouslySetInnerHTML={{
+                __html: props.tag,
+              }}
+            />
+            <div
+              className="title"
+              dangerouslySetInnerHTML={{
+                __html: props.title,
+              }}
+            />
+            <div
+              className="price"
+              dangerouslySetInnerHTML={{
+                __html: props.price,
+              }}
+            />
             <hr className="horizontalline" />
-            <div className="text">
-              Because we have many types of elements we created Live Editor for
-              you so you can see live changes. link of elements we created Live
-              tEditor for you so forat you can for you so you can.
-            </div>
+            <div
+              className="text"
+              dangerouslySetInnerHTML={{
+                __html: props.text,
+              }}
+            />
             <hr className="horizontalline" />
             <div className="d-flex icons ">
               <div className="icon-container">
@@ -55,81 +79,56 @@ function Details(props: IProps) {
         </Col>
         <Col xs={12} sm={12} md={12} lg={12} xl={4} xxl={4}>
           <div className="d-flex roseBox justify-content-center">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335"
-              alt=""
-              className="img1"
-            />
+            <img src={props.src} alt="" className="img1" />
           </div>
           <div className=" boxes d-flex justify-content-between mt-4">
-            <div className="box d-flex justify-content-center ">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335"
-                alt=""
-                className="img2"
-              />
-            </div>
-            <div className="box d-flex justify-content-center ">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335"
-                alt=""
-                className="img2"
-              />
-            </div>
-            <div className="box d-flex justify-content-center ">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335"
-                alt=""
-                className="img2"
-              />
-            </div>
-            <div className="box d-flex justify-content-center ">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335"
-                alt=""
-                className="img2"
-              />
-            </div>
+            {props.dummy1.map((e, i) => (
+              <div key={i} className="box d-flex justify-content-center ">
+                <img src={props.src} alt="" className="img2" />
+              </div>
+            ))}
           </div>
         </Col>
         <Col xs={12} sm={12} md={12} lg={12} xl={4} xxl={4}>
           <div className="reviews mt-5 mb-3 d-flex justify-content-between  ">
             <div className="d-flex">
-              <AiTwotoneStar size={17} color="gold" className="" />
-              <AiTwotoneStar size={17} color="gold" className="" />
-              <AiTwotoneStar size={17} color="gold" className="" />
-              <AiTwotoneStar size={17} color="gold" className="" />
-              <AiTwotoneStar size={17} color="#CCCCCC" className="" />
+              {props.dummy1.map((e, i) => (
+                <div key={i}>
+                  <AiTwotoneStar size={17} color="gold" />
+                </div>
+              ))}
+              <div>
+                <AiTwotoneStar size={17} color="#CCCCCC" className="" />
+              </div>
             </div>
-            <div className="Count">4 Review(s)</div>
+            <div
+              className="Count"
+              dangerouslySetInnerHTML={{
+                __html: props.count,
+              }}
+            />
           </div>
           <hr className="mb-2 horiLine2 " />
-          <div className="hedding mb-1">MORE DESIGN</div>
+          <div
+            className="hedding mb-1"
+            dangerouslySetInnerHTML={{
+              __html: props.hedding1,
+            }}
+          />
           <div className="d-flex justify-content-between mb-3 boxes2 ">
-            <div className="box2 d-flex justify-content-center">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335"
-                alt=""
-                className="img2"
-              />
-            </div>
-            <div className="box2 d-flex justify-content-center">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335"
-                alt=""
-                className="img2"
-              />
-            </div>
-            <div className="box2 d-flex justify-content-center">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2019%20(1).png?alt=media&token=4b025c15-e38b-40af-b59a-a70cadefb335"
-                alt=""
-                className="img2"
-              />
-            </div>
+            {props.dummy2.map((e, i) => (
+              <div key={i} className="box2 d-flex justify-content-center">
+                <img src={props.src} alt="" className="img2" />
+              </div>
+            ))}
           </div>
           <hr className="horiLine2 mb-2" />
-          <div className="hedding mb-1">SELECT GOLD</div>
+          <div
+            className="hedding mb-1"
+            dangerouslySetInnerHTML={{
+              __html: props.hedding2,
+            }}
+          />
           <div className="buttonsGroup">
             <div className="droppdown">
               <Dropdown as={ButtonGroup}>
@@ -164,26 +163,28 @@ function Details(props: IProps) {
             </div>
             <div className="wishlist mt-auto mb-auto d-flex">
               <BsHeart size={17} color="black" className="icon" />
-              <div className="whishlist-text">Save to Whishlist</div>
+              <div
+                className="whishlist-text"
+                dangerouslySetInnerHTML={{
+                  __html: props.hedding3,
+                }}
+              />
             </div>
           </div>
           <hr className="horiLine2 mb-4" />
           <div className="button-Container">
             <button className="Button mb-4 ">
-              <BsBag size={17} color="white" className="icon" /> Add to Cart
+              <BsBag size={17} color="white" className="icon" />{" "}
+              {props.hedding4}
             </button>
           </div>
           <hr className="horiLine2 mb-4" />
-          <div className="tags  ">
-            <div className="tag1 me-2">
-              <b>SKU:</b> U2012
-            </div>
-            <div className="tag1 me-2 ">
-              <b>TAGS</b> Hot, Women
-            </div>
-            <div className="tag1 me-2 ">
-              <b>Categories:</b> Earrings
-            </div>
+          <div className="tags">
+            {props.tags.map((e, i) => (
+              <div key={i} className="tag1 me-2">
+                {e}
+              </div>
+            ))}
           </div>
         </Col>
       </Row>
