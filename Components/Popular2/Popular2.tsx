@@ -19,7 +19,7 @@ export interface IProps {
     src: string;
     Cardtag: string;
     Cardtitle: string;
-    price: string;
+    price: number;
     prodid: number;
   }[];
   buttontext1: string;
@@ -103,7 +103,7 @@ function Popular2(props: IProps) {
                     src: string;
                     Cardtag: string;
                     Cardtitle: string;
-                    price: string;
+                    price: number;
                     prodid: number;
                   },
                   i

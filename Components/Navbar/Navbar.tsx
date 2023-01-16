@@ -11,6 +11,11 @@ import React, { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import cartReducer from "../../redux/reducers/cartReducer";
+import { IStore } from "../../redux/store";
+import { useEffect } from "react";
 
 export interface IProps {
   Line: string;
@@ -39,6 +44,10 @@ function Navbar(props: IProps) {
   const [show3, setShow3] = useState(false);
   const handleClose3 = () => setShow3(false);
   const handleShow3 = () => setShow3(true);
+
+  const [sum, setSum] = useState(0);
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
 
   const [Language, setLanguage] = useState("ENGLISH");
   return (
@@ -126,7 +135,121 @@ function Navbar(props: IProps) {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className="d-flex flex-column">
-              {/* <div className="price"> total price $9,983</div> */}
+              <div className="cartSideBar">
+                {cart.map((e, i) => (
+                  <div key={i}>
+                    <div className="d-flex mt-1 mb-1 justify-content-between">
+                      <img
+                        src="https://picsum.photos/100"
+                        alt=""
+                        className="img"
+                      />
+                      <div className="cart-item d-flex flex-column ms-1">
+                        <div className="product-name me-1">{e.productName}</div>
+                        <div className="quantity-controls">
+                          <button
+                            className="decrement "
+                            onClick={() => {
+                              function addToCart(
+                                productId: number,
+                                newQuantity: number
+                              ) {
+                                if (e.quantity == 1) {
+                                  console.log("Delete now");
+                                  dispatch(
+                                    updateCart({
+                                      products: cart.filter(
+                                        (product) => product.pId !== e.pId
+                                      ),
+                                    })
+                                  );
+                                  return;
+                                }
+                                let existingProduct = cart.find(function (
+                                  item
+                                ) {
+                                  return item.pId === productId;
+                                });
+                                if (existingProduct) {
+                                  existingProduct.quantity += newQuantity;
+                                } else {
+                                  dispatch(
+                                    updateCart({
+                                      products: [
+                                        ...cart,
+                                        {
+                                          pId: e.pId,
+                                          productName: e.productName,
+                                          pPrice: e.pPrice,
+                                          quantity: newQuantity,
+                                        },
+                                      ],
+                                    })
+                                  );
+                                }
+                              }
+                              addToCart(e.pId, -1);
+                            }}
+                          >
+                            -
+                          </button>
+                          <span className="quantity">{e.quantity}</span>
+                          <button
+                            className="increment"
+                            onClick={() => {
+                              function addToCart(
+                                productId: number,
+                                newQuantity: number
+                              ) {
+                                let existingProduct = cart.find(function (
+                                  item
+                                ) {
+                                  return item.pId === productId;
+                                });
+
+                                if (existingProduct) {
+                                  existingProduct.quantity += newQuantity;
+                                } else {
+                                  dispatch(
+                                    updateCart({
+                                      products: [
+                                        ...cart,
+                                        {
+                                          pId: e.pId,
+                                          productName: e.productName,
+                                          pPrice: e.pPrice,
+                                          quantity: newQuantity,
+                                        },
+                                      ],
+                                    })
+                                  );
+                                }
+                              }
+                              addToCart(e.pId, 1);
+                            }}
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                      <span
+                        className="totalPrice mt-auto mb-auto ms-5"
+                        onLoad={() => {
+                          console.log("loaded");
+                        }}
+                      >
+                        ${e.pPrice * e.quantity}
+                      </span>
+                    </div>
+                    <hr />
+                  </div>
+                ))}
+                <div className="Buy">
+                  {/* <span className="totalPrice mt-auto mb-auto ms-5">
+                    2 {sum} 1
+                  </span> */}
+                </div>
+              </div>
             </Offcanvas.Body>
           </Offcanvas>
 

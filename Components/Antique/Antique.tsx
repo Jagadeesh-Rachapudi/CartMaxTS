@@ -24,7 +24,7 @@ export interface IProps {
     src: string;
     Cardtag: string;
     Cardtitle: string;
-    price: string;
+    price: number;
     prodid: number;
   }[];
   leaves: string;
@@ -128,7 +128,7 @@ function Antique(props: IProps) {
                     src: string;
                     Cardtag: string;
                     Cardtitle: string;
-                    price: string;
+                    price: number;
                     prodid: number;
                   },
                   i
