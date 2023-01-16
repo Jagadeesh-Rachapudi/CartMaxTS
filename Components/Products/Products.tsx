@@ -12,7 +12,7 @@ export interface IProps {
     src: string;
     Cardtag: string;
     Cardtitle: string;
-    price: string;
+    price: number;
     prodid: number;
   }[];
 }
@@ -49,7 +49,7 @@ function Products(props: IProps) {
                     src: string;
                     Cardtag: string;
                     Cardtitle: string;
-                    price: string;
+                    price: number;
                     prodid: number;
                   },
                   i
