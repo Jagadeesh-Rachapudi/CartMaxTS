@@ -3,12 +3,18 @@
   .Dark {
     height: 40vh;
     background-color: #1b1b1b;
+    @media screen and (max-width: 1300px) {
+      height: 20vh;
+    }
   }
   .Dark2 {
     height: 40vh;
     background-color: #1b1b1b;
     @media screen and (max-width: 1200px) {
       display: none;
+    }
+    @media screen and (max-width: 1300px) {
+      height: 20vh;
     }
   }
   .Dark3 {
@@ -17,16 +23,25 @@
     @media screen and (max-width: 576px) {
       display: none;
     }
+    @media screen and (max-width: 1300px) {
+      height: 20vh;
+    }
   }
   .Light {
     height: 40vh;
     background-color: #525252;
+    @media screen and (max-width: 1300px) {
+      height: 20vh;
+    }
   }
   .Light2 {
     height: 40vh;
     background-color: #525252;
     @media screen and (max-width: 768px) {
       display: none;
+    }
+    @media screen and (max-width: 1300px) {
+      height: 20vh;
     }
   }
   .Footer {

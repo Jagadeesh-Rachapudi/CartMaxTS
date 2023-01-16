@@ -14,6 +14,10 @@ import { AiTwotoneStar } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import cartReducer from "../../redux/reducers/cartReducer";
+import { IStore } from "../../redux/store";
 
 export interface IProps {
   tag: string;
@@ -33,6 +37,8 @@ export interface IProps {
 
 function Details(props: IProps) {
   const [active, setActive] = useState("18k");
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
   return (
     <Container className="Details-Body" fluid="xxl">
       <Row>
@@ -173,17 +179,48 @@ function Details(props: IProps) {
           </div>
           <hr className="horiLine2 mb-4" />
           <div className="button-Container">
-            <button className="Button mb-4 ">
-              <BsBag size={17} color="white" className="icon" />{" "}
-              {props.hedding4}
+            <button
+              className="Button mb-4"
+              onClick={() => {
+                function addToCart(productId: number, newQuantity: number) {
+                  var existingProduct = cart.find(function (item) {
+                    return item.pId === productId;
+                  });
+
+                  if (existingProduct) {
+                    existingProduct.quantity += newQuantity;
+                  } else {
+                    dispatch(
+                      updateCart({
+                        products: [
+                          ...cart,
+                          {
+                            pId: 10,
+                            productName: "Diamond Vine Climber Earrings",
+                            pPrice: 2000,
+                            quantity: newQuantity,
+                          },
+                        ],
+                      })
+                    );
+                  }
+                }
+                addToCart(10, 1);
+              }}
+            >
+              <BsBag size={17} color="white" className="icon" /> Add to Cart
             </button>
           </div>
           <hr className="horiLine2 mb-4" />
           <div className="tags">
             {props.tags.map((e, i) => (
-              <div key={i} className="tag1 me-2">
-                {e}
-              </div>
+              <div
+                key={i}
+                className="tag1 me-2"
+                dangerouslySetInnerHTML={{
+                  __html: e,
+                }}
+              />
             ))}
           </div>
         </Col>

@@ -1,6 +1,9 @@
 .Details-Body {
   height: fit-content;
   margin-top: -7rem;
+  @media screen and (max-width: 1300px) {
+    margin-top: -15rem;
+  }
   background-color: white;
   .horiLine2 {
     width: 75% !important;
