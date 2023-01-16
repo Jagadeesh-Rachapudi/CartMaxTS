@@ -12,6 +12,11 @@ import Hedder5Data from "../Components/Hedder5/Hedder5.json";
 import Details, { IProps as DetailsProps } from "../Components/Details/Details";
 import DetailsData from "../Components/Details/Details.json";
 
+import TabsInDetails, {
+  IProps as TabsInDetailsProps,
+} from "../Components/TabsInDetails/TabsInDetails";
+import TabsInDetailsData from "../Components/TabsInDetails/TabsInDetails.json";
+
 function JewelleryDetailsPage() {
   return (
     <div>
@@ -25,6 +30,7 @@ function JewelleryDetailsPage() {
         color="#212121"
       />
       <Details {...(DetailsData as DetailsProps)} />
+      <TabsInDetails {...(TabsInDetailsData as TabsInDetailsProps)} />
       <Footer6 {...(Footer6Data as Footer6Props)} />
     </div>
   );
