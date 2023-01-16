@@ -2,14 +2,40 @@
   height: fit-content;
   margin-top: -7rem;
   background-color: white;
+  .horiLine2 {
+    width: 75% !important;
+    @media screen and (max-width: 1200px) {
+      width: 60% !important;
+      margin: auto;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100% !important;
+    }
+  }
+  .buttonsGroup {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 450px) {
+      justify-content: center !important;
+    }
+  }
   .content {
     height: 70vh;
     padding-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media screen and (max-width: 992px) {
-     margin-left: 10rem;
+    @media screen and (max-width: 1200px) {
+      margin-left: 28%;
+    }
+    @media screen and (max-width: 600px) {
+      margin-left: 10%;
+    }
+    @media screen and (max-width: 450px) {
+      margin-left: 0rem !important;
+      padding-left: 0rem !important;
     }
     .tag {
       font-family: "Jost";
@@ -19,6 +45,9 @@
       line-height: 20px;
       letter-spacing: 0.02em;
       color: #c18623;
+      @media screen and (max-width: 450px) {
+        margin-left: 1rem;
+      }
     }
     .title {
       font-family: "Jost";
@@ -27,8 +56,11 @@
       font-size: 50px;
       line-height: 55px;
       color: #232323;
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 1200px) {
         width: 24rem;
+      }
+      @media screen and (max-width: 450px) {
+        margin-left: 1rem;
       }
     }
     .price {
@@ -38,11 +70,17 @@
       font-size: 33px;
       line-height: 48px;
       color: #3f3f3f;
+      @media screen and (max-width: 450px) {
+        margin-left: 1rem;
+      }
     }
     .horizontalline {
       width: 80%;
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 1200px) {
         width: 24rem;
+      }
+      @media screen and (max-width: 450px) {
+        width: 100% !important;
       }
     }
     .text {
@@ -52,8 +90,17 @@
       font-size: 16.972px;
       line-height: 26px;
       color: #666666;
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 1200px) {
         width: 24rem;
+      }
+      @media screen and (max-width: 450px) {
+        width: 90% !important;
+        margin-left: 1rem;
+      }
+    }
+    .icons {
+      @media screen and (max-width: 450px) {
+        margin-left: 1rem;
       }
     }
     .icon-container {
@@ -63,6 +110,7 @@
       background-color: #eeeeee;
       border-radius: 50%;
       margin-right: 0.5rem;
+
       .icon {
         margin-left: 0.7rem;
         margin-top: 0.7rem;
@@ -70,20 +118,79 @@
     }
   }
   .roseBox {
-    width: 100%;
+    width: 415px;
     height: 394px;
     background-color: #fff9f6;
+    @media screen and (max-width: 1200px) {
+      margin: auto;
+    }
+    @media screen and (max-width: 394px) {
+      width: 380px;
+    }
+    .img1 {
+      width: auto;
+      height: 380px;
+    }
+  }
+  .boxes {
+    @media screen and (max-width: 1200px) {
+      width: 40%;
+      margin: auto;
+    }
+    @media screen and (max-width: 879px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 560px) {
+      width: 80% !important;
+    }
+    @media screen and (max-width: 430px) {
+      width: 100% !important;
+    }
   }
   .box {
     width: 5rem;
     height: 5rem;
     background-color: #efefef;
+    .img2 {
+      height: 4.5rem;
+      width: auto;
+    }
   }
-  .box2 {
-    width: 85px;
-    height: 77px;
-    background-color: #eae4e4;
+  .reviews {
+    width: 75% !important;
+    @media screen and (max-width: 1200px) {
+      width: 50% !important;
+      margin: auto;
+    }
+    @media screen and (max-width: 430px) {
+      width: 90% !important;
+      margin-left: 1rem !important;
+      margin-right: 1rem !important;
+    }
   }
+  .boxes2 {
+    width: 75%;
+    @media screen and (max-width: 1200px) {
+      width: 30% !important;
+      margin: auto;
+    }
+    @media screen and (max-width: 900px) {
+      width: 50% !important;
+    }
+    @media screen and (max-width: 560px) {
+      width: 80% !important;
+    }
+    .box2 {
+      width: 85px;
+      height: 77px;
+      background-color: #eae4e4;
+      .img2 {
+        height: 70px;
+        width: auto;
+      }
+    }
+  }
+
   .hedding {
     font-family: "Jost";
     font-style: normal;
@@ -91,6 +198,20 @@
     font-size: 14px;
     line-height: 20px;
     color: #020202;
+    @media screen and (max-width: 1200px) {
+      margin-left: 25%;
+    }
+    @media screen and (max-width: 450px) {
+      margin-left: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+  }
+  .droppdown {
+    @media screen and (max-width: 1200px) {
+      margin-left: 33%;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
   }
   .name-button,
   .split-button {
@@ -112,26 +233,34 @@
     font-size: 16.029px;
     line-height: 23px;
     color: #191919;
+    white-space: nowrap;
     .icon {
       margin-top: 0.23rem;
       margin-right: 0.5rem;
     }
   }
-  .Button {
-    background-color: #191919;
-    width: 234px;
-    height: 50px;
-    border: none;
-    border-radius: 25px;
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16.029px;
-    line-height: 23px;
-    color: #ffffff;
-    .icon {
-      margin-top: -0.25rem;
-      margin-right: 0.5rem;
+  .button-Container {
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
+    .Button {
+      background-color: #191919;
+      width: 234px;
+      height: 50px;
+      border: none;
+      border-radius: 25px;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16.029px;
+      line-height: 23px;
+      color: #ffffff;
+      white-space: nowrap;
+      .icon {
+        margin-top: -0.25rem;
+        margin-right: 0.5rem;
+      }
     }
   }
   .tags {
@@ -144,5 +273,11 @@
     font-size: 17.924px;
     line-height: 26px;
     color: #3d3d3d;
+    width: 75%;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 2rem;
+      width: 100%;
+      justify-content: center !important;
+    }
   }
 }
