@@ -102,6 +102,8 @@ import "../Components/TabsInDetails/TabsInDetails.scss";
 import "../Components/Products/Products.scss";
 
 import "../Components/Nav7/Nav7.scss";
+import "../Components/Hedder6/Hedder6.scss";
+
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

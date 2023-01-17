@@ -1,0 +1,247 @@
+.Hedder6-Search {
+  margin-top: -2.5rem;
+  height: 5rem;
+  background-color: #fed700;
+  z-index: +1;
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  .megaphone-Container {
+    width: 5rem !important;
+    min-height: 5rem;
+    border-right: 2px solid rgb(202, 199, 199);
+    img {
+      margin-top: 1.85rem;
+      margin-left: 1.3rem;
+    }
+    @media screen and (max-width: 674px) {
+      display: none;
+    }
+  }
+  .searchcontainer {
+    @media screen and (max-width: 674px) {
+      margin-top: 1rem;
+    }
+  }
+  .text {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Jost";
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    .text1 {
+      text-decoration-line: underline;
+    }
+    @media screen and (max-width: 925px) {
+      display: none;
+    }
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 470px) {
+      padding-left: 0;
+    }
+    input {
+      height: 3rem;
+      width: fit-content;
+      border-radius: 25px 0 0 25px;
+      padding-left: 2rem;
+      border: none;
+      @media screen and (max-width: 400px) {
+        width: 10rem;
+        padding-left: 0.5rem;
+      }
+    }
+    .dd-button {
+      width: fit-content;
+      background-color: white;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #6b6b6b;
+      border: none;
+      height: 3rem;
+      border-radius: 0 !important;
+    }
+    .dropdown {
+      @media screen and (max-width: 592px) {
+        display: none;
+      }
+    }
+    .Button {
+      background-color: #333e48;
+      border: none;
+      width: 4rem;
+      border-radius: 0 25px 25px 0;
+    }
+  }
+  .Righticons {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 450px) {
+      margin-right: 0 !important;
+    }
+    .icon-container {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background-color: #edc903;
+      @media screen and (max-width: 450px) {
+        width: 2rem;
+        height: 2rem;
+      }
+      @media screen and (max-width: 400px) {
+        margin: 0 !important;
+      }
+      .icon {
+        margin-top: 0.7rem;
+        margin-left: 0.9rem;
+        @media screen and (max-width: 450px) {
+          margin-top: 0.2rem;
+          margin-left: 0.4rem;
+        }
+      }
+    }
+  }
+}
+.Hedder6-Body {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%201520.png?alt=media&token=0bf1ecd1-fad1-4998-b5d0-cd58a3aa7154");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  .hedder-box {
+    background-color: white;
+    margin-top: 3.5rem;
+    height: 960px;
+    padding: 1.5rem;
+    display: flex;
+    @media screen and (max-width: 500px) {
+      padding: 0.25rem;
+    }
+    .dropdown {
+      margin-top: 0.5rem;
+      @media screen and (max-width: 768px) {
+        display: none !important;
+      }
+      .dropdown-menu.show {
+        width: 12.75rem !important;
+        background-color: #fafbff !important;
+      }
+      .dropdown-item {
+        height: 2.2rem !important;
+        border-bottom: 1px solid rgb(219, 217, 217);
+      }
+      .dropdown-toggle::after {
+        display: none !important;
+      }
+      .ddButton {
+        display: flex;
+        border: none !important;
+        border-radius: 0 !important;
+        background-color: #fed700;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+        color: #333e48;
+        div {
+          width: 2rem;
+          height: 2rem;
+          background-color: #ebc700;
+          border-radius: 50%;
+        }
+      }
+    }
+    .hedder-content {
+      margin: 1rem;
+      width: 100%;
+      height: 450px;
+      background-color: #ececec;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .carousel-control-next-icon,
+      .carousel-control-prev-icon {
+        display: none !important;
+      }
+      .carousel-indicators {
+        justify-content: end !important;
+        bottom: -100px !important;
+      }
+      .carousel-indicators [data-bs-target] {
+        background-color: white;
+        width: 30px;
+        height: 8px;
+        border-radius: 20px;
+        opacity: 1;
+        border: none;
+      }
+      .carousel-indicators [data-bs-target].active {
+        background-color: #fed700;
+        width: 30px;
+        height: 8px;
+        border-radius: 20px;
+        opacity: 1;
+        border: none;
+      }
+      .content {
+        padding-left: 5rem;
+        @media screen and (max-width: 992px) {
+          padding-left: 2rem;
+        }
+        .tag {
+          background-color: #fed700;
+          font-family: "Jost";
+          font-size: 12px;
+          line-height: 14px;
+          color: #282828;
+          width: 9rem;
+          height: 1.3rem;
+          border-radius: 25px;
+          padding-left: 0.75rem;
+          padding-top: 0.25rem;
+        }
+        .title {
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 45px;
+          letter-spacing: -0.01em;
+          color: #282828;
+          @media screen and (max-width: 500px) {
+            font-size: 30px;
+            line-height: 30px;
+          }
+        }
+        .price {
+          font-family: "Jost";
+          font-size: 30px;
+          line-height: 35px;
+          letter-spacing: -0.01em;
+          color: #282828;
+        }
+        button {
+          width: 149px;
+          height: 53px;
+          border: none;
+          border-radius: 25px;
+          background-color: #fed700;
+        }
+      }
+    }
+  }
+}

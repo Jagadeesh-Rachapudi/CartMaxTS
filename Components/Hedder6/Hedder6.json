@@ -1,0 +1,26 @@
+{
+  "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2Fmegaphone.png?alt=media&token=cf72c39c-7a9e-4e0f-83bb-d2b3483d89e9",
+  "text1": "<p>Shop & Store - Electronics & Digital</p>",
+  "text2": "<p>Responsive PrestaShop</p>",
+  "Categories": "All Categories",
+  "Department": "All Departments",
+  "tag": "<p>WEEKEND DISCOUNT</p>",
+  "price": "<p>$339.99</p>",
+  "buttontext": "<p>Shop Now</p>",
+  "title": "<p>Feel - good Shopping<br /><strong>Shop what&nbsp;</strong></p>",
+  "options": [
+    "Value of the Day",
+    "Top 100 Offers",
+    "New Arrivals",
+    "Laptops & Computers",
+    "Cameras & Photography",
+    "Smart Phones & Tablets",
+    "Video Games & Consoles",
+    "TV & Audio",
+    "Gadgets",
+    "Car Electronic & GPS",
+    "Accesories"
+  ],
+  "dummy1": ["1", "2", "3"],
+  "dummy2": ["Category1", "Category2"]
+}
