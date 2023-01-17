@@ -101,6 +101,8 @@ import "../Components/Details/Details.scss";
 import "../Components/TabsInDetails/TabsInDetails.scss";
 import "../Components/Products/Products.scss";
 
+import "../Components/Nav7/Nav7.scss";
+
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";
 import { PersistGate } from "redux-persist/integration/react";
