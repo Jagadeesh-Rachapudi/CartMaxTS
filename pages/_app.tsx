@@ -106,6 +106,7 @@ import "../Components/Nav7/Nav7.scss";
 import "../Components/Hedder6/Hedder6.scss";
 import "../Components/Best/Best.scss";
 import "../Components/SmartPhone/SmartPhone.scss";
+import "../Components/Timmer/Timmer.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

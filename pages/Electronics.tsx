@@ -14,6 +14,9 @@ import SmartPhone, {
 } from "../Components/SmartPhone/SmartPhone";
 import SmartPhoneData from "../Components/SmartPhone/SmartPhone.json";
 
+import Timmer, { IProps as TimmerProps } from "../Components/Timmer/Timmer";
+import TimmerData from "../Components/Timmer/Timmer.json";
+
 function Electronics() {
   return (
     <div>
@@ -21,6 +24,7 @@ function Electronics() {
       <Hedder6 {...(Hedder6Data as Hedder6Props)} />
       <Best {...(BestData as BestProps)} />
       <SmartPhone {...(SmartPhoneData as SmartPhoneProps)} />
+      <Timmer {...(TimmerData as TimmerProps)} />
     </div>
   );
 }
