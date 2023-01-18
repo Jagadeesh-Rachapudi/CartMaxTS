@@ -20,6 +20,9 @@ import SmartPhoneData from "../Components/SmartPhone/SmartPhone.json";
 import Timmer, { IProps as TimmerProps } from "../Components/Timmer/Timmer";
 import TimmerData from "../Components/Timmer/Timmer.json";
 
+import Top, { IProps as TopProps } from "../Components/Top/Top";
+import TopData from "../Components/Top/Top.json";
+
 function Electronics() {
   return (
     <div>
@@ -29,6 +32,7 @@ function Electronics() {
       <SmartPhone {...(SmartPhoneData as SmartPhoneProps)} />
       <Timmer {...(TimmerData as TimmerProps)} />
       <Latest {...(LatestData as LatestProps)} />
+      <Top {...(TopData as TopProps)} />
     </div>
   );
 }
