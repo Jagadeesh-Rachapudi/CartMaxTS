@@ -15,6 +15,7 @@ export interface IProps {
   dummy: string[];
   count: string;
   sold: string;
+  prodid: number;
 }
 
 function Gadget(props: IProps) {

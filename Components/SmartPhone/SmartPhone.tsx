@@ -12,7 +12,13 @@ export interface IProps {
   add1: string;
   add2: string;
   options: string[];
-  products: { src: string; title: string; price1: number; price2: number }[];
+  products: {
+    src: string;
+    title: string;
+    price1: number;
+    price2: number;
+    id: number;
+  }[];
 }
 
 function SmartPhone(props: IProps) {
@@ -64,6 +70,7 @@ function SmartPhone(props: IProps) {
                         title: string;
                         price1: number;
                         price2: number;
+                        id: number;
                       },
                       i
                     ) => (
@@ -74,6 +81,7 @@ function SmartPhone(props: IProps) {
                         title={product.title}
                         price1={product.price1}
                         price2={product.price2}
+                        prodid={product.id}
                       />
                     )
                   )}

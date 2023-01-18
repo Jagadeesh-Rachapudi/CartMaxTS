@@ -3,36 +3,42 @@
   "options": ["<p>Featured</p>", "<p>On Sale</p>", "<p>Top Rated</p>"],
   "products": [
     {
+      "id": 6,
       "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-6.png?alt=media&token=ce6ed9e9-dae4-4183-95da-b288d1e34a6c",
       "title": "<p>Gaming Joystick<p>",
       "price1": 1199.0,
       "price2": 1999.0
     },
     {
+      "id": 7,
       "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-7.png?alt=media&token=a336b099-68a1-4ee1-a622-78255cb00819",
       "title": "<p>Mobile Cover<p>",
       "price1": 1199.0,
       "price2": 1999.0
     },
     {
+      "id": 8,
       "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-8.png?alt=media&token=6147a227-2818-4aa4-8fff-cd2721270835",
       "title": "<p>Watering Device<p>",
       "price1": 1199.0,
       "price2": 1999.0
     },
     {
+      "id": 9,
       "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-12.png?alt=media&token=6ea8425c-ecaa-4c66-9526-3195046eabd7",
       "title": "<p>Windows Laptop<p>",
       "price1": 1199.0,
       "price2": 1999.0
     },
     {
+      "id": 10,
       "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-10.png?alt=media&token=5c48e11c-6e8f-44eb-b6b2-b2976fc9dd53",
       "title": "<p>Bolt Watch<p>",
       "price1": 1199.0,
       "price2": 1999.0
     },
     {
+      "id": 11,
       "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-11.png?alt=media&token=e57702cb-ce96-41d5-8b3a-2fd3d4d2bcb8",
       "title": "<p>Mobile Gaming Stick<p>",
       "price1": 1199.0,

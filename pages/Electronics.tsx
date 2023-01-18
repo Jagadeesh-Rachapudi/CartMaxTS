@@ -6,6 +6,9 @@ import BestData from "../Components/Best/Best.json";
 import Hedder6, { IProps as Hedder6Props } from "../Components/Hedder6/Hedder6";
 import Hedder6Data from "../Components/Hedder6/Hedder6.json";
 
+import Latest, { IProps as LatestProps } from "../Components/Latest/Latest";
+import LatestData from "../Components/Latest/Latest.json";
+
 import Nav7, { IProps as Nav7Props } from "../Components/Nav7/Nav7";
 import Nav7Data from "../Components/Nav7/Nav7.json";
 
@@ -25,6 +28,7 @@ function Electronics() {
       <Best {...(BestData as BestProps)} />
       <SmartPhone {...(SmartPhoneData as SmartPhoneProps)} />
       <Timmer {...(TimmerData as TimmerProps)} />
+      <Latest {...(LatestData as LatestProps)} />
     </div>
   );
 }

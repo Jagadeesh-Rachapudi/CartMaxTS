@@ -10,7 +10,13 @@ import GadgetData from "../../Utils/Gadget/Gadget.json";
 
 export interface IProps {
   elements: { src: string; title: string; text: string }[];
-  products: { src: string; title: string; price1: number; price2: number }[];
+  products: {
+    src: string;
+    title: string;
+    price1: number;
+    price2: number;
+    id: number;
+  }[];
   title: string;
   view: string;
   add1: string;
@@ -75,6 +81,7 @@ function Best(props: IProps) {
                   title: string;
                   price1: number;
                   price2: number;
+                  id: number;
                 },
                 i
               ) => (
@@ -85,6 +92,7 @@ function Best(props: IProps) {
                   title={product.title}
                   price1={product.price1}
                   price2={product.price2}
+                  prodid={product.id}
                 />
               )
             )}
