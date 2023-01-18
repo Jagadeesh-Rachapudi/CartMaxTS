@@ -23,6 +23,7 @@ import "../Utils/WatchItem/WatchItem.scss";
 import "../Utils/TransButton/TransButton.scss";
 import "../Utils/GoldCard/GoldCard.scss";
 import "../Utils/GoldItem/GoldItem.scss";
+import "../Utils/Gadget/Gadget.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -103,7 +104,7 @@ import "../Components/Products/Products.scss";
 
 import "../Components/Nav7/Nav7.scss";
 import "../Components/Hedder6/Hedder6.scss";
-
+import "../Components/Best/Best.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

@@ -1,5 +1,8 @@
 import React from "react";
 
+import Best, { IProps as BestProps } from "../Components/Best/Best";
+import BestData from "../Components/Best/Best.json";
+
 import Hedder6, { IProps as Hedder6Props } from "../Components/Hedder6/Hedder6";
 import Hedder6Data from "../Components/Hedder6/Hedder6.json";
 
@@ -11,6 +14,7 @@ function Electronics() {
     <div>
       <Nav7 {...(Nav7Data as Nav7Props)} />
       <Hedder6 {...(Hedder6Data as Hedder6Props)} />
+      <Best {...(BestData as BestProps)} />
     </div>
   );
 }

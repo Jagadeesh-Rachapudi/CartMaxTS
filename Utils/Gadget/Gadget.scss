@@ -1,0 +1,76 @@
+.Gadget-Body {
+  width: 263px;
+  height: 407px;
+  border: 1px solid #f3f3f3;
+
+  .horizontal-line {
+    width: 261px;
+    margin-left: -0.75rem !important;
+    color: #d2cece;
+  }
+  .img-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sale {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    background-color: #ff541f;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .Gadget-title {
+    margin-top: 1rem;
+    font-family: "Jost";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333e48;
+    max-width: 100%;
+  }
+  .price1 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #006fdc;
+  }
+  .price2 {
+    font-family: "Jost";
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    color: #7e7e7e;
+    margin-left: 1rem;
+    margin-top: 0.15rem;
+  }
+  .count {
+    font-family: "Jost";
+    font-size: 13px;
+    line-height: 15px;
+    color: #a0a0a0;
+  }
+  .progress {
+    height: 12px !important;
+  }
+  .progress-bar {
+    background-color: #fed700 !important;
+  }
+  .sold {
+    font-family: "Jost";
+    font-size: 12px;
+    line-height: 14px;
+    color: #242424;
+  }
+}

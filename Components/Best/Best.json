@@ -1,0 +1,61 @@
+{
+  "elements": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2F111.png?alt=media&token=aba300dc-0612-479b-a999-44f14b70b65a",
+      "title": "<p>Free Delivery</p>",
+      "text": "<p>Free shipping on all order</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2F112.png?alt=media&token=37ebdab1-c953-4d25-85ef-6e8feaddd00e",
+      "title": "<p>Online Support 24/7</p>",
+      "text": "<p>Support online 24 hours a day</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2F113.png?alt=media&token=ed9178f2-30ed-4775-a156-98b7490301db",
+      "title": "<p>Money Return</p>",
+      "text": "<p>Back guarantee under 7 days</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2F114.png?alt=media&token=e6cdfd6c-5b55-40fe-bef9-a7c0909c9a47",
+      "title": "<p>Member Discount</p>",
+      "text": "<p>Onevery order over $120.00</p>"
+    }
+  ],
+  "products": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2028%20(2).png?alt=media&token=cfbe6b01-4dd2-4f6a-8d95-b0ea73433590",
+      "title": "<p>Kodak Camera<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FE-Mobiles.png?alt=media&token=d7c113c8-b61f-401c-90d0-a07de3fd5096",
+      "title": "<p>Apple IPhone<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FE-EarPhones.png?alt=media&token=028642dc-441b-4fb3-bd89-d02b86c56153",
+      "title": "<p>Apple Airpods pro<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FE-BlackWatch.png?alt=media&token=ea2750ff-5a50-474e-8b16-3e7fc503f6f6",
+      "title": "<p>Apple IWatch<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FE-White-Watch.png?alt=media&token=a3a82cb4-3e5a-48bd-92b4-e4a6156eb516",
+      "title": "<p>Samsung Watch<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    }
+  ],
+  "title": "<p>Best Sellers</p>",
+  "view": "<p>View All</p>",
+  "add1": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FAdd1.jpg?alt=media&token=47612199-13d0-4236-b6e4-f4b3000bc38c",
+  "add2": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FAdd2.jpg?alt=media&token=09e1a93a-e055-4fa0-b2f9-8f247764756c",
+  "add3": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FAdd3.jpg?alt=media&token=c5d4d9b9-7fe5-4592-b0a1-7be1d7da97f0"
+}
