@@ -1,0 +1,44 @@
+{
+  "title": "<p>Smartphones & Accessories</p>",
+  "options": ["<p>Featured</p>", "<p>On Sale</p>", "<p>Top Rated</p>"],
+  "products": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-6.png?alt=media&token=ce6ed9e9-dae4-4183-95da-b288d1e34a6c",
+      "title": "<p>Gaming Joystick<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-7.png?alt=media&token=a336b099-68a1-4ee1-a622-78255cb00819",
+      "title": "<p>Mobile Cover<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-8.png?alt=media&token=6147a227-2818-4aa4-8fff-cd2721270835",
+      "title": "<p>Watering Device<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-12.png?alt=media&token=6ea8425c-ecaa-4c66-9526-3195046eabd7",
+      "title": "<p>Windows Laptop<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-10.png?alt=media&token=5c48e11c-6e8f-44eb-b6b2-b2976fc9dd53",
+      "title": "<p>Bolt Watch<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEBS-PROD-11.png?alt=media&token=e57702cb-ce96-41d5-8b3a-2fd3d4d2bcb8",
+      "title": "<p>Mobile Gaming Stick<p>",
+      "price1": 1199.0,
+      "price2": 1999.0
+    }
+  ],
+  "add1": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FAdds-4.jpg?alt=media&token=790968f0-9e2d-43b8-964b-8bc24ae74605",
+  "add2": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2Fadd-vertical.png?alt=media&token=d14e99d0-7299-4b21-b3cc-91b771217847"
+}

@@ -11,6 +11,7 @@
     margin-bottom: 3rem;
     @media screen and (max-width: 1500px) {
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
   .box {

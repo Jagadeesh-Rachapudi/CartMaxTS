@@ -1,0 +1,57 @@
+.SmartPhone-Body {
+//   height: 500vh;
+margin-bottom: 3rem;
+  .title-box {
+    @media screen and (max-width: 650px) {
+      flex-direction: column !important;
+      justify-content: center !important;
+    }
+  }
+  .title {
+    font-family: "Jost";
+    font-size: 30px;
+    line-height: 35px;
+    color: #333e48;
+    @media screen and (max-width: 650px) {
+      width: fit-content;
+      margin: auto;
+    }
+  }
+  .options {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #333e48;
+    cursor: pointer;
+  }
+  .option {
+    width: fit-content;
+  }
+  .option:hover {
+    font-weight: 700;
+  }
+  .active {
+    font-weight: 700;
+  }
+  .addimg {
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1500px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

@@ -19,7 +19,7 @@ export interface IProps {
 
 function Gadget(props: IProps) {
   return (
-    <Container className="Gadget-Body">
+    <Container className="Gadget-Body m-2">
       <Row>
         <Col className="d-flex flex-column justify-content-between">
           <div
