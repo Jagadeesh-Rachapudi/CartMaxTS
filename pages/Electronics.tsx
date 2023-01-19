@@ -3,6 +3,11 @@ import React from "react";
 import Best, { IProps as BestProps } from "../Components/Best/Best";
 import BestData from "../Components/Best/Best.json";
 
+import HandPick, {
+  IProps as HandPickProps,
+} from "../Components/HandPick/HandPick";
+import HandPickData from "../Components/HandPick/HandPick.json";
+
 import Hedder6, { IProps as Hedder6Props } from "../Components/Hedder6/Hedder6";
 import Hedder6Data from "../Components/Hedder6/Hedder6.json";
 
@@ -41,6 +46,7 @@ function Electronics() {
       <Top {...(TopData as TopProps)} />
       <Sellers {...(SellersData as SellersProps)} />
       <Tablet {...(TabletData as TabletProps)} />
+      <HandPick {...(HandPickData as HandPickProps)} />
     </div>
   );
 }

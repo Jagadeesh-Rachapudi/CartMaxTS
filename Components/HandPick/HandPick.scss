@@ -1,0 +1,23 @@
+.HandPick-Body {
+  // height: 500vh;
+  padding-top: 5rem;
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+    letter-spacing: 0.01em;
+    color: #191919;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,27 @@
+.Picks-Body {
+  width: fit-content;
+  .img {
+    padding: 1rem;
+    border: 1px solid #f2f2f2;
+  }
+  .title2 {
+    font-family: "Jost";
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #333e48;
+    width: 12rem;
+    padding-left: 1rem;
+    margin-top: 0.8rem;
+  }
+  .price {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #006fdc;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+  }
+}
