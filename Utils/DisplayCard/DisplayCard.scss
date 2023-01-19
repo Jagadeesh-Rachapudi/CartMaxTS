@@ -1,0 +1,21 @@
+.DisplayCard-Body {
+  width: 416px;
+  height: 143px;
+  background-color: #f5f5f5;
+  .Cardtitle {
+    margin: auto;
+    font-family: "Jost";
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    width: fit-content;
+    margin-left: 2rem;
+  }
+  .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}

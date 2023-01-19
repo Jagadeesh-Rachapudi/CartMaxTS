@@ -24,6 +24,7 @@ import "../Utils/TransButton/TransButton.scss";
 import "../Utils/GoldCard/GoldCard.scss";
 import "../Utils/GoldItem/GoldItem.scss";
 import "../Utils/Gadget/Gadget.scss";
+import "../Utils/DisplayCard/DisplayCard.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";

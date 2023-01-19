@@ -1,1 +1,29 @@
-{}
+{
+  "products": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%20115.png?alt=media&token=d2771463-7a1d-45b1-a0ee-0cc5447754c3",
+      "title": "<p>Desktop PCs & Laptops</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEL-cat2.png?alt=media&token=42e5f37b-fd58-4d7a-bf2f-280186c8079e",
+      "title": "<p>Home & Audio Enternteinment</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEL-cat3.png?alt=media&token=49def46c-5030-4d75-805b-9e734866c017",
+      "title": "<p>Smartphone & Tables</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEL-cat4.png?alt=media&token=67f8d1eb-611c-4461-8816-02318bf16fac",
+      "title": "<p>Video Games & Consoles</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEL-cat5.png?alt=media&token=90b51db5-3070-4804-a908-51543df75fc6",
+      "title": "<p>Gedgets & Accesories</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEL-cat6.png?alt=media&token=df939d4c-3ee8-4dba-b73a-3ba386cacb07",
+      "title": "<p>Photo Cameras</p>"
+    }
+  ],
+  "title": "<p>Top Product Categories</p>"
+}
