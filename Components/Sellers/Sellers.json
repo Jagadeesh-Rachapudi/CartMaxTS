@@ -1,0 +1,61 @@
+{
+  "title": "<p>Best Sellers<p>",
+  "options": [
+    "<p>Top 20<p>",
+    "<p>Phones & Tablets<p>",
+    "<p>Laptops & Computers<p>",
+    "<p>Video Cameras<p>"
+  ],
+  "products": [
+    {
+      "id": 12,
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEL-p1.png?alt=media&token=65641062-e9a4-4391-8139-76374bdac4e4",
+      "title": "<p>Samsung Tablet<p>",
+      "price1": 2499.0,
+      "price2": 3999.0
+    },
+    {
+      "id": 12,
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FE-EarPhones.png?alt=media&token=028642dc-441b-4fb3-bd89-d02b86c56153",
+      "title": "<p>Samsung HeadPhones<p>",
+      "price1": 199.0,
+      "price2": 1999.0
+    },
+    {
+      "id": 14,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%20111.png?alt=media&token=a8ee272b-5077-4292-9390-da2b1bfab40c",
+      "title": "<p>Jio Wifi Router<p>",
+      "price1": 1599.0,
+      "price2": 1999.0
+    },
+    {
+      "id": 15,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%20112.png?alt=media&token=30611450-2803-4c2f-afea-8b09773fce83",
+      "title": "<p>4K Oled Televison<p>",
+      "price1": 2199.0,
+      "price2": 3999.0
+    },
+    {
+      "id": 12,
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FE-EarPhones.png?alt=media&token=028642dc-441b-4fb3-bd89-d02b86c56153",
+      "title": "<p>Samsung HeadPhones<p>",
+      "price1": 199.0,
+      "price2": 1999.0
+    },
+    {
+      "id": 14,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%20111.png?alt=media&token=a8ee272b-5077-4292-9390-da2b1bfab40c",
+      "title": "<p>Jio Wifi Router<p>",
+      "price1": 1599.0,
+      "price2": 1999.0
+    },
+    {
+      "id": 15,
+      "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%20112.png?alt=media&token=30611450-2803-4c2f-afea-8b09773fce83",
+      "title": "<p>4K Oled Televison<p>",
+      "price1": 2199.0,
+      "price2": 3999.0
+    }
+  ],
+  "add": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEL-Adds.jpg?alt=media&token=f2105b8b-cfb6-4d4a-b4ab-57ee27b7e7fe"
+}

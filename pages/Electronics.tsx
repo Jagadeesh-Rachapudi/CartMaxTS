@@ -12,6 +12,9 @@ import LatestData from "../Components/Latest/Latest.json";
 import Nav7, { IProps as Nav7Props } from "../Components/Nav7/Nav7";
 import Nav7Data from "../Components/Nav7/Nav7.json";
 
+import Sellers, { IProps as SellersProps } from "../Components/Sellers/Sellers";
+import SellersData from "../Components/Sellers/Sellers.json";
+
 import SmartPhone, {
   IProps as SmartPhoneProps,
 } from "../Components/SmartPhone/SmartPhone";
@@ -33,6 +36,7 @@ function Electronics() {
       <Timmer {...(TimmerData as TimmerProps)} />
       <Latest {...(LatestData as LatestProps)} />
       <Top {...(TopData as TopProps)} />
+      <Sellers {...(SellersData as SellersProps)} />
     </div>
   );
 }
