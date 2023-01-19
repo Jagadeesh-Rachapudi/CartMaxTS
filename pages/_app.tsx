@@ -111,6 +111,7 @@ import "../Components/Timmer/Timmer.scss";
 import "../Components/Latest/Latest.scss";
 import "../Components/Top/Top.scss";
 import "../Components/Sellers/Sellers.scss";
+import "../Components/Tablet/Tablet.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

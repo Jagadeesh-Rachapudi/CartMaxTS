@@ -20,6 +20,9 @@ import SmartPhone, {
 } from "../Components/SmartPhone/SmartPhone";
 import SmartPhoneData from "../Components/SmartPhone/SmartPhone.json";
 
+import Tablet, { IProps as TabletProps } from "../Components/Tablet/Tablet";
+import TabletData from "../Components/Tablet/Tablet.json";
+
 import Timmer, { IProps as TimmerProps } from "../Components/Timmer/Timmer";
 import TimmerData from "../Components/Timmer/Timmer.json";
 
@@ -37,6 +40,7 @@ function Electronics() {
       <Latest {...(LatestData as LatestProps)} />
       <Top {...(TopData as TopProps)} />
       <Sellers {...(SellersData as SellersProps)} />
+      <Tablet {...(TabletData as TabletProps)} />
     </div>
   );
 }

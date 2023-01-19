@@ -1,0 +1,63 @@
+.Tablet-Body {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background-color: #fbf9f9;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%201526%20(1).png?alt=media&token=1a7eddf3-a345-4308-be44-0b222944ad31");
+  background-image: no-repeat;
+  background-size: 100% 100%;
+  .tag {
+    font-family: "Jost";
+    font-size: 16px;
+    line-height: 19px;
+    color: #454545;
+    text-align: center;
+  }
+  .title {
+    font-family: "Jost";
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #191919;
+    text-align: center;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem 1.5rem 3rem;
+    .hedding {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 35px;
+      color: #191919;
+      text-align: center;
+    }
+    .tag2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      color: #5a5a5a;
+      text-align: center;
+    }
+  }
+  .product:nth-child(3) {
+    .img {
+      margin-top: 3rem;
+      margin-bottom: 3.5rem;
+    }
+  }
+}

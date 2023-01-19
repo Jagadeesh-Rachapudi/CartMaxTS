@@ -1,0 +1,21 @@
+{
+  "tag": "<p>VAIO FIT LAPTOP</p>",
+  "title": "<p>Smartphone & Tablet</p>",
+  "products": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEoff-content1.png?alt=media&token=25ae3a81-af42-472d-918d-91be658f8a6c",
+      "title": "<p>Upto -70% Off</p>",
+      "tag2": "<p>SonicFuel Wireless</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEoff-content2.png?alt=media&token=2e2ed65d-8ce8-4014-8b47-33ba40dd30b4",
+      "title": "<p>Upto -50% Off</p>",
+      "tag2": "<p>Men's Cycling Underwear</p>"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/cartmax-39396.appspot.com/o/HF%2FEoff-content3.png?alt=media&token=21c1c99d-8ccf-464d-b4c8-8dcabfcb9183",
+      "title": "<p>Upto -70% Off</p>",
+      "tag2": "<p>SonicFuel Wireless</p>"
+    }
+  ]
+}
