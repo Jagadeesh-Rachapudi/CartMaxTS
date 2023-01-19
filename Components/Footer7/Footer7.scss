@@ -1,0 +1,136 @@
+.Footer7-Body {
+  height: fit-content;
+  .Footer {
+    height: fit-content;
+    margin-top: -3rem;
+    background-color: #23292d;
+    .Button {
+      width: 134px;
+      height: 47px;
+      border: none;
+      border-radius: 25px;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      background-color: #fed700;
+      color: black;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #ededed;
+      max-width: 27rem;
+    }
+    .hedding {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 33px;
+      letter-spacing: -0.01em;
+      color: white;
+    }
+    .Container {
+      width: fit-content;
+    }
+    .link {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 48px;
+      color: white;
+      text-decoration: none;
+    }
+    .link:hover {
+      color: #ffffff;
+    }
+    .underline1 {
+      width: 25%;
+      background-color: #fed700;
+      height: 0.1rem;
+    }
+    .underline {
+      width: 25%;
+      background-color: #fed700;
+      height: 0.1rem;
+      margin-top: -0.5rem;
+    }
+    .icon1 {
+      background-color: #fed700;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      @media screen and (max-width: 992px) {
+        width: 2rem !important;
+      }
+    }
+    .icon2 {
+      background-color: #fed700;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      @media screen and (max-width: 992px) {
+        width: 2rem !important;
+      }
+    }
+    .icon3 {
+      background-color: #fed700;
+      height: 2rem;
+      width: 3rem;
+      border-radius: 50%;
+      @media screen and (max-width: 992px) {
+        width: 2rem !important;
+      }
+    }
+    .address {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      color: white;
+    }
+    .content1 {
+      @media screen and (max-width: 992px) {
+        margin-left: 27%;
+      }
+      @media screen and (max-width: 593px) {
+        margin-left: 12%;
+      }
+      @media screen and (max-width: 400px) {
+        margin-left: 1rem !important;
+      }
+    }
+    .content2 {
+      @media screen and (max-width: 992px) {
+        margin-top: 3rem !important;
+        padding: 0 !important;
+        margin-left: 25% !important;
+      }
+      @media screen and (max-width: 593px) {
+        margin-left: 12% !important;
+      }
+      @media screen and (max-width: 400px) {
+        margin-left: 1rem !important;
+      }
+    }
+    .content4 {
+      @media screen and (max-width: 992px) {
+        margin-top: 3rem !important;
+        margin-left: 25% !important;
+      }
+      @media screen and (max-width: 593px) {
+        margin-left: 12% !important;
+      }
+      @media screen and (max-width: 400px) {
+        margin-left: 1rem !important;
+      }
+    }
+  }
+}

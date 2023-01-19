@@ -3,6 +3,9 @@ import React from "react";
 import Best, { IProps as BestProps } from "../Components/Best/Best";
 import BestData from "../Components/Best/Best.json";
 
+import Footer7, { IProps as Footer7Props } from "../Components/Footer7/Footer7";
+import Footer7Data from "../Components/Footer7/Footer7.json";
+
 import HandPick, {
   IProps as HandPickProps,
 } from "../Components/HandPick/HandPick";
@@ -47,6 +50,7 @@ function Electronics() {
       <Sellers {...(SellersData as SellersProps)} />
       <Tablet {...(TabletData as TabletProps)} />
       <HandPick {...(HandPickData as HandPickProps)} />
+      <Footer7 {...(Footer7Data as Footer7Props)} />
     </div>
   );
 }

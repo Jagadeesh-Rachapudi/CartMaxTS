@@ -114,6 +114,7 @@ import "../Components/Top/Top.scss";
 import "../Components/Sellers/Sellers.scss";
 import "../Components/Tablet/Tablet.scss";
 import "../Components/HandPick/HandPick.scss";
+import "../Components/Footer7/Footer7.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";
