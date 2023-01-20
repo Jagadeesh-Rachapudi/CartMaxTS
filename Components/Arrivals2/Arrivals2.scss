@@ -1,0 +1,42 @@
+.Arrivals2-Body {
+  height: fit-content;
+  background-color: black;
+  margin-top: -5rem;
+  .adds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 33px;
+      color: white;
+      white-space: nowrap;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #b38068;
+      white-space: nowrap;
+    }
+    .item {
+      width: fit-content;
+    }
+    .image-Container {
+      background-color: #242424;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+    }
+    .img {
+      margin-top: 1.2rem;
+      margin-left: 1.5rem;
+    }
+  }
+}
