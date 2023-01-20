@@ -130,7 +130,7 @@ function Hedder6(props: IProps) {
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
-              <div className="hedder-content" id="AboutUS">
+              <div className="hedder-content">
                 <Carousel variant="dark">
                   {props.dummy1.map((e, i) => (
                     <Carousel.Item key={i}>

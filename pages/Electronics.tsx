@@ -48,7 +48,9 @@ function Electronics() {
         <Best {...(BestData as BestProps)} />
       </div>
       <SmartPhone {...(SmartPhoneData as SmartPhoneProps)} />
-      <Timmer {...(TimmerData as TimmerProps)} />
+      <div id="AboutUS">
+        <Timmer {...(TimmerData as TimmerProps)} />
+      </div>
       <Latest {...(LatestData as LatestProps)} />
       <div id="Pages">
         <Top {...(TopData as TopProps)} />
