@@ -4,7 +4,6 @@
   background-color: #fed700;
   z-index: +1;
   position: absolute;
-  position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -104,8 +103,9 @@
         margin: 0 !important;
       }
       .icon {
-        margin-top: 0.7rem;
+        margin-top: 0.9rem;
         margin-left: 0.9rem;
+        cursor: pointer;
         @media screen and (max-width: 450px) {
           margin-top: 0.2rem;
           margin-left: 0.4rem;

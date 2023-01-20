@@ -41,16 +41,26 @@ function Electronics() {
   return (
     <div>
       <Nav7 {...(Nav7Data as Nav7Props)} />
-      <Hedder6 {...(Hedder6Data as Hedder6Props)} />
-      <Best {...(BestData as BestProps)} />
+      <div id="home3">
+        <Hedder6 {...(Hedder6Data as Hedder6Props)} />
+      </div>
+      <div id="Features">
+        <Best {...(BestData as BestProps)} />
+      </div>
       <SmartPhone {...(SmartPhoneData as SmartPhoneProps)} />
       <Timmer {...(TimmerData as TimmerProps)} />
       <Latest {...(LatestData as LatestProps)} />
-      <Top {...(TopData as TopProps)} />
+      <div id="Pages">
+        <Top {...(TopData as TopProps)} />
+      </div>
       <Sellers {...(SellersData as SellersProps)} />
-      <Tablet {...(TabletData as TabletProps)} />
+      <div id="Blog">
+        <Tablet {...(TabletData as TabletProps)} />
+      </div>
       <HandPick {...(HandPickData as HandPickProps)} />
-      <Footer7 {...(Footer7Data as Footer7Props)} />
+      <div id="ContactUs">
+        <Footer7 {...(Footer7Data as Footer7Props)} />
+      </div>
     </div>
   );
 }

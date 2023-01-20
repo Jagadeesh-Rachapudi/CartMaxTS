@@ -1,9 +1,14 @@
 .Nav7-Body {
-  padding-bottom: 2rem;
+  // padding-bottom: 2rem;
+  height: fit-content;
   .Nav-Container2 {
+    .menuicon {
+      cursor: pointer;
+    }
     display: none !important;
     @media screen and (max-width: 992px) {
       display: block !important;
+      margin-left: 3rem;
     }
     @media screen and (max-width: 579px) {
       margin-left: 3rem;
@@ -65,5 +70,21 @@
         }
       }
     }
+  }
+}
+.nav7links2 {
+  display: flex;
+  flex-direction: column;
+  .navLinks.nav-link,
+  .dropdown-toggle.nav-link,
+  .navLinks.dropdown-item {
+    font-family: "Jost";
+    font-size: 16px;
+    line-height: 19px;
+    color: #334141;
+    margin-top: 0.3rem;
+  }
+  .navLinks.nav-link.active {
+    color: black !important;
   }
 }
