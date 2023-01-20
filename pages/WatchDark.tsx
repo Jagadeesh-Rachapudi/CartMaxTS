@@ -11,12 +11,18 @@ import Nav6Data from "../Components/Nav6/Nav6.json";
 import Hedder7, { IProps as Hedder7Props } from "../Components/Hedder7/Hedder7";
 import Hedder7Data from "../Components/Hedder7/Hedder7.json";
 
+import Collection3, {
+  IProps as Collection3Props,
+} from "../Components/Collection3/Collection3";
+import Collection3Data from "../Components/Collection3/Collection3.json";
+
 function WatchDark() {
   return (
     <div style={{ backgroundColor: "black" }}>
       <Nav6 {...(Nav6Data as Nav6Props)} />
       <Hedder7 {...(Hedder7Data as Hedder7Props)} />
       <Arrivals2 {...(Arrivals2Data as Arrivals2Props)} />
+      <Collection3 {...(Collection3Data as Collection3Props)} />
     </div>
   );
 }
