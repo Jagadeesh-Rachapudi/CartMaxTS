@@ -1,0 +1,97 @@
+.Hedder7-Body {
+  margin-top: -32rem;
+  margin-bottom: 5rem;
+  .White {
+    background-color: #171717;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 110px;
+      line-height: 100px;
+      text-align: center;
+      color: white;
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        font-size: 80px;
+        line-height: 70px;
+      }
+      @media screen and (max-width: 391px) {
+        width: 100%;
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+    .underline {
+      background-color: #b38068;
+      width: 5rem;
+      height: 0.2rem;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .tag {
+      font-family: "Jost";
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      color: white;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      @media screen and (max-width: 391px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      color: White;
+      width: 28rem;
+      margin: auto;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      @media screen and (max-width: 445px) {
+        width: 95%;
+      }
+    }
+    .button {
+      width: fit-content;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    img {
+      position: absolute;
+      margin-top: -25rem;
+      margin-left: 47rem;
+      width: 300px;
+      @media screen and (max-width: 1400px) {
+        margin-left: 39rem;
+      }
+      @media screen and (max-width: 1200px) {
+        margin-left: 32rem;
+      }
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+  .dark {
+    background-color: #bfbfbf;
+    height: 70vh;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+}
