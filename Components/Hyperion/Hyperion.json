@@ -12,5 +12,6 @@
   "plus": "<p>+</p>",
   "minus": "<p>-</p>",
   "shirt": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FAJ897_WQ8675.png?alt=media&token=e61291b2-665e-445d-8fb2-c6bc8e053cbd",
-  "buttontext": "<p>ADD TO CART</p>"
+  "buttontext": "<p>ADD TO CART</p>",
+  "dummy": ["1", "2"]
 }

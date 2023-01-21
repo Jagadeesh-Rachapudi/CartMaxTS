@@ -1,11 +1,14 @@
 .Hyperion-Body {
-  height: 500vh;
+  height: fit-content;
   .light {
     background-color: #d4d1d1;
     height: 113.8vh;
     @media screen and (max-width: 576px) {
-    display: none;
+      display: none;
     }
+  }
+  .carousel-indicators {
+    display: none !important;
   }
   .dark {
     background-color: #faf2f0;

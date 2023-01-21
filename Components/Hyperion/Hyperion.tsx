@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaCheck } from "react-icons/fa";
 import Dropdown from "react-bootstrap/Dropdown";
+import Carousel from "react-bootstrap/Carousel";
 
 export interface IProps {
   tag: string;
@@ -22,6 +23,7 @@ export interface IProps {
   minus: string;
   shirt: string;
   buttontext: string;
+  dummy: string[];
 }
 function Hyperion(props: IProps) {
   const [active, setActive] = useState(-1);
@@ -202,9 +204,16 @@ function Hyperion(props: IProps) {
               />
             </div>
           </div>
-          <div className="shirt mt-5 ">
-            <img src={props.shirt} alt="" className="shirt-img" />
-          </div>
+
+          <Carousel variant="dark">
+            {props.dummy.map((e, i) => (
+              <Carousel.Item key={i}>
+                <div className="shirt mt-5 ">
+                  <img src={props.shirt} alt="" className="shirt-img" />
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </Col>
       </Row>
     </Container>
