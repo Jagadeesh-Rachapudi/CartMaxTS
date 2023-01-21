@@ -6,23 +6,18 @@
   background-size: 100%;
   // display: flex;
   align-items: center;
-
   @media screen and (max-width: 1163px) {
     padding-left: 0 !important;
     background-image: none;
     height: fit-content !important;
     padding-bottom: 5rem !important;
   }
-  .control-next-icon {
-    margin-left: 50% !important;
-    margin-top: 0.5rem !important;
+  .carousel-indicators,
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
   }
-  .carousel-control-prev-icon {
-    margin-right: 50% !important;
-  }
-  .carousel-indicators {
-    display: none;
-  }
+
   .tag {
     padding-left: 8rem;
     margin-top: 15rem;

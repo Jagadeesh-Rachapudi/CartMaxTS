@@ -11,7 +11,7 @@ import HomeFashionItemData from "../../Utils/HomeFashionItem/HomeFashionItem.jso
 export interface IProps {
   tag: string;
   title: string;
-  dummy: string[];
+  dummy: { id: number; productname: string; price: number }[];
 }
 
 function BestSales(props: IProps) {
@@ -41,14 +41,21 @@ function BestSales(props: IProps) {
         <Row>
           <Col>
             <div className="Container-Box">
-              {props.dummy.map((e, i) => (
-                <div key={i} className="m-1">
-                  <HomeFashionItem
-                    {...(HomeFashionItemData as HomeFashionItemProps)}
-                    imageTitle={e}
-                  />
-                </div>
-              ))}
+              {props.dummy.map(
+                (
+                  product: { id: number; productname: string; price: number },
+                  i
+                ) => (
+                  <div key={i} className="m-1">
+                    <HomeFashionItem
+                      {...(HomeFashionItemData as HomeFashionItemProps)}
+                      imageTitle={product.productname}
+                      price={product.price}
+                      prodId={product.id}
+                    />
+                  </div>
+                )
+              )}
             </div>
           </Col>
         </Row>

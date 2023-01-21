@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import { useRouter } from "next/router";
 import NewsArticle2, {
   NewsArticle2Props,
 } from "../../Utils/NewsArticle2/NewsArticle2";
@@ -15,6 +15,7 @@ export interface IProps {
 }
 
 function News2(props: IProps) {
+  const router = useRouter();
   return (
     <Container className="News2-Body" id="Blog1">
       <Row>
@@ -37,7 +38,12 @@ function News2(props: IProps) {
             <NewsArticle2 {...(NewsArticle2Data as NewsArticle2Props)} />
             <NewsArticle2 {...(NewsArticle2Data as NewsArticle2Props)} />
           </div>
-          <div className="Button-Container mb-5 ">
+          <div
+            className="Button-Container mb-5"
+            onClick={() => {
+              router.push("/HomeFashionsViewAll");
+            }}
+          >
             <RedButton text={props.ButtonText} />
           </div>
         </Col>

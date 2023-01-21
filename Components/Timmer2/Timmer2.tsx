@@ -7,6 +7,10 @@ import Card from "react-bootstrap/Card";
 import RedButton from "../../Utils/RedButton/RedButton";
 import { useState, useEffect } from "react";
 
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import { IStore } from "../../redux/store";
+
 export interface IProps {
   timmer: {
     tag: string;
@@ -58,6 +62,8 @@ function Timmer2(props: IProps) {
       }
     }, 1000);
   });
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
 
   return (
     <Container className="Timmer2-Body" fluid>
@@ -143,7 +149,35 @@ function Timmer2(props: IProps) {
               </div>
             </div>
           </div>
-          <div className="Button-Container mb-5 pb-5 ">
+          <div
+            className="Button-Container mb-5 pb-5"
+            onClick={() => {
+              function addToCart(productId: number, newQuantity: number) {
+                var existingProduct = cart.find(function (item: any) {
+                  return item.pId === productId;
+                });
+
+                if (existingProduct) {
+                  existingProduct.quantity += newQuantity;
+                } else {
+                  dispatch(
+                    updateCart({
+                      products: [
+                        ...cart,
+                        {
+                          pId: 103,
+                          productName: "Enjoy this Spring Collection",
+                          pPrice: 80.99,
+                          quantity: newQuantity,
+                        },
+                      ],
+                    })
+                  );
+                }
+              }
+              addToCart(103, 1);
+            }}
+          >
             <RedButton text="BUY IT NOW" />
           </div>
         </Col>

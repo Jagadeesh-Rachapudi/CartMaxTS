@@ -2,6 +2,9 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import { IStore } from "../../redux/store";
 
 export interface IProps {
   img1: string;
@@ -13,6 +16,9 @@ export interface IProps {
 }
 
 function Cute(props: IProps) {
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
+
   return (
     <Container fluid className="Cute-Body">
       <Row>
@@ -43,6 +49,33 @@ function Cute(props: IProps) {
               }}
             />
             <button
+              onClick={() => {
+                function addToCart(productId: number, newQuantity: number) {
+                  var existingProduct = cart.find(function (item: any) {
+                    return item.pId === productId;
+                  });
+
+                  if (existingProduct) {
+                    existingProduct.quantity += newQuantity;
+                  } else {
+                    dispatch(
+                      updateCart({
+                        products: [
+                          ...cart,
+                          {
+                            pId: 105,
+                            productName:
+                              "Cute Pastel Outfit Combinations and Ideas",
+                            pPrice: 80.99,
+                            quantity: newQuantity,
+                          },
+                        ],
+                      })
+                    );
+                  }
+                }
+                addToCart(105, 1);
+              }}
               className="Button"
               dangerouslySetInnerHTML={{
                 __html: props.buttontext,

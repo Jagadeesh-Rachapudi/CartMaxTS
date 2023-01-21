@@ -6,6 +6,11 @@ import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import RedButton from "../../Utils/RedButton/RedButton";
 import { BsPlayCircle } from "react-icons/bs";
+
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import { IStore } from "../../redux/store";
+
 export interface IProps {
   src: string;
   tag: string;
@@ -17,8 +22,10 @@ export interface IProps {
 }
 
 function SlideShow2(props: IProps) {
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
   return (
-    <Container fluid className="SlideShow2-body" id="Home1" >
+    <Container fluid className="SlideShow2-body" id="Home1">
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
           <Carousel variant="dark">
@@ -48,10 +55,47 @@ function SlideShow2(props: IProps) {
                   </div>
                 </div>
                 <div className="Buttons">
-                  <div className="Button1">
+                  <div
+                    className="Button1"
+                    onClick={() => {
+                      function addToCart(
+                        productId: number,
+                        newQuantity: number
+                      ) {
+                        var existingProduct = cart.find(function (item: any) {
+                          return item.pId === productId;
+                        });
+
+                        if (existingProduct) {
+                          existingProduct.quantity += newQuantity;
+                        } else {
+                          dispatch(
+                            updateCart({
+                              products: [
+                                ...cart,
+                                {
+                                  pId: 101,
+                                  productName:
+                                    "Outside The City Mini bag Arrivals ",
+                                  pPrice: 80.99,
+                                  quantity: newQuantity,
+                                },
+                              ],
+                            })
+                          );
+                        }
+                      }
+                      addToCart(101, 1);
+                    }}
+                  >
                     <RedButton text={e} />
                   </div>
-                  <button className="Button2 d-flex flex-row ">
+                  <button
+                    className="Button2 d-flex flex-row"
+                    onClick={() => {
+                      window.open("https://youtube.com", "_blank");
+                    }}
+                  >
                     <BsPlayCircle color="black" className="me-2" size={47} />
                     <div
                       className="mt-auto mb-auto"

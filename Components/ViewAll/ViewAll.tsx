@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Pagination from "react-bootstrap/Pagination";
-
+import { useEffect } from "react";
 import HomeFashionItem, {
   IProps as HomeFashionItemProps,
 } from "../../Utils/HomeFashionItem/HomeFashionItem";
@@ -16,6 +16,7 @@ export interface IProps {
   Items: string[];
   prev: string;
   next: string;
+  dummy: { id: number; productname: string; price: number }[];
 }
 
 function ViewAll(props: IProps) {
@@ -62,6 +63,13 @@ function ViewAll(props: IProps) {
     );
   }
 
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
   return (
     <Container className="ViewAll-Body">
       <Row>
@@ -95,14 +103,21 @@ function ViewAll(props: IProps) {
               </Spinner>
             ) : (
               <div className="Container-Box">
-                {props.Items.map((e, i) => (
-                  <div key={i}>
-                    <HomeFashionItem
-                      {...(HomeFashionItemData as HomeFashionItemProps)}
-                      imageTitle={e}
-                    />
-                  </div>
-                ))}
+                {props.dummy.map(
+                  (
+                    product: { id: number; productname: string; price: number },
+                    i
+                  ) => (
+                    <div key={i} className="m-1">
+                      <HomeFashionItem
+                        {...(HomeFashionItemData as HomeFashionItemProps)}
+                        imageTitle={product.productname}
+                        price={product.price}
+                        prodId={product.id}
+                      />
+                    </div>
+                  )
+                )}
               </div>
             )}
           </div>

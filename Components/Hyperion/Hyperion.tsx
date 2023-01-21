@@ -7,6 +7,9 @@ import Col from "react-bootstrap/Col";
 import { FaCheck } from "react-icons/fa";
 import Dropdown from "react-bootstrap/Dropdown";
 import Carousel from "react-bootstrap/Carousel";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import { IStore } from "../../redux/store";
 
 export interface IProps {
   tag: string;
@@ -29,6 +32,10 @@ function Hyperion(props: IProps) {
   const [active, setActive] = useState(-1);
   const [size, setSize] = useState("XLL");
   const [value, setValue] = useState(2);
+
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
+
   return (
     <Container className="Hyperion-Body" fluid>
       <Row>
@@ -198,6 +205,32 @@ function Hyperion(props: IProps) {
               </div>
               <button
                 className="ms-5 Button"
+                onClick={() => {
+                  function addToCart(productId: number, newQuantity: number) {
+                    var existingProduct = cart.find(function (item: any) {
+                      return item.pId === productId;
+                    });
+
+                    if (existingProduct) {
+                      existingProduct.quantity += newQuantity;
+                    } else {
+                      dispatch(
+                        updateCart({
+                          products: [
+                            ...cart,
+                            {
+                              pId: 104,
+                              productName: "Hyperion",
+                              pPrice: 80.99,
+                              quantity: newQuantity,
+                            },
+                          ],
+                        })
+                      );
+                    }
+                  }
+                  addToCart(104, value);
+                }}
                 dangerouslySetInnerHTML={{
                   __html: props.buttontext,
                 }}

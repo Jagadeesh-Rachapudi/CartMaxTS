@@ -1,5 +1,21 @@
 {
   "tag": "<p>SHORT DESIGN</p>",
   "title": "<p>Last Items Viewed</p>",
-  "dummy": ["Crew Neck T-shirt", "Tarot Garden Dress", "Basic Long Sleeve"]
+  "dummy": [
+    {
+      "id": 29,
+      "productname": "Crew Neck T-shirt",
+      "price": 80.99
+    },
+    {
+      "id": 30,
+      "productname": "Tarot Garden Dress",
+      "price": 60.01
+    },
+    {
+      "id": 31,
+      "productname": "Basic Long Sleeve",
+      "price": 120.99
+    }
+  ]
 }

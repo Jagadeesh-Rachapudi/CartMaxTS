@@ -3,13 +3,37 @@
   "title": "<p>Top Month Sellers</p>",
   "Option1": "<p>New 2021</p>",
   "Option2": "<p>M2 Collection</p>",
-  "Items": [
-    "Travel Large Trifold Wallet",
-    "Cross Body Mini Bag",
-    "Bag with Flap",
-    "Crew Neck T-shirt",
-    "Collared Poplin Dress",
-    "Polarised Sunglasses"
+  "dummy": [
+    {
+      "id": 4,
+      "productname": "Travel Large Trifold Wallet",
+      "price": 20.99
+    },
+    {
+      "id": 5,
+      "productname": "Cross Body Mini Bag",
+      "price": 60.01
+    },
+    {
+      "id": 6,
+      "productname": "Bag with Flap",
+      "price": 160.99
+    },
+    {
+      "id": 7,
+      "productname": "Crew Neck T-shirt",
+      "price": 320.99
+    },
+    {
+      "id": 8,
+      "productname": "Collared Poplin Dress",
+      "price": 420.99
+    },
+    {
+      "id": 9,
+      "productname": "Polarised Sunglasses",
+      "price": 30.99
+    }
   ],
   "ButtonText": "<p>BUY IT NOW</p>"
 }

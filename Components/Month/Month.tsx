@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useRouter } from "next/router";
 
 import HomeFashionItem, {
   IProps as HomeFashionItemProps,
@@ -14,10 +15,11 @@ export interface IProps {
   title: string;
   Option1: string;
   Option2: string;
-  Items: string[];
+  dummy: { id: number; productname: string; price: number }[];
   ButtonText: string;
 }
 function Month(props: IProps) {
+  const router = useRouter();
   return (
     <div className="Month-Body" id="Product1">
       <Container className="p-0">
@@ -43,11 +45,17 @@ function Month(props: IProps) {
               <div className="Options">
                 <div
                   className="Option1 me-2 mt-auto mb-auto"
+                  onClick={() => {
+                    router.push("/HomeFashionsViewAll");
+                  }}
                   dangerouslySetInnerHTML={{
                     __html: props.Option1,
                   }}
                 />
                 <div
+                  onClick={() => {
+                    router.push("/HomeFashionsViewAll");
+                  }}
                   className="Option1 mt-auto mb-auto"
                   dangerouslySetInnerHTML={{
                     __html: props.Option2,
@@ -60,14 +68,21 @@ function Month(props: IProps) {
         <Row className="p-0">
           <Col className="p-0">
             <div className="Container-Box mb-5 ">
-              {props.Items.map((e, i) => (
-                <div key={i}>
-                  <HomeFashionItem
-                    {...(HomeFashionItemData as HomeFashionItemProps)}
-                    imageTitle={e}
-                  />
-                </div>
-              ))}
+              {props.dummy.map(
+                (
+                  product: { id: number; productname: string; price: number },
+                  i
+                ) => (
+                  <div key={i} className="m-1">
+                    <HomeFashionItem
+                      {...(HomeFashionItemData as HomeFashionItemProps)}
+                      imageTitle={product.productname}
+                      price={product.price}
+                      prodId={product.id}
+                    />
+                  </div>
+                )
+              )}
             </div>
           </Col>
         </Row>

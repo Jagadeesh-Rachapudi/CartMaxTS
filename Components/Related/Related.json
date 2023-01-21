@@ -1,10 +1,22 @@
 {
   "tag": "<p>JACKET & COAST</p>",
   "title": "<p>Related Product</p>",
-  "Items": [
-    "Travel Large Trifold Wallet",
-    "Cross Body Mini Bag",
-    "Bag with Flap"
+  "dummy": [
+    {
+      "id": 10,
+      "productname": "Travel Large Trifold Wallet",
+      "price": 50.99
+    },
+    {
+      "id": 11,
+      "productname": "Cross Body Mini Bag",
+      "price": 100.01
+    },
+    {
+      "id": 12,
+      "productname": "Bag with Flap",
+      "price": 150.99
+    }
   ],
   "add": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLayer%2056%20(1).png?alt=media&token=d2aa57b3-44f7-4a80-af38-4e590d14cf2c"
 }

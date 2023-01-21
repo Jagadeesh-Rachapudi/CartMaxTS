@@ -5,6 +5,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import RedButton from "../../Utils/RedButton/RedButton";
 
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import { IStore } from "../../redux/store";
+
 export interface IProps {
   title: string;
   tag: string;
@@ -22,6 +26,10 @@ export interface IProps {
 }
 function Behind(props: IProps) {
   const [active, setActive] = useState("");
+
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
+
   return (
     <div className="Behind-Body" id="Promotions1">
       <Container className="ads" fluid>
@@ -83,7 +91,36 @@ function Behind(props: IProps) {
                 __html: props.Text1,
               }}
             />
-            <RedButton text={props.ButtonText} />
+            <div
+              onClick={() => {
+                function addToCart(productId: number, newQuantity: number) {
+                  var existingProduct = cart.find(function (item: any) {
+                    return item.pId === productId;
+                  });
+
+                  if (existingProduct) {
+                    existingProduct.quantity += newQuantity;
+                  } else {
+                    dispatch(
+                      updateCart({
+                        products: [
+                          ...cart,
+                          {
+                            pId: 102,
+                            productName: "Behind the brand",
+                            pPrice: 80.99,
+                            quantity: newQuantity,
+                          },
+                        ],
+                      })
+                    );
+                  }
+                }
+                addToCart(102, 1);
+              }}
+            >
+              <RedButton text={props.ButtonText} />
+            </div>
           </Col>
           <Col
             className="mb-3 col2"

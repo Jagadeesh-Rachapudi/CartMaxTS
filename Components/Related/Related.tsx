@@ -13,7 +13,7 @@ export interface IProps {
   tag: string;
   title: string;
   add: string;
-  Items: string[];
+  dummy: { id: number; productname: string; price: number }[];
 }
 
 function Related(props: IProps) {
@@ -42,14 +42,21 @@ function Related(props: IProps) {
       <Row>
         <Col>
           <div className="Container-Box">
-            {props.Items.map((e, i) => (
-              <div key={i}>
-                <HomeFashionItem
-                  {...(HomeFashionItemData as HomeFashionItemProps)}
-                  imageTitle={e}
-                />
-              </div>
-            ))}
+            {props.dummy.map(
+              (
+                product: { id: number; productname: string; price: number },
+                i
+              ) => (
+                <div key={i} className="m-1">
+                  <HomeFashionItem
+                    {...(HomeFashionItemData as HomeFashionItemProps)}
+                    imageTitle={product.productname}
+                    price={product.price}
+                    prodId={product.id}
+                  />
+                </div>
+              )
+            )}
           </div>
         </Col>
       </Row>

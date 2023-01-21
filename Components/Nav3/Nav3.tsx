@@ -11,6 +11,11 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import { RxCross1 } from "react-icons/rx";
 
+import { useDispatch, useSelector } from "react-redux";
+import { IStore } from "../../redux/store";
+import { updateCart, updatelist } from "../../redux/actions/cartActions";
+import RedButton from "../../Utils/RedButton/RedButton";
+
 export interface IProps {
   navOptions: { text: string; link: string }[];
   cartitems: string[];
@@ -33,6 +38,10 @@ function Nav3(props: IProps) {
   const [clicked, setClicked] = useState(true);
 
   const [userData, setUserData] = useState("");
+
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
+  const list = useSelector((state: IStore) => state.list.list);
 
   function f(event: any) {
     setUserData(event?.target.value);
@@ -166,8 +175,38 @@ function Nav3(props: IProps) {
                     <Offcanvas.Title>WhishList</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    {props.whishList.map((cartItem, id) => (
-                      <h6 key={id}>{cartItem}</h6>
+                    {list.map((e, i) => (
+                      <div key={i} className="cartSideBar">
+                        <hr />
+                        <div className="d-flex">
+                          <div>
+                            <img
+                              src="https://picsum.photos/100"
+                              alt=""
+                              className="img rounded "
+                            />
+                          </div>
+                          <div>
+                            <div className=" ms-5 product-name">
+                              {e.productName}
+                            </div>
+                            <div
+                              className="ms-4 mt-3"
+                              onClick={() => {
+                                dispatch(
+                                  updatelist({
+                                    list: list.filter(
+                                      (product) => product.pId !== e.pId
+                                    ),
+                                  })
+                                );
+                              }}
+                            >
+                              <RedButton text="Remove from Whishlist" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     ))}
                   </Offcanvas.Body>
                 </Offcanvas>
@@ -183,9 +222,123 @@ function Nav3(props: IProps) {
                     <Offcanvas.Title>Your Cart Items</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    {props.cartitems.map((cartItem, id) => (
-                      <h6 key={id}>{cartItem}</h6>
-                    ))}
+                    <div className="cartSideBar">
+                      {cart.map((e, i) => (
+                        <div key={i}>
+                          <div className="d-flex mt-1 mb-1 justify-content-between">
+                            <img
+                              src="https://picsum.photos/100"
+                              alt=""
+                              className="img"
+                            />
+                            <div className="cart-item d-flex flex-column ms-1">
+                              <div className="product-name me-1">
+                                {e.productName}
+                              </div>
+                              <div className="quantity-controls">
+                                <button
+                                  className="decrement "
+                                  onClick={() => {
+                                    function addToCart(
+                                      productId: number,
+                                      newQuantity: number
+                                    ) {
+                                      if (e.quantity == 1) {
+                                        console.log("Delete now");
+                                        dispatch(
+                                          updateCart({
+                                            products: cart.filter(
+                                              (product) => product.pId !== e.pId
+                                            ),
+                                          })
+                                        );
+                                        return;
+                                      }
+                                      let existingProduct = cart.find(function (
+                                        item
+                                      ) {
+                                        return item.pId === productId;
+                                      });
+                                      if (existingProduct) {
+                                        existingProduct.quantity += newQuantity;
+                                      } else {
+                                        dispatch(
+                                          updateCart({
+                                            products: [
+                                              ...cart,
+                                              {
+                                                pId: e.pId,
+                                                productName: e.productName,
+                                                pPrice: e.pPrice,
+                                                quantity: newQuantity,
+                                              },
+                                            ],
+                                          })
+                                        );
+                                      }
+                                    }
+                                    addToCart(e.pId, -1);
+                                  }}
+                                >
+                                  -
+                                </button>
+                                <span className="quantity">{e.quantity}</span>
+                                <button
+                                  className="increment"
+                                  onClick={() => {
+                                    function addToCart(
+                                      productId: number,
+                                      newQuantity: number
+                                    ) {
+                                      let existingProduct = cart.find(function (
+                                        item
+                                      ) {
+                                        return item.pId === productId;
+                                      });
+
+                                      if (existingProduct) {
+                                        existingProduct.quantity += newQuantity;
+                                      } else {
+                                        dispatch(
+                                          updateCart({
+                                            products: [
+                                              ...cart,
+                                              {
+                                                pId: e.pId,
+                                                productName: e.productName,
+                                                pPrice: e.pPrice,
+                                                quantity: newQuantity,
+                                              },
+                                            ],
+                                          })
+                                        );
+                                      }
+                                    }
+                                    addToCart(e.pId, 1);
+                                  }}
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                            <span
+                              className="totalPrice mt-auto mb-auto ms-5"
+                              onLoad={() => {
+                                console.log("loaded");
+                              }}
+                            >
+                              ${e.pPrice * e.quantity}
+                            </span>
+                          </div>
+                          <hr />
+                        </div>
+                      ))}
+                      <div className="Buy">
+                        {/* <span className="totalPrice mt-auto mb-auto ms-5">
+                      2 {sum} 1
+                    </span> */}
+                      </div>
+                    </div>
                   </Offcanvas.Body>
                 </Offcanvas>
                 {/* Cart OffCanvas Ends */}

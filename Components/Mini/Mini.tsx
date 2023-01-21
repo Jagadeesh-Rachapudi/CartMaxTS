@@ -5,6 +5,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import RedButton from "../../Utils/RedButton/RedButton";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../../redux/actions/cartActions";
+import { IStore } from "../../redux/store";
 
 export interface IProps {
   tag: string;
@@ -18,7 +21,7 @@ export interface IProps {
 }
 
 function Mini(props: IProps) {
-  const [value, setValue] = useState(10);
+  const [value, setValue] = useState(2);
   const addHandler = () => {
     setValue(value + 1);
   };
@@ -27,6 +30,9 @@ function Mini(props: IProps) {
       setValue(value - 1);
     }
   };
+  const dispatch = useDispatch();
+  const cart = useSelector((state: IStore) => state.cart.products);
+
   return (
     <Container className="Mini-Body mb-5" fluid="xxl">
       <Row>
@@ -98,7 +104,35 @@ function Mini(props: IProps) {
                   </button>
                 </Card.Body>
               </Card>
-              <div className=" ms-3 mt-auto mb-auto">
+              <div
+                className=" ms-3 mt-auto mb-auto"
+                onClick={() => {
+                  function addToCart(productId: number, newQuantity: number) {
+                    var existingProduct = cart.find(function (item: any) {
+                      return item.pId === productId;
+                    });
+
+                    if (existingProduct) {
+                      existingProduct.quantity += newQuantity;
+                    } else {
+                      dispatch(
+                        updateCart({
+                          products: [
+                            ...cart,
+                            {
+                              pId: 100,
+                              productName: "Pleated Mini Bucket Bag",
+                              pPrice: 80.99,
+                              quantity: newQuantity,
+                            },
+                          ],
+                        })
+                      );
+                    }
+                  }
+                  addToCart(100, value);
+                }}
+              >
                 <RedButton text={props.ButtonText} />
               </div>
             </div>

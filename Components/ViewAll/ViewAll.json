@@ -20,7 +20,84 @@
     "Polarised Sunglasses",
     "Travel Large Trifold Wallet",
     "Cross Body Mini Bag",
-    "Bag with Flap"
+    ""
+  ],
+  "dummy": [
+    {
+      "id": 13,
+      "productname": "Crew Neck T-shirt",
+      "price": 80.99
+    },
+    {
+      "id": 14,
+      "productname": "Bag with Flap",
+      "price": 60.01
+    },
+    {
+      "id": 15,
+      "productname": "Basic Long Sleeve",
+      "price": 120.99
+    },
+    {
+      "id": 16,
+      "productname": "Crew Neck T-shirt",
+      "price": 80.99
+    },
+    {
+      "id": 17,
+      "productname": "Polarised Sunglasses",
+      "price": 60.01
+    },
+    {
+      "id": 18,
+      "productname": "Travel Large Trifold Wallet",
+      "price": 120.99
+    },
+    {
+      "id": 19,
+      "productname": "Crew Neck T-shirt",
+      "price": 80.99
+    },
+    {
+      "id": 20,
+      "productname": "Bag with Flap",
+      "price": 60.01
+    },
+    {
+      "id": 22,
+      "productname": "Basic Long Sleeve",
+      "price": 120.99
+    },
+    {
+      "id": 23,
+      "productname": "Crew Neck T-shirt",
+      "price": 80.99
+    },
+    {
+      "id": 24,
+      "productname": "Polarised Sunglasses",
+      "price": 60.01
+    },
+    {
+      "id": 25,
+      "productname": "Travel Large Trifold Wallet",
+      "price": 120.99
+    },
+    {
+      "id": 26,
+      "productname": "Crew Neck T-shirt",
+      "price": 80.99
+    },
+    {
+      "id": 27,
+      "productname": "Bag with Flap",
+      "price": 60.01
+    },
+    {
+      "id": 28,
+      "productname": "Basic Long Sleeve",
+      "price": 120.99
+    }
   ],
   "prev": "<p>&lt;&nbsp;PREVIOUS</p>",
   "next": "<p>NEXT &gt;</p>"

@@ -17,7 +17,12 @@ function Dark(props: IProps) {
           <Container className="play rounded">
             <Row>
               <Col className="Col1">
-                <div className="play-Button">
+                <div
+                  className="play-Button"
+                  onClick={() => {
+                    window.open("https://youtube.com", "_blank");
+                  }}
+                >
                   <BsFillPlayFill color="#f76954" size={100} className="icon" />
                 </div>
               </Col>
@@ -48,6 +53,9 @@ function Dark(props: IProps) {
             />
             <div className="button-Container">
               <button
+                onClick={() => {
+                  window.open("https://youtube.com", "_blank");
+                }}
                 className="Button"
                 dangerouslySetInnerHTML={{
                   __html: props.buttontext,

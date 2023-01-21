@@ -30,7 +30,12 @@ function Amazon(props: IProps) {
                 __html: props.title,
               }}
             />
-            <div className="mb-5">
+            <div
+              className="mb-5"
+              onClick={() => {
+                window.open("https://youtube.com", "_blank");
+              }}
+            >
               <RedButton text={props.ButtonText} />
             </div>
           </div>

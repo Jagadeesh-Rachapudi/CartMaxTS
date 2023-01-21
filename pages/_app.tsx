@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/globals.css";
+import "../styles/globals.scss";
 
 import "../Utils/Furniture/FurnitureItem.scss";
 import "../Utils/NewsArticle/NewsArticle.scss";

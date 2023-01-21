@@ -4,10 +4,11 @@ import reducers from "./reducers";
 import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
 import { composeWithDevTools } from "redux-devtools-extension";
-import { ICart } from "./reducers/cartReducer";
+import { ICart, IWishList } from "./reducers/cartReducer";
 
 export interface IStore {
   cart: ICart;
+  list: IWishList;
 }
 
 const persistConfig = {
