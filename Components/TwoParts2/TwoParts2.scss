@@ -1,0 +1,152 @@
+.TwoParts2-Body {
+  height: fit-content;
+  .dark {
+    background-color: #161d25;
+    height: 100vh;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+    .img-Container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 60%;
+      @media screen and (max-width: 1500px) {
+        margin-left: 50%;
+      }
+      @media screen and (max-width: 1200px) {
+        margin-left: 39%;
+      }
+      @media screen and (max-width: 987px) {
+        margin-left: 22%;
+      }
+      img {
+        height: 70vh;
+      }
+    }
+  }
+  .white {
+    background-color: black;
+    height: 100vh;
+    @media screen and (max-width: 1200px) {
+      height: 70vh;
+    }
+    .content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 25%;
+      @media screen and (max-width: 576px) {
+        margin-left: 5rem;
+      }
+      @media screen and (max-width: 456px) {
+        margin-left: 2rem;
+      }
+    }
+    .sale {
+      background-color: #2cc25d;
+      width: fit-content;
+      padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+      font-family: "Jost";
+      font-size: 13px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+    .tag {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17.045px;
+      line-height: 20px;
+      color: #ff3800;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 55px;
+      line-height: 60px;
+      color: #f7f7f7;
+      width: 24rem;
+      @media screen and (max-width: 456px) {
+        width: 98%;
+        font-size: 45px;
+        line-height: 50x;
+      }
+    }
+    .price1 {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 25px;
+      color: #f7f7f7;
+    }
+    .price2 {
+      font-family: "Jost";
+      font-size: 15px;
+      line-height: 18px;
+      text-decoration-line: line-through;
+      color: #b0b0b0;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 28px;
+      color: #919090;
+      width: 27rem;
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
+    }
+    .color {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 25px;
+      color: #f7f7f7;
+    }
+    .color1 {
+      background-color: #dcdee3;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+      margin-top: 0.15rem;
+      margin-left: 0.12rem !important;
+    }
+    .color2 {
+      background-color: #4fd25a;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+      margin-top: 0.15rem;
+      margin-left: 0.13rem;
+    }
+    .color3 {
+      background-color: #fb4038;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+      margin-top: 0.15rem;
+      margin-left: 0.115rem;
+    }
+    .active1 {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #dcdee3 !important;
+    }
+    .active2 {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #4fd25a !important;
+    }
+    .active3 {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #fb4038 !important;
+    }
+  }
+}

@@ -120,6 +120,8 @@ import "../Components/Footer7/Footer7.scss";
 import "../Components/Hedder7/Hedder7.scss";
 import "../Components/Arrivals2/Arrivals2.scss";
 import "../Components/Collection3/Collection3.scss";
+import "../Components/TwoParts2/TwoParts2.scss";
+import "../Components/DarkCollection/DarkCollection.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

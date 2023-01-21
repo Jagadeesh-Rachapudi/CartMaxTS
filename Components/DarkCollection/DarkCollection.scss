@@ -1,0 +1,83 @@
+.DarkCollection-Body {
+  height: 100vh;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ff3800;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 770px) {
+      justify-content: center !important;
+    }
+  }
+}
+.bottom {
+  .whitebox {
+    background-color: #313131;
+    height: 40vh;
+  }
+  .darkbox {
+    background-color: #1b1b1b;
+    height: 40vh;
+  }
+  .tag {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 7rem;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .link {
+    font-family: "Jost";
+    font-size: 19.993px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #ffffff;
+    text-align: center;
+  }
+  .title2 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    color: #b38068;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
