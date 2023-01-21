@@ -20,6 +20,9 @@ import DarkData from "../Components/Dark/Dark.json";
 import Related, { IProps as RelatedProps } from "../Components/Related/Related";
 import RelatedData from "../Components/Related/Related.json";
 
+import Footer3, { IProps as Footer3Props } from "../Components/Footer3/Footer3";
+import Footer3Data from "../Components/Footer3/Footer3.json";
+
 function HomeFashionsPDP() {
   return (
     <div>
@@ -36,6 +39,7 @@ function HomeFashionsPDP() {
       <Cute {...(CuteData as CuteProps)} />
       <Dark {...(DarkData as DarkProps)} />
       <Related {...(RelatedData as RelatedProps)} />
+      <Footer3 {...(Footer3Data as Footer3Props)} />
     </div>
   );
 }
