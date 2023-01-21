@@ -1,0 +1,16 @@
+{
+  "tag": "<p>JACKETS</p>",
+  "sale": "<p>SALE</p>",
+  "title": "<p>Hyperion</p>",
+  "price1": "<p>$85.99</p>",
+  "price2": "<p>$130.99</p>",
+  "text": "<p>Donec id massa ut nisl auctor mollis eu nec  magna. Duis mattis congue lacus ac elementum. Nunc et lorem vitae justo venenatis imperdiet.</p>",
+  "color": "<p>COLOR:</p>",
+  "size": "<p>SIZE:</p>",
+  "XL": "<p>XL</p>",
+  "XLL": "<p>XLL</p>",
+  "plus": "<p>+</p>",
+  "minus": "<p>-</p>",
+  "shirt": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FAJ897_WQ8675.png?alt=media&token=e61291b2-665e-445d-8fb2-c6bc8e053cbd",
+  "buttontext": "<p>ADD TO CART</p>"
+}

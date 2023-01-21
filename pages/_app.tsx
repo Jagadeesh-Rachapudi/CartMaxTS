@@ -127,6 +127,8 @@ import "../Components/Coat/Coat.scss";
 import "../Components/ViewAll/ViewAll.scss";
 import "../Components/Last/Last.scss";
 
+import "../Components/Hyperion/Hyperion.scss";
+
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";
 import { PersistGate } from "redux-persist/integration/react";
