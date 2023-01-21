@@ -123,6 +123,8 @@ import "../Components/Collection3/Collection3.scss";
 import "../Components/TwoParts2/TwoParts2.scss";
 import "../Components/DarkCollection/DarkCollection.scss";
 
+import "../Components/Coat/Coat.scss";
+
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";
 import { PersistGate } from "redux-persist/integration/react";

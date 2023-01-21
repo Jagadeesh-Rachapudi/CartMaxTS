@@ -1,0 +1,47 @@
+.Coat-Body {
+  margin-top: 5rem;
+  height: 70vh;
+  margin-bottom: 5rem;
+  background-color: #c8c8c8;
+  .content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 5rem;
+    @media screen and (max-width: 400px) {
+      padding-left: 1rem;
+    }
+    .tag {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #232323;
+      margin-top: 0.5rem;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 45px;
+      color: #232323;
+      width: 19rem;
+      margin-top: 0.5rem;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #3f3f3f;
+      width: 20rem;
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
