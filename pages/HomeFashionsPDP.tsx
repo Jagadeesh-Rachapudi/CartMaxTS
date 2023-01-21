@@ -14,6 +14,9 @@ import HyperionData from "../Components/Hyperion/Hyperion.json";
 import Cute, { IProps as CuteProps } from "../Components/Cute/Cute";
 import CuteData from "../Components/Cute/Cute.json";
 
+import Dark, { IProps as DarkProps } from "../Components/Dark/Dark";
+import DarkData from "../Components/Dark/Dark.json";
+
 function HomeFashionsPDP() {
   return (
     <div>
@@ -28,6 +31,7 @@ function HomeFashionsPDP() {
       />
       <Hyperion {...(HyperionData as HyperionProps)} />
       <Cute {...(CuteData as CuteProps)} />
+      <Dark {...(DarkData as DarkProps)} />
     </div>
   );
 }

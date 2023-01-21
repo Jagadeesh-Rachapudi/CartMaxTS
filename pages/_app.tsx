@@ -129,6 +129,7 @@ import "../Components/Last/Last.scss";
 
 import "../Components/Hyperion/Hyperion.scss";
 import "../Components/Cute/Cute.scss";
+import "../Components/Dark/Dark.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

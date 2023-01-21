@@ -1,0 +1,79 @@
+.Dark-Body {
+  height: 100vh;
+  background-color: black;
+  .play {
+    background-color: #c1c1c1;
+    height: 585px;
+    margin-top: -10rem;
+    .Col1 {
+      margin-top: 15rem;
+    }
+    .play-Button {
+      width: 118px;
+      height: 118px;
+      border-radius: 50%;
+      background-color: white;
+      margin: auto;
+      .icon {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  .content {
+    margin-top: 8rem;
+    .tag {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 25px;
+      color: #f76954;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 39.369px;
+      line-height: 57px;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      color: #eeeeee;
+      width: 28rem;
+      margin: auto;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .button-Container {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      button {
+        background-color: #fb491d;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 18px;
+        color: #ffffff;
+        width: 183px;
+        height: 54px;
+        border: none;
+        border-radius: 25px;
+      }
+    }
+  }
+}
