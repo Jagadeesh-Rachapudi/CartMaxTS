@@ -12,13 +12,19 @@ import CoatData from "../Components/Coat/Coat.json";
 import ViewAll, { IProps as ViewAllProps } from "../Components/ViewAll/ViewAll";
 import ViewAllData from "../Components/ViewAll/ViewAll.json";
 
+import Footer3, { IProps as Footer3Props } from "../Components/Footer3/Footer3";
+import Footer3Data from "../Components/Footer3/Footer3.json";
+
+import Last, { IProps as LastProps } from "../Components/Last/Last";
+import LastData from "../Components/Last/Last.json";
+
 function HomeFashionsViewAll() {
   return (
     <div>
       <Nav3 {...(Nav3Data as Nav3Props)} />
       <Hedder5
         {...(Hedder5Data as Hedder5Props)}
-        title="ProductDetail"
+        title="Shop Page"
         option1="Home"
         option2="Shop"
         option3="Shop List"
@@ -26,6 +32,8 @@ function HomeFashionsViewAll() {
       />
       <Coat {...(CoatData as CoatProps)} />
       <ViewAll {...(ViewAllData as ViewAllProps)} />
+      <Last {...(LastData as LastProps)} />
+      <Footer3 {...(Footer3Data as Footer3Props)} />
     </div>
   );
 }
