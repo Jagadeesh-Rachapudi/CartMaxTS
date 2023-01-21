@@ -1,0 +1,91 @@
+.Cute-Body {
+  height: 100vh;
+  background-color: #ededed;
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+    .img1 {
+      margin-left: auto;
+    }
+    .img2 {
+      position: absolute;
+      margin-left: -15rem;
+      margin-top: +17rem;
+      @media screen and (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+  .part2 {
+    height: 100vh;
+    .content {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      @media screen and (max-width: 992px) {
+        margin-left: 5rem;
+      }
+      @media screen and (max-width: 548px) {
+        margin-left: 2rem;
+      }
+      .tag {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 25px;
+        color: #f76954;
+        margin-bottom: 1rem;
+      }
+      .title {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 59.053px;
+        line-height: 65px;
+        letter-spacing: -0.02em;
+        color: #141412;
+        width: 27rem;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+          font-size: 50px;
+          line-height: 55px;
+        }
+      }
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #373737;
+        margin-bottom: 1rem;
+        width: 28rem;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
+      }
+      .Button {
+        background-color: #fb491d;
+        width: 170px;
+        height: 53px;
+        border: none;
+        border-radius: 25px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 17px;
+        color: #ffffff;
+      }
+    }
+  }
+}
