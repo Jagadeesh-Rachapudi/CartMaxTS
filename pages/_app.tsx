@@ -124,6 +124,7 @@ import "../Components/TwoParts2/TwoParts2.scss";
 import "../Components/DarkCollection/DarkCollection.scss";
 
 import "../Components/Coat/Coat.scss";
+import "../Components/ViewAll/ViewAll.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

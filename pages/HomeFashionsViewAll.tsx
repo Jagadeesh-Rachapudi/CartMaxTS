@@ -9,6 +9,9 @@ import Hedder5Data from "../Components/Hedder5/Hedder5.json";
 import Coat, { IProps as CoatProps } from "../Components/Coat/Coat";
 import CoatData from "../Components/Coat/Coat.json";
 
+import ViewAll, { IProps as ViewAllProps } from "../Components/ViewAll/ViewAll";
+import ViewAllData from "../Components/ViewAll/ViewAll.json";
+
 function HomeFashionsViewAll() {
   return (
     <div>
@@ -22,6 +25,7 @@ function HomeFashionsViewAll() {
         color="#4F4F4F"
       />
       <Coat {...(CoatData as CoatProps)} />
+      <ViewAll {...(ViewAllData as ViewAllProps)} />
     </div>
   );
 }
