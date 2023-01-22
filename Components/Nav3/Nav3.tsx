@@ -15,6 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { IStore } from "../../redux/store";
 import { updateCart, updatelist } from "../../redux/actions/cartActions";
 import RedButton from "../../Utils/RedButton/RedButton";
+import { GiPerspectiveDiceSixFacesTwo } from "react-icons/gi";
 
 export interface IProps {
   navOptions: { text: string; link: string }[];
@@ -36,6 +37,15 @@ function Nav3(props: IProps) {
   const handleShow3 = () => setShow3(true);
 
   const [clicked, setClicked] = useState(true);
+  const [sum, setSum] = useState(0);
+
+  const [prices, setPrices] = useState([
+    {
+      id: -1,
+      price: 0,
+      quanti: 0,
+    },
+  ]);
 
   const [userData, setUserData] = useState("");
 
@@ -48,6 +58,27 @@ function Nav3(props: IProps) {
     event.preventDefault();
     console.log(userData);
   }
+
+  const handleAddPrice = (newPrice: {
+    id: number;
+    price: number;
+    quanti: number;
+  }) => {
+    const productExists = prices.some((price) => price.id === newPrice.id);
+    if (!productExists) {
+      setPrices((prices) => [...prices, newPrice]);
+    } else {
+      // console.log("new price added");
+      console.log(prices);
+    }
+    const uniquePrices = prices.filter(
+      (newPrice, index, self) =>
+        index === self.findIndex((p) => p.id === newPrice.id)
+    );
+    // console.log(uniquePrices);
+    setPrices(uniquePrices.slice());
+  };
+
   return (
     <div className="Nav3-Body">
       <Container fluid>
@@ -229,7 +260,7 @@ function Nav3(props: IProps) {
                             <img
                               src="https://picsum.photos/100"
                               alt=""
-                              className="img"
+                              className="img rounded "
                             />
                             <div className="cart-item d-flex flex-column ms-1">
                               <div className="product-name me-1">
@@ -278,6 +309,11 @@ function Nav3(props: IProps) {
                                       }
                                     }
                                     addToCart(e.pId, -1);
+                                    handleAddPrice({
+                                      id: e.pId,
+                                      price: e.pPrice,
+                                      quanti: e.quantity,
+                                    });
                                   }}
                                 >
                                   -
@@ -295,7 +331,6 @@ function Nav3(props: IProps) {
                                       ) {
                                         return item.pId === productId;
                                       });
-
                                       if (existingProduct) {
                                         existingProduct.quantity += newQuantity;
                                       } else {
@@ -315,28 +350,33 @@ function Nav3(props: IProps) {
                                       }
                                     }
                                     addToCart(e.pId, 1);
+                                    handleAddPrice({
+                                      id: e.pId,
+                                      price: e.pPrice,
+                                      quanti: e.quantity,
+                                    });
                                   }}
                                 >
                                   +
                                 </button>
                               </div>
                             </div>
-                            <span
+                            <div
                               className="totalPrice mt-auto mb-auto ms-5"
                               onLoad={() => {
                                 console.log("loaded");
                               }}
                             >
                               ${e.pPrice * e.quantity}
-                            </span>
+                            </div>
                           </div>
                           <hr />
                         </div>
                       ))}
-                      <div className="Buy">
-                        {/* <span className="totalPrice mt-auto mb-auto ms-5">
-                      2 {sum} 1
-                    </span> */}
+                      <div className="Buy ms-5 mt-2">
+                        <button className="btn btn-danger">
+                          Proceed to pay $ {sum}
+                        </button>
                       </div>
                     </div>
                   </Offcanvas.Body>
