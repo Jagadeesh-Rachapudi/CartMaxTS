@@ -1,0 +1,90 @@
+.Shop-Body {
+  height: fit-content;
+  margin-bottom: 3rem;
+
+  .part1 {
+    height: 50vh;
+    background-color: #4c4c4c;
+    @media screen and (max-width: 992px) {
+      height: 70vh;
+    }
+    @media screen and (max-width: 440px) {
+      height: 106vh;
+    }
+    .tag {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #f92950;
+      text-align: center;
+      margin-top: 5rem;
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      margin-top: 1rem;
+    }
+    .products {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: wrap;
+      column-gap: 1rem;
+      .Product {
+        height: 320px;
+        width: 200px;
+        background-color: #ffffff;
+        border-radius: 100px 100px 100px 100px;
+      }
+      .inner-product {
+        margin-left: 0.62rem;
+        margin-top: 0.5rem;
+        height: 240px;
+        width: 182px;
+        border-radius: 91px 91px 91px 91px;
+      }
+      .product-tilte {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        color: #000000;
+        text-align: center;
+        margin-top: 5%;
+      }
+      .count {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: -0.02em;
+        color: #f92950;
+        text-align: center;
+        margin-top: 3%;
+      }
+    }
+  }
+  .part2 {
+    background-color: #eaeff5;
+    height: 30vh;
+    @media screen and (max-width: 992px) {
+      height: 50vh;
+    }
+    @media screen and (max-width: 440px) {
+      height: 86vh;
+    }
+  }
+}

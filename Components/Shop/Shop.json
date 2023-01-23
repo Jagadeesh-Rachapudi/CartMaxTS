@@ -1,0 +1,26 @@
+{
+  "tag": "<p>CARTMAX CATEGORIES<p>",
+  "title": "<p><span style=\"color:#ffffff\">Cartmax Shop<br />By</span> <span style=\"color:#f92950\">Category</span></p>",
+  "products": [
+    {
+      "producttitle": "<p>SHOES</p>",
+      "count": "<p>(5 ITEMS)</p>",
+      "color": "#F5F5F5"
+    },
+    {
+      "producttitle": "<p>GLASES</p>",
+      "count": "<p>(7 ITEMS)</p>",
+      "color": "#FEE3CE"
+    },
+    {
+      "producttitle": "<p>SHIRTS</p>",
+      "count": "<p>(8 ITEMS)</p>",
+      "color": "#F6F6F6"
+    },
+    {
+      "producttitle": "<p>TROUSERS</p>",
+      "count": "<p>(1 ITEM)</p>",
+      "color": "#F1F1F3"
+    }
+  ]
+}
