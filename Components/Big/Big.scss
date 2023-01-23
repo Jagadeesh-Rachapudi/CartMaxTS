@@ -1,0 +1,68 @@
+.Big-Body {
+  height: fit-content;
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+  .element {
+    background-color: #252525;
+    width: 450px;
+    height: 554px;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 1rem;
+      .tag {
+        font-family: "Jost";
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: -0.02em;
+        color: #e1e1e1;
+        margin-top: 8rem;
+      }
+      .title {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 45px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+      .percent {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 126.313px;
+        line-height: 126px;
+        letter-spacing: -0.05em;
+        color: #ffffff;
+      }
+      .Button {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        border: none;
+        width: 153px;
+        height: 48px;
+        padding-top: 0.1rem;
+        color: white;
+      }
+      .Button:hover {
+        background-color: #f92950;
+        color: white;
+      }
+    }
+  }
+}

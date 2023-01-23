@@ -1,5 +1,8 @@
 import React from "react";
 
+import Big, { IProps as BigProps } from "../Components/Big/Big";
+import BigData from "../Components/Big/Big.json";
+
 import Dreams, { IProps as DreamsProps } from "../Components/Dreams/Dreams";
 import DreamsData from "../Components/Dreams/Dreams.json";
 
@@ -23,6 +26,7 @@ function FashionAccesories() {
       <Dreams {...(DreamsData as DreamsProps)} />
       <Shop {...(ShopData as ShopProps)} />
       <New {...(NewData as NewProps)} />
+      <Big {...(BigData as BigProps)} />
     </div>
   );
 }

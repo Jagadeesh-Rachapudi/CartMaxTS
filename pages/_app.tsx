@@ -139,6 +139,7 @@ import "../Components/Hedder8/Hedder8.scss";
 import "../Components/Dreams/Dreams.scss";
 import "../Components/Shop/Shop.scss";
 import "../Components/New/New.scss";
+import "../Components/Big/Big.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";
