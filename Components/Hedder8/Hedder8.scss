@@ -1,0 +1,76 @@
+.Hedder8-Body {
+  background-color: #b7b7b7;
+  height: 850px;
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15rem;
+    margin-top: -16rem;
+    @media screen and (max-width: 780px) {
+      margin-left: 7rem;
+    }
+    @media screen and (max-width: 500px) {
+      margin-left: 3rem;
+    }
+    @media screen and (max-width: 375px) {
+      margin-left: 1rem;
+    }
+  }
+  .carousel-indicators{
+    display: none !important;
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 85px;
+    letter-spacing: -0.02em;
+    color: #161616;
+    width: 449px;
+    @media screen and (max-width: 449px) {
+      width: auto;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 75px;
+      line-height: 80px;
+    }
+  }
+  .text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #282525;
+    width: 304px;
+    margin-top: 1rem;
+    @media screen and (max-width: 340px) {
+      width: auto;
+    }
+  }
+  .triangle {
+    margin-top: 13.5rem;
+    position: relative;
+    @media screen and (max-width: 1150px) {
+      display: none;
+    }
+  }
+  .img2 {
+    position: relative;
+    margin-top: 05%;
+  }
+  .icon {
+    z-index: +2;
+    position: absolute;
+    margin-top: 53%;
+    margin-left: 65%;
+  }
+  .Button-Container {
+    margin-top: 2rem;
+    width: fit-content;
+    margin-left: 1rem;
+  }
+}

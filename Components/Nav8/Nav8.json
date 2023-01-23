@@ -1,0 +1,42 @@
+{
+  "src": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo%20(9).png?alt=media&token=39495fc8-65ef-485a-8a31-bee520d9fac3",
+  "navOptions": [
+    {
+      "text": "Home",
+      "link": "#Home1"
+    },
+    {
+      "text": "Promotions",
+      "link": "#Promotions1"
+    },
+    {
+      "text": "Shop",
+      "link": "#Shop1"
+    },
+    {
+      "text": "Product",
+      "link": "#Product1"
+    },
+    {
+      "text": "Blog",
+      "link": "#Blog1"
+    },
+    {
+      "text": "Pages",
+      "link": "#Pages1"
+    }
+  ],
+  "cartitems": [
+    "Apple Watch Ultra",
+    "IPhone 14",
+    "Apple Tab 13",
+    "Nike Shoes",
+    "Realme 10 Pro"
+  ],
+  "whishList": [
+    "Galaxy Z Fold4",
+    "Galaxy Z Fold3",
+    "Galaxy Z Fold2",
+    "Galaxy Z Fold10"
+  ]
+}

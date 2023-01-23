@@ -24,8 +24,7 @@ export interface IProps {
   src: string;
 }
 
-
-function Nav3(props: IProps) {
+function Nav8(props: IProps) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -82,14 +81,7 @@ function Nav3(props: IProps) {
   };
 
   return (
-    <div className="Nav3-Body">
-      <Container fluid>
-        <Row>
-          <div className="TopRibbon">
-            FREE SHIPPING OVER $100 & FREE RETURNS
-          </div>
-        </Row>
-      </Container>
+    <div className="Nav8-Body">
       <Container fluid>
         <Row>
           <Col>
@@ -393,4 +385,4 @@ function Nav3(props: IProps) {
   );
 }
 
-export default Nav3;
+export default Nav8;
