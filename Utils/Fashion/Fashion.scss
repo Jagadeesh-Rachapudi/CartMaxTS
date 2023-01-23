@@ -1,0 +1,129 @@
+.Fashion-Body {
+  width: fit-content;
+  @media screen and (max-width: 413px) {
+    width: 100%;
+  }
+  .overflow-icons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: +2;
+    width: 380px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    @media screen and (max-width: 413px) {
+      width: 80%;
+    }
+    .sale {
+      background-color: #fb4a18;
+      border-radius: 2px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      width: 48px;
+      height: 22px;
+      padding-top: 0.2rem;
+      padding-left: 0.5rem;
+    }
+    .hot {
+      background-color: #191919;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      width: 48px;
+      height: 22px;
+      padding-top: 0.2rem;
+      padding-left: 0.7rem;
+      border-radius: 2px;
+      margin-top: 0.3rem;
+    }
+    .icons-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+      .icons {
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        background-color: white;
+        padding: 0.65rem 0rem 0rem 0.9rem;
+      }
+    }
+  }
+  .showOnHover {
+    .img {
+      border-radius: 4px 4px 4px 4px;
+      @media screen and (max-width: 413px) {
+        width: 100%;
+      }
+    }
+    .cart {
+      width: 413px;
+      background-color: #1d1d1d;
+      height: 51px;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffffff;
+      padding: 0.75rem 0rem 0rem 130px;
+      position: absolute;
+      margin-top: -51px;
+      border-radius: 0px 0px 4px 4px;
+      display: none;
+    }
+  }
+  .showOnHover:hover {
+    .img {
+      border-radius: 4px 4px 0px 0px;
+    }
+    .cart {
+      display: flex;
+    }
+  }
+  .Fashion-title {
+    font-family: "Jost";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #000000;
+  }
+  .price1 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+    text-decoration-line: line-through;
+    color: #151515;
+  }
+  .price {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #606060;
+    margin-top: 0.1rem;
+    margin-left: 0.8rem;
+  }
+  .color1 {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .color2 {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #e31e27;
+  }
+}

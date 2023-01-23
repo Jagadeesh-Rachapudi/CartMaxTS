@@ -28,6 +28,7 @@ import "../Utils/DisplayCard/DisplayCard.scss";
 import "../Utils/Picks/Picks.scss";
 import "../Utils/WatchItem2/WatchItem2.scss";
 import "../Utils/PinkButton/PinkButton.scss";
+import "../Utils/Fashion/Fashion.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -137,6 +138,7 @@ import "../Components/Nav8/Nav8.scss";
 import "../Components/Hedder8/Hedder8.scss";
 import "../Components/Dreams/Dreams.scss";
 import "../Components/Shop/Shop.scss";
+import "../Components/New/New.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";
