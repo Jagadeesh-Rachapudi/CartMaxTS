@@ -140,6 +140,7 @@ import "../Components/Dreams/Dreams.scss";
 import "../Components/Shop/Shop.scss";
 import "../Components/New/New.scss";
 import "../Components/Big/Big.scss";
+import "../Components/Summer/Summer.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

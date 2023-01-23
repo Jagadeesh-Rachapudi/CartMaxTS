@@ -51,13 +51,15 @@ function Fashion(props: IProps) {
           <div className="showOnHover">
             <img src={props.img} alt="" className="img" />
             <div className="cart">
-              <BsBag color="white" size={17} className="bagicon mt-1" />
-              <div
-                className="ms-2"
-                dangerouslySetInnerHTML={{
-                  __html: props.cart,
-                }}
-              />
+              <div className="ms-auto me-auto d-flex mt-3">
+                <BsBag color="white" size={17} className="bagicon mt-1" />
+                <div
+                  className="ms-2"
+                  dangerouslySetInnerHTML={{
+                    __html: props.cart,
+                  }}
+                />
+              </div>
             </div>
           </div>
         </Col>

@@ -57,6 +57,9 @@
     }
   }
   .showOnHover {
+    @media screen and (max-width: 413px) {
+      width: 100%;
+    }
     .img {
       border-radius: 4px 4px 4px 4px;
       @media screen and (max-width: 413px) {
@@ -73,11 +76,14 @@
       font-size: 18px;
       line-height: 26px;
       color: #ffffff;
-      padding: 0.75rem 0rem 0rem 130px;
+      // padding: 0.75rem 0rem 0rem 130px;
       position: absolute;
       margin-top: -51px;
       border-radius: 0px 0px 4px 4px;
       display: none;
+      @media screen and (max-width: 413px) {
+        width: 88%;
+      }
     }
   }
   .showOnHover:hover {

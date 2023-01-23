@@ -1,0 +1,71 @@
+.Summer-Body {
+  height: fit-content;
+  margin-top: 2rem;
+  .tag {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ff3030;
+    margin-left: 2rem;
+    @media screen and (max-width: 992px) {
+      text-align: center;
+    }
+  }
+  .title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 0.5rem;
+      align-items: center;
+    }
+  }
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 65px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-left: 2rem;
+  }
+  .options {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    column-gap: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #c1c1c1;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+  }
+  .option {
+    width: fit-content;
+    cursor: pointer;
+  }
+  .option:hover {
+    color: black;
+  }
+  .active {
+    color: black;
+  }
+  .Container-Box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+}

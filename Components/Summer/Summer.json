@@ -1,0 +1,67 @@
+{
+  "tag": "<p>JACKET & COAST</p>",
+  "title": "<p>Summer Days Look</p>",
+  "options": [
+    "<p>LATEST PRODUCTS</p>",
+    "<p>BEST SELLING</p>",
+    "<p>FEATURED PRODICTS</p>"
+  ],
+  "products": [
+    {
+      "id": 34,
+      "fashionttile": "<p>Soft Flap Crossbody</p>",
+      "price": 89.99,
+      "color1": "#1D1D1D",
+      "color2": "aqua"
+    },
+    {
+      "id": 35,
+      "fashionttile": "<p>Polarised Sunglasses</p>",
+      "price": 69.99,
+      "color1": "#C5D518",
+      "color2": "#E6DDCE"
+    },
+    {
+      "id": 36,
+      "fashionttile": "<p>Felted Wool Hat</p>",
+      "price": 99.99,
+      "color1": "#A6A6A4",
+      "color2": "#4B4C4A"
+    },
+    {
+      "id": 37,
+      "fashionttile": "<p>Blazer Coupe Amincie</p>",
+      "price": 89.99,
+      "color1": "pink",
+      "color2": "#E31E27"
+    },
+    {
+      "id": 38,
+      "fashionttile": "<p>Polarised Sunglasses</p>",
+      "price": 69.99,
+      "color1": "#C5D518",
+      "color2": "red"
+    },
+    {
+      "id": 39,
+      "fashionttile": "<p>Textured vegan leather</p>",
+      "price": 99.99,
+      "color1": "green",
+      "color2": "#4B4C4A"
+    },
+    {
+      "id": 40,
+      "fashionttile": "<p>Felted Wool Hat</p>",
+      "price": 99.99,
+      "color1": "#A6A6A4",
+      "color2": "#4B4C4A"
+    },
+    {
+      "id": 41,
+      "fashionttile": "<p>Blazer Coupe Amincie</p>",
+      "price": 89.99,
+      "color1": "pink",
+      "color2": "#E31E27"
+    }
+  ]
+}

@@ -52,7 +52,7 @@ function Big(props: IProps) {
       <Row>
         <Col>
           <div className="Container-Box">
-            <div className="element rounded">
+            <div className="element m-2 rounded">
               <div className="content">
                 <div
                   className="tag"
@@ -92,7 +92,7 @@ function Big(props: IProps) {
               </div>
             </div>
 
-            <div className="element rounded">
+            <div className="element m-2 rounded">
               <div className="content">
                 <div
                   className="tag"
@@ -132,7 +132,7 @@ function Big(props: IProps) {
               </div>
             </div>
 
-            <div className="element rounded">
+            <div className="element m-2 rounded">
               <div className="content">
                 <div
                   className="tag"

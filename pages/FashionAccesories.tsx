@@ -18,6 +18,9 @@ import NewData from "../Components/New/New.json";
 import Shop, { IProps as ShopProps } from "../Components/Shop/Shop";
 import ShopData from "../Components/Shop/Shop.json";
 
+import Summer, { IProps as SummerProps } from "../Components/Summer/Summer";
+import SummerData from "../Components/Summer/Summer.json";
+
 function FashionAccesories() {
   return (
     <div>
@@ -27,6 +30,7 @@ function FashionAccesories() {
       <Shop {...(ShopData as ShopProps)} />
       <New {...(NewData as NewProps)} />
       <Big {...(BigData as BigProps)} />
+      <Summer {...(SummerData as SummerProps)} />
     </div>
   );
 }
