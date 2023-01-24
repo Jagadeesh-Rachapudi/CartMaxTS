@@ -27,6 +27,9 @@ import ShopData from "../Components/Shop/Shop.json";
 import Summer, { IProps as SummerProps } from "../Components/Summer/Summer";
 import SummerData from "../Components/Summer/Summer.json";
 
+import Timmer4, { IProps as Timmer4Props } from "../Components/Timmer4/Timmer4";
+import Timmer4Data from "../Components/Timmer4/Timmer4.json";
+
 function FashionAccesories() {
   return (
     <div>
@@ -39,6 +42,7 @@ function FashionAccesories() {
       <Summer {...(SummerData as SummerProps)} />
       <Play {...(PlayData as PlayProps)} />
       <Reviews {...(ReviewsData as ReviewsProps)} />
+      <Timmer4 {...(Timmer4Data as Timmer4Props)} />
     </div>
   );
 }

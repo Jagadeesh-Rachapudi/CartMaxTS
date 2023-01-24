@@ -1,0 +1,103 @@
+.Timmer4-Body {
+  height: 100vh;
+  background-color: #c6c6c6;
+  margin-bottom: 3rem;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: -10rem;
+    @media screen and (max-width: 768px) {
+      margin-left: 0rem;
+    }
+    .play-Border {
+      height: 147px;
+      width: 147px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 3px solid #6270ff;
+      .play-Container {
+        margin: auto;
+        margin-top: 0.85rem;
+        background-color: #ffffff;
+        width: fit-content;
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        .play {
+          margin-left: 0.75rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+    .title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 58px;
+      letter-spacing: -0.02em;
+      color: #1e1e1e;
+    }
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: #585858;
+      text-align: center;
+    }
+    .timmer {
+      //   @media screen and (max-width: 992px) {
+      //     margin-left: 40%;
+      //   }
+      //   @media screen and (max-width: 650px) {
+      //     margin-left: 20%;
+      //   }
+      //   @media screen and (max-width: 520px) {
+      //     margin-left: 10%;
+      //   }
+      //   @media screen and (max-width: 420px) {
+      //     margin-left: 0.5rem;
+      //   }
+      .numbercontainer {
+        width: 69px;
+        height: 69px;
+        min-width: 69px;
+        min-height: 69px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        .time {
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22.422px;
+          line-height: 32px;
+          color: #383838;
+          width: fit-content;
+          margin-top: 0.5rem;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .days {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #383838;
+          width: fit-content;
+          margin: auto;
+          margin-top: 0.25rem;
+        }
+      }
+    }
+    .Button-Container {
+      width: fit-content;
+    }
+  }
+}
