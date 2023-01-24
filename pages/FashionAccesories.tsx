@@ -15,6 +15,9 @@ import Nav8Data from "../Components/Nav8/Nav8.json";
 import New, { IProps as NewProps } from "../Components/New/New";
 import NewData from "../Components/New/New.json";
 
+import Play, { IProps as PlayProps } from "../Components/Play/Play";
+import PlayData from "../Components/Play/Play.json";
+
 import Shop, { IProps as ShopProps } from "../Components/Shop/Shop";
 import ShopData from "../Components/Shop/Shop.json";
 
@@ -31,6 +34,7 @@ function FashionAccesories() {
       <New {...(NewData as NewProps)} />
       <Big {...(BigData as BigProps)} />
       <Summer {...(SummerData as SummerProps)} />
+      <Play {...(PlayData as PlayProps)} />
     </div>
   );
 }
