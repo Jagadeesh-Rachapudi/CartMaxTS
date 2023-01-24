@@ -29,6 +29,7 @@ import "../Utils/Picks/Picks.scss";
 import "../Utils/WatchItem2/WatchItem2.scss";
 import "../Utils/PinkButton/PinkButton.scss";
 import "../Utils/Fashion/Fashion.scss";
+import "../Utils/NewsArticle3/NewsArticle3.scss";
 
 import "../Components/Nav1/Nav1.scss";
 import "../Components/Hedder1/Hedder1.scss";
@@ -144,6 +145,8 @@ import "../Components/Summer/Summer.scss";
 import "../Components/Play/Play.scss";
 import "../Components/Reviews/Reviews.scss";
 import "../Components/Timmer4/Timmer4.scss";
+import "../Components/LatestNews/LatestNews.scss";
+import "../Components/Footer/Footer.scss";
 
 import type { AppProps } from "next/app";
 import { store } from "../redux/store";

@@ -1,0 +1,23 @@
+{
+  "logo": "https://firebasestorage.googleapis.com/v0/b/catmax2-36a5f.appspot.com/o/Furniture%2FLogo%20(3).png?alt=media&token=15d6710a-91f4-4cf3-99ba-2bc925431126",
+  "hedding1": "<p>About us<p>",
+  "hedding2": "<p>Useful links<p>",
+  "hedding3": "<p>Help & Support<p>",
+  "hedding4": "<p>Git in touch<p>",
+  "text": "<p>Orci varius nato que penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel nisi lorem. Donec  dignissim non est ut pulvinar. Dlobortis metus libero commodo  rhon cusnunc libero tarcu.</p>",
+  "set1": [
+    "<p>Useful links</p>",
+    "<p>Blog</p>",
+    "<p>Agencies</p>",
+    "<p>Contact</p>"
+  ],
+  "set2": [
+    "<p>Login</p>",
+    "<p>My account</p>",
+    "<p>Subscribe</p>",
+    "<p>Contact</p>"
+  ],
+  "address": "<p>333 Middle Winchendon Rd, Rindge, NH 03461</p>",
+  "number": "<p>125-711-811</p>",
+  "mail": "<p>Support.cartmax@gmail.com</p>"
+}

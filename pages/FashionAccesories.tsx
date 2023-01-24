@@ -6,8 +6,16 @@ import BigData from "../Components/Big/Big.json";
 import Dreams, { IProps as DreamsProps } from "../Components/Dreams/Dreams";
 import DreamsData from "../Components/Dreams/Dreams.json";
 
+import Footer, { IProps as FooterProps } from "../Components/Footer/Footer";
+import FooterData from "../Components/Footer/Footer.json";
+
 import Hedder8, { IProps as Hedder8Props } from "../Components/Hedder8/Hedder8";
 import Hedder8Data from "../Components/Hedder8/Hedder8.json";
+
+import LatestNews, {
+  IProps as LatestNewsProps,
+} from "../Components/LatestNews/LatestNews";
+import LatestNewsData from "../Components/LatestNews/LatestNews.json";
 
 import Nav8, { IProps as Nav8Props } from "../Components/Nav8/Nav8";
 import Nav8Data from "../Components/Nav8/Nav8.json";
@@ -43,6 +51,8 @@ function FashionAccesories() {
       <Play {...(PlayData as PlayProps)} />
       <Reviews {...(ReviewsData as ReviewsProps)} />
       <Timmer4 {...(Timmer4Data as Timmer4Props)} />
+      <LatestNews {...(LatestNewsData as LatestNewsProps)} />
+      <Footer {...(FooterData as FooterProps)} />
     </div>
   );
 }
