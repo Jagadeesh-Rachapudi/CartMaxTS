@@ -18,6 +18,9 @@ import NewData from "../Components/New/New.json";
 import Play, { IProps as PlayProps } from "../Components/Play/Play";
 import PlayData from "../Components/Play/Play.json";
 
+import Reviews, { IProps as ReviewsProps } from "../Components/Reviews/Reviews";
+import ReviewsData from "../Components/Reviews/Reviews.json";
+
 import Shop, { IProps as ShopProps } from "../Components/Shop/Shop";
 import ShopData from "../Components/Shop/Shop.json";
 
@@ -35,6 +38,7 @@ function FashionAccesories() {
       <Big {...(BigData as BigProps)} />
       <Summer {...(SummerData as SummerProps)} />
       <Play {...(PlayData as PlayProps)} />
+      <Reviews {...(ReviewsData as ReviewsProps)} />
     </div>
   );
 }

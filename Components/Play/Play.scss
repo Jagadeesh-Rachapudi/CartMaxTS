@@ -22,6 +22,13 @@
       width: 31rem;
       margin: auto;
       margin-top: 1rem;
+      @media screen and (max-width: 528px) {
+        font-size: 55px;
+        line-height: 55px;
+      }
+      @media screen and (max-width: 490px) {
+        width: auto;
+      }
     }
   }
   .banner {
