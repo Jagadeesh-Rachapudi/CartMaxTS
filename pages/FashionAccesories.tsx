@@ -42,17 +42,29 @@ function FashionAccesories() {
   return (
     <div>
       <Nav8 {...(Nav8Data as Nav8Props)} />
-      <Hedder8 {...(Hedder8Data as Hedder8Props)} />
+      <div id="Home1">
+        <Hedder8 {...(Hedder8Data as Hedder8Props)} />
+      </div>
       <Dreams {...(DreamsData as DreamsProps)} />
-      <Shop {...(ShopData as ShopProps)} />
-      <New {...(NewData as NewProps)} />
+      <div id="Promotions1">
+        <Shop {...(ShopData as ShopProps)} />
+      </div>
+      <div id="Shop1">
+        <New {...(NewData as NewProps)} />
+      </div>
       <Big {...(BigData as BigProps)} />
-      <Summer {...(SummerData as SummerProps)} />
+      <div id="Product1">
+        <Summer {...(SummerData as SummerProps)} />
+      </div>
       <Play {...(PlayData as PlayProps)} />
       <Reviews {...(ReviewsData as ReviewsProps)} />
       <Timmer4 {...(Timmer4Data as Timmer4Props)} />
-      <LatestNews {...(LatestNewsData as LatestNewsProps)} />
-      <Footer {...(FooterData as FooterProps)} />
+      <div id="Blog1">
+        <LatestNews {...(LatestNewsData as LatestNewsProps)} />
+      </div>
+      <div id="Pages1">
+        <Footer {...(FooterData as FooterProps)} />
+      </div>
     </div>
   );
 }
