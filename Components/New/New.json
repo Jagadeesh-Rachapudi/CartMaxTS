@@ -4,21 +4,21 @@
   "products": [
     {
       "id": 31,
-      "fashionttile": "<p>Soft Flap Crossbody</p>",
+      "fashionttile": "Soft Flap Crossbody",
       "price": 89.99,
       "color1": "#1D1D1D",
       "color2": "#E31E27"
     },
     {
       "id": 32,
-      "fashionttile": "<p>Polarised Sunglasses</p>",
+      "fashionttile": "Polarised Sunglasses",
       "price": 69.99,
       "color1": "#C5D518",
       "color2": "#E6DDCE"
     },
     {
       "id": 33,
-      "fashionttile": "<p>Felted Wool Hat</p>",
+      "fashionttile": "Felted Wool Hat",
       "price": 99.99,
       "color1": "#A6A6A4",
       "color2": "#4B4C4A"
