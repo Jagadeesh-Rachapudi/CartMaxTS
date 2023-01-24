@@ -369,7 +369,7 @@ function Nav8(props: IProps) {
                       ))}
                       <div className="Buy ms-5 mt-2">
                         <button className="btn btn-danger">
-                          Proceed to pay $ {sum}
+                          Proceed to pay
                         </button>
                       </div>
                     </div>
