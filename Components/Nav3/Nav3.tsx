@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Nav from "react-bootstrap/Nav";
@@ -13,9 +13,8 @@ import { RxCross1 } from "react-icons/rx";
 
 import { useDispatch, useSelector } from "react-redux";
 import { IStore } from "../../redux/store";
-import { updateCart, updatelist } from "../../redux/actions/cartActions";
-import RedButton from "../../Utils/RedButton/RedButton";
-import { GiPerspectiveDiceSixFacesTwo } from "react-icons/gi";
+import WhishList from "../../Utils/WhishList";
+import CartItemsListing from "../../Utils/CartItemsListing";
 
 export interface IProps {
   navOptions: { text: string; link: string }[];
@@ -23,7 +22,6 @@ export interface IProps {
   whishList: string[];
   src: string;
 }
-
 
 function Nav3(props: IProps) {
   const [show, setShow] = useState(false);
@@ -41,6 +39,9 @@ function Nav3(props: IProps) {
   const [clicked, setClicked] = useState(true);
   const [sum, setSum] = useState(0);
 
+  const [isListEmpty, setIsListEmpy] = useState(true);
+  const [isCartEmpty, setIsCartEmpy] = useState(true);
+
   const [prices, setPrices] = useState([
     {
       id: -1,
@@ -55,31 +56,21 @@ function Nav3(props: IProps) {
   const cart = useSelector((state: IStore) => state.cart.products);
   const list = useSelector((state: IStore) => state.list.list);
 
-  function f(event: any) {
-    setUserData(event?.target.value);
-    event.preventDefault();
-    console.log(userData);
-  }
-
-  const handleAddPrice = (newPrice: {
-    id: number;
-    price: number;
-    quanti: number;
-  }) => {
-    const productExists = prices.some((price) => price.id === newPrice.id);
-    if (!productExists) {
-      setPrices((prices) => [...prices, newPrice]);
+  useEffect(() => {
+    if (list.length > 0) {
+      setIsListEmpy(false);
     } else {
-      // console.log("new price added");
-      console.log(prices);
+      setIsListEmpy(true);
     }
-    const uniquePrices = prices.filter(
-      (newPrice, index, self) =>
-        index === self.findIndex((p) => p.id === newPrice.id)
-    );
-    // console.log(uniquePrices);
-    setPrices(uniquePrices.slice());
-  };
+  }, [list]);
+
+  useEffect(() => {
+    if (cart.length > 0) {
+      setIsCartEmpy(false);
+    } else {
+      setIsCartEmpy(true);
+    }
+  }, [cart]);
 
   return (
     <div className="Nav3-Body">
@@ -208,39 +199,13 @@ function Nav3(props: IProps) {
                     <Offcanvas.Title>WhishList</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    {list.map((e, i) => (
-                      <div key={i} className="cartSideBar">
-                        <hr />
-                        <div className="d-flex">
-                          <div>
-                            <img
-                              src="https://picsum.photos/100"
-                              alt=""
-                              className="img rounded "
-                            />
-                          </div>
-                          <div>
-                            <div className=" ms-5 product-name">
-                              {e.productName}
-                            </div>
-                            <div
-                              className="ms-4 mt-3"
-                              onClick={() => {
-                                dispatch(
-                                  updatelist({
-                                    list: list.filter(
-                                      (product) => product.pId !== e.pId
-                                    ),
-                                  })
-                                );
-                              }}
-                            >
-                              <RedButton text="Remove from Whishlist" />
-                            </div>
-                          </div>
-                        </div>
+                    {isListEmpty ? (
+                      <h4 className="text-center">No items in Whish-list</h4>
+                    ) : (
+                      <div>
+                        <WhishList />
                       </div>
-                    ))}
+                    )}
                   </Offcanvas.Body>
                 </Offcanvas>
                 {/* Cart OffCanvas Ends */}
@@ -255,132 +220,13 @@ function Nav3(props: IProps) {
                     <Offcanvas.Title>Your Cart Items</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    <div className="cartSideBar">
-                      {cart.map((e, i) => (
-                        <div key={i}>
-                          <div className="d-flex mt-1 mb-1 justify-content-between">
-                            <img
-                              src="https://picsum.photos/100"
-                              alt=""
-                              className="img rounded "
-                            />
-                            <div className="cart-item d-flex flex-column ms-1">
-                              <div className="product-name me-1">
-                                {e.productName}
-                              </div>
-                              <div className="quantity-controls">
-                                <button
-                                  className="decrement "
-                                  onClick={() => {
-                                    function addToCart(
-                                      productId: number,
-                                      newQuantity: number
-                                    ) {
-                                      if (e.quantity == 1) {
-                                        console.log("Delete now");
-                                        dispatch(
-                                          updateCart({
-                                            products: cart.filter(
-                                              (product) => product.pId !== e.pId
-                                            ),
-                                          })
-                                        );
-                                        return;
-                                      }
-                                      let existingProduct = cart.find(function (
-                                        item
-                                      ) {
-                                        return item.pId === productId;
-                                      });
-                                      if (existingProduct) {
-                                        existingProduct.quantity += newQuantity;
-                                      } else {
-                                        dispatch(
-                                          updateCart({
-                                            products: [
-                                              ...cart,
-                                              {
-                                                pId: e.pId,
-                                                productName: e.productName,
-                                                pPrice: e.pPrice,
-                                                quantity: newQuantity,
-                                              },
-                                            ],
-                                          })
-                                        );
-                                      }
-                                    }
-                                    addToCart(e.pId, -1);
-                                    handleAddPrice({
-                                      id: e.pId,
-                                      price: e.pPrice,
-                                      quanti: e.quantity,
-                                    });
-                                  }}
-                                >
-                                  -
-                                </button>
-                                <span className="quantity">{e.quantity}</span>
-                                <button
-                                  className="increment"
-                                  onClick={() => {
-                                    function addToCart(
-                                      productId: number,
-                                      newQuantity: number
-                                    ) {
-                                      let existingProduct = cart.find(function (
-                                        item
-                                      ) {
-                                        return item.pId === productId;
-                                      });
-                                      if (existingProduct) {
-                                        existingProduct.quantity += newQuantity;
-                                      } else {
-                                        dispatch(
-                                          updateCart({
-                                            products: [
-                                              ...cart,
-                                              {
-                                                pId: e.pId,
-                                                productName: e.productName,
-                                                pPrice: e.pPrice,
-                                                quantity: newQuantity,
-                                              },
-                                            ],
-                                          })
-                                        );
-                                      }
-                                    }
-                                    addToCart(e.pId, 1);
-                                    handleAddPrice({
-                                      id: e.pId,
-                                      price: e.pPrice,
-                                      quanti: e.quantity,
-                                    });
-                                  }}
-                                >
-                                  +
-                                </button>
-                              </div>
-                            </div>
-                            <div
-                              className="totalPrice mt-auto mb-auto ms-5"
-                              onLoad={() => {
-                                console.log("loaded");
-                              }}
-                            >
-                              ${e.pPrice * e.quantity}
-                            </div>
-                          </div>
-                          <hr />
-                        </div>
-                      ))}
-                      <div className="Buy ms-5 mt-2">
-                        <button className="btn btn-danger">
-                          Proceed to pay $ {sum}
-                        </button>
+                    {isCartEmpty ? (
+                      <h4 className="text-center">No items in Cart</h4>
+                    ) : (
+                      <div>
+                        <CartItemsListing />
                       </div>
-                    </div>
+                    )}
                   </Offcanvas.Body>
                 </Offcanvas>
                 {/* Cart OffCanvas Ends */}

@@ -80,6 +80,7 @@ function HomeFashionItem(props: IProps) {
                 }
               }
               addToCart(props.prodId, 1);
+              // console.log(cart.length);
             }}
             style={{
               color: selected === 2 ? "white" : "black",
